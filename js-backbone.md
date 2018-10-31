@@ -11,3 +11,15 @@ Utility    ( 2 )
 View       ( 13 )  
 
 ### Backbone Index Details
+
+### Backbone Namespace
+Backbone.Collection  
+Backbone.Events  
+Backbone.history  
+Backbone.Model  
+Backbone.Router  
+Backbone.sync  
+Backbone.View  
+Backbone.$  
+Backbone.noConflict  
+
