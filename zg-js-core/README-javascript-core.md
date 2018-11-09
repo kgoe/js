@@ -1,0 +1,4 @@
+### javascript core
+
+### links
+https://developer.mozilla.org/en-US/docs/Web/JavaScript

@@ -30,6 +30,14 @@ JavaScript
 
 ### JavaScript Reference
 
+#### Standard Objects
+
+#### Expressons and Operators
+
+#### Statements and Declarations
+
+#### Functions
+
 Global Objects
 - Value Properties
 -- Infinity
