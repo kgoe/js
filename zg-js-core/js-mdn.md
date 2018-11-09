@@ -42,13 +42,14 @@ Feedback
 
 #### Functions
 
-Global Objects
-- Value Properties
+##### Global Objects
+
+###### Value Properties
 -- Infinity
 -- NaN
 -- undefined
 -- null literal
-- Function Properties
+###### Function Properties
 -- eval()
 -- uneval()
 -- isFinite()
@@ -61,7 +62,7 @@ Global Objects
 -- encodeURIComponent()
 -- escape()
 -- unescape()
-- Fundamental Objects
+###### Fundamental Objects
 -- Object
 -- Function
 -- Boolean
@@ -74,14 +75,14 @@ Global Objects
 -- SyntaxError
 -- TypeError
 -- URIError
-- Numbers and Dates
+###### Numbers and Dates
 -- Number
 -- Math
 -- Date
-- Text Processing
+###### Text Processing
 -- String
 -- RegExp
-- Indexed Collections
+###### Indexed Collections
 -- Array
 -- Int8Array
 -- Uint8Array
@@ -92,31 +93,31 @@ Global Objects
 -- Uint32Array
 -- Float32Array
 -- Float64Array
-- Keyed Collections
+###### Keyed Collections
 -- Map
 -- Set
 -- WeakMap
 -- WeakSet
-- Structured Data
+###### Structured Data
 -- ArrayBuffer
 -- SharedArrayBuffer
 -- Atomics
 -- DataView
 -- JSON
-- Control Abstraction Objects
+###### Control Abstraction Objects
 -- Promise
 -- Generator
 -- GeneratorFunction
 -- AsyncFunction
-- Reflection
+###### Reflection
 -- Reflect
 -- Proxy
-- Internationalilzation
+###### Internationalilzation
 -- Intl
 -- Intl.Collator
 -- Intl.DateTimeFormat
 -- Intl.NumberFormat
-- WebAssembly
+###### WebAssembly
 -- WebAssembly
 -- WebAssembly.Module
 -- WebAssembly.Instance
@@ -125,7 +126,7 @@ Global Objects
 -- WebAssembly.CompileError
 -- WebAssembly.LinkError
 -- WebAssembly.RuntimeError
-- Other
+###### Other
 -- arguments
 
 Statements
