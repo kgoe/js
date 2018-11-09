@@ -9,13 +9,16 @@ References & Guides
 Feedback
 
 ### Topics
-JavaScript
-- Tutorials
+
+#### JavaScript
+
+##### Tutorials
 -- Complete Beginners
 -- JavaScript Guide
 -- Intermediate
 -- Advanced
-- References
+
+##### References
 -- Built-in objects
 -- Expressions & operators
 -- Statements & declarations
@@ -24,7 +27,8 @@ JavaScript
 -- Errors
 -- Misc
 -- New in JavaScript
-- Documentation
+
+##### Documentation
 -- Useful Lists
 -- Contribute
 
