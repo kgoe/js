@@ -1,5 +1,56 @@
 const assert = require('assert');
 
+// Global Objects
+//// Value Properties
+//// Function Properties
+//// Fundamental Objects
+//// Numbers and Dates
+//// Text Processing
+//// Indexed Collections
+//// Keyed Collections
+//// Structured Data
+//// Control Abstraction Objects
+//// Reflection
+//// Internationalization
+//// WebAssembly
+//// Other
+
+// Statements
+//// Control Flow
+//// Declarations
+//// Functions and Classes
+//// Iterations
+//// Others
+
+// Exressions and Operators
+//// Primary Expressions
+//// Left Hand Side Expressions
+//// Increment and Decrement
+//// Unary Operators
+//// Arithmetic Operators
+//// Relational Operators
+//// Equality Operators
+//// Bitwise Shift Operators
+//// Binary Bitwise Operators
+//// Binary Logical Operators
+//// Conditional Ternary Operators
+//// Assignment Operators
+//// Comma Operators
+//// Non Standard Features // Obsolete
+
+// Functions
+//// JavaScript functions
+//// arguments object
+//// Arrow functions
+//// Default parameters
+//// Rest parameters
+
+// Additional Reference Pages
+//// Lexical grammar
+//// Data types and Data structures
+//// Struct mode
+//// Deprecated features
+
 /*
 describe('js core', function() {
   describe('literals', function() {
@@ -70,6 +121,10 @@ var coreConstructors = [
   //['Symnbol',Symnbol,'function'],
   ['Number',Number,'function'],
   ['Date',Date,'function'],
+  ['String',String,'function'],
+  ['RegExp',RegExp,'function'],
+  ['Promise',Promise,'function'],
+  ['Proxy',Proxy,'function'],
   ['Error',Error,'function'],
   ['EvalError',EvalError,'function'],
   //['InternalError',InternalError,'function'],
@@ -78,6 +133,51 @@ var coreConstructors = [
   ['SyntaxError',SyntaxError,'function'],
   ['TypeError',TypeError,'function'],
   ['URIError',URIError,'function'],
+];
+
+var coreCollections = [
+  ['Array',Array,'function'],
+  ['Int8Array',Int8Array,'function'],
+  ['Uint8Array',Uint8Array,'function'],
+  ['Uint8ClampedArray',Uint8ClampedArray,'function'],
+  ['Int16Array',Int16Array,'function'],
+  ['Uint16Array',Uint16Array,'function'],
+  ['Int32Array',Int32Array,'function'],
+  ['Uint32Array',Uint32Array,'function'],
+  ['Float32Array',Float32Array,'function'],
+  ['Float64Array',Float64Array,'function'],
+  ['Map',Map,'function'],
+  ['Set',Set,'function'],
+  ['WeakMap',WeakMap,'function'],
+  ['WeakSet',WeakSet,'function'],
+  ['ArrayBuffer',ArrayBuffer,'function'],
+  ['SharedArrayBuffer',SharedArrayBuffer,'function'],
+  ['DataView',DataView,'function'],
+  //['Generator',Generator,'function'],
+  //['GeneratorFunction',GeneratorFunction,'function'],
+  //['AsyncFunction',AsyncFunction,'function'],
+];
+
+var coreObjects = [
+  ['Atomics',Atomics,'object'],
+  ['console',console,'object'],
+  ['Math',Math,'object'],
+  ['JSON',JSON,'object'],
+  ['JSON',JSON,'object'],
+  ['Reflect',Reflect,'object'],
+  ['Intl',Intl,'object'],
+  ['Intl.Collator',Intl.Collator,'function'],
+  ['Intl.DateTimeFormat',Intl.DateTimeFormat,'function'],
+  ['Intl.Numberformat',Intl.NumberFormat,'function'],
+  ['WebAssembly',WebAssembly,'object'],
+  ['WebAssembly.Module',WebAssembly.Module,'function'],
+  ['WebAssembly.Instance',WebAssembly.Instance,'function'],
+  ['WebAssembly.Memory',WebAssembly.Memory,'function'],
+  ['WebAssembly.Table',WebAssembly.Table,'function'],
+  ['WebAssembly.CompileError',WebAssembly.CompileError,'function'],
+  ['WebAssembly.LinkError',WebAssembly.LinkError,'function'],
+  ['WebAssembly.RuntimeError',WebAssembly.RuntimeError,'function'],
+  ['arguments',arguments,'object'],
 ];
 
 describe('js core', function() {
@@ -97,6 +197,20 @@ describe('js core', function() {
   });
   describe('constructors', function() {
     coreConstructors.forEach(function(value){
+      it(value[0],function(){
+        assert.equal(typeof value[1],value[2]);
+      });
+    });
+  });
+  describe('objects', function() {
+    coreObjects.forEach(function(value){
+      it(value[0],function(){
+        assert.equal(typeof value[1],value[2]);
+      });
+    });
+  });
+  describe('collections', function() {
+    coreCollections.forEach(function(value){
       it(value[0],function(){
         assert.equal(typeof value[1],value[2]);
       });
