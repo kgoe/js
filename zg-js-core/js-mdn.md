@@ -295,39 +295,56 @@ Strict Mode
 Deprecated Features
 
 ##### DevDocs JavaScript Tree
-
 JavaScript  
-Array  
-ArrayBuffer  
-Atomics  
-Boolean  
+Array : constructor collection  
+ArrayBuffer : constructor collection  
+Atomics : object  
+Boolean : constructor  
 Classes  
-DataView  
-Date  
-Errors  
-Function   
+Classes Classes  
+Classes constructor  
+Classes extends  
+Classes static  
+DataView : constructor collection  
+Date : object  
+Errors : constructor  
+Function : constructor   
 Generator  
-Global Objects  
-Intl  
-JSON  
-Map  
-Math  
+Generator Generator  
+Generator generator.next  
+Generator generator.return  
+Generator generator.throw  
+Global Objects : virtual namespace  
+Intl : object  
+JSON : object  
+Map : constructor collection  
+Math : object  
 Miscellaneous  
-Number  
-Object  
-Operators  
+Miscellaneous About  
+Miscellaneous Iteration Protocols  
+Miscellaneous Lexical Grammar  
+Miscellaneous Strict Mode  
+Miscellaneous Strict Mode Transitioniing to strict mode  
+Miscellaneous Template Literals  
+Number : constructor  
+Object : constructor  
+Operators : virtual namespace    
 PluralRules  
-Promise  
-Proxy   
-Reflect  
-RegExp  
-Set  
-SharedArrayBuffer  
-Statements  
-Strings  
-String  
-Symbol  
-TypedArray  
-WeakMap  
-WeakSet  
-WebAssembly  
+PluralRules PluralRules  
+PluralRules PluralRules.prototype  
+PluralRules PluralRules.resolvedOptions  
+PluralRules PluralRules.select  
+PluralRules PluralRules.supportedLocaledOf  
+Promise : constructor  
+Proxy : constructor   
+Reflect : object  
+RegExp : constructor  
+Set : constructor collection  
+SharedArrayBuffer : constructor collection  
+Statements : virtual namespace  
+String : constructor  
+Symbol : constructor experimental  
+TypedArray : constructor collection experimental  
+WeakMap : constructor collection  
+WeakSet : constructor collection  
+WebAssembly : constructor  
