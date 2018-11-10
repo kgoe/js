@@ -1,5 +1,10 @@
 const assert = require('assert');
 
+// https://devdocs.io/javascript/
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+// JavaScriptd
+
 // Global Objects
 //// Value Properties
 //// Function Properties
