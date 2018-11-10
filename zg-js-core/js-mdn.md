@@ -293,3 +293,41 @@ Lexical Gramar
 Data Types and Data Structures
 Strict Mode
 Deprecated Features
+
+##### DevDocs JavaScript Tree
+
+JavaScript  
+Array
+ArrayBuffer
+Atomics
+Boolean
+Classes
+DataView
+Date
+Errors
+Function
+Generator
+Global Objects
+Intl
+JSON
+Map
+Math
+Miscellaneous
+Number
+Object
+Operators
+PluralRules
+Promise
+Proxy
+Reflect
+RegExp
+Set
+SharedArrayBuffer
+Statements
+Strings
+String
+Symbol
+TypedArray
+WeakMap
+WeakSet
+WebAssembly
