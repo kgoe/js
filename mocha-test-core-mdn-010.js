@@ -169,7 +169,10 @@ describe('Additional References',function(){
     });  
     it('array',function(){
       assert.equal(typeof [],'object');
-    });  
+    }); 
+    it('JSON',function(){
+      assert.equal(typeof JSON,'object');
+    });   
   });
   describe('Strict Mode',function(){});
   describe('Deprecated Features',function(){});
