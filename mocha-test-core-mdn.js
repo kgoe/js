@@ -1,4 +1,6 @@
-const assert = require('assert');
+if ( typeof global !== 'undefined' ) {
+  const assert = require('assert');
+}
 
 // https://devdocs.io/javascript/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
@@ -182,7 +184,7 @@ var coreObjects = [
   ['WebAssembly.CompileError',WebAssembly.CompileError,'function'],
   ['WebAssembly.LinkError',WebAssembly.LinkError,'function'],
   ['WebAssembly.RuntimeError',WebAssembly.RuntimeError,'function'],
-  ['arguments',arguments,'object'],
+  // ['arguments',arguments,'object'], // speciall value inside functions
 ];
 
 describe('js core', function() {
