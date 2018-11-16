@@ -8,3 +8,4 @@ npm i -g debug
 ### browser
 npm i --save mocha
 npm i --save chai
+npm i --save mocha-qunit-ui

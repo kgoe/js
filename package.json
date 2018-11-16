@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kgoe/js#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "mocha-qunit-ui": "^0.1.3"
   }
 }
