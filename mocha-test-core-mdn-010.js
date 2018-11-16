@@ -1,116 +1,178 @@
 const assert = require('assert');
 
 describe('Statements',function(){
-  it('block',function(){
-    var theValue = 0;
-      try {
-        {
-        var x = 1;
-        var y = 1;
-        }
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,0);
-  });
-  it('break',function(){
-    var theValue = 0;
-      try {
-        for ( var counter = 0; counter < 5; counter ++ ) {
-          theValue += counter;
-          if ( counter == 2 ) {
-            break;
+  describe('Control Flow',function(){
+    it('block',function(){
+      var theValue = 0;
+        try {
+          {
+          var x = 1;
+          var y = 1;
           }
+        } catch ( e ) {
+          theValue += 3;
         }
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,3);
-  });
-  it('continue',function(){
-    var theValue = 0;
-      try {
-        for ( var counter = 0; counter < 5; counter ++ ) {
-          if ( counter == 2 ) {
-            continue;
+      assert.equal(theValue,0);
+    });
+    it('break',function(){
+      var theValue = 0;
+        try {
+          for ( var counter = 0; counter < 5; counter ++ ) {
+            theValue += counter;
+            if ( counter == 2 ) {
+              break;
+            }
           }
-          theValue += counter;
+        } catch ( e ) {
+          theValue += 3;
         }
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,8);
-  });
-
-  it('Empty',function(){
-    var theValue = 0;
-      try {
-        var array1 = [1, 2, 3];
-        // Assign all array values to 0
-        for (i = 0; i < array1.length; array1[i++] = 0) /* empty statement */ ;
-        theValue = 1;
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,1);
-  });
-
-  it('if...else',function(){
-    var theValue = 0;
-      try {
-        if ( false ) {
+      assert.equal(theValue,3);
+    });
+    it('continue',function(){
+      var theValue = 0;
+        try {
+          for ( var counter = 0; counter < 5; counter ++ ) {
+            if ( counter == 2 ) {
+              continue;
+            }
+            theValue += counter;
+          }
+        } catch ( e ) {
+          theValue += 3;
+        }
+      assert.equal(theValue,8);
+    });
+  
+    it('Empty',function(){
+      var theValue = 0;
+        try {
+          var array1 = [1, 2, 3];
+          // Assign all array values to 0
+          for (i = 0; i < array1.length; array1[i++] = 0) /* empty statement */ ;
           theValue = 1;
-        } else if ( false ) {
-          thValue = 3;
-        } else {
-          theValue = 2;
+        } catch ( e ) {
+          theValue += 3;
         }
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,2);
-  });
-
-  it('switch',function(){
-    var theValue = 0;
-      try {
-        var item = 'b';
-        switch( item ) {
-          case 'a' :
+      assert.equal(theValue,1);
+    });
+  
+    it('if...else',function(){
+      var theValue = 0;
+        try {
+          if ( false ) {
             theValue = 1;
-          case 'z' :
-            theValule += 10;
-            break;
-          case 'd' :
-          case 'e' :
-          case 'b' :
-          case 'y' :
-            theValue += 2;
-          case 'x' :
-            theValue += 3;
-            break;
-          default:
-            theValue = 111;
-            break;
+          } else if ( false ) {
+            thValue = 3;
+          } else {
+            theValue = 2;
+          }
+        } catch ( e ) {
+          theValue += 3;
         }
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,5);
+      assert.equal(theValue,2);
+    });
+  
+    it('switch',function(){
+      var theValue = 0;
+        try {
+          var item = 'b';
+          switch( item ) {
+            case 'a' :
+              theValue = 1;
+            case 'z' :
+              theValule += 10;
+              break;
+            case 'd' :
+            case 'e' :
+            case 'b' :
+            case 'y' :
+              theValue += 2;
+            case 'x' :
+              theValue += 3;
+              break;
+            default:
+              theValue = 111;
+              break;
+          }
+        } catch ( e ) {
+          theValue += 3;
+        }
+      assert.equal(theValue,5);
+    });
+  
+    it('try-throw-catch-finally',function(){
+      var theValue = 0;
+        try {
+          theValue += 2;
+          throw("force error");
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,9);
+    });
   });
+  describe('Declarations',function(){});
+  describe('Functions and Classes',function(){});
+  describe('Iterations',function(){});
+  describe('Others',function(){});
+});
+describe('Expressions and Operators',function(){
+  describe('Primary Expressions',function(){});
+  describe('Left Hand Side Expressions',function(){});
+  describe('Increment and Decrement',function(){});
+  describe('Unary Operators',function(){});
+  describe('Arithmetic Operators',function(){});
+  describe('Relational Operators',function(){});
+  describe('Equality Operators',function(){});
+  describe('Birwise Shift Operators',function(){});
+  describe('Binary Bitwise Operators',function(){});
+  describe('Binary Logical Operators',function(){});
+  describe('Conditional Ternary Operator',function(){});
+  describe('Assignment Operators',function(){});
+  describe('Comma Operators',function(){});
+  describe('Non Standard Features',function(){});
+});
 
-  it('try-throw-catch-finally',function(){
-    var theValue = 0;
-      try {
-        theValue += 2;
-        throw("force error");
-      } catch ( e ) {
-        theValue += 3;
-      } finally {
-        theValue += 4;
-      }
-    assert.equal(theValue,9);
+describe('Functions',function(){
+  describe('arguments',function(){});
+  describe('Arrow Functions',function(){});
+  describe('Default Parameters',function(){});
+  describe('Rest Parameters',function(){});
+});
+
+describe('Additional References',function(){
+  describe('Lexical Grammars',function(){});
+  describe('Data Types and Data Structures',function(){
+    it('boolean',function(){
+      assert.equal(typeof true,'boolean');
+      assert.equal(typeof false,'boolean');
+    });
+    it('null',function(){
+      assert.equal(typeof null,'object');
+    });
+    it('undefined',function(){
+      assert.equal(typeof undefined,'undefined');
+    });
+    it('number',function(){
+      assert.equal(typeof 12345,'number');
+    }); 
+    it('string',function(){
+      assert.equal(typeof 'hello','string');
+    });
+    it('symbol',function(){
+      assert.equal(typeof Symbol(),'symbol');
+    });  
+    it('object',function(){
+      assert.equal(typeof {},'object');
+    });  
+    it('array',function(){
+      assert.equal(typeof [],'object');
+    });  
   });
+  describe('Strict Mode',function(){});
+  describe('Deprecated Features',function(){});
 });
 
 /*
