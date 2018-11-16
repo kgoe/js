@@ -221,4 +221,19 @@ describe('js core', function() {
       });
     });
   });
+  describe('try-catch-finally',function(){
+    it('try-catch-finally',function(){
+      var theValue = 0;
+      try {
+        theValue += 2;
+        throw("force error");
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+  
+      assert.equal(theValue,9);
+    });
+  });
 });
