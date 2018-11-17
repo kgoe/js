@@ -1,8 +1,8 @@
-### JS Standard
+### README : js standard
 ECMA 262 Standard  
 ECMAScript  
 
-### Versions
+### versions
 ECMA 262 1st Edition  
 ECMA 262 2nd Edition  
 ECMA 262 3rd Edition  

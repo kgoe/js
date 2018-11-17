@@ -1,2 +1,2 @@
-### js : javascript
-a repository containing topics to learn about javascript
+### README : kgoe js
+a repository created to collect useful topics about javascript

@@ -1,6 +1,6 @@
 ### JavaScript Libraries
 
-### Links
+### links
 https://medium.com/javascript-scene/top-javascript-libraries-tech-to-learn-in-2018-c38028e028e6  
 https://www.htmlgoodies.com/beyond/javascript/top-javascript-libraries-and-trends-for-2018.html  
 https://onaircode.com/top-javascript-animation-libraries/  

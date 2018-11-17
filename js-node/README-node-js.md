@@ -1,6 +1,10 @@
-### javascript node.js
+### README : node.js
+node.js is based on javascript and google chrome's v8 javascript engine
 
 ### links
+https://nodejs.org/en/
+https://www.npmjs.com/
+https://github.com/nodejs/node
 
 ### versions
 10.x LTS  

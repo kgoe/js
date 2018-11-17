@@ -1,18 +1,21 @@
-### javascript core
+### README : javascript core
+javascript is a scripting language originally intended to be run inside web browsers
+it is standardized as ECMA-262
 
 ### links
 https://devdocs.io/javascript/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-### mdn core javascript index
-tutorials
+#### standards
+
+#### tutorials
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tutorials
 
-reference
+#### reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
-tools and resources
+#### tools and resources
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources
 
 ### todo
