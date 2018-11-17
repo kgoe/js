@@ -6,8 +6,11 @@
 
 #### MDN JavaScript Web API
 
-#### You Dont Know JS
+#### You Dont Know JS ( YDKJS )
 up & going
+  into programming
+  into javascript
+  into YDKJS
 scope & closures
 this & object prototypes
 types & grammar
