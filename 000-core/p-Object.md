@@ -1,5 +1,4 @@
 ### Object properties
-
 [ 'length',
   'name',
   'prototype',
@@ -23,3 +22,28 @@
   'keys',
   'entries',
   'values' ]
+
+### Object.prototype properties
+[ 'constructor',
+  '__defineGetter__',
+  '__defineSetter__',
+  'hasOwnProperty',
+  '__lookupGetter__',
+  '__lookupSetter__',
+  'isPrototypeOf',
+  'propertyIsEnumerable',
+  'toString',
+  'valueOf',
+  '__proto__',
+  'toLocaleString' ]
+
+### Object.__proto__ properties
+[ 'length',
+  'name',
+  'arguments',
+  'caller',
+  'constructor',
+  'apply',
+  'bind',
+  'call',
+  'toString' ]
