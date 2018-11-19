@@ -50,6 +50,30 @@ ph_regions = [
   "region 18 ph",
 ];
 
+ph_regional_capital = [
+  "san fernando la union city ph",
+  "baguio city ph",
+  "tuguegarao city ph",
+  "san fernando pampanga city ph",
+  "manila city ph",
+  "calamba city ph",
+  "legazpi city ph",
+  "calapan city ph",
+  "iloilo city ph",
+  "cebu city ph",
+  "tacloban city ph",
+  "pagadian city ph",
+  "cagayan de oro city ph",
+  "butuan city ph",
+  "cotabato city ph",
+  "koronadal city ph",
+  "davao city ph",
+];
+
+ph_province = [
+  
+];
+
 ph_islands = [
   "luzon ph",
   "mindanao ph",
