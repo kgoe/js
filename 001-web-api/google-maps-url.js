@@ -26,7 +26,10 @@ ph_regions = [
   "metro manila ph",
   "ilocos region ph",
   "cagayan valley region ph",
+  "car region ph",
+  "central luzon region ph",
   "northern mindanao region ph",
+  "armm region ph",
   "region 1 ph",
   "region 2 ph",
   "region 3 ph",
@@ -43,6 +46,8 @@ ph_regions = [
   "region 14 ph",
   "region 15 ph",
   "region 16 ph",
+  "region 17 ph",
+  "region 18 ph",
 ];
 
 ph_islands = [
