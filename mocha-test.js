@@ -119,14 +119,14 @@ var coreObjects = [
   //['Intl.DateTimeFormat',Intl.DateTimeFormat,'function'],
   //['Intl.Numberformat',Intl.NumberFormat,'function'],
   ['WebAssembly','WebAssembly','object'],
-  //['WebAssembly.Module',WebAssembly.Module,'function'],
-  //['WebAssembly.Instance',WebAssembly.Instance,'function'],
-  //['WebAssembly.Memory',WebAssembly.Memory,'function'],
-  //['WebAssembly.Table',WebAssembly.Table,'function'],
-  //['WebAssembly.CompileError',WebAssembly.CompileError,'function'],
-  //['WebAssembly.LinkError',WebAssembly.LinkError,'function'],
-  //['WebAssembly.RuntimeError',WebAssembly.RuntimeError,'function'],
-  ['arguments','arguments','object'], // err n10.13.0 special value inside functions
+  ['WebAssembly.Module',WebAssembly.Module,'function'],
+  ['WebAssembly.Instance',WebAssembly.Instance,'function'],
+  ['WebAssembly.Memory',WebAssembly.Memory,'function'],
+  ['WebAssembly.Table',WebAssembly.Table,'function'],
+  ['WebAssembly.CompileError',WebAssembly.CompileError,'function'],
+  ['WebAssembly.LinkError',WebAssembly.LinkError,'function'],
+  ['WebAssembly.RuntimeError',WebAssembly.RuntimeError,'function'],
+  //['arguments','arguments','object'], // err n10.13.0 special value inside functions
 ];
 
 var theRoot = global || window;
@@ -156,7 +156,13 @@ describe('js core', function() {
   describe('objects', function() {
     coreObjects.forEach(function(value){
       it(value[0],function(){
-        assert.equal(typeof theRoot[value[1]],value[2]);
+        var check = undefined;
+        if ( typeof value[1] == 'string' ) {
+          check = theRoot[value[1]];
+        } else if ( typeof value[1] !== 'undefined' ) {
+          check = value[1];
+        }
+        assert.equal(typeof check,value[2]);
       });
     });
   });
