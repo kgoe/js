@@ -1,6 +1,6 @@
 ### ECMA 262 1st Edition
 ECMAScirpt 1st Edition, June 1997
-PDF
+PDF 111page 309kb
 https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf
 
 ### TOC

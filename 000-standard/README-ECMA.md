@@ -34,3 +34,9 @@ Open XML Paper Specification (OpenXPS)
 
 ISO/IEC JTC 1
 1986
+
+### links
+https://www.ecma-international.org
+https://www.ecma-international.org/ecma-262/
+https://github.com/tc39/test262
+https://www.ecma-international.org/publications/standards/Ecma-262.htm

@@ -2,6 +2,9 @@
 ECMA 262 Standard  
 ECMAScript  
 
+https://www.ecma-international.org/ecma-262/9.0/index.html#Title
+https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+
 ### versions
 ECMA 262 1st Edition  
 ECMA 262 2nd Edition  
