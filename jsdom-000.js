@@ -1,39 +1,6 @@
-const _http = require('https');
-const _cher = require('cheerio');
-const _lg = console.log;
 const log = console.log;
-
 const _jsdom = require('jsdom');
 const { JSDOM } = _jsdom;
-
-const fmtHost = function fmtHost( hostName, hostPath ) {
-  var theObj = {};
-	 theObj.host = hostName;
-	 theObj.path = hostPath;
-	 return theObj;
-};
-
-const httpGet = function httpGet( httpOption, responseCallback ) {
-  _http.get( httpOption, function httpExecGet( res, req ) {
-    var responseText = "";
-    
-    res.on('data', function onData( response ){
-      responseText += response;
-    });
-    
-    res.on('end', function onEnd( response ) {
-      responseCallback( responseText );
-    });
-  });
-};
-
-const responseParse = function responseParse( res ) {
-	 var $$ = _cher.load(res);
-	 var $$body = $$('body')
-  _lg($$.html());
-};
-
-//log([_jsdom,JSDOM]);
 
 const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
 console.log(dom.window.document.querySelector("p").textContent); 
@@ -42,8 +9,8 @@ console.log(dom.window.document.querySelector("p").textContent); 
 //log(dom.window);
 //log(dom.window.document);
 //log(dom.window.document.__proto__);
-
 // log(dom);
+
 // log(Object.getOwnPropertyNames(global));
 /*
 [ 'Object',
