@@ -1,4 +1,4 @@
-const assert = require('assert');
+assert = assert || require('assert');
 
 describe('Statements',function(){
   describe('Control Flow',function(){

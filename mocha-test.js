@@ -1,4 +1,4 @@
-const assert = require('assert');
+assert = assert || require('assert');
 
 //*
 describe('js core', function() {
@@ -129,7 +129,14 @@ var coreObjects = [
   //['arguments','arguments','object'], // err n10.13.0 special value inside functions
 ];
 
-var theRoot = global || window;
+var theRoot = undefined;
+if ( typeof global !== 'undefined' ) {
+  theRoot = global;
+}
+
+if ( typeof window !== 'undefined' ) {
+  theRoot = window;
+}
 
 describe('js core', function() {
   describe('literals', function() {
