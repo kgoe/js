@@ -50,7 +50,7 @@ var coreLiterals = [
 
 var coreMethods = [
   ['eval','eval','function'],
-  ['uneval','uneval','function'], // err n10.13.0
+  //['uneval','uneval','function'], // err n10.13.0
   ['isFinite','isFinite','function'],
   ['isNaN','isNaN','function'],
   ['parseFloat','parseFloat','function'],
@@ -67,7 +67,7 @@ var coreConstructors = [
   ['Object','Object','function'],
   ['Function','Function','function'],
   ['Boolean','Boolean','function'],
-  ['Symnbol','Symnbol','function'], // err n10.13.0
+  //['Symnbol','Symnbol','function'], // err n10.13.0
   ['Number','Number','function'],
   ['Date','Date','function'],
   ['String','String','function'],
@@ -76,7 +76,7 @@ var coreConstructors = [
   ['Proxy','Proxy','function'],
   ['Error','Error','function'],
   ['EvalError','EvalError','function'],
-  ['InternalError','InternalError','function'], // err n10.13.0
+  //['InternalError','InternalError','function'], // err n10.13.0
   ['RangeError','RangeError','function'],
   ['ReferenceError','ReferenceError','function'],
   ['SyntaxError','SyntaxError','function'],
@@ -100,21 +100,21 @@ var coreCollections = [
   ['WeakMap','WeakMap','function'],
   ['WeakSet','WeakSet','function'],
   ['ArrayBuffer','ArrayBuffer','function'],
-  ['SharedArrayBuffer','SharedArrayBuffer','function'],
+  //['SharedArrayBuffer','SharedArrayBuffer','function'], // err n8.9
   ['DataView','DataView','function'],
-  ['Generator','Generator','function'], // err n10.13.0
-  ['GeneratorFunction','GeneratorFunction','function'], // err n10.13.0
-  ['AsyncFunction','AsyncFunction','function'], // err n10.13.0
+  //['Generator','Generator','function'], // err n10.13.0
+  //['GeneratorFunction','GeneratorFunction','function'], // err n10.13.0
+  //['AsyncFunction','AsyncFunction','function'], // err n10.13.0
 ];
 
 var coreObjects = [
-  ['Atomics','Atomics','object'],
+  //['Atomics','Atomics','object'], // err n8.9
   ['console','console','object'],
   ['Math','Math','object'],
   ['JSON','JSON','object'],
   ['JSON','JSON','object'],
   ['Reflect','Reflect','object'],
-  ['Intl','Intl','object'],
+  //['Intl','Intl','object'], // err n8.9
   //['Intl.Collator',Intl.Collator,'function'],
   //['Intl.DateTimeFormat',Intl.DateTimeFormat,'function'],
   //['Intl.Numberformat',Intl.NumberFormat,'function'],
