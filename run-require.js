@@ -20,27 +20,24 @@ var theOutput = (function iifeEnvDetect(){
 
 console.log(theOutput, __filename);
 
-var log = console.log;
-var fs = require('fs');
-var uu = require('./run-require.js');
+var uu = {};
+uu.refP = (function exec(){
+  function reflectProperties( input ){
+    var types = [
+      "object",
+      "function"
+    ];
+    return Object.getOwnPropertyNames( input );
+  };
+  return reflectProperties;
+})();
+uu.reflectProperties = uu.refP;
 
+if ( theOutput === 'node-module' ) {
+  module.exports = uu;
+} else {
 //log(uu.refP( console ));
-//log(fs.readdirSync('/'));
 //log(fs.readdirSync('/etc'));
 //log(fs.readdirSync('/sdcard'));
 ////log(fs.readdirSync('/sdcard-ext'));
-
-/*
-// android file system
-// http://www.stevesandroidguide.com/android-files/
-
-/root
-/etc
-/sdcard
-/sdcard-ext
-/ext-sdcard
-/storage
-/storage/40F3-509C
-/storage/self
-/storage/emulated/0
-*/
+}
