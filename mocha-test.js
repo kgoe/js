@@ -191,7 +191,6 @@ describe('js core', function() {
       } finally {
         theValue += 4;
       }
-  
       assert.equal(theValue,9);
     });
   });
