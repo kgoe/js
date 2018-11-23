@@ -74,11 +74,11 @@ caller: 'object',
 prototype: 'object'
 }
 
-function getGlobalPropertyTree() {
+function reflectGlobalPropertyTree() {
   var theRoot = typeof global != 'undefined' ? global : window;
-  props = Object.getOwnPropertyNames( theRoot );
-  propsPrototype = Object.getOwnPropertyNames( theRoot.prototype || {} );
-  propsProto = Object.getOwnPropertyNames( theRoot.__proto__ || {});
+  props = Object.getOwnPropertyNames( theRoot || {} );
+  propsPrototype = Object.getOwnPropertyNames( theRoot || {} );
+  propsProto = Object.getOwnPropertyNames( theRoot || {});
   var theOutput = {};
   var theOutputPrototype = {};
   var theOutputProto = {};
@@ -95,7 +95,7 @@ function getGlobalPropertyTree() {
   
   for ( var cd1 = 0; cd1 < propsPrototype.length; cd1++ ) {
     try {
-      theOutputPrototype[propsPrototype[cd1]] = getPropType(theRoot[propsPrototype[cd1]]);
+      theOutputPrototype[propsPrototype[cd1]] = getPropType(theRoot[propsPrototype[cd1]].prototype);
     } catch ( err ) {
       console.log(err);
       theOutputPrototype[propsPrototype[cd1]] = false;
@@ -105,7 +105,7 @@ function getGlobalPropertyTree() {
   
   for ( var cd = 0; cd < propsProto.length; cd++ ) {
     try {
-      theOutputProto[propsProto[cd]] = getPropType(theRoot[propsProto[cd]]);
+      theOutputProto[propsProto[cd]] = getPropType(theRoot[propsProto[cd]].__proto__);
     } catch ( err ) {
       console.log(err);
       theOutputProto[propsProto[cd]] = false;
@@ -114,13 +114,13 @@ function getGlobalPropertyTree() {
   }
   
   // console.log(theOutput);
-  // console.log(theOutputPrototype);
-  // console.log(theOutputProto);
+  //console.log(theOutputPrototype);
+  //console.log(theOutputProto);
   
   // return theOutput;
 }
 
-// getGlobalPropertyTree();
+//reflectGlobalPropertyTree();
 
 var arrayTypes = [ 
   'Object',
@@ -188,9 +188,9 @@ var arrayTypes = [
   'setTimeout'
 ];
 
-arrayTypes.forEach(function( value ){
-  log( value,global[value].__proto__ == Object.__proto__,eventCC);
-});
+//arrayTypes.forEach(function( value ){
+//  log( value,global[value].__proto__ == Object.__proto__,eventCC);
+//});
 
 setTimeout(function(){console.log('T',eventCC);},1000);
 
