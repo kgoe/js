@@ -2,13 +2,12 @@
 // checks if javascript core properties is supported
 
 var assert = require('assert');
-
+var log = console.log;
 describe("core properties",function(){
 	it("core literals",function(){
 		assert.equal(typeof function(){},'function');
 		assert.equal(typeof {},'object');
-		assert.equal(typeof [],'object')
-		;
+		assert.equal(typeof [],'object');
 		assert.equal(typeof 5,'number');
 		assert.equal(typeof true,'boolean');
 		assert.equal(typeof false,'boolean');
@@ -17,6 +16,7 @@ describe("core properties",function(){
 		assert.equal(typeof Symbol('s'),'symbol');
 		assert.equal(typeof Error('err'),'object');
 	});
+
 	it("core constructors",function(){	
 		assert.equal(typeof Object,'function');
 		assert.equal(typeof Function,'function');
@@ -33,6 +33,49 @@ describe("core properties",function(){
 		assert.equal(typeof Set,'function');
 		assert.equal(typeof WeakMap,'function');
 		assert.equal(typeof WeakSet,'function');
+		
+		assert.equal(this.constructor.toString(),'function Context() {}');
+		assert.equal(Object.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Function.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Array.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Number.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Boolean.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(String.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(RegExp.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Symbol.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Error.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(JSON.constructor.toString(),'function Object() { [native code] }');
+		assert.equal(Math.constructor.toString(),'function Object() { [native code] }');
+		assert.equal(Map.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(Set.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(WeakMap.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(WeakSet.constructor.toString(),'function Function() { [native code] }');
+
+		assert.equal(function(){}.constructor.toString(),'function Function() { [native code] }');
+		assert.equal(function(){}.prototype.toString(),'[object Object]');
+		assert.equal(function(){}.__proto__.toString(),'function () { [native code] }');
+
+		assert.equal(Object.prototype.toString(),'[object Object]');
+		assert.equal(Function.prototype.toString(),'function () { [native code] }');
+		assert.equal(Array.prototype.toString(),'');
+		assert.equal(Number.prototype.toString(),'0');
+		assert.equal(Boolean.prototype.toString(),'false');
+		assert.equal(String.prototype.toString(),'');
+		assert.equal(RegExp.prototype.toString(),'/(?:)/');
+		assert.equal(Symbol('s').toString(),"Symbol(s)");
+		assert.equal(Error.prototype.toString(),'Error');
+
+		assert.equal(Object.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Function.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Array.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Number.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Boolean.__proto__.toString(),'function () { [native code] }');
+		assert.equal(String.__proto__.toString(),'function () { [native code] }');
+		assert.equal(RegExp.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Symbol.__proto__.toString(),'function () { [native code] }');
+		assert.equal(Error.__proto__.toString(),'function () { [native code] }');
+		assert.equal(JSON.__proto__.toString(),'[object Object]');
+		assert.equal(Math.__proto__.toString(),'[object Object]');
 	});
 
 });
