@@ -1,6 +1,7 @@
-assert = assert || require('assert');
+
 
 describe('Statements',function(){
+
   describe('Control Flow',function(){
     it('block',function(){
       var theValue = 0;
@@ -113,11 +114,58 @@ describe('Statements',function(){
       assert.equal(theValue,9);
     });
   });
-  describe('Declarations',function(){});
-  describe('Functions and Classes',function(){});
-  describe('Iterations',function(){});
-  describe('Others',function(){});
+
+  describe('Declarations',function(){
+    it('var',function(){
+      var theValue = 0;
+        try {
+          theValue += 2;
+          throw("force error");
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,9);
+    });
+    it('let',function(){
+      let theValue = 0;
+        try {
+          theValue += 2;
+          throw("force error");
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,9);
+    });
+    it('const',function(){
+        var output = false;
+        try {
+          const theValue = 2;
+          output = theValue;
+        } catch ( e ) {
+          const theValue = 3;
+          output = theValue;
+        } finally {
+          output += 4;
+        }
+        assert.equal(output,6);
+    });
+  });
+
+  describe('Functions and Classes',function(){
+  });
+
+  describe('Iterations',function(){
+  });
+
+  describe('Others',function(){
+  });
+
 });
+
 describe('Expressions and Operators',function(){
   describe('Primary Expressions',function(){});
   describe('Left Hand Side Expressions',function(){});

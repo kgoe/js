@@ -15,6 +15,10 @@ describe("core properties",function(){
 		assert.equal(typeof /i/g,'object');
 		assert.equal(typeof Symbol('s'),'symbol');
 		assert.equal(typeof Error('err'),'object');
+		assert.equal(typeof undefined,'undefined');
+		assert.equal(typeof Infinity,'number');
+		assert.equal(typeof NaN,'number');
+		assert.equal(typeof null,'object');
 	});
 
 	it("core constructors",function(){	

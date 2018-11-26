@@ -1,4 +1,4 @@
-assert = assert || require('assert');
+assert = typeof global !== 'undefined' ? require('assert') : assert;
 
 // https://devdocs.io/javascript/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
