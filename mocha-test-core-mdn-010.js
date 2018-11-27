@@ -545,15 +545,19 @@ describe('Expressions and Operators',function(){
   });
 
   describe('Left Hand Side Expressions',function(){
+    
     it('property accessor',function(){
       assert.equal(typeof JSON.parse,'function');
     });
+
     it('property accessor',function(){
       assert.equal(typeof JSON['parse'],'function');
     });
+    
     it('new',function(){
       assert.equal(typeof new Object(),'object');
     });
+    
     it('new.target',function(){
       function Foo() {
         if (!new.target) throw 'Foo() must be called with new';
@@ -567,6 +571,31 @@ describe('Expressions and Operators',function(){
       }
       assert.equal(typeof Foo,'function');
     });
+
+    it.skip('super',function(){
+      //assert.equal(super.name,'function');
+    });
+
+    it('... spread',function(){
+      var theValue = 0;
+      try {
+        function sum(x, y, z) {
+          return x + y + z;
+        }
+        const numbers = [1, 2, 3];
+        //console.log(sum(...numbers));
+        // expected output: 6
+        //console.log(sum.apply(null, numbers));
+
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
   });
 
   describe('Increment and Decrement',function(){
@@ -594,9 +623,88 @@ describe('Expressions and Operators',function(){
   });
 
   describe('Unary Operators',function(){
+
+    it('delete',function(){
+      var theValue = 0;
+      try {
+        var obj = {};
+        obj.test = 'test';
+        delete obj.test;
+        var Employee = {
+          firstname: "Mohammed",
+          lastname: "Haddad"
+        }
+        delete Employee.firstname;       
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('void operator',function(){
+      var theValue = 0;
+      try {
+        void function test() {
+          //console.log('boo!');
+          // expected output: "boo!"
+        }();
+        
+        try {
+          test();
+        }
+        catch(e) {
+          //console.log(e);
+          // expected output: ReferenceError: test is not defined
+        }
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('typeof',function(){
+      assert.equal(typeof {},'object');
+    });
+
   });
 
   describe('Arithmetic Operators',function(){
+    var ii = 0;
+
+    it('+',function(){
+      assert.equal(ii+1,1);
+    });
+    
+    it('-',function(){
+      assert.equal(ii-1,-1);
+    });
+
+    it('/',function(){
+      ii = ii+10;
+      assert.equal(ii/2,5);
+    });
+
+    it('/',function(){
+      ii = 1 * 10
+      assert.equal(ii*5,50);
+    });
+
+    it('%',function(){
+      ii = 1 * 10
+      assert.equal(ii%2,0);
+    });
+
+    it('**',function(){
+      ii = 1 * 10
+      assert.equal(ii**3,1000);
+    });
+
   });
 
   describe('Relational Operators',function(){
