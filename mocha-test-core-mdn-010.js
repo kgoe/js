@@ -1,4 +1,4 @@
-
+assert = typeof global !== 'undefined' ? require('assert') : assert;
 
 describe('Statements',function(){
 
@@ -156,42 +156,157 @@ describe('Statements',function(){
   });
 
   describe('Functions and Classes',function(){
+
+    it('function return',function(){
+      var theValue = 0;
+        try {
+          function test(){
+            return 1;
+          }
+          theValue += test();
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,5);
+    });
+
+    it('function* generator',function(){
+      var theValue = 0;
+        try {
+          function* test(i){
+            yield i;
+            yield i + 5;
+          }
+          var gen = test(theValue)
+          theValue += gen.next().value;
+        } catch ( e ) {
+          theValue += 5;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,4);
+    });
+
+    it('async function',function(done){
+      var theValue = 0;
+        try {
+          function resolveAfter2seconds(){
+            return new Promise(resolve => {
+              setTimeout(() => {
+                resolve('resolved');
+              }, 500);
+            });
+          }
+          async function asyncCall(){
+            console.log('calling');
+            var result = await resolveAfter2seconds();
+            console.log(result);
+            // expected output: 'resolved'
+            return 1;
+          }
+          asyncCall().then(function( value ){
+            console.log(value);
+            done();
+          });
+          theValue += 1;
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,5);
+    });
+
   });
 
   describe('Iterations',function(){
+
   });
 
   describe('Others',function(){
+
+    it('debugger',function(){
+      var theValue = 0;
+        try {
+          debugger;
+          theValue += 1;
+        } catch ( e ) {
+          theValue += 3;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,5);
+    });
+    
   });
 
 });
 
 describe('Expressions and Operators',function(){
-  describe('Primary Expressions',function(){});
-  describe('Left Hand Side Expressions',function(){});
-  describe('Increment and Decrement',function(){});
-  describe('Unary Operators',function(){});
-  describe('Arithmetic Operators',function(){});
-  describe('Relational Operators',function(){});
-  describe('Equality Operators',function(){});
-  describe('Birwise Shift Operators',function(){});
-  describe('Binary Bitwise Operators',function(){});
-  describe('Binary Logical Operators',function(){});
-  describe('Conditional Ternary Operator',function(){});
-  describe('Assignment Operators',function(){});
-  describe('Comma Operators',function(){});
-  describe('Non Standard Features',function(){});
+  describe('Primary Expressions',function(){
+
+  });
+  describe('Left Hand Side Expressions',function(){
+
+  });
+  describe('Increment and Decrement',function(){
+
+  });
+  describe('Unary Operators',function(){
+
+  });
+  describe('Arithmetic Operators',function(){
+
+  });
+  describe('Relational Operators',function(){
+
+  });
+  describe('Equality Operators',function(){
+
+  });
+  describe('Birwise Shift Operators',function(){
+
+  });
+  describe('Binary Bitwise Operators',function(){
+
+  });
+  describe('Binary Logical Operators',function(){
+
+  });
+  describe('Conditional Ternary Operator',function(){
+
+  });
+  describe('Assignment Operators',function(){
+
+  });
+  describe('Comma Operators',function(){
+
+  });
+  describe('Non Standard Features',function(){
+
+  });
 });
 
 describe('Functions',function(){
-  describe('arguments',function(){});
-  describe('Arrow Functions',function(){});
-  describe('Default Parameters',function(){});
-  describe('Rest Parameters',function(){});
+  describe('arguments',function(){
+
+  });
+  describe('Arrow Functions',function(){
+
+  });
+  describe('Default Parameters',function(){
+
+  });
+  describe('Rest Parameters',function(){
+
+  });
 });
 
 describe('Additional References',function(){
-  describe('Lexical Grammars',function(){});
+  describe('Lexical Grammars',function(){}
+  );
   describe('Data Types and Data Structures',function(){
     it('boolean',function(){
       assert.equal(typeof true,'boolean');
@@ -222,8 +337,12 @@ describe('Additional References',function(){
       assert.equal(typeof JSON,'object');
     });   
   });
-  describe('Strict Mode',function(){});
-  describe('Deprecated Features',function(){});
+  describe('Strict Mode',function(){
+
+  });
+  describe('Deprecated Features',function(){
+
+  });
 });
 
 /*
