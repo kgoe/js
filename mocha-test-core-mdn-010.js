@@ -506,12 +506,91 @@ describe('Statements',function(){
 describe('Expressions and Operators',function(){
 
   describe('Primary Expressions',function(){
+    it('this',function(){
+      assert.equal(typeof this,'object');
+    });
+    it('function',function(){
+      assert.equal(typeof function test(){},'function');
+    });
+    it('class',function(){
+      assert.equal(typeof class test{},'function');
+    });
+    it('function*',function(){
+      assert.equal(typeof function* test(){},'function');
+    });
+    it('function*',function(){
+      assert.equal(typeof function* test(i){yield i;},'function');
+    });
+    it('async yield',function(){
+      assert.equal(typeof function* test(i){yield* i;},'function');
+    });
+    it('async function',function(){
+      assert.equal(typeof async function test(){},'function');
+    });
+    it('async await',function(){
+      assert.equal(typeof async function test(){await {};},'function');
+    });
+    it('[]',function(){
+      assert.equal(typeof [],'object');
+    });
+    it('{}',function(){      
+      assert.equal(typeof {},'object');
+    });
+    it('regexp',function(){
+      assert.equal(typeof /ab+c/i,'object');
+    });
+    it.skip('()',function(){
+      //assert.equal(typeof (),'object');
+    });
   });
 
   describe('Left Hand Side Expressions',function(){
+    it('property accessor',function(){
+      assert.equal(typeof JSON.parse,'function');
+    });
+    it('property accessor',function(){
+      assert.equal(typeof JSON['parse'],'function');
+    });
+    it('new',function(){
+      assert.equal(typeof new Object(),'object');
+    });
+    it('new.target',function(){
+      function Foo() {
+        if (!new.target) throw 'Foo() must be called with new';
+      }
+      
+      try {
+        Foo();
+        //var foo = new Foo();
+      } catch( err ) {
+        console.log(err);
+      }
+      assert.equal(typeof Foo,'function');
+    });
   });
 
   describe('Increment and Decrement',function(){
+    var ii = 1;
+    
+    // post increment
+    it('A++',function(){
+      assert.equal(ii++,1);
+    });
+
+    // post decrement
+    it('A--',function(){
+      assert.equal(ii--,2);
+    });
+
+    // pre increment
+    it('++A',function(){
+      assert.equal(++ii,2);
+    });
+
+    // pre decrement
+    it('--A',function(){
+      assert.equal(--ii,1);
+    });
   });
 
   describe('Unary Operators',function(){
@@ -606,7 +685,7 @@ describe('Additional References',function(){
 
   describe('Deprecated Features',function(){
   });
-  
+
 });
 
 /*
