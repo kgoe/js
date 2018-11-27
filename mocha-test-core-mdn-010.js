@@ -708,9 +708,58 @@ describe('Expressions and Operators',function(){
   });
 
   describe('Relational Operators',function(){
+
+    it('in',function(){
+      var car = {make: 'Honda', model: 'Accord', year: 1998};
+      //console.log('make' in car);
+      // expected output: true
+      delete car.make;
+      if ('make' in car === false) {
+        car.make = 'Suzuki';
+      }
+      //console.log(car.make);
+      assert.equal(car.make,'Suzuki');
+    });
+
+    it('instanceof',function(){
+      function Car(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+      }
+      var auto = new Car('Honda', 'Accord', 1998);
+      //console.log(auto instanceof Car);
+      // expected output: true
+      //console.log(auto instanceof Object);
+      // expected output: true
+      //console.log(car.make);
+      assert.equal(auto instanceof Car,true);
+    });
+
+    it('comparisons',function(){
+      assert.equal(1 == 1,true);
+      assert.equal("1" == 1,true);
+      assert.equal(1 === 1,true);
+      assert.equal("1" === 1,false);
+      //assert.equal(5 < 6,true);
+      //assert.equal(5 > 4,true);
+      //assert.equal(5 <= 5,true);
+      //assert.equal(5 >= 2,true);
+    });
+
   });
 
   describe('Equality Operators',function(){
+    it('comparisons',function(){
+      //assert.equal(1 == 1,true);
+      //assert.equal("1" == 1,true);
+      //assert.equal(1 === 1,true);
+      //assert.equal("1" === 1,false);
+      assert.equal(5 < 6,true);
+      assert.equal(5 > 4,true);
+      assert.equal(5 <= 5,true);
+      assert.equal(5 >= 2,true);
+    });
   });
 
   describe('Birwise Shift Operators',function(){
