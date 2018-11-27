@@ -200,14 +200,14 @@ describe('Statements',function(){
             });
           }
           async function asyncCall(){
-            console.log('calling');
+            //console.log('calling');
             var result = await resolveAfter2seconds();
-            console.log(result);
+            //console.log(result);
             // expected output: 'resolved'
             return 1;
           }
           asyncCall().then(function( value ){
-            console.log(value);
+            //console.log(value);
             done();
           });
           theValue += 1;
@@ -227,7 +227,7 @@ describe('Statements',function(){
               this.area = height * width;
             }
           }         
-          console.log(new Polygon(4,3).area);
+          //console.log(new Polygon(4,3).area);
           function test(){
             return 1;
           }
@@ -245,20 +245,257 @@ describe('Statements',function(){
 
   describe('Iterations',function(){
 
+    it('do ... while',function(){
+      var theValue = 0;
+      try {
+
+        var result = "";
+        var i = 0;
+        
+        do {
+          i = i + 1;
+          result = result + i;
+        } while (i < 5);
+        
+        //console.log(result);
+
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('for',function(){
+      var theValue = 0;
+      try {
+        var str = "";
+        for (var i = 0; i < 9; i++) {
+          str = str + i;
+        }
+        //console.log(str);
+
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it.skip('x for each...in deprecated',function(){
+      var theValue = 0;
+      try {
+        // deprecated
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('for ... in',function(){
+      var theValue = 0;
+      try {
+        var string1 = "";
+        var object1 = {a: 1, b: 2, c: 3};
+        for (var property1 in object1) {
+          string1 += object1[property1];
+        }
+        //console.log(string1);
+
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('for ... of',function(){
+      var theValue = 0;
+      try {
+        function* foo(){
+          yield 1;
+          yield 2;
+        }
+        
+        for (let o of foo()) {
+          //console.log(o);
+          // expected output: 1
+          break; // closes iterator, triggers return
+        }
+
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it.skip('x for await ... of',function(){
+      var theValue = 0;
+      try {
+        //debugger;
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('while',function(){
+      var theValue = 0;
+      try {
+        var n = 0;
+        while (n < 3) {
+          n++;
+        }
+        //console.log(n);
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
   });
 
   describe('Others',function(){
 
+    it('strict',function(){
+      var theValue = 0;
+      try {
+        "use strict";
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
     it('debugger',function(){
       var theValue = 0;
-        try {
-          debugger;
-          theValue += 1;
-        } catch ( e ) {
-          theValue += 3;
-        } finally {
-          theValue += 4;
+      try {
+        debugger;
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('x export',function(){
+      var theValue = 0;
+      try {
+        //export {};
+        //exports {};
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('x import',function(){
+      var theValue = 0;
+      try {
+        //import {};
+        //import {};
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('x future proof',function(){
+      var theValue = 0;
+      try {
+        //implements
+        //interface
+        //let
+        //package
+        //private
+        //protected
+        //public
+        //static
+        //yield
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('x import.meta',function(){
+      var theValue = 0;
+      try {
+        //console.log(import.meta);
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('label',function(){
+      var theValue = 0;
+      try {
+        var str = "";
+
+        loop1:
+        for (var i = 0; i < 5; i++) {
+          if (i === 1) {
+            continue loop1;
+          }
+          str = str + i;
         }
+        
+        //console.log(str);
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
+      assert.equal(theValue,5);
+    });
+
+    it('with',function(){
+      var theValue = 0;
+      try {
+        with(theValue);
+        theValue += 1;
+      } catch ( e ) {
+        theValue += 3;
+      } finally {
+        theValue += 4;
+      }
       assert.equal(theValue,5);
     });
 
@@ -267,68 +504,72 @@ describe('Statements',function(){
 });
 
 describe('Expressions and Operators',function(){
+
   describe('Primary Expressions',function(){
-
   });
+
   describe('Left Hand Side Expressions',function(){
-
   });
+
   describe('Increment and Decrement',function(){
-
   });
+
   describe('Unary Operators',function(){
-
   });
+
   describe('Arithmetic Operators',function(){
-
   });
+
   describe('Relational Operators',function(){
-
   });
+
   describe('Equality Operators',function(){
-
   });
+
   describe('Birwise Shift Operators',function(){
-
   });
+
   describe('Binary Bitwise Operators',function(){
-
   });
+
   describe('Binary Logical Operators',function(){
-
   });
+
   describe('Conditional Ternary Operator',function(){
-
   });
+
   describe('Assignment Operators',function(){
-
   });
+
   describe('Comma Operators',function(){
-
   });
+
   describe('Non Standard Features',function(){
-
   });
+
 });
 
 describe('Functions',function(){
+
   describe('arguments',function(){
-
   });
+
   describe('Arrow Functions',function(){
-
   });
+
   describe('Default Parameters',function(){
-
   });
+
   describe('Rest Parameters',function(){
-
   });
+
 });
 
 describe('Additional References',function(){
-  describe('Lexical Grammars',function(){}
-  );
+
+  describe('Lexical Grammars',function(){
+  });
+
   describe('Data Types and Data Structures',function(){
     it('boolean',function(){
       assert.equal(typeof true,'boolean');
@@ -359,12 +600,13 @@ describe('Additional References',function(){
       assert.equal(typeof JSON,'object');
     });   
   });
+
   describe('Strict Mode',function(){
-
   });
+
   describe('Deprecated Features',function(){
-
   });
+  
 });
 
 /*
