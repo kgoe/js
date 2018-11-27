@@ -219,6 +219,28 @@ describe('Statements',function(){
       assert.equal(theValue,5);
     });
 
+    it('class',function(){
+      var theValue = 0;
+        try {
+          class Polygon {
+            constructor(height, width) {
+              this.area = height * width;
+            }
+          }         
+          console.log(new Polygon(4,3).area);
+          function test(){
+            return 1;
+          }
+          theValue += test();
+          theValue += new Polygon(4,3).area;
+        } catch ( e ) {
+          theValue += 5;
+        } finally {
+          theValue += 4;
+        }
+      assert.equal(theValue,17);
+    });
+
   });
 
   describe('Iterations',function(){
@@ -239,7 +261,7 @@ describe('Statements',function(){
         }
       assert.equal(theValue,5);
     });
-    
+
   });
 
 });
