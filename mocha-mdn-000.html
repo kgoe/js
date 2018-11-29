@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tests</title>
+    <title>Mocha Tests</title>
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
     <script src="node_modules/chai/chai.js"></script>
-    <script src="node_modules/mocha-qunit-ui/mocha-qunit-ui.js"></script>
     <script>
       mocha.setup('bdd');
       var assert = chai.assert;
       var require = function(){};
-      mocha.setup({
-        ui: "qunit"
-      });
-    </script> 
-    <!--<link rel="stylesheet" type="text/css" href="path/to/mocha.css">-->
-  </head>
-  <body>
-    <div id="mocha"></div>
+    </script>
     <script src="mocha-mdn-000.js"></script>
+
+    <!-- load code you want to test here -->
+
+    <!-- load your test files here -->
+
     <script>
-      module("On page test!");
-      test("An awesome QUnit style test", 2, function () {
-        ok(true);
-        equal(1, parseInt("1"));
-      });
       mocha.run();
-    </script> 
+    </script>
   </body>
 </html>

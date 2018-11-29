@@ -1,4 +1,7 @@
 assert = typeof global !== 'undefined' ? require('assert') : assert;
+if ( typeof chai !== 'undefined' ) {
+  assert = chai.assert;
+}
 
 // https://devdocs.io/javascript/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
