@@ -562,7 +562,7 @@ var coreConstructors = [
   ['Object','function'],
   ['Function','function'],
   ['Boolean','function'],
-  //['Symnbol','function'], // Internal ?
+  //['Symnbol','function'],      // Internal ?
   ['Number','function'],
   ['Date','function'],
   ['String','function'],
@@ -571,7 +571,7 @@ var coreConstructors = [
   ['Proxy','function'],     // no IE Support
   ['Error','function'],
   ['EvalError','function'],
-  ['InternalError','function'], // Internal ?
+  //['InternalError','function'], // Internal ?
   ['RangeError','function'],
   ['ReferenceError','function'],
   ['SyntaxError','function'],
@@ -597,9 +597,9 @@ var coreCollections = [
   ['ArrayBuffer','function'],
   ['SharedArrayBuffer','function'],  // no IE Support
   ['DataView','function'],
-  ['Generator','function'], // no Node Support
-  ['GeneratorFunction','function'], // no Node Support
-  ['AsyncFunction','function'], // no Node Support
+  //['Generator','function'],         // new special syntax
+  //['GeneratorFunction','function'], // new special syntax
+  //['AsyncFunction','function'],     // new special syntax
 ];
 
 var coreObjects = [
