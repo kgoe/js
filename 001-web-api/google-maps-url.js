@@ -22,7 +22,7 @@ var ph_mm_cities = [
   "pateros ncr ph"
 ];
 
-ph_regions = [
+var ph_regions = [
   "metro manila ph",
   "ilocos region ph",
   "cagayan valley region ph",
@@ -50,7 +50,7 @@ ph_regions = [
   "region 18 ph",
 ];
 
-ph_regional_capital = [
+var ph_regional_capital = [
   "san fernando la union city ph",
   "baguio city ph",
   "tuguegarao city ph",
@@ -70,11 +70,11 @@ ph_regional_capital = [
   "davao city ph",
 ];
 
-ph_province = [
+var ph_province = [
   
 ];
 
-ph_islands = [
+var ph_islands = [
   "luzon ph",
   "mindanao ph",
   "palawan ph",
