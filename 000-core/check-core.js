@@ -3,7 +3,9 @@
 
 var assert = require('assert');
 var log = console.log;
+
 describe("core properties",function(){
+	
 	it("core literals",function(){
 		assert.equal(typeof function(){},'function');
 		assert.equal(typeof {},'object');
