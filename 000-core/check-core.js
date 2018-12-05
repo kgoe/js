@@ -4,9 +4,9 @@
 var assert = require('assert');
 var log = console.log;
 
-describe("core properties",function(){
-	
-	it("core literals",function(){
+describe("js core properties",function(){
+
+	it("js core literals",function(){
 		assert.equal(typeof function(){},'function');
 		assert.equal(typeof {},'object');
 		assert.equal(typeof [],'object');
@@ -23,7 +23,7 @@ describe("core properties",function(){
 		assert.equal(typeof null,'object');
 	});
 
-	it("core constructors",function(){	
+	it("js core constructors",function(){	
 		assert.equal(typeof Object,'function');
 		assert.equal(typeof Function,'function');
 		assert.equal(typeof Array,'function');
