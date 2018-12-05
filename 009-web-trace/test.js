@@ -1,4 +1,3 @@
-
 if ( typeof global !== 'undefined' ) {
   var props = JSON.stringify(Object.getOwnPropertyNames(global));
   console.log(props);
