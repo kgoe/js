@@ -4,7 +4,46 @@
 var assert = require('assert');
 var log = console.log;
 
+//log(Object.prototype);   //{}
+//log(Object.constructor); //[Function: Function]
+//log(Object.__proto__);   //[Function]
+//log(Object.constructor.prototype === Object.__proto__); // Object.constructor.prototype === Object.__proto__
+
+//log({}.prototype);   // undefined
+//log({}.constructor); // [Function: Object]
+//log({}.__proto__);   // {}
+//log({}.constructor.prototype); // {}
+
+//log(function(){}.prototype);   // {}
+//log(function(){}.constructor); // [Function: Function]
+//log(function(){}.__proto__);   // [Function]
+
 describe("js core properties",function(){
+
+	it("js environment",function(){
+		assert.equal(typeof arguments,'object');
+		assert.equal(typeof this,'object');
+		assert.equal(typeof Object,'function');
+		assert.equal(typeof Function,'function');
+		assert.equal(typeof Number,'function');
+		assert.equal(typeof String,'function');
+		assert.equal(typeof Symbol,'function');
+		assert.equal(typeof Boolean,'function');
+		assert.equal(typeof Array,'function');
+		assert.equal(typeof Date,'function');
+		assert.equal(typeof Math,'object');
+		assert.equal(typeof JSON,'object');
+		if ( typeof global !== 'undefined') {
+			// node js
+			assert.equal(typeof global,'object');
+		} else if ( typeof window !== 'undefined' ) {
+			// browser
+			assert.equal(typeof widnow,'object');
+		} else {
+			assert.equal(true,false);
+		}
+	});
+
 
 	it("js core literals",function(){
 		assert.equal(typeof function(){},'function');
