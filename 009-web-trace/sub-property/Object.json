@@ -1,0 +1,245 @@
+{
+    "Object": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "object",
+            ""
+        ],
+        [
+            "assign",
+            "function",
+            "function assign() "
+        ],
+        [
+            "getOwnPropertyDescriptor",
+            "function",
+            "function getOwnPropertyDescriptor() "
+        ],
+        [
+            "getOwnPropertyDescriptors",
+            "function",
+            "function getOwnPropertyDescriptors() "
+        ],
+        [
+            "getOwnPropertyNames",
+            "function",
+            "function getOwnPropertyNames() "
+        ],
+        [
+            "getOwnPropertySymbols",
+            "function",
+            "function getOwnPropertySymbols() "
+        ],
+        [
+            "is",
+            "function",
+            "function is() "
+        ],
+        [
+            "preventExtensions",
+            "function",
+            "function preventExtensions() "
+        ],
+        [
+            "seal",
+            "function",
+            "function seal() "
+        ],
+        [
+            "create",
+            "function",
+            "function create() "
+        ],
+        [
+            "defineProperties",
+            "function",
+            "function defineProperties() "
+        ],
+        [
+            "defineProperty",
+            "function",
+            "function defineProperty() "
+        ],
+        [
+            "freeze",
+            "function",
+            "function freeze() "
+        ],
+        [
+            "getPrototypeOf",
+            "function",
+            "function getPrototypeOf() "
+        ],
+        [
+            "setPrototypeOf",
+            "function",
+            "function setPrototypeOf() "
+        ],
+        [
+            "isExtensible",
+            "function",
+            "function isExtensible() "
+        ],
+        [
+            "isFrozen",
+            "function",
+            "function isFrozen() "
+        ],
+        [
+            "isSealed",
+            "function",
+            "function isSealed() "
+        ],
+        [
+            "keys",
+            "function",
+            "function keys() "
+        ],
+        [
+            "entries",
+            "function",
+            "function entries() "
+        ],
+        [
+            "values",
+            "function",
+            "function values() "
+        ]
+    ],
+    "ptype": [
+        [
+            "constructor",
+            "function",
+            "function Object() "
+        ],
+        [
+            "__defineGetter__",
+            "function",
+            "function __defineGetter__() "
+        ],
+        [
+            "__defineSetter__",
+            "function",
+            "function __defineSetter__() "
+        ],
+        [
+            "hasOwnProperty",
+            "function",
+            "function hasOwnProperty() "
+        ],
+        [
+            "__lookupGetter__",
+            "function",
+            "function __lookupGetter__() "
+        ],
+        [
+            "__lookupSetter__",
+            "function",
+            "function __lookupSetter__() "
+        ],
+        [
+            "isPrototypeOf",
+            "function",
+            "function isPrototypeOf() "
+        ],
+        [
+            "propertyIsEnumerable",
+            "function",
+            "function propertyIsEnumerable() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ],
+        [
+            "valueOf",
+            "function",
+            "function valueOf() "
+        ],
+        [
+            "__proto__",
+            "object",
+            ""
+        ],
+        [
+            "toLocaleString",
+            "function",
+            "function toLocaleString() "
+        ]
+    ],
+    "cntrc": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "function",
+            "function () "
+        ]
+    ],
+    "proto": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "arguments",
+            "",
+            ""
+        ],
+        [
+            "caller",
+            "",
+            ""
+        ],
+        [
+            "constructor",
+            "function",
+            "function Function() "
+        ],
+        [
+            "apply",
+            "function",
+            "function apply() "
+        ],
+        [
+            "bind",
+            "function",
+            "function bind() "
+        ],
+        [
+            "call",
+            "function",
+            "function call() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ]
+    ]
+}

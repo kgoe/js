@@ -1,0 +1,100 @@
+{
+    "Boolean": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "object",
+            ""
+        ]
+    ],
+    "ptype": [
+        [
+            "constructor",
+            "function",
+            "function Boolean() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ],
+        [
+            "valueOf",
+            "function",
+            "function valueOf() "
+        ]
+    ],
+    "cntrc": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "function",
+            "function () "
+        ]
+    ],
+    "proto": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "arguments",
+            "",
+            ""
+        ],
+        [
+            "caller",
+            "",
+            ""
+        ],
+        [
+            "constructor",
+            "function",
+            "function Function() "
+        ],
+        [
+            "apply",
+            "function",
+            "function apply() "
+        ],
+        [
+            "bind",
+            "function",
+            "function bind() "
+        ],
+        [
+            "call",
+            "function",
+            "function call() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ]
+    ]
+}

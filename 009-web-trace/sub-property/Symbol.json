@@ -1,0 +1,170 @@
+{
+    "Symbol": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "object",
+            ""
+        ],
+        [
+            "for",
+            "function",
+            "function for() "
+        ],
+        [
+            "keyFor",
+            "function",
+            "function keyFor() "
+        ],
+        [
+            "asyncIterator",
+            "symbol",
+            ""
+        ],
+        [
+            "hasInstance",
+            "symbol",
+            ""
+        ],
+        [
+            "isConcatSpreadable",
+            "symbol",
+            ""
+        ],
+        [
+            "iterator",
+            "symbol",
+            ""
+        ],
+        [
+            "match",
+            "symbol",
+            ""
+        ],
+        [
+            "replace",
+            "symbol",
+            ""
+        ],
+        [
+            "search",
+            "symbol",
+            ""
+        ],
+        [
+            "species",
+            "symbol",
+            ""
+        ],
+        [
+            "split",
+            "symbol",
+            ""
+        ],
+        [
+            "toPrimitive",
+            "symbol",
+            ""
+        ],
+        [
+            "toStringTag",
+            "symbol",
+            ""
+        ],
+        [
+            "unscopables",
+            "symbol",
+            ""
+        ]
+    ],
+    "ptype": [
+        [
+            "constructor",
+            "function",
+            "function Symbol() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ],
+        [
+            "valueOf",
+            "function",
+            "function valueOf() "
+        ]
+    ],
+    "cntrc": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "prototype",
+            "function",
+            "function () "
+        ]
+    ],
+    "proto": [
+        [
+            "length",
+            "number",
+            ""
+        ],
+        [
+            "name",
+            "string",
+            ""
+        ],
+        [
+            "arguments",
+            "",
+            ""
+        ],
+        [
+            "caller",
+            "",
+            ""
+        ],
+        [
+            "constructor",
+            "function",
+            "function Function() "
+        ],
+        [
+            "apply",
+            "function",
+            "function apply() "
+        ],
+        [
+            "bind",
+            "function",
+            "function bind() "
+        ],
+        [
+            "call",
+            "function",
+            "function call() "
+        ],
+        [
+            "toString",
+            "function",
+            "function toString() "
+        ]
+    ]
+}
