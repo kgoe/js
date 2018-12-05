@@ -4,6 +4,8 @@
 var assert = require('assert');
 var log = console.log;
 
+if ( typeof describe == 'function') {
+
 describe("js core properties",function(){
 
 	it("js environment",function(){
@@ -111,6 +113,9 @@ describe("js core properties",function(){
 
 });
 
+} else {
+	log('!!! no mocha running !!!');
+}
 
 //log(Object.prototype);   //{}
 //log(Object.constructor); //[Function: Function]
@@ -149,3 +154,5 @@ log(theFunction.toString().split("{"));
 log(theFunction.a);
 
 log(thatFunction.toString().split("{"));
+
+
