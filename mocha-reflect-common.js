@@ -624,7 +624,6 @@ var coreObjects = [
   //['arguments','object'], // speciall value inside functions
 ];
 
-
 var nodeJsdomBrowserCommonProperties = [
   "onafterprint",
   "onbeforeprint",
@@ -1624,13 +1623,13 @@ describe('Expressions and Operators',function(){
         // expected output: 6
         //console.log(sum.apply(null, numbers));
 
-        theValue += 1;
+        theValue += sum(...numbers);
       } catch ( e ) {
         theValue += 3;
       } finally {
         theValue += 4;
       }
-      assert.equal(theValue,5);
+      assert.equal(theValue,10);
     });
 
   });
@@ -1841,12 +1840,15 @@ describe('Expressions and Operators',function(){
   });
 
   describe('Assignment Operators',function(){
+
   });
 
   describe('Comma Operators',function(){
+
   });
 
   describe('Non Standard Features',function(){
+
   });
 
 });
@@ -1855,18 +1857,113 @@ describe('Functions',function(){
 
   describe('arguments',function(){
     it('arguments',function(){
-      assert.equal(typeof arguments,'object');
+      function checkArguments(){
+        return typeof arguments;
+      }
+
+      assert.equal(checkArguments(),'object');
+    });
+  });
+
+  describe('arguments2',function(){
+    it('arguments2',function(){
+      function func1(a, b, c) {
+        //console.log(arguments[0]);
+        // expected output: 1
+      
+        //console.log(arguments[1]);
+        // expected output: 2
+      
+        //console.log(arguments[2]);
+        // expected output: 3
+        return JSON.stringify(arguments);
+      }
+      
+      func1(1, 2, 3);
+      assert.equal(func1(1, 2, 3),'{"0":1,"1":2,"2":3}');
+
+      
     });
   });
 
   describe('Arrow Functions',function(){
+    it('()=>{}',function(){
+      var value = (()=>{return 365;})()
+      assert.equal(value,365);
+    });
   });
 
   describe('Default Parameters',function(){
+    it('Default Parameters',function(){
+      function multiply(a, b = 1) {
+        return a * b;
+      }
+      
+      //console.log(multiply(5, 2));
+      assert.equal(multiply(5, 2),10);
+      // expected output: 10
+      
+      //console.log(multiply(5));
+      assert.equal(multiply(5),5);
+      // expected output: 5
+    });
   });
 
   describe('Rest Parameters',function(){
+    it('Rest Parameters',function(){
+      function sum(...theArgs) {
+        return theArgs.reduce((previous, current) => {
+          return previous + current;
+        });
+      }
+      
+      //console.log(sum(1, 2, 3));
+      assert.equal(sum(1, 2, 3),6);
+      // expected output: 6
+      
+      //console.log(sum(1, 2, 3, 4));
+      assert.equal(sum(1, 2, 3, 4),10);
+      // expected output: 10
+    });
   });
+
+  describe('setter',function(){
+    it('set',function(){
+      var language = {
+        set current(name) {
+          this.log.push(name);
+        },
+        log: []
+      }
+      
+      language.current = 'EN';
+      language.current = 'FA';
+      
+      //console.log(language.log);
+      assert.equal(language.log.toString(),'EN,FA');
+
+    });
+  });
+
+  describe('getter',function(){
+    it('get',function(){
+      var obj = {
+        log: ['a', 'b', 'c'],
+        get latest() {
+          if (this.log.length == 0) {
+            return undefined;
+          }
+          return this.log[this.log.length - 1];
+        }
+      }
+      
+      // console.log(obj.latest);
+      // expected output: "c"
+      assert.equal(obj.latest,'c');
+
+    });
+  });
+
 
 });
 
@@ -1907,12 +2004,199 @@ describe('Additional References',function(){
   });
 
   describe('Strict Mode',function(){
+
+  });
+
+  describe('Template Literals',function(){
+    describe('template literals',function(){
+      it('template literals',function(){
+        var literals = `string text ${1 + 2} string text`;
+        assert.equal(literals,'string text 3 string text');
+      });
+    });
   });
 
   describe('Deprecated Features',function(){
+
   });
 
 });
+
+// JS Prototypes Check
+if ( typeof describe === 'function' ) {
+  describe('js constructors prototype',function(){
+
+    it('Object.prototype isPrototypeOf Function.constructor',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Function.constructor),true);
+    });
+
+    it('Function.prototype isPrototypeOf Object',function(){
+      assert.equal(Function.prototype.isPrototypeOf(Object),true);
+    });
+
+    it('Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Array),true);
+    });
+
+    it('Error',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Error),true);
+      assert.equal(Function.prototype.isPrototypeOf(Error),true);
+    });
+
+    it('Number',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Number),true);
+      assert.equal(Function.prototype.isPrototypeOf(Number),true);
+    });
+
+    it('Boolean',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Boolean),true);
+      assert.equal(Function.prototype.isPrototypeOf(Boolean),true);
+    });
+
+    it('String',function(){
+      assert.equal(Object.prototype.isPrototypeOf(String),true);
+      assert.equal(Function.prototype.isPrototypeOf(String),true);
+    });
+
+    it('Date',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Date),true);
+      assert.equal(Function.prototype.isPrototypeOf(Date),true);
+    });
+
+    it('RegExp',function(){
+      assert.equal(Object.prototype.isPrototypeOf(RegExp),true);
+      assert.equal(Function.prototype.isPrototypeOf(RegExp),true);
+    });
+
+  });
+
+  describe('js errors prototype',function(){});
+
+  describe('js array prototype',function(){
+    it('Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Array),true);
+    });
+    it('ArrayBuffer',function(){
+      assert.equal(Object.prototype.isPrototypeOf(ArrayBuffer),true);
+      assert.equal(Function.prototype.isPrototypeOf(ArrayBuffer),true);
+      //assert.equal(Array.isPrototypeOf(ArrayBuffer),true);
+    });
+    it('Uint8Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Uint8Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Uint8Array),true);
+      //assert.equal(Array.isPrototypeOf(Uint8Array),true);
+    });
+    it('Int8Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Int8Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Int8Array),true);
+      //assert.equal(Array.isPrototypeOf(Int8Array),true);
+    });
+    it('Uint16Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Uint16Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Uint16Array),true);
+      //assert.equal(Array.isPrototypeOf(Uint16Array),true);
+    });
+    it('Int16Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Int16Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Int16Array),true);
+      //assert.equal(Array.isPrototypeOf(Int16Array),true);
+    });
+    it('Uint32Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Uint32Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Uint32Array),true);
+      //assert.equal(Array.isPrototypeOf(Uint32Array),true);
+    });
+    it('Int32Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Int32Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Int32Array),true);
+      //assert.equal(Array.isPrototypeOf(Int32Array),true);
+    });
+    it('Float32Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Float32Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Float32Array),true);
+      //assert.equal(Array.isPrototypeOf(Float32Array),true);
+    });
+    it('Float64Array',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Float64Array),true);
+      assert.equal(Function.prototype.isPrototypeOf(Float64Array),true);
+      //assert.equal(Array.isPrototypeOf(Float64Array),true);
+    });
+    it('DataView',function(){
+      assert.equal(Object.prototype.isPrototypeOf(DataView),true);
+      assert.equal(Function.prototype.isPrototypeOf(DataView),true);
+      //assert.equal(Array.isPrototypeOf(DataView),true);
+    });
+  });
+
+  describe('js core property prototype',function(){
+    it('Infinity',function(){
+      //assert.equal(Number.prototype.isPrototypeOf(Infinity),true);
+      //assert.equal(Function.prototype.isPrototypeOf(Infinity),true);
+    });
+
+    it('NaN',function(){
+      //assert.equal(Object.prototype.isPrototypeOf(NaN),true);
+      //assert.equal(Function.prototype.isPrototypeOf(NaN),true);
+    });
+
+    it('parseFloat',function(){
+      assert.equal(Object.prototype.isPrototypeOf(parseFloat),true);
+      assert.equal(Function.prototype.isPrototypeOf(parseFloat),true);
+    });
+    it('parseInt',function(){
+      assert.equal(Object.prototype.isPrototypeOf(parseInt),true);
+      assert.equal(Function.prototype.isPrototypeOf(parseInt),true);
+    });
+    it('decodeURI',function(){
+      assert.equal(Object.prototype.isPrototypeOf(decodeURI),true);
+      assert.equal(Function.prototype.isPrototypeOf(decodeURI),true);
+    });
+    it('decodeURIComponent',function(){
+      assert.equal(Object.prototype.isPrototypeOf(decodeURIComponent),true);
+      assert.equal(Function.prototype.isPrototypeOf(decodeURIComponent),true);
+    });
+    it('encodeURI',function(){
+      assert.equal(Object.prototype.isPrototypeOf(encodeURI),true);
+      assert.equal(Function.prototype.isPrototypeOf(encodeURI),true);
+    });
+    it('encodeURIComponent',function(){
+      assert.equal(Object.prototype.isPrototypeOf(encodeURIComponent),true);
+      assert.equal(Function.prototype.isPrototypeOf(encodeURIComponent),true);
+    });
+    it('escape',function(){
+      assert.equal(Object.prototype.isPrototypeOf(escape),true);
+      assert.equal(Function.prototype.isPrototypeOf(escape),true);
+    });
+    it('unescape',function(){
+      assert.equal(Object.prototype.isPrototypeOf(unescape),true);
+      assert.equal(Function.prototype.isPrototypeOf(unescape),true);
+    });
+    it('eval',function(){
+      assert.equal(Object.prototype.isPrototypeOf(eval),true);
+      assert.equal(Function.prototype.isPrototypeOf(eval),true);
+    });
+    it('isFinite',function(){
+      assert.equal(Object.prototype.isPrototypeOf(isFinite),true);
+      assert.equal(Function.prototype.isPrototypeOf(isFinite),true);
+    });
+    it('isNaN',function(){
+      assert.equal(Object.prototype.isPrototypeOf(isNaN),true);
+      assert.equal(Function.prototype.isPrototypeOf(isNaN),true);
+    });
+
+    it('console',function(){
+      assert.equal(Object.prototype.isPrototypeOf(console),true);
+    }); 
+    it('Math',function(){
+      assert.equal(Object.prototype.isPrototypeOf(Math),true);
+    });   
+    it('JSON',function(){
+      assert.equal(Object.prototype.isPrototypeOf(JSON),true);
+    });   
+  });
+}
 
 // BROWSER SPECIFIC
 if ( typeof window !== 'undefined' ) {
