@@ -944,7 +944,7 @@ var nodeJsdomBrowserCommonProperties = [
 // execute test script
 if ( typeof describe == 'function' ) {
 
-function mochaTestArray( name,ARR ){
+function mochaTestArrayNotUndefined( name,ARR ){
   describe(name,function(){
     ARR.forEach(function(val){
       if ( val == 'undefined' ) {
@@ -970,7 +970,7 @@ function mochaTestObject( name, OBJ ){
   });
 }
 
-function mochaTestObject2( name, OBJ ){
+function mochaTestObjectLiteral( name, OBJ ){
   describe(name, function() {
     OBJ.forEach(function(value){
       it(value[0],function(){
@@ -1027,12 +1027,12 @@ describe('js core try-catch-finally',function(){
   });
 });
 
-mochaTestObject2('js core literals object',coreLiterals);
+mochaTestObjectLiteral('js core literals object',coreLiterals);
 mochaTestObject('js core methods object',coreMethods);
 mochaTestObject('js core constructors object',coreConstructors);
 mochaTestObject('js core collections object',coreCollections);
 mochaTestObject('js core object',coreObjects);
-mochaTestArray('node browser global',nodeBrowserProperties);
+mochaTestArrayNotUndefined('node browser global',nodeBrowserProperties);
 
 
 // SYNTAX
@@ -2200,8 +2200,8 @@ if ( typeof describe === 'function' ) {
 
 // BROWSER SPECIFIC
 if ( typeof window !== 'undefined' ) {
-  mochaTestArray('browser-node',nodeJsdomBrowserCommonProperties);
-  mochaTestArray('browser-specific',nodeJsdomBrowserCommonProperties);
+  mochaTestArrayNotUndefined('browser-node',nodeJsdomBrowserCommonProperties);
+  mochaTestArrayNotUndefined('browser-specific',nodeJsdomBrowserCommonProperties);
 }
 
 }
