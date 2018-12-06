@@ -4,7 +4,7 @@ const _lg = console.log;
 const log = console.log;
 
 const _jsdom = require('jsdom');
-const { JSDOM } = _jsdom;
+const {JSDOM} = _jsdom;
 
 const fmtHost = function fmtHost( hostName, hostPath ) {
   var theObj = {};
@@ -15,12 +15,12 @@ const fmtHost = function fmtHost( hostName, hostPath ) {
 
 const httpGet = function httpGet( httpOption, responseCallback ) {
   _http.get( httpOption, function httpExecGet( res, req ) {
-    var responseText = "";
-    
-    res.on('data', function onData( response ){
+    var responseText = '';
+
+    res.on('data', function onData( response ) {
       responseText += response;
     });
-    
+
     res.on('end', function onEnd( response ) {
       responseCallback( responseText );
     });
@@ -29,19 +29,19 @@ const httpGet = function httpGet( httpOption, responseCallback ) {
 
 const responseParse = function responseParse( res ) {
 	 var $$ = _cher.load(res);
-	 var $$body = $$('body')
+	 var $$body = $$('body');
   _lg($$.html());
 };
 
-//log([_jsdom,JSDOM]);
+// log([_jsdom,JSDOM]);
 
 const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
-console.log(dom.window.document.querySelector("p").textContent); 
+console.log(dom.window.document.querySelector('p').textContent);
 // Hello World
 
-//log(dom.window);
-//log(dom.window.document);
-//log(dom.window.document.__proto__);
+// log(dom.window);
+// log(dom.window.document);
+// log(dom.window.document.__proto__);
 
 // log(dom);
 // log(Object.getOwnPropertyNames(global));
@@ -111,13 +111,13 @@ console.log(dom.window.document.querySelector("p").textContent); 
   'setTimeout' ]
 */
 
-//httpGet( fmtHost("www.pse.com.ph","/stockMarket/home.html"), responseParse);
-//httpGet( fmtHost("www.pse.com.ph","/stockMarket/marketInfo-marketActivity.html?tab=1&indexName=PSEi"), responseParse);
-//httpGet( fmtHost("www.pse.com.ph","/stockMarket/marketInfo-marketActivity-indicesComposition.html?method=viewIndicesComposition&ajax=true&indexName=PSEi"), responseParse);
+// httpGet( fmtHost("www.pse.com.ph","/stockMarket/home.html"), responseParse);
+// httpGet( fmtHost("www.pse.com.ph","/stockMarket/marketInfo-marketActivity.html?tab=1&indexName=PSEi"), responseParse);
+// httpGet( fmtHost("www.pse.com.ph","/stockMarket/marketInfo-marketActivity-indicesComposition.html?method=viewIndicesComposition&ajax=true&indexName=PSEi"), responseParse);
 
-//_lg(_cher.load());				
-//url: 'marketInfo-marketActivity-indicesComposition.html?method=viewIndicesComposition',
-//params: '&ajax=true&indexName=PSEi',
+// _lg(_cher.load());
+// url: 'marketInfo-marketActivity-indicesComposition.html?method=viewIndicesComposition',
+// params: '&ajax=true&indexName=PSEi',
 
 // https://m.investing.com/indices/psei-composite
 // https://m.investing.com/indices/psei-composite-components
@@ -125,7 +125,7 @@ console.log(dom.window.document.querySelector("p").textContent); 
 // dom jsdom
 /*
 JSDOM {
-  [Symbol(window)]: 
+  [Symbol(window)]:
    Window {
      onafterprint: [Getter/Setter],
      onbeforeprint: [Getter/Setter],
@@ -208,21 +208,21 @@ JSDOM {
      onwaiting: [Getter/Setter],
      _registeredHandlers: Set {},
      _eventHandlers: {},
-     _resourceLoader: 
+     _resourceLoader:
       NoOpResourceLoader {
         _strictSSL: true,
         _proxy: undefined,
         _userAgent: 'Mozilla/5.0 (android) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/13.0.0' },
      _globalProxy: [Circular],
      _document: Document { location: [Getter/Setter] },
-     _sessionHistory: 
+     _sessionHistory:
       SessionHistory {
         _window: [Circular],
         _windowImpl: [Object],
         _historyTraversalQueue: Set {},
         _entries: [Array],
         _currentIndex: 0 },
-     _virtualConsole: 
+     _virtualConsole:
       VirtualConsole {
         domain: null,
         _events: [Object],
@@ -236,7 +236,7 @@ JSDOM {
      _pretendToBeVisual: false,
      _storageQuota: 5000000,
      _commonForOrigin: { null: [Object] },
-     _currentOriginData: 
+     _currentOriginData:
       { localStorageArea: Map {},
         sessionStorageArea: Map {},
         windowsInSameOrigin: [Array] },
@@ -295,7 +295,7 @@ JSDOM {
      getComputedStyle: [Function],
      captureEvents: [Function],
      releaseEvents: [Function],
-     console: 
+     console:
       { assert: [Function],
         clear: [Function],
         count: [Function],
@@ -343,7 +343,7 @@ JSDOM {
      scroll: [Function],
      scrollBy: [Function],
      scrollTo: [Function],
-     [Symbol(named property tracker)]: 
+     [Symbol(named property tracker)]:
       NamedPropertiesTracker {
         object: [Circular],
         objectProxy: [Circular],
