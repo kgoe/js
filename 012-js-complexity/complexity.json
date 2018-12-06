@@ -3,167 +3,6 @@
         {
             "aggregate": {
                 "sloc": {
-                    "logical": 7,
-                    "physical": 14
-                },
-                "cyclomatic": 1,
-                "halstead": {
-                    "operators": {
-                        "distinct": 6,
-                        "total": 16,
-                        "identifiers": [
-                            "var",
-                            "=",
-                            "function",
-                            ".",
-                            "{}",
-                            ":"
-                        ]
-                    },
-                    "operands": {
-                        "distinct": 12,
-                        "total": 18,
-                        "identifiers": [
-                            "TeslaModelS",
-                            "<anonymous>",
-                            "this",
-                            "numWheels",
-                            4,
-                            "manufacturer",
-                            "\"Tesla\"",
-                            "make",
-                            "\"Model S\"",
-                            "prototype",
-                            "go",
-                            "stop"
-                        ]
-                    },
-                    "length": 34,
-                    "vocabulary": 18,
-                    "difficulty": 4.5,
-                    "volume": 141.7774500490386,
-                    "effort": 637.9985252206737,
-                    "bugs": 0.0472591500163462,
-                    "time": 35.44436251225965
-                },
-                "params": 0,
-                "line": 3,
-                "cyclomaticDensity": 14.285714285714285
-            },
-            "functions": [
-                {
-                    "name": "TeslaModelS",
-                    "sloc": {
-                        "logical": 3,
-                        "physical": 5
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 2,
-                            "total": 6,
-                            "identifiers": [
-                                "=",
-                                "."
-                            ]
-                        },
-                        "operands": {
-                            "distinct": 7,
-                            "total": 9,
-                            "identifiers": [
-                                "this",
-                                "numWheels",
-                                4,
-                                "manufacturer",
-                                "\"Tesla\"",
-                                "make",
-                                "\"Model S\""
-                            ]
-                        },
-                        "length": 15,
-                        "vocabulary": 9,
-                        "difficulty": 1.2857142857142858,
-                        "volume": 47.548875021634686,
-                        "effort": 61.13426788495889,
-                        "bugs": 0.01584962500721156,
-                        "time": 3.396348215831049
-                    },
-                    "params": 0,
-                    "line": 3,
-                    "cyclomaticDensity": 33.33333333333333
-                },
-                {
-                    "name": "go",
-                    "sloc": {
-                        "logical": 0,
-                        "physical": 3
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0,
-                            "identifiers": []
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0,
-                            "identifiers": []
-                        },
-                        "length": 0,
-                        "time": 0,
-                        "bugs": 0,
-                        "effort": 0,
-                        "volume": 0,
-                        "difficulty": 0,
-                        "vocabulary": 0
-                    },
-                    "params": 0,
-                    "line": 10,
-                    "cyclomaticDensity": null
-                },
-                {
-                    "name": "stop",
-                    "sloc": {
-                        "logical": 0,
-                        "physical": 3
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0,
-                            "identifiers": []
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0,
-                            "identifiers": []
-                        },
-                        "length": 0,
-                        "time": 0,
-                        "bugs": 0,
-                        "effort": 0,
-                        "volume": 0,
-                        "difficulty": 0,
-                        "vocabulary": 0
-                    },
-                    "params": 0,
-                    "line": 13,
-                    "cyclomaticDensity": null
-                }
-            ],
-            "dependencies": [],
-            "maintainability": 93.97107946105336,
-            "loc": 1,
-            "cyclomatic": 1,
-            "effort": 20.378089294986296,
-            "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\007-p.js"
-        },
-        {
-            "aggregate": {
-                "sloc": {
                     "logical": 4,
                     "physical": 5
                 },
@@ -209,7 +48,7 @@
             "cyclomatic": 1,
             "effort": 162.30016007384643,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c000.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0000.js"
         },
         {
             "aggregate": {
@@ -301,7 +140,7 @@
             "cyclomatic": 1,
             "effort": 31.34602928097939,
             "params": 1,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c001.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0001.js"
         },
         {
             "aggregate": {
@@ -522,7 +361,7 @@
             "cyclomatic": 1,
             "effort": 152.8970145171195,
             "params": 0.75,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c002.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0002.js"
         },
         {
             "aggregate": {
@@ -604,7 +443,7 @@
             "cyclomatic": 1,
             "effort": 4.754887502163468,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c003-m.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0003-m.js"
         },
         {
             "aggregate": {
@@ -790,7 +629,7 @@
             "cyclomatic": 1,
             "effort": 117.11123149635262,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c004-m.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0004-m.js"
         },
         {
             "aggregate": {
@@ -1014,7 +853,7 @@
             "cyclomatic": 1,
             "effort": 228.51973498902856,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c005-rm.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0005-rm.js"
         },
         {
             "aggregate": {
@@ -1173,7 +1012,168 @@
             "cyclomatic": 1,
             "effort": 20.378089294986296,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c006-p.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0006-p.js"
+        },
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 7,
+                    "physical": 14
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 6,
+                        "total": 16,
+                        "identifiers": [
+                            "var",
+                            "=",
+                            "function",
+                            ".",
+                            "{}",
+                            ":"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 12,
+                        "total": 18,
+                        "identifiers": [
+                            "TeslaModelS",
+                            "<anonymous>",
+                            "this",
+                            "numWheels",
+                            4,
+                            "manufacturer",
+                            "\"Tesla\"",
+                            "make",
+                            "\"Model S\"",
+                            "prototype",
+                            "go",
+                            "stop"
+                        ]
+                    },
+                    "length": 34,
+                    "vocabulary": 18,
+                    "difficulty": 4.5,
+                    "volume": 141.7774500490386,
+                    "effort": 637.9985252206737,
+                    "bugs": 0.0472591500163462,
+                    "time": 35.44436251225965
+                },
+                "params": 0,
+                "line": 3,
+                "cyclomaticDensity": 14.285714285714285
+            },
+            "functions": [
+                {
+                    "name": "TeslaModelS",
+                    "sloc": {
+                        "logical": 3,
+                        "physical": 5
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 2,
+                            "total": 6,
+                            "identifiers": [
+                                "=",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 7,
+                            "total": 9,
+                            "identifiers": [
+                                "this",
+                                "numWheels",
+                                4,
+                                "manufacturer",
+                                "\"Tesla\"",
+                                "make",
+                                "\"Model S\""
+                            ]
+                        },
+                        "length": 15,
+                        "vocabulary": 9,
+                        "difficulty": 1.2857142857142858,
+                        "volume": 47.548875021634686,
+                        "effort": 61.13426788495889,
+                        "bugs": 0.01584962500721156,
+                        "time": 3.396348215831049
+                    },
+                    "params": 0,
+                    "line": 3,
+                    "cyclomaticDensity": 33.33333333333333
+                },
+                {
+                    "name": "go",
+                    "sloc": {
+                        "logical": 0,
+                        "physical": 3
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0,
+                            "identifiers": []
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0,
+                            "identifiers": []
+                        },
+                        "length": 0,
+                        "time": 0,
+                        "bugs": 0,
+                        "effort": 0,
+                        "volume": 0,
+                        "difficulty": 0,
+                        "vocabulary": 0
+                    },
+                    "params": 0,
+                    "line": 10,
+                    "cyclomaticDensity": null
+                },
+                {
+                    "name": "stop",
+                    "sloc": {
+                        "logical": 0,
+                        "physical": 3
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0,
+                            "identifiers": []
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0,
+                            "identifiers": []
+                        },
+                        "length": 0,
+                        "time": 0,
+                        "bugs": 0,
+                        "effort": 0,
+                        "volume": 0,
+                        "difficulty": 0,
+                        "vocabulary": 0
+                    },
+                    "params": 0,
+                    "line": 13,
+                    "cyclomaticDensity": null
+                }
+            ],
+            "dependencies": [],
+            "maintainability": 93.97107946105336,
+            "loc": 1,
+            "cyclomatic": 1,
+            "effort": 20.378089294986296,
+            "params": 0,
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0007-p.js"
         },
         {
             "aggregate": {
@@ -1381,7 +1381,7 @@
             "cyclomatic": 1,
             "effort": 104.01798798928642,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c007-p.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0008-p.js"
         },
         {
             "aggregate": {
@@ -1517,7 +1517,7 @@
             "cyclomatic": 1,
             "effort": 66.26534190207941,
             "params": 1.5,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c008-o.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0009-o.js"
         },
         {
             "aggregate": {
@@ -1903,7 +1903,7 @@
             "cyclomatic": 1.4285714285714286,
             "effort": 359.0929161610084,
             "params": 0.5714285714285714,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c009-o.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0010-o.js"
         },
         {
             "aggregate": {
@@ -2184,13 +2184,347 @@
             "cyclomatic": 1.3333333333333333,
             "effort": 80.08054082997306,
             "params": 0,
-            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\c010-s.js"
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0011-s.js"
+        },
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 9,
+                    "physical": 12
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 8,
+                        "total": 24,
+                        "identifiers": [
+                            "function",
+                            "=",
+                            ".",
+                            "return",
+                            "+",
+                            "var",
+                            "new",
+                            "()"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 15,
+                        "total": 29,
+                        "identifiers": [
+                            "Car",
+                            "model",
+                            "this",
+                            "color",
+                            "\"silver\"",
+                            "year",
+                            "\"2012\"",
+                            "getInfo",
+                            "<anonymous>",
+                            "\" \"",
+                            "myCar",
+                            "\"ford\"",
+                            "\"2010\"",
+                            "console",
+                            "log"
+                        ]
+                    },
+                    "length": 53,
+                    "vocabulary": 23,
+                    "difficulty": 7.733333333333333,
+                    "volume": 239.7487836710217,
+                    "effort": 1854.0572603892344,
+                    "bugs": 0.0799162612236739,
+                    "time": 103.00318113273525
+                },
+                "params": 1,
+                "line": 9,
+                "cyclomaticDensity": 11.11111111111111
+            },
+            "functions": [
+                {
+                    "name": "Car",
+                    "sloc": {
+                        "logical": 4,
+                        "physical": 8
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 9,
+                            "identifiers": [
+                                "=",
+                                ".",
+                                "function"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 8,
+                            "total": 13,
+                            "identifiers": [
+                                "model",
+                                "this",
+                                "color",
+                                "\"silver\"",
+                                "year",
+                                "\"2012\"",
+                                "getInfo",
+                                "<anonymous>"
+                            ]
+                        },
+                        "length": 22,
+                        "vocabulary": 11,
+                        "difficulty": 2.4375,
+                        "volume": 76.10749561002055,
+                        "effort": 185.5120205494251,
+                        "bugs": 0.025369165203340184,
+                        "time": 10.306223363856951
+                    },
+                    "params": 1,
+                    "line": 9,
+                    "cyclomaticDensity": 25
+                },
+                {
+                    "name": "<anonymous>.getInfo",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 3
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 5,
+                            "identifiers": [
+                                "return",
+                                "+",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 4,
+                            "total": 5,
+                            "identifiers": [
+                                "this",
+                                "model",
+                                "\" \"",
+                                "year"
+                            ]
+                        },
+                        "length": 10,
+                        "vocabulary": 7,
+                        "difficulty": 1.875,
+                        "volume": 28.07354922057604,
+                        "effort": 52.63790478858007,
+                        "bugs": 0.009357849740192013,
+                        "time": 2.924328043810004
+                    },
+                    "params": 0,
+                    "line": 13,
+                    "cyclomaticDensity": 100
+                }
+            ],
+            "dependencies": [],
+            "maintainability": 81.75984449483501,
+            "loc": 2.5,
+            "cyclomatic": 1,
+            "effort": 119.07496266900259,
+            "params": 0.5,
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0012-class.js"
+        },
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 3,
+                    "physical": 7
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 6,
+                        "total": 11,
+                        "identifiers": [
+                            "var",
+                            "=",
+                            "{}",
+                            "()",
+                            ".",
+                            "new"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 5,
+                        "total": 9,
+                        "identifiers": [
+                            "newObject",
+                            "<anonymous>",
+                            "Object",
+                            "prototype",
+                            "create"
+                        ]
+                    },
+                    "length": 20,
+                    "vocabulary": 11,
+                    "difficulty": 5.4,
+                    "volume": 69.18863237274596,
+                    "effort": 373.6186148128282,
+                    "bugs": 0.023062877457581985,
+                    "time": 20.75658971182379
+                },
+                "params": 0,
+                "line": 4,
+                "cyclomaticDensity": 33.33333333333333
+            },
+            "functions": [],
+            "dependencies": [],
+            "maintainability": 77.7456230460956,
+            "loc": 3,
+            "cyclomatic": 1,
+            "effort": 373.6186148128282,
+            "params": 0,
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0013-constructor.js"
+        },
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 33,
+                    "physical": 87
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 7,
+                        "total": 63,
+                        "identifiers": [
+                            "=",
+                            ".",
+                            "var",
+                            "()",
+                            "{}",
+                            ":",
+                            "function"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 37,
+                        "total": 99,
+                        "identifiers": [
+                            "newObject",
+                            "someKey",
+                            "\"Hello World\"",
+                            "value",
+                            "_toString",
+                            "\"someKey\"",
+                            "<anonymous>",
+                            "\"for more control of the property's behavior\"",
+                            "writable",
+                            true,
+                            "enumerable",
+                            "configurable",
+                            "Object",
+                            "defineProperty",
+                            "defineProp",
+                            "obj",
+                            "key",
+                            "config",
+                            "person",
+                            "prototype",
+                            "create",
+                            "\"car\"",
+                            "\"Delorean\"",
+                            "\"dateOfBirth\"",
+                            "\"1981\"",
+                            "\"hasBeard\"",
+                            false,
+                            "console",
+                            "log",
+                            "\"anotherKey\"",
+                            "\"Foo bar\"",
+                            "defineProperties",
+                            "driver",
+                            "\"topSpeed\"",
+                            "\"100mph\"",
+                            "dateOfBirth",
+                            "topSpeed"
+                        ]
+                    },
+                    "length": 162,
+                    "vocabulary": 44,
+                    "difficulty": 9.364864864864865,
+                    "volume": 884.4279222192422,
+                    "effort": 8282.547974296416,
+                    "bugs": 0.2948093074064141,
+                    "time": 460.1415541275787
+                },
+                "params": 3,
+                "line": 8,
+                "cyclomaticDensity": 3.0303030303030303
+            },
+            "functions": [
+                {
+                    "name": "defineProp",
+                    "sloc": {
+                        "logical": 6,
+                        "physical": 9
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 6,
+                            "total": 9,
+                            "identifiers": [
+                                "var",
+                                "=",
+                                "{}",
+                                ":",
+                                "()",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 11,
+                            "total": 18,
+                            "identifiers": [
+                                "obj",
+                                "key",
+                                "value",
+                                "config",
+                                "<anonymous>",
+                                "writable",
+                                true,
+                                "enumerable",
+                                "configurable",
+                                "Object",
+                                "defineProperty"
+                            ]
+                        },
+                        "length": 27,
+                        "vocabulary": 17,
+                        "difficulty": 4.909090909090909,
+                        "volume": 110.36149671375918,
+                        "effort": 541.7746202311814,
+                        "bugs": 0.03678716557125306,
+                        "time": 30.098590012843413
+                    },
+                    "params": 3,
+                    "line": 40,
+                    "cyclomaticDensity": 16.666666666666664
+                }
+            ],
+            "dependencies": [],
+            "maintainability": 70.4357364370598,
+            "loc": 6,
+            "cyclomatic": 1,
+            "effort": 541.7746202311814,
+            "params": 3,
+            "path": "C:\\doc\\kg-dev\\gg-js\\012-js-complexity\\0014-constructor-es3.js"
         },
         {
             "aggregate": {
                 "sloc": {
                     "logical": 7,
-                    "physical": 25
+                    "physical": 27
                 },
                 "cyclomatic": 1,
                 "halstead": {
@@ -2274,18 +2608,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2295,18 +2617,6 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -2334,18 +2644,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2355,18 +2653,6 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -2394,18 +2680,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2424,6 +2698,27 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -2439,9 +2734,141 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -2472,18 +2899,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2493,18 +2908,6 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -2532,18 +2935,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2553,18 +2944,6 @@
             0,
             0,
             0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
             0,
             0,
             0,
@@ -2592,18 +2971,6 @@
             0,
             0,
             0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
             0,
             0,
             0,
@@ -2622,6 +2989,27 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
             0
         ],
         [
@@ -2637,9 +3025,141 @@
             0,
             0,
             0,
+            0,
+            0,
+            0,
             0
         ],
         [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
             0,
             0,
             0,
@@ -2655,11 +3175,11 @@
             0
         ]
     ],
-    "changeCost": 7.6923076923076925,
+    "changeCost": 6.25,
     "coreSize": 0,
-    "loc": 2.4716117216117217,
-    "cyclomatic": 1.0586080586080586,
-    "effort": 179.77343292094798,
-    "params": 0.2939560439560439,
-    "maintainability": 84.29338568387529
+    "loc": 2.7269345238095237,
+    "cyclomatic": 1.0476190476190477,
+    "effort": 210.7201766053335,
+    "params": 0.4575892857142857,
+    "maintainability": 82.85970111677307
 }
