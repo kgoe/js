@@ -16,7 +16,7 @@ describe('js core', function() {
       assert.equal(typeof {}, 'object');
     });
     it('function', function() {
-      assert.equal(typeof function(){}, 'function');
+      assert.equal(typeof function() {}, 'function');
     });
     it('undefined', function() {
       assert.equal(typeof undefined, 'undefined');
@@ -32,101 +32,101 @@ describe('js core', function() {
     });
   });
 });
-//*/
+//* /
 
 var coreLiterals = [
-  ['number',1,'number'],
-  ['string','test','string'],
-  ['boolean',true,'boolean'],
-  ['boolean',false,'boolean'],
-  ['object',{},'object'],
-  ['array',[],'object'],
-  ['function',function(){},'function'],
-  ['undefined',undefined,'undefined'],
-  ['infinity',Infinity,'number'],
-  ['NaN',NaN,'number'],
-  ['null',null,'object'],
+  ['number', 1, 'number'],
+  ['string', 'test', 'string'],
+  ['boolean', true, 'boolean'],
+  ['boolean', false, 'boolean'],
+  ['object', {}, 'object'],
+  ['array', [], 'object'],
+  ['function', function() {}, 'function'],
+  ['undefined', undefined, 'undefined'],
+  ['infinity', Infinity, 'number'],
+  ['NaN', NaN, 'number'],
+  ['null', null, 'object'],
 ];
 
 var coreMethods = [
-  ['eval','eval','function'],
-  //['uneval','uneval','function'], // err n10.13.0
-  ['isFinite','isFinite','function'],
-  ['isNaN','isNaN','function'],
-  ['parseFloat','parseFloat','function'],
-  ['parseInt','parseInt','function'],
-  ['decodeURI','decodeURI','function'],
-  ['encodeURI','encodeURI','function'],
-  ['decodeURIComponent','decodeURIComponent','function'],
-  ['encodeURIComponent','encodeURIComponent','function'],
-  ['escape','escape','function'],
-  ['unescape','unescape','function'],
+  ['eval', 'eval', 'function'],
+  // ['uneval','uneval','function'], // err n10.13.0
+  ['isFinite', 'isFinite', 'function'],
+  ['isNaN', 'isNaN', 'function'],
+  ['parseFloat', 'parseFloat', 'function'],
+  ['parseInt', 'parseInt', 'function'],
+  ['decodeURI', 'decodeURI', 'function'],
+  ['encodeURI', 'encodeURI', 'function'],
+  ['decodeURIComponent', 'decodeURIComponent', 'function'],
+  ['encodeURIComponent', 'encodeURIComponent', 'function'],
+  ['escape', 'escape', 'function'],
+  ['unescape', 'unescape', 'function'],
 ];
 
 var coreConstructors = [
-  ['Object','Object','function'],
-  ['Function','Function','function'],
-  ['Boolean','Boolean','function'],
-  //['Symnbol','Symnbol','function'], // err n10.13.0
-  ['Number','Number','function'],
-  ['Date','Date','function'],
-  ['String','String','function'],
-  ['RegExp','RegExp','function'],
-  ['Promise','Promise','function'],
-  ['Proxy','Proxy','function'],
-  ['Error','Error','function'],
-  ['EvalError','EvalError','function'],
-  //['InternalError','InternalError','function'], // err n10.13.0
-  ['RangeError','RangeError','function'],
-  ['ReferenceError','ReferenceError','function'],
-  ['SyntaxError','SyntaxError','function'],
-  ['TypeError','TypeError','function'],
-  ['URIError','URIError','function'],
+  ['Object', 'Object', 'function'],
+  ['Function', 'Function', 'function'],
+  ['Boolean', 'Boolean', 'function'],
+  // ['Symnbol','Symnbol','function'], // err n10.13.0
+  ['Number', 'Number', 'function'],
+  ['Date', 'Date', 'function'],
+  ['String', 'String', 'function'],
+  ['RegExp', 'RegExp', 'function'],
+  ['Promise', 'Promise', 'function'],
+  ['Proxy', 'Proxy', 'function'],
+  ['Error', 'Error', 'function'],
+  ['EvalError', 'EvalError', 'function'],
+  // ['InternalError','InternalError','function'], // err n10.13.0
+  ['RangeError', 'RangeError', 'function'],
+  ['ReferenceError', 'ReferenceError', 'function'],
+  ['SyntaxError', 'SyntaxError', 'function'],
+  ['TypeError', 'TypeError', 'function'],
+  ['URIError', 'URIError', 'function'],
 ];
 
 var coreCollections = [
-  ['Array','Array','function'],
-  ['Int8Array','Int8Array','function'],
-  ['Uint8Array','Uint8Array','function'],
-  ['Uint8ClampedArray','Uint8ClampedArray','function'],
-  ['Int16Array','Int16Array','function'],
-  ['Uint16Array','Uint16Array','function'],
-  ['Int32Array','Int32Array','function'],
-  ['Uint32Array','Uint32Array','function'],
-  ['Float32Array','Float32Array','function'],
-  ['Float64Array','Float64Array','function'],
-  ['Map','Map','function'],
-  ['Set','Set','function'],
-  ['WeakMap','WeakMap','function'],
-  ['WeakSet','WeakSet','function'],
-  ['ArrayBuffer','ArrayBuffer','function'],
-  //['SharedArrayBuffer','SharedArrayBuffer','function'], // err n8.9
-  ['DataView','DataView','function'],
-  //['Generator','Generator','function'], // err n10.13.0
-  //['GeneratorFunction','GeneratorFunction','function'], // err n10.13.0
-  //['AsyncFunction','AsyncFunction','function'], // err n10.13.0
+  ['Array', 'Array', 'function'],
+  ['Int8Array', 'Int8Array', 'function'],
+  ['Uint8Array', 'Uint8Array', 'function'],
+  ['Uint8ClampedArray', 'Uint8ClampedArray', 'function'],
+  ['Int16Array', 'Int16Array', 'function'],
+  ['Uint16Array', 'Uint16Array', 'function'],
+  ['Int32Array', 'Int32Array', 'function'],
+  ['Uint32Array', 'Uint32Array', 'function'],
+  ['Float32Array', 'Float32Array', 'function'],
+  ['Float64Array', 'Float64Array', 'function'],
+  ['Map', 'Map', 'function'],
+  ['Set', 'Set', 'function'],
+  ['WeakMap', 'WeakMap', 'function'],
+  ['WeakSet', 'WeakSet', 'function'],
+  ['ArrayBuffer', 'ArrayBuffer', 'function'],
+  // ['SharedArrayBuffer','SharedArrayBuffer','function'], // err n8.9
+  ['DataView', 'DataView', 'function'],
+  // ['Generator','Generator','function'], // err n10.13.0
+  // ['GeneratorFunction','GeneratorFunction','function'], // err n10.13.0
+  // ['AsyncFunction','AsyncFunction','function'], // err n10.13.0
 ];
 
 var coreObjects = [
-  //['Atomics','Atomics','object'], // err n8.9
-  ['console','console','object'],
-  ['Math','Math','object'],
-  ['JSON','JSON','object'],
-  ['JSON','JSON','object'],
-  ['Reflect','Reflect','object'],
-  //['Intl','Intl','object'], // err n8.9
-  //['Intl.Collator',Intl.Collator,'function'],
-  //['Intl.DateTimeFormat',Intl.DateTimeFormat,'function'],
-  //['Intl.Numberformat',Intl.NumberFormat,'function'],
-  ['WebAssembly','WebAssembly','object'],
-  ['WebAssembly.Module',WebAssembly.Module,'function'],
-  ['WebAssembly.Instance',WebAssembly.Instance,'function'],
-  ['WebAssembly.Memory',WebAssembly.Memory,'function'],
-  ['WebAssembly.Table',WebAssembly.Table,'function'],
-  ['WebAssembly.CompileError',WebAssembly.CompileError,'function'],
-  ['WebAssembly.LinkError',WebAssembly.LinkError,'function'],
-  ['WebAssembly.RuntimeError',WebAssembly.RuntimeError,'function'],
-  //['arguments','arguments','object'], // err n10.13.0 special value inside functions
+  // ['Atomics','Atomics','object'], // err n8.9
+  ['console', 'console', 'object'],
+  ['Math', 'Math', 'object'],
+  ['JSON', 'JSON', 'object'],
+  ['JSON', 'JSON', 'object'],
+  ['Reflect', 'Reflect', 'object'],
+  // ['Intl','Intl','object'], // err n8.9
+  // ['Intl.Collator',Intl.Collator,'function'],
+  // ['Intl.DateTimeFormat',Intl.DateTimeFormat,'function'],
+  // ['Intl.Numberformat',Intl.NumberFormat,'function'],
+  ['WebAssembly', 'WebAssembly', 'object'],
+  ['WebAssembly.Module', WebAssembly.Module, 'function'],
+  ['WebAssembly.Instance', WebAssembly.Instance, 'function'],
+  ['WebAssembly.Memory', WebAssembly.Memory, 'function'],
+  ['WebAssembly.Table', WebAssembly.Table, 'function'],
+  ['WebAssembly.CompileError', WebAssembly.CompileError, 'function'],
+  ['WebAssembly.LinkError', WebAssembly.LinkError, 'function'],
+  ['WebAssembly.RuntimeError', WebAssembly.RuntimeError, 'function'],
+  // ['arguments','arguments','object'], // err n10.13.0 special value inside functions
 ];
 
 var theRoot = undefined;
@@ -140,58 +140,58 @@ if ( typeof window !== 'undefined' ) {
 
 describe('js core', function() {
   describe('literals', function() {
-    coreLiterals.forEach(function(value){
-      it(value[0],function(){
-        assert.equal(typeof value[1],value[2]);
+    coreLiterals.forEach(function(value) {
+      it(value[0], function() {
+        assert.equal(typeof value[1], value[2]);
       });
     });
   });
   describe('methods', function() {
-    coreMethods.forEach(function(value){
-      it(value[0],function(){
-        assert.equal(typeof theRoot[value[1]],value[2]);
+    coreMethods.forEach(function(value) {
+      it(value[0], function() {
+        assert.equal(typeof theRoot[value[1]], value[2]);
       });
     });
   });
   describe('constructors', function() {
-    coreConstructors.forEach(function(value){
-      it(value[0],function(){
-        assert.equal(typeof theRoot[value[1]],value[2]);
+    coreConstructors.forEach(function(value) {
+      it(value[0], function() {
+        assert.equal(typeof theRoot[value[1]], value[2]);
       });
     });
   });
   describe('objects', function() {
-    coreObjects.forEach(function(value){
-      it(value[0],function(){
+    coreObjects.forEach(function(value) {
+      it(value[0], function() {
         var check = undefined;
         if ( typeof value[1] == 'string' ) {
           check = theRoot[value[1]];
         } else if ( typeof value[1] !== 'undefined' ) {
           check = value[1];
         }
-        assert.equal(typeof check,value[2]);
+        assert.equal(typeof check, value[2]);
       });
     });
   });
   describe('collections', function() {
-    coreCollections.forEach(function(value){
-      it(value[0],function(){
-        assert.equal(typeof theRoot[value[1]],value[2]);
+    coreCollections.forEach(function(value) {
+      it(value[0], function() {
+        assert.equal(typeof theRoot[value[1]], value[2]);
       });
     });
   });
-  describe('try-catch-finally',function(){
-    it('try-catch-finally',function(){
+  describe('try-catch-finally', function() {
+    it('try-catch-finally', function() {
       var theValue = 0;
       try {
         theValue += 2;
-        throw("force error");
+        throw ('force error');
       } catch ( e ) {
         theValue += 3;
       } finally {
         theValue += 4;
       }
-      assert.equal(theValue,9);
+      assert.equal(theValue, 9);
     });
   });
 });

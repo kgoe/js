@@ -1,12 +1,14 @@
 var eventCC = 0;
 console.log('SCRIPT START', eventCC);
 
-setInterval(function(){eventCC = eventCC + 1;});
-var theOutput = (function iifeEnvDetect(){
+setInterval(function() {
+  eventCC = eventCC + 1;
+});
+var theOutput = (function iifeEnvDetect() {
   var output = false;
   if ( typeof global !== 'undefined' && typeof module !== 'undefined' && typeof require !== 'undefined' ) {
     if ( require.main === module ) {
-      output = 'node';      
+      output = 'node';
     } else {
       output = 'node-module';
     }
@@ -15,8 +17,10 @@ var theOutput = (function iifeEnvDetect(){
   if ( typeof window !== 'undefined' && typeof document !== 'undefined' ) {
     output = 'browser';
     if ( typeof require === 'undefined' ) {
-      //require = function( value ) { console.log("%c TO REQUIRE : " + value,"color: ##FF0000;"); }
-      require = function( value ) { console.log("TO REQUIRE : " + value); }
+      // require = function( value ) { console.log("%c TO REQUIRE : " + value,"color: ##FF0000;"); }
+      require = function( value ) {
+        console.log('TO REQUIRE : ' + value);
+      };
     }
   }
   return output;
@@ -31,7 +35,7 @@ var log = console.log;
 var rdom = require('./reflect-properties.js');
 rdom.prop = Object.getOwnPropertyNames;
 
-//log(rdom.prop(String.prototype));
+// log(rdom.prop(String.prototype));
 
 function getPropType( val ) {
   var prop = Object.getOwnPropertyNames( val );
@@ -40,8 +44,8 @@ function getPropType( val ) {
   for ( cc = 0; cc < ll; cc++ ) {
     try {
       output[prop[cc]] = typeof val[prop[cc]];
-    } catch( err ) {
-    	 console.log( err , prop[cc]);
+    } catch ( err ) {
+    	 console.log( err, prop[cc]);
     	 output[prop[cc]] = false;
     }
   }
@@ -56,23 +60,23 @@ log(Object.__proto__ == Array.__proto__);
 log(Object.__proto__ == Error.__proto__);
 log(Object.__proto__ == eval.__proto__);
 
-function fnfn(a,b,c,d){
+function fnfn(a, b, c, d) {
 	 var one = 1;
 	 return one;
 }
 
-//log(getPropType(fnfn));
+// log(getPropType(fnfn));
 
 // get function signature
-log(fnfn.toString().split("\n")[0]);
+log(fnfn.toString().split('\n')[0]);
 
 var functionLiteralProperties = {
-length: 'number',
-name: 'string',
-arguments: 'object',
-caller: 'object',
-prototype: 'object'
-}
+  length: 'number',
+  name: 'string',
+  arguments: 'object',
+  caller: 'object',
+  prototype: 'object',
+};
 
 function reflectGlobalPropertyTree() {
   var theRoot = typeof global != 'undefined' ? global : window;
@@ -82,7 +86,7 @@ function reflectGlobalPropertyTree() {
   var theOutput = {};
   var theOutputPrototype = {};
   var theOutputProto = {};
-  
+
   for ( var cd = 0; cd < props.length; cd++ ) {
     try {
       theOutput[props[cd]] = getPropType(theRoot[props[cd]]);
@@ -92,7 +96,7 @@ function reflectGlobalPropertyTree() {
       continue;
     }
   }
-  
+
   for ( var cd1 = 0; cd1 < propsPrototype.length; cd1++ ) {
     try {
       theOutputPrototype[propsPrototype[cd1]] = getPropType(theRoot[propsPrototype[cd1]].prototype);
@@ -102,7 +106,7 @@ function reflectGlobalPropertyTree() {
       continue;
     }
   }
-  
+
   for ( var cd = 0; cd < propsProto.length; cd++ ) {
     try {
       theOutputProto[propsProto[cd]] = getPropType(theRoot[propsProto[cd]].__proto__);
@@ -112,17 +116,17 @@ function reflectGlobalPropertyTree() {
       continue;
     }
   }
-  
+
   // console.log(theOutput);
-  //console.log(theOutputPrototype);
-  //console.log(theOutputProto);
-  
+  // console.log(theOutputPrototype);
+  // console.log(theOutputProto);
+
   // return theOutput;
 }
 
-//reflectGlobalPropertyTree();
+// reflectGlobalPropertyTree();
 
-var arrayTypes = [ 
+var arrayTypes = [
   'Object',
   'Function',
   'Array',
@@ -185,15 +189,17 @@ var arrayTypes = [
   'clearTimeout',
   'setImmediate',
   'setInterval',
-  'setTimeout'
+  'setTimeout',
 ];
 
-//arrayTypes.forEach(function( value ){
+// arrayTypes.forEach(function( value ){
 //  log( value,global[value].__proto__ == Object.__proto__,eventCC);
-//});
+// });
 
-setTimeout(function(){console.log('T',eventCC);},1000);
+setTimeout(function() {
+  console.log('T', eventCC);
+}, 1000);
 
-//log(JSON.stringify(getGlobalPropertyTree()));
+// log(JSON.stringify(getGlobalPropertyTree()));
 
 console.log('SCRIPT END', eventCC);
