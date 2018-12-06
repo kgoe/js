@@ -3,11 +3,12 @@
 Continuous Integration
 Continuous Development
 
-node.js assert
-qunit
-jest
 mocha
 chai
+node.js assert
+jest
+qunit
+
 
 jasmine
 cucumber
@@ -16,34 +17,34 @@ unit tests
 integration tests
 ui tests / functional tests
 
-testing structure
+#### testing structure
     mocha
     jasmine
     jest
     cucumber
-assertion functions
+#### assertion functions
     assert
     chai
     jest
     unexpected
-testing displayer
+#### testing displayer
     mocha
     jasmine
     jest
     karma
-testing snapshots
+#### testing snapshots
     jest
     ava
-testing mocks, spies, stubs
+#### testing mocks, spies, stubs
     sinon
     jasmine
     enzyme
     jest
-testing code coverage
+#### testing code coverage
     istanbul
     jest
     blanket
-testing browser environment
+#### testing browser environment
     protractor
     nightwatch
     phantom
@@ -54,4 +55,4 @@ testing browser environment
     qunit ?
 
 ### Node.JS and PHPUnit Integration
-https://mwop.net/blog/2016-10-24-watch-phpunit-with-node.html
+    https://mwop.net/blog/2016-10-24-watch-phpunit-with-node.html
