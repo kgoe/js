@@ -1,3 +1,2 @@
-(function() {
-//  … 
-}());
+(function (window, document) {
+})(window, document);
