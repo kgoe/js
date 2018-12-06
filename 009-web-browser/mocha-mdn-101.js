@@ -931,13 +931,13 @@ describe('Expressions and Operators',function(){
         // expected output: 6
         //console.log(sum.apply(null, numbers));
 
-        theValue += 1;
+        theValue += sum(...numbers);
       } catch ( e ) {
         theValue += 3;
       } finally {
         theValue += 4;
       }
-      assert.equal(theValue,5);
+      assert.equal(theValue,10);
     });
 
   });
@@ -1146,14 +1146,17 @@ describe('Expressions and Operators',function(){
       assert.equal(getFee(1),"$2.00");
     });
   });
-
+  
   describe('Assignment Operators',function(){
+
   });
 
   describe('Comma Operators',function(){
+
   });
 
   describe('Non Standard Features',function(){
+
   });
 
 });
@@ -1162,18 +1165,113 @@ describe('Functions',function(){
 
   describe('arguments',function(){
     it('arguments',function(){
-      assert.equal(typeof arguments,'object');
+      function checkArguments(){
+        return typeof arguments;
+      }
+
+      assert.equal(checkArguments(),'object');
+    });
+  });
+
+  describe('arguments2',function(){
+    it('arguments2',function(){
+      function func1(a, b, c) {
+        //console.log(arguments[0]);
+        // expected output: 1
+      
+        //console.log(arguments[1]);
+        // expected output: 2
+      
+        //console.log(arguments[2]);
+        // expected output: 3
+        return JSON.stringify(arguments);
+      }
+      
+      func1(1, 2, 3);
+      assert.equal(func1(1, 2, 3),'{"0":1,"1":2,"2":3}');
+
+      
     });
   });
 
   describe('Arrow Functions',function(){
+    it('()=>{}',function(){
+      var value = (()=>{return 365;})()
+      assert.equal(value,365);
+    });
   });
 
   describe('Default Parameters',function(){
+    it('Default Parameters',function(){
+      function multiply(a, b = 1) {
+        return a * b;
+      }
+      
+      //console.log(multiply(5, 2));
+      assert.equal(multiply(5, 2),10);
+      // expected output: 10
+      
+      //console.log(multiply(5));
+      assert.equal(multiply(5),5);
+      // expected output: 5
+    });
   });
 
   describe('Rest Parameters',function(){
+    it('Rest Parameters',function(){
+      function sum(...theArgs) {
+        return theArgs.reduce((previous, current) => {
+          return previous + current;
+        });
+      }
+      
+      //console.log(sum(1, 2, 3));
+      assert.equal(sum(1, 2, 3),6);
+      // expected output: 6
+      
+      //console.log(sum(1, 2, 3, 4));
+      assert.equal(sum(1, 2, 3, 4),10);
+      // expected output: 10
+    });
   });
+
+  describe('setter',function(){
+    it('set',function(){
+      var language = {
+        set current(name) {
+          this.log.push(name);
+        },
+        log: []
+      }
+      
+      language.current = 'EN';
+      language.current = 'FA';
+      
+      //console.log(language.log);
+      assert.equal(language.log.toString(),'EN,FA');
+
+    });
+  });
+
+  describe('getter',function(){
+    it('get',function(){
+      var obj = {
+        log: ['a', 'b', 'c'],
+        get latest() {
+          if (this.log.length == 0) {
+            return undefined;
+          }
+          return this.log[this.log.length - 1];
+        }
+      }
+      
+      // console.log(obj.latest);
+      // expected output: "c"
+      assert.equal(obj.latest,'c');
+
+    });
+  });
+
 
 });
 
@@ -1214,9 +1312,20 @@ describe('Additional References',function(){
   });
 
   describe('Strict Mode',function(){
+
+  });
+
+  describe('Template Literals',function(){
+    describe('template literals',function(){
+      it('template literals',function(){
+        var literals = `string text ${1 + 2} string text`;
+        assert.equal(literals,'string text 3 string text');
+      });
+    });
   });
 
   describe('Deprecated Features',function(){
+
   });
 
 });

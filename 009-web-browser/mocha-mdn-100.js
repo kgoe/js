@@ -876,21 +876,3 @@ describe('Additional References',function(){
   });
 
 });
-
-/*
-describe('others',function(){
-  it('try-catch-finally',function(){
-    var theValue = 0;
-      try {
-        var x = 1;
-        var y = 1;
-        [ for( x of y ) x ];
-        ( for( x of y ) y );
-        theValue += 0;
-      } catch ( e ) {
-        theValue += 3;
-      }
-    assert.equal(theValue,9);
-  });
-});
-*/
