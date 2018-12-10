@@ -1,16 +1,20 @@
-function myclass() {
+/**
+ * MyClass
+ * class
+ */
+function MyClass() {
 }
 
-myclass.prototype.x = 1;
-Object.defineProperty(myclass.prototype, 'y', {
+MyClass.prototype.x = 1;
+Object.defineProperty(MyClass.prototype, 'y', {
   writable: false,
   value: 1,
 });
 
-var a = new myclass();
+var a = new MyClass();
 a.x = 2;
 console.log(a.x); // 2
-console.log(myclass.prototype.x); // 1
+console.log(MyClass.prototype.x); // 1
 a.y = 2; // Ignored, throws in strict mode
 console.log(a.y); // 1
-console.log(myclass.prototype.y); // 1
+console.log(MyClass.prototype.y); // 1

@@ -1,7 +1,11 @@
-function myclass() {
+/**
+ * MyClass
+ * class
+ */
+function MyClass() {
 }
 
-Object.defineProperty(myclass.prototype, 'x', {
+Object.defineProperty(MyClass.prototype, 'x', {
   get() {
     return this.stored_x;
   },
@@ -10,7 +14,7 @@ Object.defineProperty(myclass.prototype, 'x', {
   },
 });
 
-var a = new myclass();
-var b = new myclass();
+var a = new MyClass();
+var b = new MyClass();
 a.x = 1;
 console.log(b.x); // undefined
