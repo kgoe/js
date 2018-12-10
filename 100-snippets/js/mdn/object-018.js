@@ -22,7 +22,7 @@ function showProperties( b ) {
 }
 
 ob={}; ob.pn=ocn; ob.po=oco;
-// create same compound object again, 
+// create same compound object again,
 // but create same properties in different order
 
 showProperties( ob );

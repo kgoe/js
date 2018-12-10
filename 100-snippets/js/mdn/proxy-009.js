@@ -20,9 +20,11 @@ var docCookies = new Proxy(docCookies, {
     return oTarget.removeItem(sKey);
   },
   enumerate: function(oTarget, sKey) {
+    sKey.toString();
     return oTarget.keys();
   },
   ownKeys: function(oTarget, sKey) {
+    sKey.toString();
     return oTarget.keys();
   },
   has: function(oTarget, sKey) {

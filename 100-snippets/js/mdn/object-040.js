@@ -2,9 +2,9 @@ function myclass() {
 }
 
 myclass.prototype.x = 1;
-Object.defineProperty(myclass.prototype, "y", {
+Object.defineProperty(myclass.prototype, 'y', {
   writable: false,
-  value: 1
+  value: 1,
 });
 
 var a = new myclass();

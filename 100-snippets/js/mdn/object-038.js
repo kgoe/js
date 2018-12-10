@@ -13,7 +13,7 @@ Object.defineProperty(MyClass.prototype, 'x', {
   },
   set(x) {
     value = x;
-  }
+  },
 });
 
 var a = new MyClass();

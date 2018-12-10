@@ -15,11 +15,13 @@ function Archiver() {
     },
     set(value) {
       temperature = value;
-      archive.push({ val: temperature });
-    }
+      archive.push({val: temperature});
+    },
   });
 
-  this.getArchive = function() { return archive; };
+  this.getArchive = function() {
+    return archive;
+  };
 }
 
 var arc = new Archiver();

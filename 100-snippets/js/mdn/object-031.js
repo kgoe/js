@@ -20,8 +20,12 @@ Object.defineProperty(o, 'b', {
   // This is equivalent to:
   // get: function() { return bValue; },
   // set: function(newValue) { bValue = newValue; },
-  get() { return bValue; },
-  set(newValue) { bValue = newValue; },
+  get() {
+    return bValue;
+  },
+  set(newValue) {
+    bValue = newValue;
+  },
   enumerable: true,
   configurable: true,
 });
@@ -33,7 +37,9 @@ o.b; // 38
 // You cannot try to mix both:
 Object.defineProperty(o, 'conflict', {
   value: 0x9f91102,
-  get() { return 0xdeadbeef; }
+  get() {
+    return 0xdeadbeef;
+  },
 });
 // throws a TypeError: value appears
 // only in data descriptors,

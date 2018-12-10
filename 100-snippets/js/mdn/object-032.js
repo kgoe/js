@@ -4,7 +4,7 @@ var o = {}; // Creates a new object
 
 Object.defineProperty(o, 'a', {
   value: 37,
-  writable: false
+  writable: false,
 });
 
 console.log(o.a); // logs 37

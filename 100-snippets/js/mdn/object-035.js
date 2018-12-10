@@ -12,7 +12,7 @@ Object.defineProperty(o, 'a', {
 });
 
 // On the other hand,
-Object.defineProperty(o, 'a', { value: 1 });
+Object.defineProperty(o, 'a', {value: 1});
 // is equivalent to:
 Object.defineProperty(o, 'a', {
   value: 1,

@@ -1,13 +1,13 @@
 function myclass() {
 }
 
-Object.defineProperty(myclass.prototype, "x", {
+Object.defineProperty(myclass.prototype, 'x', {
   get() {
     return this.stored_x;
   },
   set(x) {
     this.stored_x = x;
-  }
+  },
 });
 
 var a = new myclass();

@@ -19,21 +19,23 @@ o = Object.create(Object.prototype, {
   foo: {
     writable: true,
     configurable: true,
-    value: 'hello'
+    value: 'hello',
   },
   // bar is a getter-and-setter (accessor) property
   bar: {
     configurable: false,
-    get: function() { return 10; },
+    get: function() {
+      return 10;
+    },
     set: function(value) {
       console.log('Setting `o.bar` to', value);
-    }
-/* with ES2015 Accessors our code can look like this
+    },
+    /* with ES2015 Accessors our code can look like this
     get() { return 10; },
     set(value) {
       console.log('Setting `o.bar` to', value);
     } */
-  }
+  },
 });
 
 
@@ -42,13 +44,13 @@ o = new Constructor();
 // is equivalent to:
 o = Object.create(Constructor.prototype);
 // Of course, if there is actual initialization code
-// in the Constructor function, 
+// in the Constructor function,
 // the Object.create() cannot reflect it
 
 
 // Create a new object whose prototype is a new, empty
 // object and add a single property 'p', with value 42.
-o = Object.create({}, { p: { value: 42 } });
+o = Object.create({}, {p: {value: 42}});
 
 // by default properties ARE NOT writable,
 // enumerable or configurable:
@@ -71,6 +73,6 @@ o2 = Object.create({}, {
     value: 42,
     writable: true,
     enumerable: true,
-    configurable: true
-  }
+    configurable: true,
+  },
 });

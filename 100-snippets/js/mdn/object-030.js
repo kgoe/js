@@ -37,5 +37,5 @@ Object.defineProperty(obj, 'key', withValue('static'));
 
 // if freeze is available, prevents adding or
 // removing the object prototype properties
-// (value, get, set, enumerable, writable, configurable)  
+// (value, get, set, enumerable, writable, configurable)
 (Object.freeze || Object)(Object.prototype);

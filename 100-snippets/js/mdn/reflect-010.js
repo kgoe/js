@@ -9,6 +9,8 @@ Reflect.get(['zero', 'one'], 1); // "one"
 var x = {p: 1};
 var obj = new Proxy(x, {
   get(t, k, r) {
+    t.toString();
+    r.toString();
     return k + 'bar';
   },
 });

@@ -8,14 +8,12 @@
  * @return {*}
  */
 function defineProperties(obj, properties) {
-
   /**
    * convertToDescriptor
    * @param {*} desc
    * @return {*}
    */
   function convertToDescriptor(desc) {
-
     /**
      * hasProperty
      * @param {*} obj

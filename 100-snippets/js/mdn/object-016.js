@@ -24,10 +24,10 @@ console.log(oco);
 console.log(ocn);
 // {p: 0} -- Still seems normal here too. BUT WAIT...
 
-console.log("oco is: " + oco);
+console.log('oco is: ' + oco);
 // shows "ocn is: [object Object]"
 
-console.log("ocn is: " + ocn);
+console.log('ocn is: ' + ocn);
 // throws error: Cannot convert object to primitive value
 
 alert(oco);
@@ -48,10 +48,10 @@ oco.valueOf();
 ocn.valueOf();
 // throws error: ocn.valueOf is not a function
 
-oco.hasOwnProperty("p");
+oco.hasOwnProperty('p');
 // shows "true"
 
-ocn.hasOwnProperty("p");
+ocn.hasOwnProperty('p');
 // throws error: ocn.hasOwnProperty is not a function
 
 oco.constructor;
