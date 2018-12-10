@@ -1,5 +1,13 @@
 // Object.create Polyfill for version < ES5
+
 if (typeof Object.create !== 'function') {
+
+  /**
+   * Object.create
+   * @param {*} proto
+   * @param {*} propertiesObject
+   * @return {functtion}
+   */
   Object.create = function(proto, propertiesObject) {
     if (typeof proto !== 'object' && typeof proto !== 'function') {
       throw new TypeError('Object prototype may only be an Object: ' + proto);
