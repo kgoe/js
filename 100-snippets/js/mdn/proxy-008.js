@@ -1,7 +1,7 @@
-let products = new Proxy([
-  { name: 'Firefox', type: 'browser' },
-  { name: 'SeaMonkey', type: 'browser' },
-  { name: 'Thunderbird', type: 'mailer' }
+const products = new Proxy([
+  {name: 'Firefox', type: 'browser'},
+  {name: 'SeaMonkey', type: 'browser'},
+  {name: 'Thunderbird', type: 'mailer'},
 ],
 {
   get: function(obj, prop) {
@@ -15,9 +15,9 @@ let products = new Proxy([
       return obj.length;
     }
 
-    let result, types = {};
+    let result; const types = {};
 
-    for (let product of obj) {
+    for (const product of obj) {
       if (product.name === prop) {
         result = product;
       }
@@ -44,7 +44,7 @@ let products = new Proxy([
     }
 
     return undefined;
-  }
+  },
 });
 
 console.log(products[0]); // { name: 'Firefox', type: 'browser' }

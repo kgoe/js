@@ -1,4 +1,4 @@
-console.log('Reflect',typeof Reflect);
+console.log('Reflect', typeof Reflect);
 
 // Reflect.apply(target, thisArgument, argumentsList);
 // Reflect.construct(target, argumentsList[, newTarget];

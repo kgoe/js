@@ -1,5 +1,5 @@
-let products = new Proxy({
-  browsers: ['Internet Explorer', 'Netscape']
+const products = new Proxy({
+  browsers: ['Internet Explorer', 'Netscape'],
 },
 {
   get: function(obj, prop) {
@@ -28,7 +28,7 @@ let products = new Proxy({
 
     // Indicate success
     return true;
-  }
+  },
 });
 
 console.log(products.browsers); // ['Internet Explorer', 'Netscape']

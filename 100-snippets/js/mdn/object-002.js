@@ -1,3 +1,6 @@
-var obj = { a: 1 };
+// cloning an object
+var obj = {a: 1};
 var copy = Object.assign({}, obj);
-console.log(copy); // { a: 1 }
+
+console.log(copy);
+// { a: 1 }

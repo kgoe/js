@@ -1,9 +1,9 @@
-let view = new Proxy({
-  selected: null
+const view = new Proxy({
+  selected: null,
 },
 {
   set: function(obj, prop, newval) {
-    let oldval = obj[prop];
+    const oldval = obj[prop];
 
     if (prop === 'selected') {
       if (oldval) {
@@ -19,12 +19,12 @@ let view = new Proxy({
 
     // Indicate success
     return true;
-  }
+  },
 });
 
-let i1 = view.selected = document.getElementById('item-1');
+const i1 = view.selected = document.getElementById('item-1');
 console.log(i1.getAttribute('aria-selected')); // 'true'
 
-let i2 = view.selected = document.getElementById('item-2');
+const i2 = view.selected = document.getElementById('item-2');
 console.log(i1.getAttribute('aria-selected')); // 'false'
 console.log(i2.getAttribute('aria-selected')); // 'true'

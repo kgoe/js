@@ -1,4 +1,4 @@
-let validator = {
+const validator = {
   set: function(obj, prop, value) {
     if (prop === 'age') {
       if (!Number.isInteger(value)) {
@@ -14,12 +14,12 @@ let validator = {
 
     // Indicate success
     return true;
-  }
+  },
 };
 
-let person = new Proxy({}, validator);
+const person = new Proxy({}, validator);
 
 person.age = 100;
 console.log(person.age); // 100
-//person.age = 'young'; // Throws an exception // not number
-//person.age = 300; // Throws an exception // mre than 200
+// person.age = 'young'; // Throws an exception // not number
+// person.age = 300; // Throws an exception // mre than 200

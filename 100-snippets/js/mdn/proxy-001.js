@@ -1,9 +1,9 @@
 var handler = {
   get: function(obj, prop) {
-      return prop in obj ?
+    return prop in obj ?
           obj[prop] :
           37;
-  }
+  },
 };
 
 var p = new Proxy({}, handler);

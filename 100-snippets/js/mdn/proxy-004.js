@@ -1,6 +1,6 @@
 function extend(sup, base) {
   var descriptor = Object.getOwnPropertyDescriptor(
-    base.prototype, 'constructor'
+      base.prototype, 'constructor'
   );
   base.prototype = Object.create(sup.prototype);
   var handler = {
@@ -12,7 +12,7 @@ function extend(sup, base) {
     apply: function(target, that, args) {
       sup.apply(that, args);
       base.apply(that, args);
-    }
+    },
   };
   var proxy = new Proxy(base, handler);
   descriptor.value = proxy;
@@ -31,6 +31,6 @@ var Boy = extend(Person, function(name, age) {
 Boy.prototype.sex = 'M';
 
 var Peter = new Boy('Peter', 13);
-console.log(Peter.sex);  // "M"
+console.log(Peter.sex); // "M"
 console.log(Peter.name); // "Peter"
-console.log(Peter.age);  // 13
+console.log(Peter.age); // 13

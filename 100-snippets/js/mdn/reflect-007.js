@@ -1,4 +1,4 @@
-var obj = { x: 1, y: 2 };
+var obj = {x: 1, y: 2};
 Reflect.deleteProperty(obj, 'x'); // true
 obj; // { y: 2 }
 
