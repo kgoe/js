@@ -1,4 +1,4 @@
-// Object.fromEntries()
+// Object.fromEntries() NS
 // Object.fromEntries(iterable);
 
 const entries = new Map([

@@ -1,4 +1,4 @@
-// Object.fromEntries()
+// Object.fromEntries() NS
 // converting a Map to an Object
 
 const map = new Map([ ['foo', 'bar'], ['baz', 42] ]);
