@@ -1,3 +1,5 @@
+// Object.entries()
+
 // example
 
 const obj = { foo: 'bar', baz: 42 };

@@ -1,8 +1,11 @@
+// Object.assign()
+
 // polyfill example
 if (typeof Object.assign != 'function') {
   // Must be writable: true, enumerable: false, configurable: true
   Object.defineProperty(Object, 'assign', {
     value: function assign(target, varArgs) { // .length of function is 2
+      varArgs.toString();
       'use strict';
       if (target == null) { // TypeError if undefined or null
         throw new TypeError('Cannot convert undefined or null to object');

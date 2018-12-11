@@ -1,4 +1,6 @@
-// mergine objects ( to the first  object )
+// Object.assign()
+
+// merging objects ( to the first  object )
 var o1 = {a: 1};
 var o2 = {b: 2};
 var o3 = {c: 3};

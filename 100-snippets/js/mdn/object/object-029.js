@@ -1,4 +1,5 @@
 // Object.defineProperty()
+
 // Object.defineProperty(obj, prop, descriptor)
 
 const object1 = {};

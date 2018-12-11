@@ -1,3 +1,5 @@
+// Object.assign()
+
 // copying accessors
 var obj = {
   foo: 1,

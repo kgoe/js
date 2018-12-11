@@ -1,4 +1,10 @@
+// Object.create()
+
 // mixins possibility, inheritance from multiple objects
+/**
+ * MyClass
+ * class
+ */
 function MyClass() {
   SuperClass.call(this);
   OtherSuperClass.call(this);

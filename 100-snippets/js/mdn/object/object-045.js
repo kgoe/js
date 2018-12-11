@@ -1,3 +1,5 @@
+// Object.entries()
+
 // Polyfill
 if (!Object.entries) {
   Object.entries = function( obj ) {

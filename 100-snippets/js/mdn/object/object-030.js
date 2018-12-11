@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // using __proto__
 var obj = {};
 var descriptor = Object.create(null); // no inherited properties

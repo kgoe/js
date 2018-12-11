@@ -1,4 +1,7 @@
+// Object.defineProperties()
+
 // inheritance of properties
+
 /**
  * MyClass
  * class

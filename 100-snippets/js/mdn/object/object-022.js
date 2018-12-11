@@ -1,3 +1,5 @@
+// Object.create()
+
 // some ok solutions
 
 ocn = Object.create( null );

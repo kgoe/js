@@ -1,4 +1,5 @@
 // Object.defineProperties()
+
 // example
 var obj = {};
 Object.defineProperties(obj, {

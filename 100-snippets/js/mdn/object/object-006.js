@@ -1,3 +1,5 @@
+// Object.assign()
+
 // copying symbol-typed properties
 var o1 = {a: 1};
 var o2 = {[Symbol('foo')]: 2};

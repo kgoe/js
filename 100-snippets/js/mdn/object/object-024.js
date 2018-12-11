@@ -1,3 +1,5 @@
+// Object.create()
+
 // event better
 
 ocn = Object.create( null );

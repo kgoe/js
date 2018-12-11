@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // modifying property
 // enumarable property
 var o = {};

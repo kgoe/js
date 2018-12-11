@@ -1,3 +1,5 @@
+// Object.assign()
+
 // properties will be wrpped to objects
 var v1 = 'abc';
 var v2 = true;

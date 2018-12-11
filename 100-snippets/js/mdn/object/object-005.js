@@ -1,3 +1,5 @@
+// Object.assign()
+
 // merging objects with the came properties
 var o1 = {a: 1, b: 1, c: 1};
 var o2 = {b: 2, c: 2};

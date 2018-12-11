@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // modifying properties
 // configurable property
 var o = {};

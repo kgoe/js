@@ -1,3 +1,5 @@
+// Object.assign()
+
 // exceptions will interrupt ongoing copying task
 var target = Object.defineProperty({}, 'foo', {
   value: 1,

@@ -1,3 +1,5 @@
+// Object.create()
+
 // some non solutions
 ocn = Object.create( null );
 // create "null" object (same as before)

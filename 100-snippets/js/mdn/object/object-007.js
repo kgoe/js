@@ -1,3 +1,5 @@
+// Object.assign()
+
 // properties on the prototype chain
 // and non-enumerable properties cnnot be copied
 var obj = Object.create({foo: 1}, { // foo is on obj's prototype chain.

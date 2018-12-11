@@ -1,3 +1,5 @@
+// Object.create()
+
 ocn = Object.create( null );
 // create "null" object (same as before)
 

@@ -1,3 +1,5 @@
+// Object.create()
+
 // debug function
 // display top-level property name:value pairs of given object
 

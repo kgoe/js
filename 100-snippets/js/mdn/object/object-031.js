@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // creating a property
 
 var o = {}; // Creates a new object

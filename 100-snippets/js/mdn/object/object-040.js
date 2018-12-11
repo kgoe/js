@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 /**
  * MyClass
  * class

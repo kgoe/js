@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // modifying a property
 // writable
 var o = {}; // Creates a new object

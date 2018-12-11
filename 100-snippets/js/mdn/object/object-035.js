@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 // modifying properties
 // adding properties and default values
 var o = {};

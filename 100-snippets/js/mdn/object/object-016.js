@@ -1,3 +1,5 @@
+// Object.create()
+
 // custom and null objects
 
 oco = Object.create( {} );

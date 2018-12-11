@@ -1,3 +1,5 @@
+// Object.defineProperties()
+
 var pattern = {
   get() {
     return 'I always return this string, ' +

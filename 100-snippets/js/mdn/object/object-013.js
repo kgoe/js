@@ -1,5 +1,11 @@
+// Object.create()
+
 // Classical inheritance with Object.create()
 // Shape - superclass
+/**
+ * Shape
+ * class
+ */
 function Shape() {
   this.x = 0;
   this.y = 0;
@@ -13,6 +19,10 @@ Shape.prototype.move = function(x, y) {
 };
 
 // Rectangle - subclass
+/**
+ * Rectangle
+ * class
+ */
 function Rectangle() {
   Shape.call(this); // call super constructor.
 }

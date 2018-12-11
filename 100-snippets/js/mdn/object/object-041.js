@@ -1,4 +1,5 @@
 // Object.entries()
+
 // Object.entries(obj)
 
 const object1 = {

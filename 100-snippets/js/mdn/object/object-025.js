@@ -1,3 +1,5 @@
+// Object.create()
+
 // Object.create Polyfill for version < ES5
 
 if (typeof Object.create !== 'function') {
