@@ -1,4 +1,5 @@
 // Object.create()
+
 const person = {
   isHuman: false,
   printIntroduction: function() {
