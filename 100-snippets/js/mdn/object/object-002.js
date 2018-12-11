@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // cloning an object

@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.create()
 
 // Classical inheritance with Object.create()

@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // merging objects ( to the first  object )

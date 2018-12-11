@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.create()
 
 // Object.create Polyfill for version < ES5

@@ -1,7 +1,13 @@
+;
+// MDN
 // Object
 
 // Object initialiser or literal
-{ [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }
+var testObject = {
+  [ nameValuePair1
+  [, nameValuePair2
+  [, ...nameValuePairN] ] ]
+}
 
 // Called as a constructor
 new Object([value])

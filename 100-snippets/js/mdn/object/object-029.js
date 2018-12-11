@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.defineProperty()
 
 // Object.defineProperty(obj, prop, descriptor)

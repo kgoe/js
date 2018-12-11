@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // properties will be wrpped to objects

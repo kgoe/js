@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // properties on the prototype chain

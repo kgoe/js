@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // exceptions will interrupt ongoing copying task

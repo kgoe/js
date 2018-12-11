@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.create()
 
 // Using propertiesObject argument with Object.create()

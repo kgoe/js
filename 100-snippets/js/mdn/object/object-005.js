@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.assign()
 
 // merging objects with the came properties

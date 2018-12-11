@@ -1,3 +1,5 @@
+;
+// MDN
 // Object.create()
 
 // mixins possibility, inheritance from multiple objects
