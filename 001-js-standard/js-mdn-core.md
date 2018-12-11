@@ -32,6 +32,12 @@ Feedback
 -- Useful Lists
 -- Contribute
 
+### JavaScript MDN Core Reference
+Global Objects
+Statements
+Expressions and Operators
+Functions
+
 ### JavaScript Reference
 
 #### Standard Objects

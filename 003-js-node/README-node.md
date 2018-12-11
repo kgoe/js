@@ -2,6 +2,10 @@
 node.js is based on javascript and google chrome's v8 javascript engine
 
 ### links
+https://en.wikipedia.org/wiki/Node.js
+https://nodejs.org/en/
+https://www.npmjs.com/
+
 https://nodejs.org/en/
 https://www.npmjs.com/
 https://github.com/nodejs/node
