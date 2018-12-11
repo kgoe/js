@@ -1,3 +1,5 @@
+// Object.freeze()
+
 // Freezing Arrays
 
 let a = [0];

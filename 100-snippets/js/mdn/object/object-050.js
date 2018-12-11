@@ -1,3 +1,5 @@
+// Object.freeze()
+
 // shallow freeze
 var employee = {
   name: 'Mayank',

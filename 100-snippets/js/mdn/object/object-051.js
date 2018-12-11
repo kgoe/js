@@ -1,3 +1,5 @@
+// Object.freeze()
+
 /**
  * deepFreeze
  * @param {*} object

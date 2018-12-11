@@ -1,3 +1,5 @@
+// Object.freeze()
+
 // Examples : Freezing Objects
 
 var obj = {
