@@ -20,3 +20,5 @@ https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201
 14. Program
 15. Native ECMAScript objects
 16. Errors
+
+### TOC details
