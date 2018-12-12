@@ -25,8 +25,11 @@ Annex B - Comparability
 
 ### TOC details
 1. Scope
+
 2. Conformance
+
 3. References
+
 4. Overview
 4.1 Web Scripting
 4.2 Language Overview
@@ -55,6 +58,7 @@ Annex B - Comparability
 4.3.21 Number Object
 4.3.22 Infinity
 4.3.23 NaN
+
 5. Notational Conventions
 5.1 Syntactic and Lexical Grammars
 5.1.1 Context-Free Grammars
@@ -63,7 +67,9 @@ Annex B - Comparability
 5.1.4 The Syntactic Grammar
 5.1.5 Grammar Notation
 5.2 Algorithm Conventions
+
 6. Source Text
+
 7. Lexical Conventions
 7.1 Unicode Format-Control Characters
 7.2 White Space
@@ -84,6 +90,7 @@ Annex B - Comparability
 7.9 Automatic Semicolon Insertion
 7.9.1 Rules of Automatic Semicolon Insertion
 7.9.2 Examples of Automatic Semicolon Insertion
+
 8. Types
 8.1 The Undefined Type
 8.2 The Null Type
@@ -98,6 +105,7 @@ Annex B - Comparability
 8.7.2 PutValue (V, W)
 8.8 The List Type
 8.9 The Completion Type
+
 9. Type Conversion
 9.1 ToPrimitive
 9.2 ToBoolean
@@ -110,6 +118,7 @@ Annex B - Comparability
 9.8 ToString
 9.8.1 ToString Applied to the Number Type
 9.9 ToObject
+
 10. Execution Contexts
 10.1 Definitions
 10.1.1 Function Objects
@@ -124,6 +133,7 @@ Annex B - Comparability
 10.2.1 Global Code
 10.2.2 Eval Code
 10.2.3 Function Code
+
 11. Expressions
 11.1 Primary Expressions
 11.1.1 The this Keyword
@@ -185,6 +195,7 @@ Annex B - Comparability
 11.13.1 Simple Assignment ( =)
 11.13.2 Compound Assignment ( op=)
 11.14 Comma Operator ( , )
+
 12. Statements
 12.1 Block
 12.2 Variable statement
@@ -204,14 +215,17 @@ Annex B - Comparability
 12.12 Labelled Statements
 12.13 The throw statement
 12.14 The try statement
-13 Function Definition
+
+13. Function Definition
 13.1 Definitions
 13.1.1 Equated Grammar Productions
 13.1.2 Joined Objects
 13.2 Creating Function Objects
 13.2.1 [[Call]]
 13.2.2 [[Construct]]
+
 14. Program
+
 15. Native ECMAScript Objects
 15.1 The Global Object
 15.1.1 Value Properties of the Global Object
@@ -281,7 +295,9 @@ Annex B - Comparability
 15.11.5 Properties of Error Instances
 15.11.6 Native Error Types Used in This Standard
 15.11.7 NativeError Object Structure
+
 16. Errors
+
 Annex A - Grammar Summary
 A.1 Lexical Grammar
 A.2 Number Conversions
