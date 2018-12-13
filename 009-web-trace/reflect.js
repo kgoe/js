@@ -1,8 +1,6 @@
 var log = console.log;
 
-
-
-//log(JSON.stringify(getPropertyAndType(Reflect.__proto__)));
+// log(JSON.stringify(getPropertyAndType(Reflect.__proto__)));
 
 function getPropertyTree(thatParent){
 
