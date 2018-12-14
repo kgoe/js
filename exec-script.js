@@ -25,15 +25,15 @@ function executor( command ) {
     if (err) {
       // node couldn't execute the command
       console.log(`error: ${err}`);
-      return;
+      return false;
     } else {
       // the *entire* stdout and stderr (buffered)
       console.log(`===stdout===`);
       console.log(`${stdout}`);
       console.log(`===stderr===`);
       console.log(`${stderr}`);
-      return;
     }
+    return true;
   }
 
   exec(command, execCallback);
