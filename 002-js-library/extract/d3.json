@@ -1,1910 +1,4345 @@
 [
     [
-        "event",
-        "object"
-    ],
-    [
-        "format",
-        "function"
-    ],
-    [
-        "formatPrefix",
-        "function"
-    ],
-    [
-        "timeFormat",
-        "function"
-    ],
-    [
-        "timeParse",
-        "function"
-    ],
-    [
-        "utcFormat",
-        "function"
-    ],
-    [
-        "utcParse",
-        "function"
-    ],
-    [
-        "version",
-        "string"
+        "__esModule",
+        "boolean",
+        true
     ],
     [
         "bisect",
-        "function"
+        "function",
+        "function(a, x, lo, hi)"
     ],
     [
         "bisectRight",
-        "function"
+        "function",
+        "function(a, x, lo, hi)"
     ],
     [
         "bisectLeft",
-        "function"
+        "function",
+        "function(a, x, lo, hi)"
     ],
     [
         "ascending",
-        "function"
+        "function",
+        "ascending(a, b)"
     ],
     [
         "bisector",
-        "function"
+        "function",
+        "bisector(compare)"
     ],
     [
         "cross",
-        "function"
+        "function",
+        "cross(values0, values1, reduce)"
     ],
     [
         "descending",
-        "function"
+        "function",
+        "descending(a, b)"
     ],
     [
         "deviation",
-        "function"
+        "function",
+        "deviation(array, f)"
     ],
     [
         "extent",
-        "function"
+        "function",
+        "extent(values, valueof)"
     ],
     [
         "histogram",
-        "function"
+        "function",
+        "histogram()"
     ],
     [
         "thresholdFreedmanDiaconis",
-        "function"
+        "function",
+        "freedmanDiaconis(values, min, max)"
     ],
     [
         "thresholdScott",
-        "function"
+        "function",
+        "scott(values, min, max)"
     ],
     [
         "thresholdSturges",
-        "function"
+        "function",
+        "sturges(values)"
     ],
     [
         "max",
-        "function"
+        "function",
+        "max(values, valueof)"
     ],
     [
         "mean",
-        "function"
+        "function",
+        "mean(values, valueof)"
     ],
     [
         "median",
-        "function"
+        "function",
+        "median(values, valueof)"
     ],
     [
         "merge",
-        "function"
+        "function",
+        "merge(arrays)"
     ],
     [
         "min",
-        "function"
+        "function",
+        "min(values, valueof)"
     ],
     [
         "pairs",
-        "function"
+        "function",
+        "pairs(array, f)"
     ],
     [
         "permute",
-        "function"
+        "function",
+        "permute(array, indexes)"
     ],
     [
         "quantile",
-        "function"
+        "function",
+        "quantile(values, p, valueof)"
     ],
     [
         "range",
-        "function"
+        "function",
+        "range(start, stop, step)"
     ],
     [
         "scan",
-        "function"
+        "function",
+        "scan(values, compare)"
     ],
     [
         "shuffle",
-        "function"
+        "function",
+        "shuffle(array, i0, i1)"
     ],
     [
         "sum",
-        "function"
+        "function",
+        "sum(values, valueof)"
     ],
     [
         "ticks",
-        "function"
+        "function",
+        "ticks(start, stop, count)"
     ],
     [
         "tickIncrement",
-        "function"
+        "function",
+        "tickIncrement(start, stop, count)"
     ],
     [
         "tickStep",
-        "function"
+        "function",
+        "tickStep(start, stop, count)"
     ],
     [
         "transpose",
-        "function"
+        "function",
+        "transpose(matrix)"
     ],
     [
         "variance",
-        "function"
+        "function",
+        "variance(values, valueof)"
     ],
     [
         "zip",
-        "function"
+        "function",
+        "zip()"
     ],
     [
         "axisTop",
-        "function"
+        "function",
+        "axisTop(scale)"
     ],
     [
         "axisRight",
-        "function"
+        "function",
+        "axisRight(scale)"
     ],
     [
         "axisBottom",
-        "function"
+        "function",
+        "axisBottom(scale)"
     ],
     [
         "axisLeft",
-        "function"
+        "function",
+        "axisLeft(scale)"
     ],
     [
         "brush",
-        "function"
+        "function",
+        "brush()"
     ],
     [
         "brushX",
-        "function"
+        "function",
+        "brushX()"
     ],
     [
         "brushY",
-        "function"
+        "function",
+        "brushY()"
     ],
     [
         "brushSelection",
-        "function"
+        "function",
+        "brushSelection(node)"
     ],
     [
         "chord",
-        "function"
+        "function",
+        "chord()"
     ],
     [
         "ribbon",
-        "function"
+        "function",
+        "ribbon()"
     ],
     [
         "nest",
-        "function"
+        "function",
+        "nest()"
     ],
     [
         "set",
-        "function"
+        "function",
+        "set(object, f)"
     ],
     [
         "map",
-        "function"
+        "function",
+        "map(object, f)"
     ],
     [
         "keys",
-        "function"
+        "function",
+        "keys(map)"
     ],
     [
         "values",
-        "function"
+        "function",
+        "values(map)"
     ],
     [
         "entries",
-        "function"
+        "function",
+        "entries(map)"
     ],
     [
         "color",
-        "function"
+        "function",
+        "color(format)"
     ],
     [
         "rgb",
-        "function"
+        "function",
+        "rgb(r, g, b, opacity)"
     ],
     [
         "hsl",
-        "function"
+        "function",
+        "hsl(h, s, l, opacity)"
     ],
     [
         "lab",
-        "function"
+        "function",
+        "lab(l, a, b, opacity)"
     ],
     [
         "hcl",
-        "function"
+        "function",
+        "hcl(h, c, l, opacity)"
     ],
     [
         "lch",
-        "function"
+        "function",
+        "lch(l, c, h, opacity)"
     ],
     [
         "gray",
-        "function"
+        "function",
+        "gray(l, opacity)"
     ],
     [
         "cubehelix",
-        "function"
+        "function",
+        "cubehelix(h, s, l, opacity)"
     ],
     [
         "contours",
-        "function"
+        "function",
+        "contours()"
     ],
     [
         "contourDensity",
-        "function"
+        "function",
+        "density()"
     ],
     [
         "dispatch",
-        "function"
+        "function",
+        "dispatch()"
     ],
     [
         "drag",
-        "function"
+        "function",
+        "drag()"
     ],
     [
         "dragDisable",
-        "function"
+        "function",
+        "nodrag(view)"
     ],
     [
         "dragEnable",
-        "function"
+        "function",
+        "yesdrag(view, noclick)"
     ],
     [
         "dsvFormat",
-        "function"
+        "function",
+        "dsv(delimiter)"
     ],
     [
         "csvParse",
-        "function"
+        "function",
+        "parse(text, f)"
     ],
     [
         "csvParseRows",
-        "function"
+        "function",
+        "parseRows(text, f)"
     ],
     [
         "csvFormat",
-        "function"
+        "function",
+        "format(rows, columns)"
     ],
     [
         "csvFormatRows",
-        "function"
+        "function",
+        "formatRows(rows)"
     ],
     [
         "tsvParse",
-        "function"
+        "function",
+        "parse(text, f)"
     ],
     [
         "tsvParseRows",
-        "function"
+        "function",
+        "parseRows(text, f)"
     ],
     [
         "tsvFormat",
-        "function"
+        "function",
+        "format(rows, columns)"
     ],
     [
         "tsvFormatRows",
-        "function"
+        "function",
+        "formatRows(rows)"
     ],
     [
         "easeLinear",
-        "function"
+        "function",
+        "linear(t)"
     ],
     [
         "easeQuad",
-        "function"
+        "function",
+        "quadInOut(t)"
     ],
     [
         "easeQuadIn",
-        "function"
+        "function",
+        "quadIn(t)"
     ],
     [
         "easeQuadOut",
-        "function"
+        "function",
+        "quadOut(t)"
     ],
     [
         "easeQuadInOut",
-        "function"
+        "function",
+        "quadInOut(t)"
     ],
     [
         "easeCubic",
-        "function"
+        "function",
+        "cubicInOut(t)"
     ],
     [
         "easeCubicIn",
-        "function"
+        "function",
+        "cubicIn(t)"
     ],
     [
         "easeCubicOut",
-        "function"
+        "function",
+        "cubicOut(t)"
     ],
     [
         "easeCubicInOut",
-        "function"
+        "function",
+        "cubicInOut(t)"
     ],
     [
         "easePoly",
-        "function"
+        "function",
+        "polyInOut(t)"
     ],
     [
         "easePolyIn",
-        "function"
+        "function",
+        "polyIn(t)"
     ],
     [
         "easePolyOut",
-        "function"
+        "function",
+        "polyOut(t)"
     ],
     [
         "easePolyInOut",
-        "function"
+        "function",
+        "polyInOut(t)"
     ],
     [
         "easeSin",
-        "function"
+        "function",
+        "sinInOut(t)"
     ],
     [
         "easeSinIn",
-        "function"
+        "function",
+        "sinIn(t)"
     ],
     [
         "easeSinOut",
-        "function"
+        "function",
+        "sinOut(t)"
     ],
     [
         "easeSinInOut",
-        "function"
+        "function",
+        "sinInOut(t)"
     ],
     [
         "easeExp",
-        "function"
+        "function",
+        "expInOut(t)"
     ],
     [
         "easeExpIn",
-        "function"
+        "function",
+        "expIn(t)"
     ],
     [
         "easeExpOut",
-        "function"
+        "function",
+        "expOut(t)"
     ],
     [
         "easeExpInOut",
-        "function"
+        "function",
+        "expInOut(t)"
     ],
     [
         "easeCircle",
-        "function"
+        "function",
+        "circleInOut(t)"
     ],
     [
         "easeCircleIn",
-        "function"
+        "function",
+        "circleIn(t)"
     ],
     [
         "easeCircleOut",
-        "function"
+        "function",
+        "circleOut(t)"
     ],
     [
         "easeCircleInOut",
-        "function"
+        "function",
+        "circleInOut(t)"
     ],
     [
         "easeBounce",
-        "function"
+        "function",
+        "bounceOut(t)"
     ],
     [
         "easeBounceIn",
-        "function"
+        "function",
+        "bounceIn(t)"
     ],
     [
         "easeBounceOut",
-        "function"
+        "function",
+        "bounceOut(t)"
     ],
     [
         "easeBounceInOut",
-        "function"
+        "function",
+        "bounceInOut(t)"
     ],
     [
         "easeBack",
-        "function"
+        "function",
+        "backInOut(t)"
     ],
     [
         "easeBackIn",
-        "function"
+        "function",
+        "backIn(t)"
     ],
     [
         "easeBackOut",
-        "function"
+        "function",
+        "backOut(t)"
     ],
     [
         "easeBackInOut",
-        "function"
+        "function",
+        "backInOut(t)"
     ],
     [
         "easeElastic",
-        "function"
+        "function",
+        "elasticOut(t)"
     ],
     [
         "easeElasticIn",
-        "function"
+        "function",
+        "elasticIn(t)"
     ],
     [
         "easeElasticOut",
-        "function"
+        "function",
+        "elasticOut(t)"
     ],
     [
         "easeElasticInOut",
-        "function"
+        "function",
+        "elasticInOut(t)"
     ],
     [
         "blob",
-        "function"
+        "function",
+        "blob(input, init)"
     ],
     [
         "buffer",
-        "function"
+        "function",
+        "buffer(input, init)"
     ],
     [
         "dsv",
-        "function"
+        "function",
+        "dsv(delimiter, input, init, row)"
     ],
     [
         "csv",
-        "function"
+        "function",
+        "function(input, init, row)"
     ],
     [
         "tsv",
-        "function"
+        "function",
+        "function(input, init, row)"
     ],
     [
         "image",
-        "function"
+        "function",
+        "image(input, init)"
     ],
     [
         "json",
-        "function"
+        "function",
+        "json(input, init)"
     ],
     [
         "text",
-        "function"
+        "function",
+        "text(input, init)"
     ],
     [
         "xml",
-        "function"
+        "function",
+        "function(input, init)"
     ],
     [
         "html",
-        "function"
+        "function",
+        "function(input, init)"
     ],
     [
         "svg",
-        "function"
+        "function",
+        "function(input, init)"
     ],
     [
         "forceCenter",
-        "function"
+        "function",
+        "center(x, y)"
     ],
     [
         "forceCollide",
-        "function"
+        "function",
+        "collide(radius)"
     ],
     [
         "forceLink",
-        "function"
+        "function",
+        "link(links)"
     ],
     [
         "forceManyBody",
-        "function"
+        "function",
+        "manyBody()"
     ],
     [
         "forceRadial",
-        "function"
+        "function",
+        "radial(radius, x, y)"
     ],
     [
         "forceSimulation",
-        "function"
+        "function",
+        "simulation(nodes)"
     ],
     [
         "forceX",
-        "function"
+        "function",
+        "x$2(x)"
     ],
     [
         "forceY",
-        "function"
+        "function",
+        "y$2(y)"
+    ],
+    [
+        "format",
+        "function",
+        "newFormat(specifier)"
+    ],
+    [
+        "formatPrefix",
+        "function",
+        "formatPrefix(specifier, value)"
     ],
     [
         "formatDefaultLocale",
-        "function"
+        "function",
+        "defaultLocale(definition)"
     ],
     [
         "formatLocale",
-        "function"
+        "function",
+        "formatLocale(locale)"
     ],
     [
         "formatSpecifier",
-        "function"
+        "function",
+        "formatSpecifier(specifier)"
     ],
     [
         "precisionFixed",
-        "function"
+        "function",
+        "precisionFixed(step)"
     ],
     [
         "precisionPrefix",
-        "function"
+        "function",
+        "precisionPrefix(step, value)"
     ],
     [
         "precisionRound",
-        "function"
+        "function",
+        "precisionRound(step, max)"
     ],
     [
         "geoArea",
-        "function"
+        "function",
+        "area(object)"
     ],
     [
         "geoBounds",
-        "function"
+        "function",
+        "bounds(feature)"
     ],
     [
         "geoCentroid",
-        "function"
+        "function",
+        "centroid(object)"
     ],
     [
         "geoCircle",
-        "function"
+        "function",
+        "circle()"
     ],
     [
         "geoClipAntimeridian",
-        "function"
+        "function",
+        "function(sink)"
     ],
     [
         "geoClipCircle",
-        "function"
+        "function",
+        "clipCircle(radius)"
     ],
     [
         "geoClipExtent",
-        "function"
+        "function",
+        "extent()"
     ],
     [
         "geoClipRectangle",
-        "function"
+        "function",
+        "clipRectangle(x0, y0, x1, y1)"
     ],
     [
         "geoContains",
-        "function"
+        "function",
+        "contains(object, point)"
     ],
     [
         "geoDistance",
-        "function"
+        "function",
+        "distance(a, b)"
     ],
     [
         "geoGraticule",
-        "function"
+        "function",
+        "graticule()"
     ],
     [
         "geoGraticule10",
-        "function"
+        "function",
+        "graticule10()"
     ],
     [
         "geoInterpolate",
-        "function"
+        "function",
+        "interpolate(a, b)"
     ],
     [
         "geoLength",
-        "function"
+        "function",
+        "length(object)"
     ],
     [
         "geoPath",
-        "function"
+        "function",
+        "index(projection, context)"
     ],
     [
         "geoAlbers",
-        "function"
+        "function",
+        "albers()"
     ],
     [
         "geoAlbersUsa",
-        "function"
+        "function",
+        "albersUsa()"
     ],
     [
         "geoAzimuthalEqualArea",
-        "function"
+        "function",
+        "azimuthalEqualArea()"
     ],
     [
         "geoAzimuthalEqualAreaRaw",
-        "function"
+        "function",
+        "function(x, y)"
     ],
     [
         "geoAzimuthalEquidistant",
-        "function"
+        "function",
+        "azimuthalEquidistant()"
     ],
     [
         "geoAzimuthalEquidistantRaw",
-        "function"
+        "function",
+        "function(x, y)"
     ],
     [
         "geoConicConformal",
-        "function"
+        "function",
+        "conicConformal()"
     ],
     [
         "geoConicConformalRaw",
-        "function"
+        "function",
+        "conicConformalRaw(y0, y1)"
     ],
     [
         "geoConicEqualArea",
-        "function"
+        "function",
+        "conicEqualArea()"
     ],
     [
         "geoConicEqualAreaRaw",
-        "function"
+        "function",
+        "conicEqualAreaRaw(y0, y1)"
     ],
     [
         "geoConicEquidistant",
-        "function"
+        "function",
+        "conicEquidistant()"
     ],
     [
         "geoConicEquidistantRaw",
-        "function"
+        "function",
+        "conicEquidistantRaw(y0, y1)"
     ],
     [
         "geoEqualEarth",
-        "function"
+        "function",
+        "equalEarth()"
     ],
     [
         "geoEqualEarthRaw",
-        "function"
+        "function",
+        "equalEarthRaw(lambda, phi)"
     ],
     [
         "geoEquirectangular",
-        "function"
+        "function",
+        "equirectangular()"
     ],
     [
         "geoEquirectangularRaw",
-        "function"
+        "function",
+        "equirectangularRaw(lambda, phi)"
     ],
     [
         "geoGnomonic",
-        "function"
+        "function",
+        "gnomonic()"
     ],
     [
         "geoGnomonicRaw",
-        "function"
+        "function",
+        "gnomonicRaw(x, y)"
     ],
     [
         "geoIdentity",
-        "function"
+        "function",
+        "identity$1()"
     ],
     [
         "geoProjection",
-        "function"
+        "function",
+        "projection(project)"
     ],
     [
         "geoProjectionMutator",
-        "function"
+        "function",
+        "projectionMutator(projectAt)"
     ],
     [
         "geoMercator",
-        "function"
+        "function",
+        "mercator()"
     ],
     [
         "geoMercatorRaw",
-        "function"
+        "function",
+        "mercatorRaw(lambda, phi)"
     ],
     [
         "geoNaturalEarth1",
-        "function"
+        "function",
+        "naturalEarth1()"
     ],
     [
         "geoNaturalEarth1Raw",
-        "function"
+        "function",
+        "naturalEarth1Raw(lambda, phi)"
     ],
     [
         "geoOrthographic",
-        "function"
+        "function",
+        "orthographic()"
     ],
     [
         "geoOrthographicRaw",
-        "function"
+        "function",
+        "orthographicRaw(x, y)"
     ],
     [
         "geoStereographic",
-        "function"
+        "function",
+        "stereographic()"
     ],
     [
         "geoStereographicRaw",
-        "function"
+        "function",
+        "stereographicRaw(x, y)"
     ],
     [
         "geoTransverseMercator",
-        "function"
+        "function",
+        "transverseMercator()"
     ],
     [
         "geoTransverseMercatorRaw",
-        "function"
+        "function",
+        "transverseMercatorRaw(lambda, phi)"
     ],
     [
         "geoRotation",
-        "function"
+        "function",
+        "rotation(rotate)"
     ],
     [
         "geoStream",
-        "function"
+        "function",
+        "geoStream(object, stream)"
     ],
     [
         "geoTransform",
-        "function"
+        "function",
+        "transform(methods)"
     ],
     [
         "cluster",
-        "function"
+        "function",
+        "cluster()"
     ],
     [
         "hierarchy",
-        "function"
+        "function",
+        "hierarchy(data, children)"
     ],
     [
         "pack",
-        "function"
+        "function",
+        "index()"
     ],
     [
         "packSiblings",
-        "function"
+        "function",
+        "siblings(circles)"
     ],
     [
         "packEnclose",
-        "function"
+        "function",
+        "enclose(circles)"
     ],
     [
         "partition",
-        "function"
+        "function",
+        "partition()"
     ],
     [
         "stratify",
-        "function"
+        "function",
+        "stratify()"
     ],
     [
         "tree",
-        "function"
+        "function",
+        "tree()"
     ],
     [
         "treemap",
-        "function"
+        "function",
+        "index$1()"
     ],
     [
         "treemapBinary",
-        "function"
+        "function",
+        "binary(parent, x0, y0, x1, y1)"
     ],
     [
         "treemapDice",
-        "function"
+        "function",
+        "treemapDice(parent, x0, y0, x1, y1)"
     ],
     [
         "treemapSlice",
-        "function"
+        "function",
+        "treemapSlice(parent, x0, y0, x1, y1)"
     ],
     [
         "treemapSliceDice",
-        "function"
+        "function",
+        "sliceDice(parent, x0, y0, x1, y1)"
     ],
     [
         "treemapSquarify",
-        "function"
+        "function",
+        "squarify(parent, x0, y0, x1, y1)"
     ],
     [
         "treemapResquarify",
-        "function"
+        "function",
+        "resquarify(parent, x0, y0, x1, y1)"
     ],
     [
         "interpolate",
-        "function"
+        "function",
+        "value(a, b)"
     ],
     [
         "interpolateArray",
-        "function"
+        "function",
+        "array(a, b)"
     ],
     [
         "interpolateBasis",
-        "function"
+        "function",
+        "basis$1(values)"
     ],
     [
         "interpolateBasisClosed",
-        "function"
+        "function",
+        "basisClosed(values)"
     ],
     [
         "interpolateDate",
-        "function"
+        "function",
+        "date(a, b)"
     ],
     [
         "interpolateDiscrete",
-        "function"
+        "function",
+        "discrete(range)"
     ],
     [
         "interpolateHue",
-        "function"
+        "function",
+        "hue$1(a, b)"
     ],
     [
         "interpolateNumber",
-        "function"
+        "function",
+        "number(a, b)"
     ],
     [
         "interpolateObject",
-        "function"
+        "function",
+        "object(a, b)"
     ],
     [
         "interpolateRound",
-        "function"
+        "function",
+        "round(a, b)"
     ],
     [
         "interpolateString",
-        "function"
+        "function",
+        "string(a, b)"
     ],
     [
         "interpolateTransformCss",
-        "function"
+        "function",
+        "function(a, b)"
     ],
     [
         "interpolateTransformSvg",
-        "function"
+        "function",
+        "function(a, b)"
     ],
     [
         "interpolateZoom",
-        "function"
+        "function",
+        "zoom(p0, p1)"
     ],
     [
         "interpolateRgb",
-        "function"
+        "function",
+        "rgb(start, end)"
     ],
     [
         "interpolateRgbBasis",
-        "function"
+        "function",
+        "function(colors)"
     ],
     [
         "interpolateRgbBasisClosed",
-        "function"
+        "function",
+        "function(colors)"
     ],
     [
         "interpolateHsl",
-        "function"
+        "function",
+        "function(start, end)"
     ],
     [
         "interpolateHslLong",
-        "function"
+        "function",
+        "function(start, end)"
     ],
     [
         "interpolateLab",
-        "function"
+        "function",
+        "lab(start, end)"
     ],
     [
         "interpolateHcl",
-        "function"
+        "function",
+        "function(start, end)"
     ],
     [
         "interpolateHclLong",
-        "function"
+        "function",
+        "function(start, end)"
     ],
     [
         "interpolateCubehelix",
-        "function"
+        "function",
+        "cubehelix(start, end)"
     ],
     [
         "interpolateCubehelixLong",
-        "function"
+        "function",
+        "cubehelix(start, end)"
     ],
     [
         "piecewise",
-        "function"
+        "function",
+        "piecewise(interpolate, values)"
     ],
     [
         "quantize",
-        "function"
+        "function",
+        "quantize(interpolator, n)"
     ],
     [
         "path",
-        "function"
+        "function",
+        "path()"
     ],
     [
         "polygonArea",
-        "function"
+        "function",
+        "area(polygon)"
     ],
     [
         "polygonCentroid",
-        "function"
+        "function",
+        "centroid(polygon)"
     ],
     [
         "polygonHull",
-        "function"
+        "function",
+        "hull(points)"
     ],
     [
         "polygonContains",
-        "function"
+        "function",
+        "contains(polygon, point)"
     ],
     [
         "polygonLength",
-        "function"
+        "function",
+        "length(polygon)"
     ],
     [
         "quadtree",
-        "function"
+        "function",
+        "quadtree(nodes, x, y)"
     ],
     [
         "randomUniform",
-        "function"
+        "function",
+        "randomUniform(min, max)"
     ],
     [
         "randomNormal",
-        "function"
+        "function",
+        "randomNormal(mu, sigma)"
     ],
     [
         "randomLogNormal",
-        "function"
+        "function",
+        "randomLogNormal()"
     ],
     [
         "randomBates",
-        "function"
+        "function",
+        "randomBates(n)"
     ],
     [
         "randomIrwinHall",
-        "function"
+        "function",
+        "randomIrwinHall(n)"
     ],
     [
         "randomExponential",
-        "function"
+        "function",
+        "randomExponential(lambda)"
     ],
     [
         "scaleBand",
-        "function"
+        "function",
+        "band()"
     ],
     [
         "scalePoint",
-        "function"
+        "function",
+        "point()"
     ],
     [
         "scaleIdentity",
-        "function"
+        "function",
+        "identity()"
     ],
     [
         "scaleLinear",
-        "function"
+        "function",
+        "linear()"
     ],
     [
         "scaleLog",
-        "function"
+        "function",
+        "log()"
     ],
     [
         "scaleOrdinal",
-        "function"
+        "function",
+        "ordinal(range)"
     ],
     [
         "scaleImplicit",
-        "object"
+        "object",
+        {
+            "name": "implicit"
+        }
     ],
     [
         "scalePow",
-        "function"
+        "function",
+        "pow()"
     ],
     [
         "scaleSqrt",
-        "function"
+        "function",
+        "sqrt()"
     ],
     [
         "scaleQuantile",
-        "function"
+        "function",
+        "quantile()"
     ],
     [
         "scaleQuantize",
-        "function"
+        "function",
+        "quantize()"
     ],
     [
         "scaleThreshold",
-        "function"
+        "function",
+        "threshold()"
     ],
     [
         "scaleTime",
-        "function"
+        "function",
+        "time()"
     ],
     [
         "scaleUtc",
-        "function"
+        "function",
+        "utcTime()"
     ],
     [
         "scaleSequential",
-        "function"
+        "function",
+        "sequential(interpolator)"
     ],
     [
         "scaleDiverging",
-        "function"
+        "function",
+        "diverging(interpolator)"
     ],
     [
         "schemeCategory10",
-        "object"
+        "object",
+        [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22",
+            "#17becf"
+        ]
     ],
     [
         "schemeAccent",
-        "object"
+        "object",
+        [
+            "#7fc97f",
+            "#beaed4",
+            "#fdc086",
+            "#ffff99",
+            "#386cb0",
+            "#f0027f",
+            "#bf5b17",
+            "#666666"
+        ]
     ],
     [
         "schemeDark2",
-        "object"
+        "object",
+        [
+            "#1b9e77",
+            "#d95f02",
+            "#7570b3",
+            "#e7298a",
+            "#66a61e",
+            "#e6ab02",
+            "#a6761d",
+            "#666666"
+        ]
     ],
     [
         "schemePaired",
-        "object"
+        "object",
+        [
+            "#a6cee3",
+            "#1f78b4",
+            "#b2df8a",
+            "#33a02c",
+            "#fb9a99",
+            "#e31a1c",
+            "#fdbf6f",
+            "#ff7f00",
+            "#cab2d6",
+            "#6a3d9a",
+            "#ffff99",
+            "#b15928"
+        ]
     ],
     [
         "schemePastel1",
-        "object"
+        "object",
+        [
+            "#fbb4ae",
+            "#b3cde3",
+            "#ccebc5",
+            "#decbe4",
+            "#fed9a6",
+            "#ffffcc",
+            "#e5d8bd",
+            "#fddaec",
+            "#f2f2f2"
+        ]
     ],
     [
         "schemePastel2",
-        "object"
+        "object",
+        [
+            "#b3e2cd",
+            "#fdcdac",
+            "#cbd5e8",
+            "#f4cae4",
+            "#e6f5c9",
+            "#fff2ae",
+            "#f1e2cc",
+            "#cccccc"
+        ]
     ],
     [
         "schemeSet1",
-        "object"
+        "object",
+        [
+            "#e41a1c",
+            "#377eb8",
+            "#4daf4a",
+            "#984ea3",
+            "#ff7f00",
+            "#ffff33",
+            "#a65628",
+            "#f781bf",
+            "#999999"
+        ]
     ],
     [
         "schemeSet2",
-        "object"
+        "object",
+        [
+            "#66c2a5",
+            "#fc8d62",
+            "#8da0cb",
+            "#e78ac3",
+            "#a6d854",
+            "#ffd92f",
+            "#e5c494",
+            "#b3b3b3"
+        ]
     ],
     [
         "schemeSet3",
-        "object"
+        "object",
+        [
+            "#8dd3c7",
+            "#ffffb3",
+            "#bebada",
+            "#fb8072",
+            "#80b1d3",
+            "#fdb462",
+            "#b3de69",
+            "#fccde5",
+            "#d9d9d9",
+            "#bc80bd",
+            "#ccebc5",
+            "#ffed6f"
+        ]
     ],
     [
         "interpolateBrBG",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeBrBG",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#d8b365",
+                "#f5f5f5",
+                "#5ab4ac"
+            ],
+            [
+                "#a6611a",
+                "#dfc27d",
+                "#80cdc1",
+                "#018571"
+            ],
+            [
+                "#a6611a",
+                "#dfc27d",
+                "#f5f5f5",
+                "#80cdc1",
+                "#018571"
+            ],
+            [
+                "#8c510a",
+                "#d8b365",
+                "#f6e8c3",
+                "#c7eae5",
+                "#5ab4ac",
+                "#01665e"
+            ],
+            [
+                "#8c510a",
+                "#d8b365",
+                "#f6e8c3",
+                "#f5f5f5",
+                "#c7eae5",
+                "#5ab4ac",
+                "#01665e"
+            ],
+            [
+                "#8c510a",
+                "#bf812d",
+                "#dfc27d",
+                "#f6e8c3",
+                "#c7eae5",
+                "#80cdc1",
+                "#35978f",
+                "#01665e"
+            ],
+            [
+                "#8c510a",
+                "#bf812d",
+                "#dfc27d",
+                "#f6e8c3",
+                "#f5f5f5",
+                "#c7eae5",
+                "#80cdc1",
+                "#35978f",
+                "#01665e"
+            ],
+            [
+                "#543005",
+                "#8c510a",
+                "#bf812d",
+                "#dfc27d",
+                "#f6e8c3",
+                "#c7eae5",
+                "#80cdc1",
+                "#35978f",
+                "#01665e",
+                "#003c30"
+            ],
+            [
+                "#543005",
+                "#8c510a",
+                "#bf812d",
+                "#dfc27d",
+                "#f6e8c3",
+                "#f5f5f5",
+                "#c7eae5",
+                "#80cdc1",
+                "#35978f",
+                "#01665e",
+                "#003c30"
+            ]
+        ]
     ],
     [
         "interpolatePRGn",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePRGn",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#af8dc3",
+                "#f7f7f7",
+                "#7fbf7b"
+            ],
+            [
+                "#7b3294",
+                "#c2a5cf",
+                "#a6dba0",
+                "#008837"
+            ],
+            [
+                "#7b3294",
+                "#c2a5cf",
+                "#f7f7f7",
+                "#a6dba0",
+                "#008837"
+            ],
+            [
+                "#762a83",
+                "#af8dc3",
+                "#e7d4e8",
+                "#d9f0d3",
+                "#7fbf7b",
+                "#1b7837"
+            ],
+            [
+                "#762a83",
+                "#af8dc3",
+                "#e7d4e8",
+                "#f7f7f7",
+                "#d9f0d3",
+                "#7fbf7b",
+                "#1b7837"
+            ],
+            [
+                "#762a83",
+                "#9970ab",
+                "#c2a5cf",
+                "#e7d4e8",
+                "#d9f0d3",
+                "#a6dba0",
+                "#5aae61",
+                "#1b7837"
+            ],
+            [
+                "#762a83",
+                "#9970ab",
+                "#c2a5cf",
+                "#e7d4e8",
+                "#f7f7f7",
+                "#d9f0d3",
+                "#a6dba0",
+                "#5aae61",
+                "#1b7837"
+            ],
+            [
+                "#40004b",
+                "#762a83",
+                "#9970ab",
+                "#c2a5cf",
+                "#e7d4e8",
+                "#d9f0d3",
+                "#a6dba0",
+                "#5aae61",
+                "#1b7837",
+                "#00441b"
+            ],
+            [
+                "#40004b",
+                "#762a83",
+                "#9970ab",
+                "#c2a5cf",
+                "#e7d4e8",
+                "#f7f7f7",
+                "#d9f0d3",
+                "#a6dba0",
+                "#5aae61",
+                "#1b7837",
+                "#00441b"
+            ]
+        ]
     ],
     [
         "interpolatePiYG",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePiYG",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e9a3c9",
+                "#f7f7f7",
+                "#a1d76a"
+            ],
+            [
+                "#d01c8b",
+                "#f1b6da",
+                "#b8e186",
+                "#4dac26"
+            ],
+            [
+                "#d01c8b",
+                "#f1b6da",
+                "#f7f7f7",
+                "#b8e186",
+                "#4dac26"
+            ],
+            [
+                "#c51b7d",
+                "#e9a3c9",
+                "#fde0ef",
+                "#e6f5d0",
+                "#a1d76a",
+                "#4d9221"
+            ],
+            [
+                "#c51b7d",
+                "#e9a3c9",
+                "#fde0ef",
+                "#f7f7f7",
+                "#e6f5d0",
+                "#a1d76a",
+                "#4d9221"
+            ],
+            [
+                "#c51b7d",
+                "#de77ae",
+                "#f1b6da",
+                "#fde0ef",
+                "#e6f5d0",
+                "#b8e186",
+                "#7fbc41",
+                "#4d9221"
+            ],
+            [
+                "#c51b7d",
+                "#de77ae",
+                "#f1b6da",
+                "#fde0ef",
+                "#f7f7f7",
+                "#e6f5d0",
+                "#b8e186",
+                "#7fbc41",
+                "#4d9221"
+            ],
+            [
+                "#8e0152",
+                "#c51b7d",
+                "#de77ae",
+                "#f1b6da",
+                "#fde0ef",
+                "#e6f5d0",
+                "#b8e186",
+                "#7fbc41",
+                "#4d9221",
+                "#276419"
+            ],
+            [
+                "#8e0152",
+                "#c51b7d",
+                "#de77ae",
+                "#f1b6da",
+                "#fde0ef",
+                "#f7f7f7",
+                "#e6f5d0",
+                "#b8e186",
+                "#7fbc41",
+                "#4d9221",
+                "#276419"
+            ]
+        ]
     ],
     [
         "interpolatePuOr",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePuOr",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#998ec3",
+                "#f7f7f7",
+                "#f1a340"
+            ],
+            [
+                "#5e3c99",
+                "#b2abd2",
+                "#fdb863",
+                "#e66101"
+            ],
+            [
+                "#5e3c99",
+                "#b2abd2",
+                "#f7f7f7",
+                "#fdb863",
+                "#e66101"
+            ],
+            [
+                "#542788",
+                "#998ec3",
+                "#d8daeb",
+                "#fee0b6",
+                "#f1a340",
+                "#b35806"
+            ],
+            [
+                "#542788",
+                "#998ec3",
+                "#d8daeb",
+                "#f7f7f7",
+                "#fee0b6",
+                "#f1a340",
+                "#b35806"
+            ],
+            [
+                "#542788",
+                "#8073ac",
+                "#b2abd2",
+                "#d8daeb",
+                "#fee0b6",
+                "#fdb863",
+                "#e08214",
+                "#b35806"
+            ],
+            [
+                "#542788",
+                "#8073ac",
+                "#b2abd2",
+                "#d8daeb",
+                "#f7f7f7",
+                "#fee0b6",
+                "#fdb863",
+                "#e08214",
+                "#b35806"
+            ],
+            [
+                "#2d004b",
+                "#542788",
+                "#8073ac",
+                "#b2abd2",
+                "#d8daeb",
+                "#fee0b6",
+                "#fdb863",
+                "#e08214",
+                "#b35806",
+                "#7f3b08"
+            ],
+            [
+                "#2d004b",
+                "#542788",
+                "#8073ac",
+                "#b2abd2",
+                "#d8daeb",
+                "#f7f7f7",
+                "#fee0b6",
+                "#fdb863",
+                "#e08214",
+                "#b35806",
+                "#7f3b08"
+            ]
+        ]
     ],
     [
         "interpolateRdBu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeRdBu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#ef8a62",
+                "#f7f7f7",
+                "#67a9cf"
+            ],
+            [
+                "#ca0020",
+                "#f4a582",
+                "#92c5de",
+                "#0571b0"
+            ],
+            [
+                "#ca0020",
+                "#f4a582",
+                "#f7f7f7",
+                "#92c5de",
+                "#0571b0"
+            ],
+            [
+                "#b2182b",
+                "#ef8a62",
+                "#fddbc7",
+                "#d1e5f0",
+                "#67a9cf",
+                "#2166ac"
+            ],
+            [
+                "#b2182b",
+                "#ef8a62",
+                "#fddbc7",
+                "#f7f7f7",
+                "#d1e5f0",
+                "#67a9cf",
+                "#2166ac"
+            ],
+            [
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#d1e5f0",
+                "#92c5de",
+                "#4393c3",
+                "#2166ac"
+            ],
+            [
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#f7f7f7",
+                "#d1e5f0",
+                "#92c5de",
+                "#4393c3",
+                "#2166ac"
+            ],
+            [
+                "#67001f",
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#d1e5f0",
+                "#92c5de",
+                "#4393c3",
+                "#2166ac",
+                "#053061"
+            ],
+            [
+                "#67001f",
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#f7f7f7",
+                "#d1e5f0",
+                "#92c5de",
+                "#4393c3",
+                "#2166ac",
+                "#053061"
+            ]
+        ]
     ],
     [
         "interpolateRdGy",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeRdGy",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#ef8a62",
+                "#ffffff",
+                "#999999"
+            ],
+            [
+                "#ca0020",
+                "#f4a582",
+                "#bababa",
+                "#404040"
+            ],
+            [
+                "#ca0020",
+                "#f4a582",
+                "#ffffff",
+                "#bababa",
+                "#404040"
+            ],
+            [
+                "#b2182b",
+                "#ef8a62",
+                "#fddbc7",
+                "#e0e0e0",
+                "#999999",
+                "#4d4d4d"
+            ],
+            [
+                "#b2182b",
+                "#ef8a62",
+                "#fddbc7",
+                "#ffffff",
+                "#e0e0e0",
+                "#999999",
+                "#4d4d4d"
+            ],
+            [
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#e0e0e0",
+                "#bababa",
+                "#878787",
+                "#4d4d4d"
+            ],
+            [
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#ffffff",
+                "#e0e0e0",
+                "#bababa",
+                "#878787",
+                "#4d4d4d"
+            ],
+            [
+                "#67001f",
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#e0e0e0",
+                "#bababa",
+                "#878787",
+                "#4d4d4d",
+                "#1a1a1a"
+            ],
+            [
+                "#67001f",
+                "#b2182b",
+                "#d6604d",
+                "#f4a582",
+                "#fddbc7",
+                "#ffffff",
+                "#e0e0e0",
+                "#bababa",
+                "#878787",
+                "#4d4d4d",
+                "#1a1a1a"
+            ]
+        ]
     ],
     [
         "interpolateRdYlBu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeRdYlBu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fc8d59",
+                "#ffffbf",
+                "#91bfdb"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#abd9e9",
+                "#2c7bb6"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#ffffbf",
+                "#abd9e9",
+                "#2c7bb6"
+            ],
+            [
+                "#d73027",
+                "#fc8d59",
+                "#fee090",
+                "#e0f3f8",
+                "#91bfdb",
+                "#4575b4"
+            ],
+            [
+                "#d73027",
+                "#fc8d59",
+                "#fee090",
+                "#ffffbf",
+                "#e0f3f8",
+                "#91bfdb",
+                "#4575b4"
+            ],
+            [
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee090",
+                "#e0f3f8",
+                "#abd9e9",
+                "#74add1",
+                "#4575b4"
+            ],
+            [
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee090",
+                "#ffffbf",
+                "#e0f3f8",
+                "#abd9e9",
+                "#74add1",
+                "#4575b4"
+            ],
+            [
+                "#a50026",
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee090",
+                "#e0f3f8",
+                "#abd9e9",
+                "#74add1",
+                "#4575b4",
+                "#313695"
+            ],
+            [
+                "#a50026",
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee090",
+                "#ffffbf",
+                "#e0f3f8",
+                "#abd9e9",
+                "#74add1",
+                "#4575b4",
+                "#313695"
+            ]
+        ]
     ],
     [
         "interpolateRdYlGn",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeRdYlGn",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fc8d59",
+                "#ffffbf",
+                "#91cf60"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#a6d96a",
+                "#1a9641"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#ffffbf",
+                "#a6d96a",
+                "#1a9641"
+            ],
+            [
+                "#d73027",
+                "#fc8d59",
+                "#fee08b",
+                "#d9ef8b",
+                "#91cf60",
+                "#1a9850"
+            ],
+            [
+                "#d73027",
+                "#fc8d59",
+                "#fee08b",
+                "#ffffbf",
+                "#d9ef8b",
+                "#91cf60",
+                "#1a9850"
+            ],
+            [
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#d9ef8b",
+                "#a6d96a",
+                "#66bd63",
+                "#1a9850"
+            ],
+            [
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#ffffbf",
+                "#d9ef8b",
+                "#a6d96a",
+                "#66bd63",
+                "#1a9850"
+            ],
+            [
+                "#a50026",
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#d9ef8b",
+                "#a6d96a",
+                "#66bd63",
+                "#1a9850",
+                "#006837"
+            ],
+            [
+                "#a50026",
+                "#d73027",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#ffffbf",
+                "#d9ef8b",
+                "#a6d96a",
+                "#66bd63",
+                "#1a9850",
+                "#006837"
+            ]
+        ]
     ],
     [
         "interpolateSpectral",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeSpectral",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fc8d59",
+                "#ffffbf",
+                "#99d594"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#abdda4",
+                "#2b83ba"
+            ],
+            [
+                "#d7191c",
+                "#fdae61",
+                "#ffffbf",
+                "#abdda4",
+                "#2b83ba"
+            ],
+            [
+                "#d53e4f",
+                "#fc8d59",
+                "#fee08b",
+                "#e6f598",
+                "#99d594",
+                "#3288bd"
+            ],
+            [
+                "#d53e4f",
+                "#fc8d59",
+                "#fee08b",
+                "#ffffbf",
+                "#e6f598",
+                "#99d594",
+                "#3288bd"
+            ],
+            [
+                "#d53e4f",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#e6f598",
+                "#abdda4",
+                "#66c2a5",
+                "#3288bd"
+            ],
+            [
+                "#d53e4f",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#ffffbf",
+                "#e6f598",
+                "#abdda4",
+                "#66c2a5",
+                "#3288bd"
+            ],
+            [
+                "#9e0142",
+                "#d53e4f",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#e6f598",
+                "#abdda4",
+                "#66c2a5",
+                "#3288bd",
+                "#5e4fa2"
+            ],
+            [
+                "#9e0142",
+                "#d53e4f",
+                "#f46d43",
+                "#fdae61",
+                "#fee08b",
+                "#ffffbf",
+                "#e6f598",
+                "#abdda4",
+                "#66c2a5",
+                "#3288bd",
+                "#5e4fa2"
+            ]
+        ]
     ],
     [
         "interpolateBuGn",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeBuGn",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e5f5f9",
+                "#99d8c9",
+                "#2ca25f"
+            ],
+            [
+                "#edf8fb",
+                "#b2e2e2",
+                "#66c2a4",
+                "#238b45"
+            ],
+            [
+                "#edf8fb",
+                "#b2e2e2",
+                "#66c2a4",
+                "#2ca25f",
+                "#006d2c"
+            ],
+            [
+                "#edf8fb",
+                "#ccece6",
+                "#99d8c9",
+                "#66c2a4",
+                "#2ca25f",
+                "#006d2c"
+            ],
+            [
+                "#edf8fb",
+                "#ccece6",
+                "#99d8c9",
+                "#66c2a4",
+                "#41ae76",
+                "#238b45",
+                "#005824"
+            ],
+            [
+                "#f7fcfd",
+                "#e5f5f9",
+                "#ccece6",
+                "#99d8c9",
+                "#66c2a4",
+                "#41ae76",
+                "#238b45",
+                "#005824"
+            ],
+            [
+                "#f7fcfd",
+                "#e5f5f9",
+                "#ccece6",
+                "#99d8c9",
+                "#66c2a4",
+                "#41ae76",
+                "#238b45",
+                "#006d2c",
+                "#00441b"
+            ]
+        ]
     ],
     [
         "interpolateBuPu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeBuPu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e0ecf4",
+                "#9ebcda",
+                "#8856a7"
+            ],
+            [
+                "#edf8fb",
+                "#b3cde3",
+                "#8c96c6",
+                "#88419d"
+            ],
+            [
+                "#edf8fb",
+                "#b3cde3",
+                "#8c96c6",
+                "#8856a7",
+                "#810f7c"
+            ],
+            [
+                "#edf8fb",
+                "#bfd3e6",
+                "#9ebcda",
+                "#8c96c6",
+                "#8856a7",
+                "#810f7c"
+            ],
+            [
+                "#edf8fb",
+                "#bfd3e6",
+                "#9ebcda",
+                "#8c96c6",
+                "#8c6bb1",
+                "#88419d",
+                "#6e016b"
+            ],
+            [
+                "#f7fcfd",
+                "#e0ecf4",
+                "#bfd3e6",
+                "#9ebcda",
+                "#8c96c6",
+                "#8c6bb1",
+                "#88419d",
+                "#6e016b"
+            ],
+            [
+                "#f7fcfd",
+                "#e0ecf4",
+                "#bfd3e6",
+                "#9ebcda",
+                "#8c96c6",
+                "#8c6bb1",
+                "#88419d",
+                "#810f7c",
+                "#4d004b"
+            ]
+        ]
     ],
     [
         "interpolateGnBu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeGnBu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e0f3db",
+                "#a8ddb5",
+                "#43a2ca"
+            ],
+            [
+                "#f0f9e8",
+                "#bae4bc",
+                "#7bccc4",
+                "#2b8cbe"
+            ],
+            [
+                "#f0f9e8",
+                "#bae4bc",
+                "#7bccc4",
+                "#43a2ca",
+                "#0868ac"
+            ],
+            [
+                "#f0f9e8",
+                "#ccebc5",
+                "#a8ddb5",
+                "#7bccc4",
+                "#43a2ca",
+                "#0868ac"
+            ],
+            [
+                "#f0f9e8",
+                "#ccebc5",
+                "#a8ddb5",
+                "#7bccc4",
+                "#4eb3d3",
+                "#2b8cbe",
+                "#08589e"
+            ],
+            [
+                "#f7fcf0",
+                "#e0f3db",
+                "#ccebc5",
+                "#a8ddb5",
+                "#7bccc4",
+                "#4eb3d3",
+                "#2b8cbe",
+                "#08589e"
+            ],
+            [
+                "#f7fcf0",
+                "#e0f3db",
+                "#ccebc5",
+                "#a8ddb5",
+                "#7bccc4",
+                "#4eb3d3",
+                "#2b8cbe",
+                "#0868ac",
+                "#084081"
+            ]
+        ]
     ],
     [
         "interpolateOrRd",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeOrRd",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fee8c8",
+                "#fdbb84",
+                "#e34a33"
+            ],
+            [
+                "#fef0d9",
+                "#fdcc8a",
+                "#fc8d59",
+                "#d7301f"
+            ],
+            [
+                "#fef0d9",
+                "#fdcc8a",
+                "#fc8d59",
+                "#e34a33",
+                "#b30000"
+            ],
+            [
+                "#fef0d9",
+                "#fdd49e",
+                "#fdbb84",
+                "#fc8d59",
+                "#e34a33",
+                "#b30000"
+            ],
+            [
+                "#fef0d9",
+                "#fdd49e",
+                "#fdbb84",
+                "#fc8d59",
+                "#ef6548",
+                "#d7301f",
+                "#990000"
+            ],
+            [
+                "#fff7ec",
+                "#fee8c8",
+                "#fdd49e",
+                "#fdbb84",
+                "#fc8d59",
+                "#ef6548",
+                "#d7301f",
+                "#990000"
+            ],
+            [
+                "#fff7ec",
+                "#fee8c8",
+                "#fdd49e",
+                "#fdbb84",
+                "#fc8d59",
+                "#ef6548",
+                "#d7301f",
+                "#b30000",
+                "#7f0000"
+            ]
+        ]
     ],
     [
         "interpolatePuBuGn",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePuBuGn",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#ece2f0",
+                "#a6bddb",
+                "#1c9099"
+            ],
+            [
+                "#f6eff7",
+                "#bdc9e1",
+                "#67a9cf",
+                "#02818a"
+            ],
+            [
+                "#f6eff7",
+                "#bdc9e1",
+                "#67a9cf",
+                "#1c9099",
+                "#016c59"
+            ],
+            [
+                "#f6eff7",
+                "#d0d1e6",
+                "#a6bddb",
+                "#67a9cf",
+                "#1c9099",
+                "#016c59"
+            ],
+            [
+                "#f6eff7",
+                "#d0d1e6",
+                "#a6bddb",
+                "#67a9cf",
+                "#3690c0",
+                "#02818a",
+                "#016450"
+            ],
+            [
+                "#fff7fb",
+                "#ece2f0",
+                "#d0d1e6",
+                "#a6bddb",
+                "#67a9cf",
+                "#3690c0",
+                "#02818a",
+                "#016450"
+            ],
+            [
+                "#fff7fb",
+                "#ece2f0",
+                "#d0d1e6",
+                "#a6bddb",
+                "#67a9cf",
+                "#3690c0",
+                "#02818a",
+                "#016c59",
+                "#014636"
+            ]
+        ]
     ],
     [
         "interpolatePuBu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePuBu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#ece7f2",
+                "#a6bddb",
+                "#2b8cbe"
+            ],
+            [
+                "#f1eef6",
+                "#bdc9e1",
+                "#74a9cf",
+                "#0570b0"
+            ],
+            [
+                "#f1eef6",
+                "#bdc9e1",
+                "#74a9cf",
+                "#2b8cbe",
+                "#045a8d"
+            ],
+            [
+                "#f1eef6",
+                "#d0d1e6",
+                "#a6bddb",
+                "#74a9cf",
+                "#2b8cbe",
+                "#045a8d"
+            ],
+            [
+                "#f1eef6",
+                "#d0d1e6",
+                "#a6bddb",
+                "#74a9cf",
+                "#3690c0",
+                "#0570b0",
+                "#034e7b"
+            ],
+            [
+                "#fff7fb",
+                "#ece7f2",
+                "#d0d1e6",
+                "#a6bddb",
+                "#74a9cf",
+                "#3690c0",
+                "#0570b0",
+                "#034e7b"
+            ],
+            [
+                "#fff7fb",
+                "#ece7f2",
+                "#d0d1e6",
+                "#a6bddb",
+                "#74a9cf",
+                "#3690c0",
+                "#0570b0",
+                "#045a8d",
+                "#023858"
+            ]
+        ]
     ],
     [
         "interpolatePuRd",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePuRd",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e7e1ef",
+                "#c994c7",
+                "#dd1c77"
+            ],
+            [
+                "#f1eef6",
+                "#d7b5d8",
+                "#df65b0",
+                "#ce1256"
+            ],
+            [
+                "#f1eef6",
+                "#d7b5d8",
+                "#df65b0",
+                "#dd1c77",
+                "#980043"
+            ],
+            [
+                "#f1eef6",
+                "#d4b9da",
+                "#c994c7",
+                "#df65b0",
+                "#dd1c77",
+                "#980043"
+            ],
+            [
+                "#f1eef6",
+                "#d4b9da",
+                "#c994c7",
+                "#df65b0",
+                "#e7298a",
+                "#ce1256",
+                "#91003f"
+            ],
+            [
+                "#f7f4f9",
+                "#e7e1ef",
+                "#d4b9da",
+                "#c994c7",
+                "#df65b0",
+                "#e7298a",
+                "#ce1256",
+                "#91003f"
+            ],
+            [
+                "#f7f4f9",
+                "#e7e1ef",
+                "#d4b9da",
+                "#c994c7",
+                "#df65b0",
+                "#e7298a",
+                "#ce1256",
+                "#980043",
+                "#67001f"
+            ]
+        ]
     ],
     [
         "interpolateRdPu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeRdPu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fde0dd",
+                "#fa9fb5",
+                "#c51b8a"
+            ],
+            [
+                "#feebe2",
+                "#fbb4b9",
+                "#f768a1",
+                "#ae017e"
+            ],
+            [
+                "#feebe2",
+                "#fbb4b9",
+                "#f768a1",
+                "#c51b8a",
+                "#7a0177"
+            ],
+            [
+                "#feebe2",
+                "#fcc5c0",
+                "#fa9fb5",
+                "#f768a1",
+                "#c51b8a",
+                "#7a0177"
+            ],
+            [
+                "#feebe2",
+                "#fcc5c0",
+                "#fa9fb5",
+                "#f768a1",
+                "#dd3497",
+                "#ae017e",
+                "#7a0177"
+            ],
+            [
+                "#fff7f3",
+                "#fde0dd",
+                "#fcc5c0",
+                "#fa9fb5",
+                "#f768a1",
+                "#dd3497",
+                "#ae017e",
+                "#7a0177"
+            ],
+            [
+                "#fff7f3",
+                "#fde0dd",
+                "#fcc5c0",
+                "#fa9fb5",
+                "#f768a1",
+                "#dd3497",
+                "#ae017e",
+                "#7a0177",
+                "#49006a"
+            ]
+        ]
     ],
     [
         "interpolateYlGnBu",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeYlGnBu",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#edf8b1",
+                "#7fcdbb",
+                "#2c7fb8"
+            ],
+            [
+                "#ffffcc",
+                "#a1dab4",
+                "#41b6c4",
+                "#225ea8"
+            ],
+            [
+                "#ffffcc",
+                "#a1dab4",
+                "#41b6c4",
+                "#2c7fb8",
+                "#253494"
+            ],
+            [
+                "#ffffcc",
+                "#c7e9b4",
+                "#7fcdbb",
+                "#41b6c4",
+                "#2c7fb8",
+                "#253494"
+            ],
+            [
+                "#ffffcc",
+                "#c7e9b4",
+                "#7fcdbb",
+                "#41b6c4",
+                "#1d91c0",
+                "#225ea8",
+                "#0c2c84"
+            ],
+            [
+                "#ffffd9",
+                "#edf8b1",
+                "#c7e9b4",
+                "#7fcdbb",
+                "#41b6c4",
+                "#1d91c0",
+                "#225ea8",
+                "#0c2c84"
+            ],
+            [
+                "#ffffd9",
+                "#edf8b1",
+                "#c7e9b4",
+                "#7fcdbb",
+                "#41b6c4",
+                "#1d91c0",
+                "#225ea8",
+                "#253494",
+                "#081d58"
+            ]
+        ]
     ],
     [
         "interpolateYlGn",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeYlGn",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#f7fcb9",
+                "#addd8e",
+                "#31a354"
+            ],
+            [
+                "#ffffcc",
+                "#c2e699",
+                "#78c679",
+                "#238443"
+            ],
+            [
+                "#ffffcc",
+                "#c2e699",
+                "#78c679",
+                "#31a354",
+                "#006837"
+            ],
+            [
+                "#ffffcc",
+                "#d9f0a3",
+                "#addd8e",
+                "#78c679",
+                "#31a354",
+                "#006837"
+            ],
+            [
+                "#ffffcc",
+                "#d9f0a3",
+                "#addd8e",
+                "#78c679",
+                "#41ab5d",
+                "#238443",
+                "#005a32"
+            ],
+            [
+                "#ffffe5",
+                "#f7fcb9",
+                "#d9f0a3",
+                "#addd8e",
+                "#78c679",
+                "#41ab5d",
+                "#238443",
+                "#005a32"
+            ],
+            [
+                "#ffffe5",
+                "#f7fcb9",
+                "#d9f0a3",
+                "#addd8e",
+                "#78c679",
+                "#41ab5d",
+                "#238443",
+                "#006837",
+                "#004529"
+            ]
+        ]
     ],
     [
         "interpolateYlOrBr",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeYlOrBr",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fff7bc",
+                "#fec44f",
+                "#d95f0e"
+            ],
+            [
+                "#ffffd4",
+                "#fed98e",
+                "#fe9929",
+                "#cc4c02"
+            ],
+            [
+                "#ffffd4",
+                "#fed98e",
+                "#fe9929",
+                "#d95f0e",
+                "#993404"
+            ],
+            [
+                "#ffffd4",
+                "#fee391",
+                "#fec44f",
+                "#fe9929",
+                "#d95f0e",
+                "#993404"
+            ],
+            [
+                "#ffffd4",
+                "#fee391",
+                "#fec44f",
+                "#fe9929",
+                "#ec7014",
+                "#cc4c02",
+                "#8c2d04"
+            ],
+            [
+                "#ffffe5",
+                "#fff7bc",
+                "#fee391",
+                "#fec44f",
+                "#fe9929",
+                "#ec7014",
+                "#cc4c02",
+                "#8c2d04"
+            ],
+            [
+                "#ffffe5",
+                "#fff7bc",
+                "#fee391",
+                "#fec44f",
+                "#fe9929",
+                "#ec7014",
+                "#cc4c02",
+                "#993404",
+                "#662506"
+            ]
+        ]
     ],
     [
         "interpolateYlOrRd",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeYlOrRd",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#ffeda0",
+                "#feb24c",
+                "#f03b20"
+            ],
+            [
+                "#ffffb2",
+                "#fecc5c",
+                "#fd8d3c",
+                "#e31a1c"
+            ],
+            [
+                "#ffffb2",
+                "#fecc5c",
+                "#fd8d3c",
+                "#f03b20",
+                "#bd0026"
+            ],
+            [
+                "#ffffb2",
+                "#fed976",
+                "#feb24c",
+                "#fd8d3c",
+                "#f03b20",
+                "#bd0026"
+            ],
+            [
+                "#ffffb2",
+                "#fed976",
+                "#feb24c",
+                "#fd8d3c",
+                "#fc4e2a",
+                "#e31a1c",
+                "#b10026"
+            ],
+            [
+                "#ffffcc",
+                "#ffeda0",
+                "#fed976",
+                "#feb24c",
+                "#fd8d3c",
+                "#fc4e2a",
+                "#e31a1c",
+                "#b10026"
+            ],
+            [
+                "#ffffcc",
+                "#ffeda0",
+                "#fed976",
+                "#feb24c",
+                "#fd8d3c",
+                "#fc4e2a",
+                "#e31a1c",
+                "#bd0026",
+                "#800026"
+            ]
+        ]
     ],
     [
         "interpolateBlues",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeBlues",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#deebf7",
+                "#9ecae1",
+                "#3182bd"
+            ],
+            [
+                "#eff3ff",
+                "#bdd7e7",
+                "#6baed6",
+                "#2171b5"
+            ],
+            [
+                "#eff3ff",
+                "#bdd7e7",
+                "#6baed6",
+                "#3182bd",
+                "#08519c"
+            ],
+            [
+                "#eff3ff",
+                "#c6dbef",
+                "#9ecae1",
+                "#6baed6",
+                "#3182bd",
+                "#08519c"
+            ],
+            [
+                "#eff3ff",
+                "#c6dbef",
+                "#9ecae1",
+                "#6baed6",
+                "#4292c6",
+                "#2171b5",
+                "#084594"
+            ],
+            [
+                "#f7fbff",
+                "#deebf7",
+                "#c6dbef",
+                "#9ecae1",
+                "#6baed6",
+                "#4292c6",
+                "#2171b5",
+                "#084594"
+            ],
+            [
+                "#f7fbff",
+                "#deebf7",
+                "#c6dbef",
+                "#9ecae1",
+                "#6baed6",
+                "#4292c6",
+                "#2171b5",
+                "#08519c",
+                "#08306b"
+            ]
+        ]
     ],
     [
         "interpolateGreens",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeGreens",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#e5f5e0",
+                "#a1d99b",
+                "#31a354"
+            ],
+            [
+                "#edf8e9",
+                "#bae4b3",
+                "#74c476",
+                "#238b45"
+            ],
+            [
+                "#edf8e9",
+                "#bae4b3",
+                "#74c476",
+                "#31a354",
+                "#006d2c"
+            ],
+            [
+                "#edf8e9",
+                "#c7e9c0",
+                "#a1d99b",
+                "#74c476",
+                "#31a354",
+                "#006d2c"
+            ],
+            [
+                "#edf8e9",
+                "#c7e9c0",
+                "#a1d99b",
+                "#74c476",
+                "#41ab5d",
+                "#238b45",
+                "#005a32"
+            ],
+            [
+                "#f7fcf5",
+                "#e5f5e0",
+                "#c7e9c0",
+                "#a1d99b",
+                "#74c476",
+                "#41ab5d",
+                "#238b45",
+                "#005a32"
+            ],
+            [
+                "#f7fcf5",
+                "#e5f5e0",
+                "#c7e9c0",
+                "#a1d99b",
+                "#74c476",
+                "#41ab5d",
+                "#238b45",
+                "#006d2c",
+                "#00441b"
+            ]
+        ]
     ],
     [
         "interpolateGreys",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeGreys",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#f0f0f0",
+                "#bdbdbd",
+                "#636363"
+            ],
+            [
+                "#f7f7f7",
+                "#cccccc",
+                "#969696",
+                "#525252"
+            ],
+            [
+                "#f7f7f7",
+                "#cccccc",
+                "#969696",
+                "#636363",
+                "#252525"
+            ],
+            [
+                "#f7f7f7",
+                "#d9d9d9",
+                "#bdbdbd",
+                "#969696",
+                "#636363",
+                "#252525"
+            ],
+            [
+                "#f7f7f7",
+                "#d9d9d9",
+                "#bdbdbd",
+                "#969696",
+                "#737373",
+                "#525252",
+                "#252525"
+            ],
+            [
+                "#ffffff",
+                "#f0f0f0",
+                "#d9d9d9",
+                "#bdbdbd",
+                "#969696",
+                "#737373",
+                "#525252",
+                "#252525"
+            ],
+            [
+                "#ffffff",
+                "#f0f0f0",
+                "#d9d9d9",
+                "#bdbdbd",
+                "#969696",
+                "#737373",
+                "#525252",
+                "#252525",
+                "#000000"
+            ]
+        ]
     ],
     [
         "interpolatePurples",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemePurples",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#efedf5",
+                "#bcbddc",
+                "#756bb1"
+            ],
+            [
+                "#f2f0f7",
+                "#cbc9e2",
+                "#9e9ac8",
+                "#6a51a3"
+            ],
+            [
+                "#f2f0f7",
+                "#cbc9e2",
+                "#9e9ac8",
+                "#756bb1",
+                "#54278f"
+            ],
+            [
+                "#f2f0f7",
+                "#dadaeb",
+                "#bcbddc",
+                "#9e9ac8",
+                "#756bb1",
+                "#54278f"
+            ],
+            [
+                "#f2f0f7",
+                "#dadaeb",
+                "#bcbddc",
+                "#9e9ac8",
+                "#807dba",
+                "#6a51a3",
+                "#4a1486"
+            ],
+            [
+                "#fcfbfd",
+                "#efedf5",
+                "#dadaeb",
+                "#bcbddc",
+                "#9e9ac8",
+                "#807dba",
+                "#6a51a3",
+                "#4a1486"
+            ],
+            [
+                "#fcfbfd",
+                "#efedf5",
+                "#dadaeb",
+                "#bcbddc",
+                "#9e9ac8",
+                "#807dba",
+                "#6a51a3",
+                "#54278f",
+                "#3f007d"
+            ]
+        ]
     ],
     [
         "interpolateReds",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeReds",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fee0d2",
+                "#fc9272",
+                "#de2d26"
+            ],
+            [
+                "#fee5d9",
+                "#fcae91",
+                "#fb6a4a",
+                "#cb181d"
+            ],
+            [
+                "#fee5d9",
+                "#fcae91",
+                "#fb6a4a",
+                "#de2d26",
+                "#a50f15"
+            ],
+            [
+                "#fee5d9",
+                "#fcbba1",
+                "#fc9272",
+                "#fb6a4a",
+                "#de2d26",
+                "#a50f15"
+            ],
+            [
+                "#fee5d9",
+                "#fcbba1",
+                "#fc9272",
+                "#fb6a4a",
+                "#ef3b2c",
+                "#cb181d",
+                "#99000d"
+            ],
+            [
+                "#fff5f0",
+                "#fee0d2",
+                "#fcbba1",
+                "#fc9272",
+                "#fb6a4a",
+                "#ef3b2c",
+                "#cb181d",
+                "#99000d"
+            ],
+            [
+                "#fff5f0",
+                "#fee0d2",
+                "#fcbba1",
+                "#fc9272",
+                "#fb6a4a",
+                "#ef3b2c",
+                "#cb181d",
+                "#a50f15",
+                "#67000d"
+            ]
+        ]
     ],
     [
         "interpolateOranges",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "schemeOranges",
-        "object"
+        "object",
+        [
+            null,
+            null,
+            null,
+            [
+                "#fee6ce",
+                "#fdae6b",
+                "#e6550d"
+            ],
+            [
+                "#feedde",
+                "#fdbe85",
+                "#fd8d3c",
+                "#d94701"
+            ],
+            [
+                "#feedde",
+                "#fdbe85",
+                "#fd8d3c",
+                "#e6550d",
+                "#a63603"
+            ],
+            [
+                "#feedde",
+                "#fdd0a2",
+                "#fdae6b",
+                "#fd8d3c",
+                "#e6550d",
+                "#a63603"
+            ],
+            [
+                "#feedde",
+                "#fdd0a2",
+                "#fdae6b",
+                "#fd8d3c",
+                "#f16913",
+                "#d94801",
+                "#8c2d04"
+            ],
+            [
+                "#fff5eb",
+                "#fee6ce",
+                "#fdd0a2",
+                "#fdae6b",
+                "#fd8d3c",
+                "#f16913",
+                "#d94801",
+                "#8c2d04"
+            ],
+            [
+                "#fff5eb",
+                "#fee6ce",
+                "#fdd0a2",
+                "#fdae6b",
+                "#fd8d3c",
+                "#f16913",
+                "#d94801",
+                "#a63603",
+                "#7f2704"
+            ]
+        ]
     ],
     [
         "interpolateCubehelixDefault",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolateRainbow",
-        "function"
+        "function",
+        "rainbow(t)"
     ],
     [
         "interpolateWarm",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolateCool",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolateSinebow",
-        "function"
+        "function",
+        "sinebow(t)"
     ],
     [
         "interpolateViridis",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolateMagma",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolateInferno",
-        "function"
+        "function",
+        "function(t)"
     ],
     [
         "interpolatePlasma",
-        "function"
+        "function",
+        "function(t)"
+    ],
+    [
+        "event",
+        "object",
+        null
     ],
     [
         "create",
-        "function"
+        "function",
+        "create(name)"
     ],
     [
         "creator",
-        "function"
+        "function",
+        "creator(name)"
     ],
     [
         "local",
-        "function"
+        "function",
+        "local()"
     ],
     [
         "matcher",
-        "function"
+        "function",
+        "function(selector)"
     ],
     [
         "mouse",
-        "function"
+        "function",
+        "mouse(node)"
     ],
     [
         "namespace",
-        "function"
+        "function",
+        "namespace(name)"
     ],
     [
         "namespaces",
-        "object"
+        "object",
+        {
+            "svg": "http://www.w3.org/2000/svg",
+            "xhtml": "http://www.w3.org/1999/xhtml",
+            "xlink": "http://www.w3.org/1999/xlink",
+            "xml": "http://www.w3.org/XML/1998/namespace",
+            "xmlns": "http://www.w3.org/2000/xmlns/"
+        }
     ],
     [
         "clientPoint",
-        "function"
+        "function",
+        "point(node, event)"
     ],
     [
         "select",
-        "function"
+        "function",
+        "select(selector)"
     ],
     [
         "selectAll",
-        "function"
+        "function",
+        "selectAll(selector)"
     ],
     [
         "selection",
-        "function"
+        "function",
+        "selection()"
     ],
     [
         "selector",
-        "function"
+        "function",
+        "selector(selector)"
     ],
     [
         "selectorAll",
-        "function"
+        "function",
+        "selectorAll(selector)"
     ],
     [
         "style",
-        "function"
+        "function",
+        "styleValue(node, name)"
     ],
     [
         "touch",
-        "function"
+        "function",
+        "touch(node, touches, identifier)"
     ],
     [
         "touches",
-        "function"
+        "function",
+        "touches(node, touches)"
     ],
     [
         "window",
-        "function"
+        "function",
+        "defaultView(node)"
     ],
     [
         "customEvent",
-        "function"
+        "function",
+        "customEvent(event1, listener, that, args)"
     ],
     [
         "arc",
-        "function"
+        "function",
+        "arc()"
     ],
     [
         "area",
-        "function"
+        "function",
+        "area()"
     ],
     [
         "line",
-        "function"
+        "function",
+        "line()"
     ],
     [
         "pie",
-        "function"
+        "function",
+        "pie()"
     ],
     [
         "areaRadial",
-        "function"
+        "function",
+        "areaRadial()"
     ],
     [
         "radialArea",
-        "function"
+        "function",
+        "areaRadial()"
     ],
     [
         "lineRadial",
-        "function"
+        "function",
+        "lineRadial$1()"
     ],
     [
         "radialLine",
-        "function"
+        "function",
+        "lineRadial$1()"
     ],
     [
         "pointRadial",
-        "function"
+        "function",
+        "pointRadial(x, y)"
     ],
     [
         "linkHorizontal",
-        "function"
+        "function",
+        "linkHorizontal()"
     ],
     [
         "linkVertical",
-        "function"
+        "function",
+        "linkVertical()"
     ],
     [
         "linkRadial",
-        "function"
+        "function",
+        "linkRadial()"
     ],
     [
         "symbol",
-        "function"
+        "function",
+        "symbol()"
     ],
     [
         "symbols",
-        "object"
+        "object",
+        [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ]
     ],
     [
         "symbolCircle",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolCross",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolDiamond",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolSquare",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolStar",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolTriangle",
-        "object"
+        "object",
+        {}
     ],
     [
         "symbolWye",
-        "object"
+        "object",
+        {}
     ],
     [
         "curveBasisClosed",
-        "function"
+        "function",
+        "basisClosed(context)"
     ],
     [
         "curveBasisOpen",
-        "function"
+        "function",
+        "basisOpen(context)"
     ],
     [
         "curveBasis",
-        "function"
+        "function",
+        "basis(context)"
     ],
     [
         "curveBundle",
-        "function"
+        "function",
+        "bundle(context)"
     ],
     [
         "curveCardinalClosed",
-        "function"
+        "function",
+        "cardinal$$1(context)"
     ],
     [
         "curveCardinalOpen",
-        "function"
+        "function",
+        "cardinal$$1(context)"
     ],
     [
         "curveCardinal",
-        "function"
+        "function",
+        "cardinal(context)"
     ],
     [
         "curveCatmullRomClosed",
-        "function"
+        "function",
+        "catmullRom$$1(context)"
     ],
     [
         "curveCatmullRomOpen",
-        "function"
+        "function",
+        "catmullRom$$1(context)"
     ],
     [
         "curveCatmullRom",
-        "function"
+        "function",
+        "catmullRom(context)"
     ],
     [
         "curveLinearClosed",
-        "function"
+        "function",
+        "linearClosed(context)"
     ],
     [
         "curveLinear",
-        "function"
+        "function",
+        "curveLinear(context)"
     ],
     [
         "curveMonotoneX",
-        "function"
+        "function",
+        "monotoneX(context)"
     ],
     [
         "curveMonotoneY",
-        "function"
+        "function",
+        "monotoneY(context)"
     ],
     [
         "curveNatural",
-        "function"
+        "function",
+        "natural(context)"
     ],
     [
         "curveStep",
-        "function"
+        "function",
+        "step(context)"
     ],
     [
         "curveStepAfter",
-        "function"
+        "function",
+        "stepAfter(context)"
     ],
     [
         "curveStepBefore",
-        "function"
+        "function",
+        "stepBefore(context)"
     ],
     [
         "stack",
-        "function"
+        "function",
+        "stack()"
     ],
     [
         "stackOffsetExpand",
-        "function"
+        "function",
+        "expand(series, order)"
     ],
     [
         "stackOffsetDiverging",
-        "function"
+        "function",
+        "diverging(series, order)"
     ],
     [
         "stackOffsetNone",
-        "function"
+        "function",
+        "none(series, order)"
     ],
     [
         "stackOffsetSilhouette",
-        "function"
+        "function",
+        "silhouette(series, order)"
     ],
     [
         "stackOffsetWiggle",
-        "function"
+        "function",
+        "wiggle(series, order)"
     ],
     [
         "stackOrderAscending",
-        "function"
+        "function",
+        "ascending(series)"
     ],
     [
         "stackOrderDescending",
-        "function"
+        "function",
+        "descending$1(series)"
     ],
     [
         "stackOrderInsideOut",
-        "function"
+        "function",
+        "insideOut(series)"
     ],
     [
         "stackOrderNone",
-        "function"
+        "function",
+        "none$1(series)"
     ],
     [
         "stackOrderReverse",
-        "function"
+        "function",
+        "reverse(series)"
     ],
     [
         "timeInterval",
-        "function"
+        "function",
+        "newInterval(floori, offseti, count, field)"
     ],
     [
         "timeMillisecond",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeMilliseconds",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcMillisecond",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcMilliseconds",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeSecond",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeSeconds",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcSecond",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcSeconds",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeMinute",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeMinutes",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeHour",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeHours",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeDay",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeDays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeWeek",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeWeeks",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeSunday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeSundays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeMonday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeMondays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeTuesday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeTuesdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeWednesday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeWednesdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeThursday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeThursdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeFriday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeFridays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeSaturday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeSaturdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeMonth",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeMonths",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "timeYear",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "timeYears",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcMinute",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcMinutes",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcHour",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcHours",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcDay",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcDays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcWeek",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcWeeks",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcSunday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcSundays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcMonday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcMondays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcTuesday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcTuesdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcWednesday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcWednesdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcThursday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcThursdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcFriday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcFridays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcSaturday",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcSaturdays",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcMonth",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcMonths",
-        "function"
+        "function",
+        "function(start, stop, step)"
     ],
     [
         "utcYear",
-        "function"
+        "function",
+        "interval(date)"
     ],
     [
         "utcYears",
-        "function"
+        "function",
+        "function(start, stop, step)"
+    ],
+    [
+        "timeFormat",
+        "function",
+        "function(specifier)"
+    ],
+    [
+        "timeParse",
+        "function",
+        "function(specifier)"
+    ],
+    [
+        "utcFormat",
+        "function",
+        "function(specifier)"
+    ],
+    [
+        "utcParse",
+        "function",
+        "function(specifier)"
     ],
     [
         "timeFormatDefaultLocale",
-        "function"
+        "function",
+        "defaultLocale(definition)"
     ],
     [
         "timeFormatLocale",
-        "function"
+        "function",
+        "formatLocale(locale)"
     ],
     [
         "isoFormat",
-        "function"
+        "function",
+        "formatIsoNative(date)"
     ],
     [
         "isoParse",
-        "function"
+        "function",
+        "parseIsoNative(string)"
     ],
     [
         "now",
-        "function"
+        "function",
+        "now()"
     ],
     [
         "timer",
-        "function"
+        "function",
+        "timer(callback, delay, time)"
     ],
     [
         "timerFlush",
-        "function"
+        "function",
+        "timerFlush()"
     ],
     [
         "timeout",
-        "function"
+        "function",
+        "timeout$1(callback, delay, time)"
     ],
     [
         "interval",
-        "function"
+        "function",
+        "interval$1(callback, delay, time)"
     ],
     [
         "transition",
-        "function"
+        "function",
+        "transition(name)"
     ],
     [
         "active",
-        "function"
+        "function",
+        "active(node, name)"
     ],
     [
         "interrupt",
-        "function"
+        "function",
+        "interrupt(node, name)"
     ],
     [
         "voronoi",
-        "function"
+        "function",
+        "voronoi()"
     ],
     [
         "zoom",
-        "function"
+        "function",
+        "zoom()"
     ],
     [
         "zoomTransform",
-        "function"
+        "function",
+        "transform(node)"
     ],
     [
         "zoomIdentity",
-        "object"
+        "object",
+        {
+            "k": 1,
+            "x": 0,
+            "y": 0
+        }
     ],
     [
-        "__esModule",
-        "boolean"
+        "version",
+        "string",
+        "5.7.0"
     ]
 ]
