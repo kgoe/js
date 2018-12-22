@@ -18,6 +18,10 @@ Shell
 Dos
 Unix Shell
 
+JavaScript
+PHP
+Pythonttq
+
 ### JavaScript
 JavaScript Core
 JavaScript DOM
@@ -42,6 +46,14 @@ Typeform
 ElasticSearch
 Gatsby
 Nivo.js
+ES6
+Express
+Jest
+VS Code
+Electron
+React Native
+Angular
+
 
 
 ### JavaScript 2019

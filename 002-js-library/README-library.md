@@ -1,5 +1,122 @@
 ### JavaScript Libraries
 
+### Top Libraries
+
+#### 2019
+Vanilla JavaScript
+jQuery
+React
+Angular 1
+Angular 2
+Vue.js
+Sencha Ext JS
+Lodash
+Underscore
+Backbone.js
+RxJS
+Ember.js
+Knockout.js
+
+Polymer
+Meteor
+Aurelia
+Svelte
+Conoditioner.js
+
+Webpack
+Gulp
+Grunt
+npm
+
+Browserify
+RequireJS
+
+ESLint
+JSHint
+JSLint
+
+Jest
+Mocha
+Jasmine
+QUnit
+
+Typescript
+LiveScript
+CoffeeScript
+Babel
+Mustache
+Handlebars
+Pug
+EJS
+Template Engine
+ES6
+ES2015
+
+ESDoc
+JSDoc
+YUIDoc
+documentation.js
+Transcription
+
+https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
+https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade
+https://www.quora.com/What-are-the-top-JavaScript-libraries-tech-to-learn-in-2019
+https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727
+https://blog.snap.hr/13/11/2018/top-10-javascript-libraries-learn-2019/
+https://blog.bitsrc.io/9-javascript-date-time-libraries-for-2018-12d82f37872d
+
+#### 2018
+React
+Vue.js
+jQuery
+Angular
+Ember
+Redux
+Next.js
+Material UI
+Storybook
+Cheerio
+Enzyme
+Lodash
+Babel
+Webpack
+ESLint
+Ramda
+Node.js
+Express
+RxJS
+
+HTML5 Canvas
+FusionCharts
+D3
+GSAP
+High Charts
+Math.jsv
+Lodash
+CreateJS
+
+PWS
+Blockchain
+Fintexh
+Medical Technology
+AR / VR
+3d Printing
+AI
+Bots
+Drones
+React Native
+Electron
+Storybook
+
+https://medium.com/javascript-scene/top-javascript-libraries-tech-to-learn-in-2018-c38028e028e6
+https://www.htmlgoodies.com/beyond/javascript/top-javascript-libraries-and-trends-for-2018.html
+https://www.ma-no.org/en/content/index_top-javascript-libraries-in-2018_2332.php
+
+#### 2017
+
+### Terms
+Methodology
+
 ### links
 https://medium.com/javascript-scene/top-javascript-libraries-tech-to-learn-in-2018-c38028e028e6  
 https://www.htmlgoodies.com/beyond/javascript/top-javascript-libraries-and-trends-for-2018.html  
