@@ -27,6 +27,8 @@ JavaScript Core
 JavaScript DOM
 JavaScript Node.JS
 
+### JavaScript 2019
+
 ### JavaScript 2018
 Dark Mode
 Individual Pages
@@ -54,6 +56,18 @@ Electron
 React Native
 Angular
 
+### JavaScript 2017
 
+### JavaScript 2016
 
-### JavaScript 2019
+### JavaScript 2015
+
+### JavaScript 2014
+
+### JavaScript 2013
+
+### JavaScript 2012
+
+### JavaScript 2011
+
+### JavaScript 2010
