@@ -154,5 +154,3 @@ log(theFunction.toString().split("{")[0]);
 log(theFunction.a);
 
 log(thatFunction.toString().split("{")[0]);
-
-
