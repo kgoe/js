@@ -150,9 +150,9 @@ function thatFunction(
 	var helloWorld = 'hello world';
 }
 
-log(theFunction.toString().split("{"));
+log(theFunction.toString().split("{")[0]);
 log(theFunction.a);
 
-log(thatFunction.toString().split("{"));
+log(thatFunction.toString().split("{")[0]);
 
 
