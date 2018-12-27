@@ -6,6 +6,8 @@ var log = console.log;
 
 if ( typeof describe == 'function') {
 
+var root = typeof global !== 'undefined' ? global : window;
+
 describe("ES3",function(){
 
 	it("basic",function(){
@@ -77,6 +79,16 @@ describe("ES3",function(){
 		assert.equal(typeof URIError, 'function');
 
 		assert.equal(typeof Math, 'object');
+
+		assert.equal(typeof root['Object'], 'function');
+		assert.equal(typeof root['Object']['prototype'], 'object');
+		assert.equal(typeof root['Object']['prototype']['constructor'], 'function');
+		assert.equal(typeof root['Object']['prototype']['toString'], 'function');
+		assert.equal(typeof root['Object']['prototype']['toLocaleString'], 'function');
+		assert.equal(typeof root['Object']['prototype']['valueOf'], 'function');
+		assert.equal(typeof root['Object']['prototype']['hasOwnProperty'], 'function');
+		assert.equal(typeof root['Object']['prototype']['isPrototypeOf'], 'function');
+		assert.equal(typeof root['Object']['prototype']['propertyIsEnumerable'], 'function');
 	});
 
 });
