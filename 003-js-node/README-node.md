@@ -10,6 +10,11 @@ https://nodejs.org/en/
 https://www.npmjs.com/
 https://github.com/nodejs/node
 
+### properties
+- require("module").builtinModules
+- require('repl')._builtinLibs
+- https://github.com/nodejs/node/tree/master/lib
+
 ### versions
 10.x LTS  
 9.x  
