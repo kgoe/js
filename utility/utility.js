@@ -98,6 +98,13 @@ function checkTypes(obj) {
   return true;
 }
 
+/**
+ * printDetails
+ * @param {*} input
+ */
+function printDetails( input ) {
+  console.log(input, typeof global[input])
+}
 
 /**
   * globalProperties
@@ -198,5 +205,6 @@ if ( typeof module !== 'undefined'
     globalPrpperties1: globalProperties1,
     globalProperties2: globalProperties2,
     checkTypes: checkTypes,
+    printDetails: printDetails,
   };
 }

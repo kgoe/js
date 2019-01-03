@@ -1,94 +1,94 @@
 var log = console.log;
 var root = typeof global !== 'undefined' ? global : window;
 
-function getDetails( input ) {
+function printDetails( input ) {
   console.log(input, typeof global[input])
 }
 
 // Value Properties
-getDetails('Infinity');
-getDetails('NaN');
-getDetails('undefined');
-getDetails('null');
+printDetails('Infinity');
+printDetails('NaN');
+printDetails('undefined');
+printDetails('null');
 
 // Function Properties
-getDetails('eval');
-getDetails('uneval');
-getDetails('isFinite');
-getDetails('isNaN');
-getDetails('parseFloat');
-getDetails('parseInt');
-getDetails('decodeURI');
-getDetails('decodeURIComponent');
-getDetails('encodeURI');
-getDetails('encodeURIComponent');
-getDetails('escape');
-getDetails('unescape');
+printDetails('eval');
+printDetails('uneval');
+printDetails('isFinite');
+printDetails('isNaN');
+printDetails('parseFloat');
+printDetails('parseInt');
+printDetails('decodeURI');
+printDetails('decodeURIComponent');
+printDetails('encodeURI');
+printDetails('encodeURIComponent');
+printDetails('escape');
+printDetails('unescape');
 
 // Fundamental Objects
-getDetails('Object');
-getDetails('Function');
-getDetails('Boolean');
-getDetails('Symbol');
-getDetails('Error');
-getDetails('EvalError');
-getDetails('InternalError');
-getDetails('RangeError');
-getDetails('ReferenceError');
-getDetails('SyntaxError');
-getDetails('TypeError');
-getDetails('URIError');
+printDetails('Object');
+printDetails('Function');
+printDetails('Boolean');
+printDetails('Symbol');
+printDetails('Error');
+printDetails('EvalError');
+printDetails('InternalError');
+printDetails('RangeError');
+printDetails('ReferenceError');
+printDetails('SyntaxError');
+printDetails('TypeError');
+printDetails('URIError');
 
 // Numbers and Dates
-getDetails('Number');
-getDetails('Math');
-getDetails('Date');
+printDetails('Number');
+printDetails('Math');
+printDetails('Date');
 
 // Text Processing
-getDetails('String');
-getDetails('RegExp');
+printDetails('String');
+printDetails('RegExp');
 
 // Indexed Collection
-getDetails('Array');
-getDetails('Int8Array');
-getDetails('Uint8Array');
-getDetails('Uint8ClampedArray');
-getDetails('Int16Array');
-getDetails('Uint16Array');
-getDetails('Int32Array');
-getDetails('Uint32Array');
-getDetails('Float32Array');
-getDetails('Float64Array');
+printDetails('Array');
+printDetails('Int8Array');
+printDetails('Uint8Array');
+printDetails('Uint8ClampedArray');
+printDetails('Int16Array');
+printDetails('Uint16Array');
+printDetails('Int32Array');
+printDetails('Uint32Array');
+printDetails('Float32Array');
+printDetails('Float64Array');
 
 // Keyed Collection
-getDetails('Map');
-getDetails('Set');
-getDetails('WeakMap');
-getDetails('WeakSet');
+printDetails('Map');
+printDetails('Set');
+printDetails('WeakMap');
+printDetails('WeakSet');
 
 // Structured Data
-getDetails('ArrayBuffer');
-getDetails('SharedArrayBuffer');
-getDetails('Atomics');
-getDetails('DataView');
-getDetails('JSON');
+printDetails('ArrayBuffer');
+printDetails('SharedArrayBuffer');
+printDetails('Atomics');
+printDetails('DataView');
+printDetails('JSON');
 
 // Conrol Abstraction
-getDetails('Promise');
-getDetails('Generator');
-getDetails('GeneratorFunction');
-getDetails('AsyncFunction');
+printDetails('Promise');
+printDetails('Generator');
+printDetails('GeneratorFunction');
+printDetails('AsyncFunction');
 
 // Reflection
-getDetails('Reflect');
-getDetails('Proxy');
+printDetails('Reflect');
+printDetails('Proxy');
 
 // Internationalization
-getDetails('Intl');
+printDetails('Intl');
 
 // WebAssembly
-getDetails('WebAssembly');
+printDetails('WebAssembly');
 
-(function(){
-  getDetails('arguments');
+(function() {
+  printDetails('arguments');
 })();
