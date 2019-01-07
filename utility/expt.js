@@ -11,7 +11,10 @@
  */
 function makeid(length) {
   var text = '';
-  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var possible = '';
+  possible += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  possible += 'abcdefghijklmnopqrstuvwxyz';
+  possible += '0123456789';
   length = length || 5;
 
   for (var counter = 0; counter < length; counter++) {
