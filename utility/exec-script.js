@@ -7,7 +7,6 @@
 
 const {exec} = require('child_process');
 
-
 /**
  * executor
  * @param {string} command
@@ -35,7 +34,6 @@ function executor( command ) {
     }
     return true;
   }
-
   exec(command, execCallback);
 }
 

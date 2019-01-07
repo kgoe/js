@@ -86,36 +86,38 @@ function getRandomColor() {
 }
 
 /**
-	* globalProperties
+  * globalProperties
+  * @param {*} parent
 	* @return {array}
 	*/
 function globalProperties( parent ) {
-  var root = 
+  var root =
     typeof parent != 'undefined'
-    ? parent 
-    : typeof global != 'undefined' 
-    ? global 
+    ? parent
+    : typeof global != 'undefined'
+    ? global
     : window;
   var prop = Object.getOwnPropertyNames(root);
   console.log(prop);
 }
 
 /**
-	* globalProperties1
-	* @return {array}
-	*/
+  * globalProperties1
+  * @param {*} parent
+  * @return {array}
+  */
 function globalProperties1( parent ) {
-  var root = 
+  var root =
     typeof parent != 'undefined'
-    ? parent 
-    : typeof global != 'undefined' 
-    ? global 
+    ? parent
+    : typeof global != 'undefined'
+    ? global
     : window;
   var prop = Object.getOwnPropertyNames(root);
   var output = [];
   for ( var cnt = 0; cnt < prop.length; cnt++ ) {
-  	 var item = prop[cnt];
-  	 var type = typeof root[item];
+    var item = prop[cnt];
+    var type = typeof root[item];
     output.push([item, type]);
   }
   console.log(output);
@@ -123,28 +125,29 @@ function globalProperties1( parent ) {
 }
 
 /**
-	* globalProperties2
-	* @return {array}
-	*/
+  * globalProperties2
+  * @param {*} parent
+  * @return {array}
+  */
 function globalProperties2( parent ) {
-  var root = 
+  var root =
     typeof parent != 'undefined'
-    ? parent 
-    : typeof global != 'undefined' 
-    ? global 
+    ? parent
+    : typeof global != 'undefined'
+    ? global
     : window;
   var prop = Object.getOwnPropertyNames(root);
   var output = [];
   for ( var cnt = 0; cnt < prop.length; cnt++ ) {
-  	 var item = prop[cnt];
-  	 var type = typeof root[item];
-  	 var syntax = 
-  	   type == 'function' 
-  	   ? root[item]
-  	     .toString()
-  	     .split('{')[0]
-  	     .trim().replace('function ', '')
-  	   : root[item];
+    var item = prop[cnt];
+    var type = typeof root[item];
+    var syntax =
+       type == 'function'
+       ? root[item]
+           .toString()
+           .split('{')[0]
+           .trim().replace('function ', '')
+           : root[item];
     output.push([item, type, syntax]);
   }
   // console.log(output);
