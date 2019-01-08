@@ -1,0 +1,736 @@
+[
+    [
+        "length",
+        "number",
+        1
+    ],
+    [
+        "name",
+        "string",
+        "_"
+    ],
+    [
+        "arguments",
+        "object",
+        null
+    ],
+    [
+        "caller",
+        "object",
+        null
+    ],
+    [
+        "prototype",
+        "object",
+        null
+    ],
+    [
+        "_",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "VERSION",
+        "string",
+        "1.9.1"
+    ],
+    [
+        "iteratee",
+        "function",
+        "function(value, context)"
+    ],
+    [
+        "forEach",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "each",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "collect",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "map",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "inject",
+        "function",
+        "function(obj, iteratee, memo, context)"
+    ],
+    [
+        "foldl",
+        "function",
+        "function(obj, iteratee, memo, context)"
+    ],
+    [
+        "reduce",
+        "function",
+        "function(obj, iteratee, memo, context)"
+    ],
+    [
+        "foldr",
+        "function",
+        "function(obj, iteratee, memo, context)"
+    ],
+    [
+        "reduceRight",
+        "function",
+        "function(obj, iteratee, memo, context)"
+    ],
+    [
+        "detect",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "find",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "select",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "filter",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "reject",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "all",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "every",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "any",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "some",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "include",
+        "function",
+        "function(obj, item, fromIndex, guard)"
+    ],
+    [
+        "includes",
+        "function",
+        "function(obj, item, fromIndex, guard)"
+    ],
+    [
+        "contains",
+        "function",
+        "function(obj, item, fromIndex, guard)"
+    ],
+    [
+        "invoke",
+        "function",
+        "function()"
+    ],
+    [
+        "pluck",
+        "function",
+        "function(obj, key)"
+    ],
+    [
+        "where",
+        "function",
+        "function(obj, attrs)"
+    ],
+    [
+        "findWhere",
+        "function",
+        "function(obj, attrs)"
+    ],
+    [
+        "max",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "min",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "shuffle",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "sample",
+        "function",
+        "function(obj, n, guard)"
+    ],
+    [
+        "sortBy",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "groupBy",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "indexBy",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "countBy",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "toArray",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "size",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "partition",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "take",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "head",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "first",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "initial",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "last",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "drop",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "tail",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "rest",
+        "function",
+        "function(array, n, guard)"
+    ],
+    [
+        "compact",
+        "function",
+        "function(array)"
+    ],
+    [
+        "flatten",
+        "function",
+        "function(array, shallow)"
+    ],
+    [
+        "without",
+        "function",
+        "function()"
+    ],
+    [
+        "unique",
+        "function",
+        "function(array, isSorted, iteratee, context)"
+    ],
+    [
+        "uniq",
+        "function",
+        "function(array, isSorted, iteratee, context)"
+    ],
+    [
+        "union",
+        "function",
+        "function()"
+    ],
+    [
+        "intersection",
+        "function",
+        "function(array)"
+    ],
+    [
+        "difference",
+        "function",
+        "function()"
+    ],
+    [
+        "unzip",
+        "function",
+        "function(array)"
+    ],
+    [
+        "zip",
+        "function",
+        "function()"
+    ],
+    [
+        "object",
+        "function",
+        "function(list, values)"
+    ],
+    [
+        "findIndex",
+        "function",
+        "function(array, predicate, context)"
+    ],
+    [
+        "findLastIndex",
+        "function",
+        "function(array, predicate, context)"
+    ],
+    [
+        "sortedIndex",
+        "function",
+        "function(array, obj, iteratee, context)"
+    ],
+    [
+        "indexOf",
+        "function",
+        "function(array, item, idx)"
+    ],
+    [
+        "lastIndexOf",
+        "function",
+        "function(array, item, idx)"
+    ],
+    [
+        "range",
+        "function",
+        "function(start, stop, step)"
+    ],
+    [
+        "chunk",
+        "function",
+        "function(array, count)"
+    ],
+    [
+        "bind",
+        "function",
+        "function()"
+    ],
+    [
+        "partial",
+        "function",
+        "function()"
+    ],
+    [
+        "bindAll",
+        "function",
+        "function()"
+    ],
+    [
+        "memoize",
+        "function",
+        "function(func, hasher)"
+    ],
+    [
+        "delay",
+        "function",
+        "function()"
+    ],
+    [
+        "defer",
+        "function",
+        "function()"
+    ],
+    [
+        "throttle",
+        "function",
+        "function(func, wait, options)"
+    ],
+    [
+        "debounce",
+        "function",
+        "function(func, wait, immediate)"
+    ],
+    [
+        "wrap",
+        "function",
+        "function(func, wrapper)"
+    ],
+    [
+        "negate",
+        "function",
+        "function(predicate)"
+    ],
+    [
+        "compose",
+        "function",
+        "function()"
+    ],
+    [
+        "after",
+        "function",
+        "function(times, func)"
+    ],
+    [
+        "before",
+        "function",
+        "function(times, func)"
+    ],
+    [
+        "once",
+        "function",
+        "function()"
+    ],
+    [
+        "restArguments",
+        "function",
+        "function(func, startIndex)"
+    ],
+    [
+        "keys",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "allKeys",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "values",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "mapObject",
+        "function",
+        "function(obj, iteratee, context)"
+    ],
+    [
+        "pairs",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "invert",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "methods",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "functions",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "extend",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "assign",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "extendOwn",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "findKey",
+        "function",
+        "function(obj, predicate, context)"
+    ],
+    [
+        "pick",
+        "function",
+        "function()"
+    ],
+    [
+        "omit",
+        "function",
+        "function()"
+    ],
+    [
+        "defaults",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "create",
+        "function",
+        "function(prototype, props)"
+    ],
+    [
+        "clone",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "tap",
+        "function",
+        "function(obj, interceptor)"
+    ],
+    [
+        "isMatch",
+        "function",
+        "function(object, attrs)"
+    ],
+    [
+        "isEqual",
+        "function",
+        "function(a, b)"
+    ],
+    [
+        "isEmpty",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isElement",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isArray",
+        "function",
+        "isArray()"
+    ],
+    [
+        "isObject",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isArguments",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isFunction",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isString",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isNumber",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isDate",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isRegExp",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isError",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isSymbol",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isMap",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isWeakMap",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isSet",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isWeakSet",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isFinite",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isNaN",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isBoolean",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isNull",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "isUndefined",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "has",
+        "function",
+        "function(obj, path)"
+    ],
+    [
+        "noConflict",
+        "function",
+        "function()"
+    ],
+    [
+        "identity",
+        "function",
+        "function(value)"
+    ],
+    [
+        "constant",
+        "function",
+        "function(value)"
+    ],
+    [
+        "noop",
+        "function",
+        "function()"
+    ],
+    [
+        "property",
+        "function",
+        "function(path)"
+    ],
+    [
+        "propertyOf",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "matches",
+        "function",
+        "function(attrs)"
+    ],
+    [
+        "matcher",
+        "function",
+        "function(attrs)"
+    ],
+    [
+        "times",
+        "function",
+        "function(n, iteratee, context)"
+    ],
+    [
+        "random",
+        "function",
+        "function(min, max)"
+    ],
+    [
+        "now",
+        "function",
+        "now()"
+    ],
+    [
+        "escape",
+        "function",
+        "function(string)"
+    ],
+    [
+        "unescape",
+        "function",
+        "function(string)"
+    ],
+    [
+        "result",
+        "function",
+        "function(obj, path, fallback)"
+    ],
+    [
+        "uniqueId",
+        "function",
+        "function(prefix)"
+    ],
+    [
+        "templateSettings",
+        "object",
+        {
+            "evaluate": {},
+            "interpolate": {},
+            "escape": {}
+        }
+    ],
+    [
+        "template",
+        "function",
+        "function(text, settings, oldSettings)"
+    ],
+    [
+        "chain",
+        "function",
+        "function(obj)"
+    ],
+    [
+        "mixin",
+        "function",
+        "function(obj)"
+    ]
+]
