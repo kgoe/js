@@ -4,7 +4,6 @@
  * test.js entry point
  * executor : node.js
  *
- *
  * Project Wide Test Entry Point
  * Load Files From Test Folder
  */
