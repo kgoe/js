@@ -1,3 +1,5 @@
+;
+
 var log = console.log;
 var root = typeof global !== 'undefined' ? global : window;
 
