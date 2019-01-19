@@ -3,12 +3,22 @@
 /*
 todo
 list all standard files in the project
+*/
 
-# entry points
+var doc = {};
+
+doc.files = {};
+
+doc.files.entry =
+`
 index.js
 test.js
+index.php
+index.html
+`;
 
-# config files
+doc.files.config =
+`
 example.env
 .eslintrc
 .env
@@ -18,13 +28,17 @@ packages.json
 dockerfile
 docker-compose.yml
 bitbucket-pipelines.yml
+`;
 
-# library files
+doc.files.lib =
+`
 composer.phar
 phpunit.phar
+`;
 
-# readme files
+doc.files.readme =
+`
 README.md
 LICENSE
+`;
 
-*/

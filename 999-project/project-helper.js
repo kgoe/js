@@ -10,10 +10,6 @@ standard file list and description
 standard folder list and description
 config file generator
 
-### DOCUMENTATION
-README.md
-LICENSE
-
 ### CONFIGURATIONS
 .dockerignore
 .eslintrc
@@ -26,11 +22,6 @@ Dockerfile
 package-lock.json
 package.json
 
-### ENTRY POINTS
-index.js
-index.html
-test.js
-
 ### DIRECTORIES
 build
 data
@@ -40,10 +31,6 @@ src
 utility
 vendor
 node_modules
-
-### EXECUTABLE LIBRARIES
-composer.phar
-phpunit.phar
 */
 
 var doc = {};
@@ -68,15 +55,6 @@ docker-compose.yml
 Dockerfile
 package.json
 package-lock.json
-
-README.md
-LICENSE
-
-index.js
-test.js
-
-composer.phar
-phpunit.phar
 `;
 
 doc['laravel-filetree'] =
