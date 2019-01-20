@@ -1,5 +1,6 @@
 ;
 var doc = {};
+
 doc['tags'] =
 `
 @abstract @virtual

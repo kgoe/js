@@ -2,74 +2,74 @@
 
 var doc = {};
 
-doc['global'] =
-[
-  'Object',
-  'Function',
-  'Array',
-  'Number',
-  'parseFloat',
-  'parseInt',
-  'Infinity',
-  'NaN',
-  'undefined',
-  'Boolean',
-  'String',
-  'Symbol',
-  'Date',
-  'Promise',
-  'RegExp',
-  'Error',
-  'EvalError',
-  'RangeError',
-  'ReferenceError',
-  'SyntaxError',
-  'TypeError',
-  'URIError',
-  'JSON',
-  'Math',
-  'console',
-  'ArrayBuffer',
-  'Uint8Array',
-  'Int8Array',
-  'Uint16Array',
-  'Int16Array',
-  'Uint32Array',
-  'Int32Array',
-  'Float32Array',
-  'Float64Array',
-  'Uint8ClampedArray',
-  'DataView',
-  'Map',
-  'Set',
-  'WeakMap',
-  'WeakSet',
-  'Proxy',
-  'Reflect',
-  'decodeURI',
-  'decodeURIComponent',
-  'encodeURI',
-  'encodeURIComponent',
-  'escape',
-  'unescape',
-  'eval',
-  'isFinite',
-  'isNaN',
-  'WebAssembly',
-  'global',
-  'process',
-  'GLOBAL',
-  'root',
-  'Buffer',
-  'clearImmediate',
-  'clearInterval',
-  'clearTimeout',
-  'setImmediate',
-  'setInterval',
-  'setTimeout',
-];
+doc.node_global =
+`
+Object
+Function
+Array
+Number
+parseFloat
+parseInt
+Infinity
+NaN
+undefined
+Boolean
+String
+Symbol
+Date
+Promise
+RegExp
+Error
+EvalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+JSON
+Math
+console
+ArrayBuffer
+Uint8Array
+Int8Array
+Uint16Array
+Int16Array
+Uint32Array
+Int32Array
+Float32Array
+Float64Array
+Uint8ClampedArray
+DataView
+Map
+Set
+WeakMap
+WeakSet
+Proxy
+Reflect
+decodeURI
+decodeURIComponent
+encodeURI
+encodeURIComponent
+escape
+unescape
+eval
+isFinite
+isNaN
+WebAssembly
+global
+process
+GLOBAL
+root
+Buffer
+clearImmediate
+clearInterval
+clearTimeout
+setImmediate
+setInterval
+setTimeout
+`;
 
-doc['array'] =
+doc.Array =
 [
   'length',
   'name',
@@ -113,7 +113,7 @@ doc['array.prototype'] =
   'fill',
 ];
 
-doc['function'] =
+doc.Function =
 [
   'length',
   'name',
@@ -133,7 +133,7 @@ doc['function.prototype'] =
   'toString',
 ];
 
-doc['number'] =
+doc.Number =
 [
   'length',
   'name',
@@ -178,7 +178,7 @@ doc['number.__proto__'] =
   'toString',
 ];
 
-doc['object'] =
+doc.Object =
 [
   'length',
   'name',

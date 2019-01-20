@@ -1,11 +1,11 @@
 ;
 
 var doc = {};
-doc['000'] =
+doc.desc =
 `
 `;
 
-doc['links'] =
+doc.links =
 `
 https://elitedatascience.com/data-science-resources
 https://www.forbes.com/sites/bernardmarr/2016/02/12/big-data-35-brilliant-and-free-data-sources-for-2016/#65734204b54d

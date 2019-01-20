@@ -1,4 +1,17 @@
-### References
+;
+
+var doc = {};
+
+doc.desc =
+`
+`;
+
+doc.toc =
+`
+`;
+
+doc zydnjquery =
+`
 http://youmightnotneedjquery.com/
 AJAX
     Post
@@ -69,13 +82,10 @@ UTILS
     Parse JSON
     Trim
     Type
+`;
 
-
-
-
-
-
-
+doc.z30secCode =
+`
 https://github.com/30-seconds/30-seconds-of-code
 Adapter
 Array
@@ -88,13 +98,15 @@ Object
 String
 Type
 Utility
+`;
 
+doc.links =
+`
+http://youmightnotneedjquery.com/
+https://github.com/30-seconds/30-seconds-of-code
 https://www.htmlgoodies.com/beyond/javascript/article.php/3887346/Top-10-JavaScript-Snippets-for-Common-Tasks.htm
-
 https://gist.github.com/marcobiedermann/91a6fe327b4dd8de03861b014498616a
-
 https://www.webhostingsecretrevealed.net/blog/featured-articles/15-cool-javascript-sample-snippets/
-
 https://onextrapixel.com/10-useful-and-time-saving-javascript-snippets/
-
 https://developers.google.com/youtube/player_parameters
+`;

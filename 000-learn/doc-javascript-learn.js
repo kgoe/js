@@ -22,7 +22,7 @@ var learn['2002'] = [];
 var learn['2001'] = [];
 var learn['2000'] = [];
 
-var learn['links'] =
+var learn.links =
 `
 https://github.com/tito10047/PHP-to-Javascript
 https://github.com/Danack/PHP-to-Javascript

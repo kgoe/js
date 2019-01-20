@@ -2,7 +2,7 @@
 
 var doc = {};
 
-doc['topic'] =
+doc.topics =
 `
 github
 atlassian bitbucket
@@ -11,7 +11,7 @@ circleci
 orbs from circcleci
 `;
 
-doc['link'] =
+doc.links =
 `
 https://scotch.io/bar-talk/10-node-frameworks-to-use-in-2019
 https://medium.com/cuelogic-technologies/top-3-best-javascript-frameworks-for-2019-3e6d21eff3d0
@@ -25,6 +25,6 @@ https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
 
 `;
 
-doc['link-youtube'] =
+doc.links_youtube =
 `
 `;
