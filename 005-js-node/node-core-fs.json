@@ -1,5 +1,5 @@
-### node fs module
-[ 'constants',
+[ 
+  'constants',
   'Stats',
   'F_OK',
   'R_OK',
@@ -81,4 +81,5 @@
   'createWriteStream',
   'WriteStream',
   'FileWriteStream',
-  'SyncWriteStream' ]
+  'SyncWriteStream' 
+];

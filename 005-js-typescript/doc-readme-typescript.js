@@ -2,7 +2,7 @@
 
 var doc = {};
 
-doc['000'] =
+doc.desc =
 `
 TypeScript
 typescript is a javascript preprocessor created by microsoft
