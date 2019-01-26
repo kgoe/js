@@ -4,7 +4,6 @@ var fs = require('fs');
 
 var files = fs.readdirSync('./../');
 
-
 /**
  * checkInsideList
  * @param {*} list1
@@ -85,6 +84,26 @@ data
 utility
 `;
 
+prj.file_dir_extra =
+`
+.cr
+.es
+.vscode
+000-learn
+001-js-core
+001-js-standards
+001-js-web-api
+004-js-library
+005-js-node
+005-js-typescript
+008-js-testing
+009-browser
+010-js-parse
+100-snippets
+999-project
+utility-shell
+`;
+
 console.log(checkInsideList(prj.file_config.split('\n'), files));
 
 console.log(checkInsideList(prj.file_exec.split('\n'), files));
@@ -94,4 +113,6 @@ console.log(checkInsideList(prj.file_entry.split('\n'), files));
 console.log(checkInsideList(prj.file_readme.split('\n'), files));
 
 console.log(checkInsideList(prj.file_dir.split('\n'), files));
+
+console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
 
