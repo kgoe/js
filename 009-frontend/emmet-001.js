@@ -6,7 +6,7 @@ snippet.h001 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+fo
 
 snippet.h002 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
-snippet.h003 = 'html>(head>(title+meta+link+style+script>{initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
+snippet.h003 = 'html>(head>(title+meta+link+style+script>{;var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
 snippet.h004 = 'ul>li*3>{This is list item $}';
 
