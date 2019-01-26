@@ -1,7 +1,7 @@
 ;
 var doc = {};
 
-doc['tags'] =
+doc.tags =
 `
 @abstract @virtual
 @access
@@ -72,7 +72,7 @@ doc['tags'] =
 @yields @yield
 `;
 
-doc['tags-inline'] =
+doc.tags_inline =
 `
 @link
 @tutorial
