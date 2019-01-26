@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 const emmet = require('emmet');
 
-const snip_h002 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
+const sniph002 = 'html>(head>(title+meta+link+style+script>{initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
-var html = emmet.expandAbbreviation(snip_h002);
+var html = emmet.expandAbbreviation(sniph002);
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -22,7 +22,8 @@ var html = emmet.expandAbbreviation(snip_h002);
     };
   });
 
-  console.log('Dimensions:', dimensions);
+  // await console.log(initprop);
+  await console.log('Dimensions:', dimensions);
 
   await browser.close();
 })();
