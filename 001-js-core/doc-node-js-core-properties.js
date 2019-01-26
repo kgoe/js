@@ -1,73 +1,122 @@
 ;
 
+/**
+ * checkTypeRoot
+ * @param {string} value
+ * @return {string}
+ */
+function checkTypeRoot( value ) {
+  var root = typeof global !== 'undefined' ? global : window;
+  value = value.split('|');
+  return typeof root[value[0]];
+}
+
+/**
+ * checkEachStringList
+ * @param {*} input
+ * @return {object}
+ */
+function checkEachStringList( input ) {
+  var theArray = input.split('\n');
+  var len = theArray.length;
+  var set = [];
+  var unset = [];
+
+  for ( itemCnt = 0; itemCnt < len; itemCnt ++ ) {
+    var theItem = theArray[itemCnt];
+    if ( theItem == '' ) {
+      // blank string
+    } else {
+      var item = theItem.split('|');
+      var type = checkTypeRoot(theItem);
+      if ( typeof item[1] !== 'undefined' && type !== 'undefined' && type == item[1] ) {
+        set.push(item[0]);
+      } else if ( type !== 'undefined' ) {
+        set.push(item[0] + ' *');
+      } else if ( type == 'undefined' ) {
+        unset.push(item[0]);
+      } else {
+        unset.push(item[0]);
+      }
+    }
+  }
+
+  return {
+    set: set,
+    unset: unset,
+  };
+}
+
 var doc = {};
 
 doc.node_global =
 `
-Object
-Function
-Array
-Number
-parseFloat
-parseInt
-Infinity
-NaN
-undefined
-Boolean
-String
-Symbol
-Date
-Promise
-RegExp
-Error
-EvalError
-RangeError
-ReferenceError
-SyntaxError
-TypeError
-URIError
-JSON
-Math
-console
-ArrayBuffer
-Uint8Array
-Int8Array
-Uint16Array
-Int16Array
-Uint32Array
-Int32Array
-Float32Array
-Float64Array
-Uint8ClampedArray
-DataView
-Map
-Set
-WeakMap
-WeakSet
-Proxy
-Reflect
-decodeURI
-decodeURIComponent
-encodeURI
-encodeURIComponent
-escape
-unescape
-eval
-isFinite
-isNaN
-WebAssembly
-global
-process
-GLOBAL
-root
-Buffer
-clearImmediate
-clearInterval
-clearTimeout
-setImmediate
-setInterval
-setTimeout
+Object|function
+Function|function
+Array|function
+Number|function
+parseFloat|function
+parseInt|function
+Infinity|number
+NaN|number
+undefined|undefined
+Boolean|function
+String|function
+Symbol|function
+Date|function
+Promise|function
+RegExp|function
+Error|function
+EvalError|function
+RangeError|function
+ReferenceError|function
+SyntaxError|function
+TypeError|function
+URIError|function
+JSON|object
+Math|object
+console|object
+ArrayBuffer|function
+Uint8Array|function
+Int8Array|function
+Uint16Array|function
+Int16Array|function
+Uint32Array|function
+Int32Array|function
+Float32Array|function
+Float64Array|function
+Uint8ClampedArray|function
+DataView|function
+Map|function
+Set|function
+WeakMap|function
+WeakSet|function
+Proxy|function
+Reflect|function
+decodeURI|function
+decodeURIComponent|function
+encodeURI|function
+encodeURIComponent|function
+escape|function
+unescape|function
+eval|function
+isFinite|function
+isNaN|function
+WebAssembly|object
+global|object
+process|object
+GLOBAL|object
+root|object
+Buffer|function
+clearImmediate|function
+clearInterval|function
+clearTimeout|function
+setImmediate|function
+setInterval|function
+setTimeout|function
 `;
+
+console.log(checkEachStringList(doc.node_global));
 
 doc.Array =
 [
@@ -79,7 +128,7 @@ doc.Array =
   'of',
 ];
 
-doc['array.prototype'] =
+doc.Array_Prototype =
 [
   'length',
   'constructor',
@@ -120,7 +169,7 @@ doc.Function =
   'prototype',
 ];
 
-doc['function.prototype'] =
+doc.Function_Prototype =
 [
   'length',
   'name',
@@ -154,7 +203,7 @@ doc.Number =
   'EPSILON',
 ];
 
-doc['number.prototype'] =
+doc.Number_Prototype =
 [
   'constructor',
   'toExponential',
