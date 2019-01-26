@@ -2,15 +2,6 @@
 
 var doc = {};
 
-doc.topics =
-`
-github
-atlassian bitbucket
-jenkins
-circleci
-orbs from circcleci
-`;
-
 doc.links =
 `
 https://scotch.io/bar-talk/10-node-frameworks-to-use-in-2019
@@ -21,8 +12,6 @@ https://www.quora.com/What-are-the-top-JavaScript-libraries-tech-to-learn-in-201
 https://technostacks.com/blog/javascript-frameworks/
 https://www.valuecoders.com/blog/technology-and-apps/top-15-front-end-development-tools-2019/amp/
 https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
-
-
 `;
 
 doc.links_youtube =
