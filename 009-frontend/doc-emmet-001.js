@@ -20,7 +20,11 @@ snippet.h004 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.ge
 // angular + initprop
 snippet.h004 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"]))';
 
-console.log(emmet.expandAbbreviation(snippet.h000));
+// bootstrap + jquery + initprop
+snippet.h005 = 'html>(head>(title+meta+link[rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"]+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]+script[src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"]))';
+
+
+console.log(emmet.expandAbbreviation(snippet.h005));
 
 /*
   <script id="sap-ui-bootstrap"
