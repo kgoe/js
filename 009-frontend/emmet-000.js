@@ -1,9 +1,9 @@
 ;
 
-var emmet = require('emmet');
+const emmet = require('emmet');
 
-var child = '';
-var doc = {};
+const child = '';
+const doc = {};
 doc.toc =
 `
 https://docs.emmet.io/
