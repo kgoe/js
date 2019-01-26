@@ -17,6 +17,9 @@ snippet.h003 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.ge
 // d3 + initprop
 snippet.h004 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"]))';
 
+// angular + initprop
+snippet.h004 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"]))';
+
 console.log(emmet.expandAbbreviation(snippet.h000));
 
 /*
