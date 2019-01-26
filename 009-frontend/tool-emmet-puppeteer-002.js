@@ -2,7 +2,7 @@
 const puppeteer = require('puppeteer');
 const emmet = require('emmet');
 
-const sniph002 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
+const sniph002 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"]))';
 
 var html = emmet.expandAbbreviation(sniph002);
 
@@ -59,7 +59,7 @@ function compareProperties( p1, p2 ) {
   // await console.log('Dimensions:', dimensions);
   // await console.log(page);
   await console.log(compareProperties(dimensions.init, dimensions.props));
-  // [ '$', 'jQuery' ]
+  // [ 'd3' ]
 
   await browser.close();
 })();

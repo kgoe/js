@@ -14,6 +14,9 @@ snippet.h002 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+fo
 // jquery + initprop
 snippet.h003 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
+// d3 + initprop
+snippet.h004 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"]))';
+
 console.log(emmet.expandAbbreviation(snippet.h000));
 
 /*
