@@ -115,4 +115,3 @@ console.log(checkInsideList(prj.file_readme.split('\n'), files));
 console.log(checkInsideList(prj.file_dir.split('\n'), files));
 
 console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
-
