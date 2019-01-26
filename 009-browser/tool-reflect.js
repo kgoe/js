@@ -32,7 +32,7 @@ console.log(theOutput, filename, eventCC);
 
 var log = console.log;
 
-var rdom = require('./reflect-properties.js');
+var rdom = require('./tool-reflect-properties.js');
 rdom.prop = Object.getOwnPropertyNames;
 
 // log(rdom.prop(String.prototype));
