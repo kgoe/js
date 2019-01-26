@@ -28,8 +28,13 @@ function checkEachStringList( input ) {
       // blank string
     } else {
       var item = theItem.split('|');
-      if ( checkTypeRoot(theItem) !== 'undefined' ) {
+      var type = checkTypeRoot(theItem);
+      if ( typeof item[1] !== 'undefined' && type !== 'undefined' && type == item[1] ) {
         set.push(item[0]);
+      } else if ( type !== 'undefined' ) {
+        set.push(item[0] + ' *');
+      } else if ( type == 'undefined' ) {
+        unset.push(item[0]);
       } else {
         unset.push(item[0]);
       }
@@ -46,10 +51,10 @@ var doc = {};
 
 doc.valueProp =
 `
-Infinity
-NaN
-undefined
-null
+Infinity|number
+NaN|number
+undefined|undefined
+null|undefined
 `;
 
 doc.funcProp =
@@ -129,15 +134,24 @@ AsyncFunction|undefined
 
 doc.reflection =
 `
-Reflect
-Proxy
+Reflect|object
+Proxy|function
 `;
 
-// Intl
+doc.intl =
+`
+Intl|object
+`;
 
-// WebAssembly
+doc.webassembly =
+`
+WebAssembly|object
+`;
 
-// arguments
+doc.arguments =
+`
+arguments|object
+`;
 
 console.log(checkEachStringList(doc.valueProp));
 
@@ -156,3 +170,9 @@ console.log(checkEachStringList(doc.keyedCollections));
 console.log(checkEachStringList(doc.controlAbstraction));
 
 console.log(checkEachStringList(doc.reflection));
+
+console.log(checkEachStringList(doc.intl));
+
+console.log(checkEachStringList(doc.webassembly));
+
+console.log(checkEachStringList(doc.arguments));
