@@ -51,6 +51,17 @@ https://getbootstrap.com/docs/4.0/getting-started/introduction/
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 `;
 
+doc.highcharts =
+`
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/funnel.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+`;
+
 doc.d3 =
 `
 D3.js
@@ -58,6 +69,9 @@ https://d3js.org/
 https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js
 <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
 `;
+
+doc.gsap =
+``;
 
 doc.jqueryui =
 `
