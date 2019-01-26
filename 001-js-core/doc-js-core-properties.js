@@ -4,11 +4,12 @@ var doc = {};
 var log = console.log;
 var root = typeof global !== 'undefined' ? global : window;
 
-var doc.valueProperties =
+doc.valueProperties =
 `
 Infinity
 NaN
 undefined
+
 null
 `;
 

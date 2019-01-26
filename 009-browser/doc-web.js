@@ -1,7 +1,8 @@
 ;
 
 doc = {};
-doc['temp'] =
+
+doc.desc =
 `
 this directory aims to document web immplelemtations
 and how to implement them

@@ -98,6 +98,7 @@ prj.file_dir_extra =
 005-js-typescript
 008-js-testing
 009-browser
+009-frontend
 010-js-parse
 100-snippets
 999-project
