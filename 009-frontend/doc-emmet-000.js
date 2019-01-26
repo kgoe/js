@@ -144,6 +144,15 @@ abbr.e022 = '(header>ul.nav>li*5)+footer';
 // no spacing !!!
 abbr.e023 = '(header > ul.nav > li*5) + footer';
 
+// list + body
+abbr.e024 = 'ul>li*3>{This is list item $}';
+
+// list
+abbr.e025 = 'ul>.list-item-$*3';
+
+// list
+abbr.e026 = 'ul>.list-item-$$$*3';
+
 // implicit
 // ul or ol >>> li
 // table or tbody or thead or tfood >>> tr

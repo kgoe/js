@@ -2,19 +2,19 @@
 var emmet = require('emmet');
 const snippet = {};
 
+// template
+snippet.h000 = '!';
+
+// full
 snippet.h001 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+footer+script))';
 
+// jquery
 snippet.h002 = 'html>(head>(title+meta+link+style+script))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
+// jquery + initprop
 snippet.h003 = 'html>(head>(title+meta+link+style+script>{var initprop=Object.getOwnPropertyNames(window);}))+(body>(header+main+footer+script[src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"]))';
 
-snippet.h004 = 'ul>li*3>{This is list item $}';
-
-snippet.h005 = 'ul>.list-item-$*3';
-
-snippet.h006 = 'ul>.list-item-$$$*3';
-
-console.log(emmet.expandAbbreviation(snippet.h004));
+console.log(emmet.expandAbbreviation(snippet.h000));
 
 /*
   <script id="sap-ui-bootstrap"
