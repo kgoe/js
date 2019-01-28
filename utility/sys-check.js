@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.readFileSync('utility.js', function(str){
+fs.readFileSync('utility.js', function(str) {
   console.log('file', str);
 });
 

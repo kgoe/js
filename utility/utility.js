@@ -103,7 +103,7 @@ function checkTypes(obj) {
  * @param {*} input
  */
 function printDetails( input ) {
-  console.log(input, typeof global[input])
+  console.log(input, typeof global[input]);
 }
 
 /**
