@@ -5,10 +5,11 @@ WORKDIR /usr/src/app
 
 COPY ["server.js","test.js"]
 
-RUN npm install
+RUN npm init -y && npm install express
 
 COPY . .
 
 EXPOSE 8080
+# note : review port mapping and container starting
 
 CMD [ "node", "server.js" ]
