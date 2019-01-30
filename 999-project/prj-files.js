@@ -13,6 +13,7 @@ doc.files.entry =
 `
 index.js
 test.js
+server.js
 index.php
 index.html
 `;
