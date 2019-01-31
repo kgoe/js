@@ -106,17 +106,17 @@ prj.file_dir_extra =
 999-project
 `;
 
-console.log(checkInsideList(prj.file_config.split('\n'), files));
+// console.log(checkInsideList(prj.file_config.split('\n'), files));
 
-console.log(checkInsideList(prj.file_exec.split('\n'), files));
+// console.log(checkInsideList(prj.file_exec.split('\n'), files));
 
-console.log(checkInsideList(prj.file_entry.split('\n'), files));
+// console.log(checkInsideList(prj.file_entry.split('\n'), files));
 
-console.log(checkInsideList(prj.file_readme.split('\n'), files));
+// console.log(checkInsideList(prj.file_readme.split('\n'), files));
 
-console.log(checkInsideList(prj.file_dir.split('\n'), files));
+// console.log(checkInsideList(prj.file_dir.split('\n'), files));
 
-console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
+// console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
 
 // OS
 // console.log(os);
@@ -134,7 +134,7 @@ path.normalize()
 path.isAbsolute()
 path.join()
 path.relative()
-path.toNamespacePath()
+path.toNamespacedPath()
 path.dirname()
 path.basename()
 path.extname()
@@ -163,3 +163,11 @@ path.posix: {
 }
 path._makeLong()
 */
+
+// console.log( __dirname );
+// C:\doc\kg-dev\gg-js\999-projec
+
+// console.log( __filename );
+// C:\doc\kg-dev\gg-js\999-project\tool-project-checker.js
+
+// console.log(path.parse(__filename));
