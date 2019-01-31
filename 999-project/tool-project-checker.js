@@ -118,6 +118,7 @@ console.log(checkInsideList(prj.file_dir.split('\n'), files));
 
 console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
 
+// OS
 // console.log(os);
 // os.arch() : x64
 // os.cpus() :  4-core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
@@ -125,6 +126,7 @@ console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
 // os.release() : 10.0.17134
 // os.EOL : '\r\n'
 
+// PATH
 // console.log(path);
 /*
 path.resolve()
