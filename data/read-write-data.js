@@ -52,6 +52,21 @@ function dateyymmddhhmmss( sep ) {
 
 var filename = dateyymmdd() + '-data.json';
 
+var filecontent = fs.readFileSync(filename);
+
+var data = JSON.parse(filecontent);
+
+if ( typeof data['2019'] !== 'undefined'
+  && typeof data['2019']['01'] !== 'undefined'
+  && typeof data['2019']['01']['count'] !== 'undefined' ) {
+  data['2019']['01']['count'] ++;
+} else {
+  data['2019'] = {};
+  data['2019']['01'] = {};
+  data['2019']['01']['count'] = 0;
+}
+
+/*
 var data = {};
 
 data.name = "test";
@@ -61,5 +76,6 @@ data['2019'] = {};
 data['2019']['01'] = {
   count: 0,
 };
+*/
 
 fs.writeFileSync(filename, JSON.stringify(data));
