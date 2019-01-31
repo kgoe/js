@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const emmet = require('emmet');
-const kcheck = require('./005-js-node/tool-check-node-10-15-modules.js');
+// const kcheck = require('./005-js-node/tool-check-node-10-15-modules.js');
 // const kutility = require('./utility/utility.js');
 // const kcheck = require('./999-project/tool-project-checker.js');
 
@@ -14,4 +14,7 @@ const kcheck = require('./005-js-node/tool-check-node-10-15-modules.js');
 // puppeteer : android : platform not supported
 // const m1 = require('./009-frontend/tool-emmet-puppeteer-001.js');
 // console.log(kutility);
+
+// TOOL : dockerfile
+const d01 = require('./tool-dockerfile.js');
 
