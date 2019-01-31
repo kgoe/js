@@ -171,3 +171,12 @@ path._makeLong()
 // C:\doc\kg-dev\gg-js\999-project\tool-project-checker.js
 
 // console.log(path.parse(__filename));
+/*
+{
+  root: 'C:\\',
+  dir: 'C:\\doc\\kg-dev\\gg-js\\999-project',
+  base: 'tool-project-checker.js',
+  ext: '.js',
+  name: 'tool-project-checker'
+}
+*/
