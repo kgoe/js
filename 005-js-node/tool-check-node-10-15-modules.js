@@ -20,7 +20,7 @@ fs|object
 http|object
 http2|object
 https|object
-inspector|undefined
+inspector|object
 module|function
 net|object
 os|object
@@ -991,24 +991,6 @@ http {
 }
 */
 
-// console.log('timers',nodeModules['timers']);
-/*
-timers { 
-  active: [Function],
-  _unrefActive: [Function],
-  unenroll: [Function: deprecated],
-  enroll: [Function: deprecated],
-  setTimeout:
-   { [Function: setTimeout] [Symbol(util.promisify.custom)]: [Function] },
-  clearTimeout: [Function: clearTimeout],
-  setInterval: [Function: setInterval],
-  clearInterval: [Function: clearInterval],
-  setImmediate:
-   { [Function: setImmediate] [Symbol(util.promisify.custom)]: [Function] },
-  clearImmediate: [Function: clearImmediate] 
-}
-*/
-
 // console.log('https',nodeModules['https']);
 /*
 https { 
@@ -1046,7 +1028,7 @@ https {
 }
 */
 
-console.log('http2',nodeModules['http2']);
+// console.log('http2',nodeModules['http2']);
 /*
 http2 { 
   constants: {
@@ -1286,6 +1268,840 @@ http2 {
   connect: [Function: connect],
   Http2ServerResponse: [Function: Http2ServerResponse],
   Http2ServerRequest: [Function: Http2ServerRequest] 
+}
+*/
+
+// console.log('inspector',nodeModules['inspector']);
+/*
+inspector { 
+  open: [Function: open],
+  close: [Function: _debugEnd],
+  url: [Function: url],
+  console:
+   Object {
+     debug: [Function: debug],
+     error: [Function: error],
+     info: [Function: info],
+     log: [Function: log],
+     warn: [Function: warn],
+     dir: [Function: dir],
+     dirxml: [Function: dirxml],
+     table: [Function: table],
+     trace: [Function: trace],
+     group: [Function: group],
+     groupCollapsed: [Function: groupCollapsed],
+     groupEnd: [Function: groupEnd],
+     clear: [Function: clear],
+     count: [Function: count],
+     countReset: [Function: countReset],
+     assert: [Function: assert],
+     markTimeline: [Function: markTimeline],
+     profile: [Function: profile],
+     profileEnd: [Function: profileEnd],
+     timeline: [Function: timeline],
+     timelineEnd: [Function: timelineEnd],
+     time: [Function: time],
+     timeEnd: [Function: timeEnd],
+     timeStamp: [Function: timeStamp],
+     context: [Function: context] },
+  Session: [Function: Session] 
+}
+*/
+
+// console.log('module',nodeModules['module']);
+/*
+module function Module(id, parent) {
+  this.id = id;
+  this.exports = {};
+  this.parent = parent;
+  updateChildren(parent, this, false);
+  this.filename = null;
+  this.loaded = false;
+  this.children = [];
+}
+*/
+
+// console.log('net',nodeModules['net']);
+/*
+net { 
+  _createServerHandle: [Function: createServerHandle],
+  _normalizeArgs: [Function: normalizeArgs],
+  _setSimultaneousAccepts: [Function: _setSimultaneousAccepts],
+  connect: [Function: connect],
+  createConnection: [Function: connect],
+  createServer: [Function: createServer],
+  isIP: [Function: isIP],
+  isIPv4: [Function: isIPv4],
+  isIPv6: [Function: isIPv6],
+  Server:
+   { [Function: Server]
+     super_:
+      { [Function: EventEmitter]
+        EventEmitter: [Circular],
+        usingDomains: true,
+        defaultMaxListeners: [Getter/Setter],
+        init: [Function],
+        listenerCount: [Function] } },
+  Socket:
+   { [Function: Socket] super_: { [Function: Duplex] super_: [Function] } },
+  Stream:
+   { [Function: Socket] super_: { [Function: Duplex] super_: [Function] } } 
+}
+*/
+
+// console.log('os',nodeModules['os']);
+/*
+os {
+  arch:
+   { [Function: arch] [Symbol(Symbol.toPrimitive)]: [Function] },
+  cpus: [Function: cpus],
+  endianness:
+   { [Function: endianness] [Symbol(Symbol.toPrimitive)]: [Function] },
+  freemem:
+   { [Function: getFreeMem] [Symbol(Symbol.toPrimitive)]: [Function] },
+  getPriority: [Function: getPriority],
+  homedir:
+   { [Function: checkError] [Symbol(Symbol.toPrimitive)]: [Function] },
+  hostname:
+   { [Function: checkError] [Symbol(Symbol.toPrimitive)]: [Function] },
+  loadavg: [Function: loadavg],
+  networkInterfaces: [Function: networkInterfaces],
+  platform:
+   { [Function: platform] [Symbol(Symbol.toPrimitive)]: [Function] },
+  release:
+   { [Function: checkError] [Symbol(Symbol.toPrimitive)]: [Function] },
+  setPriority: [Function: setPriority],
+  tmpdir:
+   { [Function: tmpdir] [Symbol(Symbol.toPrimitive)]: [Function] },
+  totalmem:
+   { [Function: getTotalMem] [Symbol(Symbol.toPrimitive)]: [Function] },
+  type:
+   { [Function: checkError] [Symbol(Symbol.toPrimitive)]: [Function] },
+  userInfo: [Function: userInfo],
+  uptime:
+   { [Function: getUptime] [Symbol(Symbol.toPrimitive)]: [Function] },
+  getNetworkInterfaces: [Function: deprecated],
+  tmpDir: [Function: deprecated],
+  constants:
+   { UV_UDP_REUSEADDR: 4,
+     dlopen: {},
+     errno:
+      { E2BIG: 7,
+        EACCES: 13,
+        EADDRINUSE: 100,
+        EADDRNOTAVAIL: 101,
+        EAFNOSUPPORT: 102,
+        EAGAIN: 11,
+        EALREADY: 103,
+        EBADF: 9,
+        EBADMSG: 104,
+        EBUSY: 16,
+        ECANCELED: 105,
+        ECHILD: 10,
+        ECONNABORTED: 106,
+        ECONNREFUSED: 107,
+        ECONNRESET: 108,
+        EDEADLK: 36,
+        EDESTADDRREQ: 109,
+        EDOM: 33,
+        EEXIST: 17,
+        EFAULT: 14,
+        EFBIG: 27,
+        EHOSTUNREACH: 110,
+        EIDRM: 111,
+        EILSEQ: 42,
+        EINPROGRESS: 112,
+        EINTR: 4,
+        EINVAL: 22,
+        EIO: 5,
+        EISCONN: 113,
+        EISDIR: 21,
+        ELOOP: 114,
+        EMFILE: 24,
+        EMLINK: 31,
+        EMSGSIZE: 115,
+        ENAMETOOLONG: 38,
+        ENETDOWN: 116,
+        ENETRESET: 117,
+        ENETUNREACH: 118,
+        ENFILE: 23,
+        ENOBUFS: 119,
+        ENODATA: 120,
+        ENODEV: 19,
+        ENOENT: 2,
+        ENOEXEC: 8,
+        ENOLCK: 39,
+        ENOLINK: 121,
+        ENOMEM: 12,
+        ENOMSG: 122,
+        ENOPROTOOPT: 123,
+        ENOSPC: 28,
+        ENOSR: 124,
+        ENOSTR: 125,
+        ENOSYS: 40,
+        ENOTCONN: 126,
+        ENOTDIR: 20,
+        ENOTEMPTY: 41,
+        ENOTSOCK: 128,
+        ENOTSUP: 129,
+        ENOTTY: 25,
+        ENXIO: 6,
+        EOPNOTSUPP: 130,
+        EOVERFLOW: 132,
+        EPERM: 1,
+        EPIPE: 32,
+        EPROTO: 134,
+        EPROTONOSUPPORT: 135,
+        EPROTOTYPE: 136,
+        ERANGE: 34,
+        EROFS: 30,
+        ESPIPE: 29,
+        ESRCH: 3,
+        ETIME: 137,
+        ETIMEDOUT: 138,
+        ETXTBSY: 139,
+        EWOULDBLOCK: 140,
+        EXDEV: 18,
+        WSAEINTR: 10004,
+        WSAEBADF: 10009,
+        WSAEACCES: 10013,
+        WSAEFAULT: 10014,
+        WSAEINVAL: 10022,
+        WSAEMFILE: 10024,
+        WSAEWOULDBLOCK: 10035,
+        WSAEINPROGRESS: 10036,
+        WSAEALREADY: 10037,
+        WSAENOTSOCK: 10038,
+        WSAEDESTADDRREQ: 10039,
+        WSAEMSGSIZE: 10040,
+        WSAEPROTOTYPE: 10041,
+        WSAENOPROTOOPT: 10042,
+        WSAEPROTONOSUPPORT: 10043,
+        WSAESOCKTNOSUPPORT: 10044,
+        WSAEOPNOTSUPP: 10045,
+        WSAEPFNOSUPPORT: 10046,
+        WSAEAFNOSUPPORT: 10047,
+        WSAEADDRINUSE: 10048,
+        WSAEADDRNOTAVAIL: 10049,
+        WSAENETDOWN: 10050,
+        WSAENETUNREACH: 10051,
+        WSAENETRESET: 10052,
+        WSAECONNABORTED: 10053,
+        WSAECONNRESET: 10054,
+        WSAENOBUFS: 10055,
+        WSAEISCONN: 10056,
+        WSAENOTCONN: 10057,
+        WSAESHUTDOWN: 10058,
+        WSAETOOMANYREFS: 10059,
+        WSAETIMEDOUT: 10060,
+        WSAECONNREFUSED: 10061,
+        WSAELOOP: 10062,
+        WSAENAMETOOLONG: 10063,
+        WSAEHOSTDOWN: 10064,
+        WSAEHOSTUNREACH: 10065,
+        WSAENOTEMPTY: 10066,
+        WSAEPROCLIM: 10067,
+        WSAEUSERS: 10068,
+        WSAEDQUOT: 10069,
+        WSAESTALE: 10070,
+        WSAEREMOTE: 10071,
+        WSASYSNOTREADY: 10091,
+        WSAVERNOTSUPPORTED: 10092,
+        WSANOTINITIALISED: 10093,
+        WSAEDISCON: 10101,
+        WSAENOMORE: 10102,
+        WSAECANCELLED: 10103,
+        WSAEINVALIDPROCTABLE: 10104,
+        WSAEINVALIDPROVIDER: 10105,
+        WSAEPROVIDERFAILEDINIT: 10106,
+        WSASYSCALLFAILURE: 10107,
+        WSASERVICE_NOT_FOUND: 10108,
+        WSATYPE_NOT_FOUND: 10109,
+        WSA_E_NO_MORE: 10110,
+        WSA_E_CANCELLED: 10111,
+        WSAEREFUSED: 10112 },
+     signals:
+      { SIGHUP: 1,
+        SIGINT: 2,
+        SIGILL: 4,
+        SIGABRT: 22,
+        SIGFPE: 8,
+        SIGKILL: 9,
+        SIGSEGV: 11,
+        SIGTERM: 15,
+        SIGBREAK: 21,
+        SIGWINCH: 28 },
+     priority:
+      { PRIORITY_LOW: 19,
+        PRIORITY_BELOW_NORMAL: 10,
+        PRIORITY_NORMAL: 0,
+        PRIORITY_ABOVE_NORMAL: -7,
+        PRIORITY_HIGH: -14,
+        PRIORITY_HIGHEST: -20 } },
+  EOL: '\r\n'
+}
+*/
+
+// console.log('path',nodeModules['path']);
+/*
+path { 
+  resolve: [Function: resolve],
+  normalize: [Function: normalize],
+  isAbsolute: [Function: isAbsolute],
+  join: [Function: join],
+  relative: [Function: relative],
+  toNamespacedPath: [Function: toNamespacedPath],
+  dirname: [Function: dirname],
+  basename: [Function: basename],
+  extname: [Function: extname],
+  format: [Function: format],
+  parse: [Function: parse],
+  sep: '\\',
+  delimiter: ';',
+  win32: [Circular],
+  posix:
+   { resolve: [Function: resolve],
+     normalize: [Function: normalize],
+     isAbsolute: [Function: isAbsolute],
+     join: [Function: join],
+     relative: [Function: relative],
+     toNamespacedPath: [Function: toNamespacedPath],
+     dirname: [Function: dirname],
+     basename: [Function: basename],
+     extname: [Function: extname],
+     format: [Function: format],
+     parse: [Function: parse],
+     sep: '/',
+     delimiter: ':',
+     win32: [Circular],
+     posix: [Circular],
+     _makeLong: [Function: toNamespacedPath] },
+  _makeLong: [Function: toNamespacedPath] 
+}
+*/
+
+// console.log('perf_hooks',nodeModules['perf_hooks']);
+/*
+perf_hooks { 
+  performance: { 
+    nodeTiming: {
+      name: 'node',
+      entryType: 'node',
+      startTime: 0,
+      duration: 1115.8258819878101,
+      nodeStart: 0.5337119996547699,
+      v8Start: 2.4199009835720062,
+      bootstrapComplete: 317.65272799134254,
+      environment: 21.234667003154755,
+      loopStart: -1,
+      loopExit: -1,
+      thirdPartyMainStart: undefined,
+      thirdPartyMainEnd: undefined,
+      clusterSetupStart: undefined,
+      clusterSetupEnd: undefined,
+      moduleLoadStart: undefined,
+      moduleLoadEnd: undefined,
+      preloadModuleLoadStart: undefined,
+      preloadModuleLoadEnd: undefined 
+    },
+    timeOrigin: 1548916617957.3677 
+  },
+  PerformanceObserver: [Function: PerformanceObserver],
+  constants: {
+    NODE_PERFORMANCE_GC_MAJOR: 2,
+    NODE_PERFORMANCE_GC_MINOR: 1,
+    NODE_PERFORMANCE_GC_INCREMENTAL: 4,
+    NODE_PERFORMANCE_GC_WEAKCB: 8 
+  }
+}
+*/
+
+// console.log('process', nodeModules['process']);
+/*
+process process {
+  title: ' ',
+  version: 'v10.13.0',
+  versions: {
+    http_parser: '2.8.0',
+    node: '10.13.0',
+    v8: '6.8.275.32-node.36',
+    uv: '1.23.2',
+    zlib: '1.2.11',
+    ares: '1.14.0',
+    modules: '64',
+    nghttp2: '1.34.0',
+    napi: '3',
+    openssl: '1.1.0i',
+    icu: '62.1',
+    unicode: '11.0',
+    cldr: '33.1',
+    tz: '2018e' 
+  },
+  arch: 'x64',
+  platform: 'win32',
+  release: { 
+    name: 'node',
+    lts: 'Dubnium',
+    sourceUrl: 'https://nodejs.org/download/release/v10.13.0/node-v10.13.0.tar.gz',
+    headersUrl: 'https://nodejs.org/download/release/v10.13.0/node-v10.13.0-headers.tar.gz',
+    libUrl: 'https://nodejs.org/download/release/v10.13.0/win-x64/node.lib' },
+  argv: [
+    'C:\\Program Files\\nodejs\\node.exe',
+    'C:\\doc\\kg-dev\\gg-js\\exec.js'
+  ],
+  execArgv: [],
+  env: {
+    ALLUSERSPROFILE: 'C:\\ProgramData',
+    APPDATA: 'C:\\Users\\nmi\\AppData\\Roaming',
+    'asl.log': 'Destination=file',
+    ChocolateyInstall: 'C:\\ProgramData\\chocolatey',
+    ChocolateyLastPathUpdate: 'Mon Nov  5 14:33:11 2018',
+    CommonProgramFiles: 'C:\\Program Files\\Common Files',
+    'CommonProgramFiles(x86)': 'C:\\Program Files (x86)\\Common Files',
+    CommonProgramW6432: 'C:\\Program Files\\Common Files',
+    COMPOSE_CONVERT_WINDOWS_PATHS: 'true',
+    COMPUTERNAME: 'LAPTOP-2DGK3T0I',
+    ComSpec: 'C:\\Windows\\system32\\cmd.exe',
+    DOCKER_CERT_PATH: 'C:\\Users\\nmi\\.docker\\machine\\machines\\default',
+    DOCKER_HOST: 'tcp://192.168.99.100:2376',
+    DOCKER_MACHINE_NAME: 'default',
+    DOCKER_TLS_VERIFY: '1',
+    DOCKER_TOOLBOX_INSTALL_PATH: 'C:\\Program Files\\Docker Toolbox',
+    DriverData: 'C:\\Windows\\System32\\Drivers\\DriverData',
+    FPS_BROWSER_APP_PROFILE_STRING: 'Internet Explorer',
+    FPS_BROWSER_USER_PROFILE_STRING: 'Default',
+    HOMEDRIVE: 'C:',
+    HOMEPATH: '\\Users\\nmi',
+    LOCALAPPDATA: 'C:\\Users\\nmi\\AppData\\Local',
+    LOGONSERVER: '\\\\LAPTOP-2DGK3T0I',
+    NO_PROXY: '192.168.99.100',
+    NUMBER_OF_PROCESSORS: '4',
+    OneDrive: 'C:\\Users\\nmi\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\nmi\\OneDrive',
+    OS: 'Windows_NT',
+    Path: 'C:\\Python27\\;C:\\Program Files\\Git;C:\\exe\\php;C:\\ProgramData\\Boxstarter;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Users\\nmi\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\nmi\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Ruby25-x64\\bin;C:\\Users\\nmi\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\nmi\\AppData\\Roaming\\npm;C:\\Program Files\\Docker Toolbox;C:\\Users\\nmi\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\bin',
+    PATHEXT: '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW;.CPL',
+    PROCESSOR_ARCHITECTURE: 'AMD64',
+    PROCESSOR_IDENTIFIER: 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel',
+    PROCESSOR_LEVEL: '6',
+    PROCESSOR_REVISION: '3d04',
+    ProgramData: 'C:\\ProgramData',
+    ProgramFiles: 'C:\\Program Files',
+    'ProgramFiles(x86)': 'C:\\Program Files (x86)',
+    ProgramW6432: 'C:\\Program Files',
+    PSModulePath: 'C:\\Users\\nmi\\Documents\\WindowsPowerShell\\Modules;C:\\Users\\nmi\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\platform\\PowerShell;C:\\ProgramData\\Boxstarter;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules',
+    PUBLIC: 'C:\\Users\\Public',
+    RUBYOPT: '-Eutf-8',
+    SESSIONNAME: 'Console',
+    SystemDrive: 'C:',
+    SystemRoot: 'C:\\Windows',
+    TEMP: 'C:\\Users\\nmi\\AppData\\Local\\Temp',
+    TMP: 'C:\\Users\\nmi\\AppData\\Local\\Temp',
+    USERDOMAIN: 'LAPTOP-2DGK3T0I',
+    USERDOMAIN_ROAMINGPROFILE: 'LAPTOP-2DGK3T0I',
+    USERNAME: 'nmi',
+    USERPROFILE: 'C:\\Users\\nmi',
+    VBOX_MSI_INSTALL_PATH: 'C:\\Program Files\\Oracle\\VirtualBox\\',
+    VSCODE_CWD: 'C:\\doc\\kg-dev\\gg-js',
+    windir: 'C:\\Windows',
+    TERM_PROGRAM: 'vscode',
+    TERM_PROGRAM_VERSION: '1.30.2',
+    LANG: 'en_US.UTF-8'
+  },
+  pid: 7156,
+  features: {
+    debug: false,
+    uv: true,
+    ipv6: true,
+    tls_alpn: true,
+    tls_sni: true,
+    tls_ocsp: true,
+    tls: true
+  },
+  ppid: 17720,
+  execPath: 'C:\\Program Files\\nodejs\\node.exe',
+  debugPort: 9229,
+  _debugProcess: [Function: _debugProcess],
+  _debugEnd: [Function: _debugEnd],
+  _startProfilerIdleNotifier: [Function: _startProfilerIdleNotifier],
+  _stopProfilerIdleNotifier: [Function: _stopProfilerIdleNotifier],
+  abort: [Function: abort],
+  chdir: [Function: chdir],
+  umask: [Function: umask],
+  _getActiveRequests: [Function: _getActiveRequests],
+  _getActiveHandles: [Function: _getActiveHandles],
+  _kill: [Function: _kill],
+  cwd: [Function: cwd],
+  dlopen: [Function: dlopen],
+  reallyExit: [Function: reallyExit],
+  uptime: [Function: uptime],
+  _rawDebug: [Function],
+  moduleLoadList: [
+    'Binding contextify',
+    'Internal Binding worker',
+    'NativeModule events',
+    'NativeModule internal/async_hooks',
+    'NativeModule internal/errors',
+    'Binding uv',
+    'Binding buffer',
+    'Binding async_wrap',
+    'Binding config',
+    'Binding icu',
+    'NativeModule util',
+    'NativeModule internal/util/inspect',
+    'Binding util',
+    'NativeModule internal/util',
+    'Binding constants',
+    'Internal Binding types',
+    'NativeModule internal/util/types',
+    'NativeModule internal/validators',
+    'NativeModule internal/encoding',
+    'NativeModule buffer',
+    'NativeModule internal/buffer',
+    'NativeModule internal/process/per_thread',
+    'NativeModule internal/process/main_thread_only',
+    'NativeModule internal/process/stdio',
+    'NativeModule assert',
+    'NativeModule internal/assert',
+    'NativeModule fs',
+    'NativeModule path',
+    'NativeModule internal/constants',
+    'Binding fs',
+    'NativeModule internal/fs/streams',
+    'NativeModule internal/fs/utils',
+    'NativeModule stream',
+    'NativeModule internal/streams/pipeline',
+    'NativeModule internal/streams/end-of-stream',
+    'NativeModule internal/streams/legacy',
+    'NativeModule _stream_readable',
+    'NativeModule internal/streams/buffer_list',
+    'NativeModule internal/streams/destroy',
+    'NativeModule internal/streams/state',
+    'NativeModule _stream_writable',
+    'NativeModule _stream_duplex',
+    'NativeModule _stream_transform',
+    'NativeModule _stream_passthrough',
+    'NativeModule internal/url',
+    'NativeModule internal/querystring',
+    'Binding url',
+    'NativeModule internal/process/warning',
+    'NativeModule internal/process/next_tick',
+    'NativeModule internal/process/promises',
+    'NativeModule internal/fixed_queue',
+    'Binding performance',
+    'Binding trace_events',
+    'NativeModule internal/inspector_async_hook',
+    'Binding inspector',
+    'Internal Binding options',
+    'NativeModule timers',
+    'Binding timer_wrap',
+    'NativeModule internal/linkedlist',
+    'NativeModule internal/timers',
+    'NativeModule internal/modules/cjs/loader',
+    'NativeModule vm',
+    'NativeModule internal/modules/cjs/helpers',
+    'NativeModule console',
+    'Binding tty_wrap',
+    'NativeModule tty',
+    'NativeModule net',
+    'NativeModule internal/net',
+    'Binding stream_wrap',
+    'Binding tcp_wrap',
+    'Binding pipe_wrap',
+    'NativeModule internal/stream_base_commons',
+    'NativeModule internal/tty',
+    'Binding signal_wrap',
+    'NativeModule http',
+    'NativeModule _http_agent',
+    'NativeModule _http_client',
+    'NativeModule url',
+    'Binding http_parser',
+    'NativeModule _http_common',
+    'NativeModule internal/freelist',
+    'NativeModule internal/http',
+    'NativeModule _http_incoming',
+    'NativeModule _http_outgoing',
+    'NativeModule _http_server',
+    'NativeModule https',
+    'NativeModule tls',
+    'NativeModule internal/tls',
+    'Binding crypto',
+    'NativeModule internal/streams/duplexpair',
+    'Binding cares_wrap',
+    'NativeModule _tls_common',
+    'NativeModule _tls_wrap',
+    'NativeModule crypto',
+    'NativeModule internal/crypto/random',
+    'NativeModule internal/crypto/pbkdf2',
+    'NativeModule internal/crypto/util',
+    'NativeModule internal/crypto/scrypt',
+    'NativeModule internal/crypto/keygen',
+    'NativeModule internal/crypto/diffiehellman',
+    ... 58 more items ],
+  binding: [Function: binding],
+  _linkedBinding: [Function: _linkedBinding],
+  _events:
+   { newListener: [ [Function], [Function] ],
+     removeListener: [ [Function], [Function] ],
+     warning: [Function],
+     SIGWINCH: [ [Function], [Function] ] },
+  _eventsCount: 4,
+  _maxListeners: undefined,
+  _fatalException: [Function],
+  domain: [Getter/Setter],
+  _exiting: false,
+  assert: [Function: deprecated],
+  config:
+   { target_defaults:
+      { cflags: [],
+        default_configuration: 'Release',
+        defines: [],
+        include_dirs: [],
+        libraries: [] },
+     variables:
+      { asan: 0,
+        build_v8_with_gn: false,
+        coverage: false,
+        debug_nghttp2: false,
+        enable_lto: false,
+        enable_pgo_generate: false,
+        enable_pgo_use: false,
+        force_dynamic_crt: 0,
+        host_arch: 'x64',
+        icu_data_in: '..\\..\\deps/icu-small\\source/data/in\\icudt62l.dat',
+        icu_endianness: 'l',
+        icu_gyp_path: 'tools/icu/icu-generic.gyp',
+        icu_locales: 'en,root',
+        icu_path: 'deps/icu-small',
+        icu_small: true,
+        icu_ver_major: '62',
+        nasm_version: '2.13',
+        node_byteorder: 'little',
+        node_debug_lib: false,
+        node_enable_d8: false,
+        node_enable_v8_vtunejit: false,
+        node_install_npm: true,
+        node_module_version: 64,
+        node_no_browser_globals: false,
+        node_prefix: '/usr/local',
+        node_release_urlbase: 'https://nodejs.org/download/release/',
+        node_shared: false,
+        node_shared_cares: false,
+        node_shared_http_parser: false,
+        node_shared_libuv: false,
+        node_shared_nghttp2: false,
+        node_shared_openssl: false,
+        node_shared_zlib: false,
+        node_tag: '',
+        node_target_type: 'executable',
+        node_use_bundled_v8: true,
+        node_use_dtrace: false,
+        node_use_etw: true,
+        node_use_openssl: true,
+        node_use_pch: false,
+        node_use_perfctr: true,
+        node_use_v8_platform: true,
+        node_with_ltcg: true,
+        node_without_node_options: false,
+        openssl_fips: '',
+        openssl_no_asm: 0,
+        shlib_suffix: 'so.64',
+        target_arch: 'x64',
+        v8_enable_gdbjit: 0,
+        v8_enable_i18n_support: 1,
+        v8_enable_inspector: 1,
+        v8_no_strict_aliasing: 1,
+        v8_optimized_debug: 0,
+        v8_promise_internal_field_count: 1,
+        v8_random_seed: 0,
+        v8_trace_maps: 0,
+        v8_typed_array_max_size_in_heap: 0,
+        v8_use_snapshot: true,
+        want_separate_host_toolset: 0 } },
+  setUncaughtExceptionCaptureCallback: [Function],
+  hasUncaughtExceptionCaptureCallback: [Function],
+  emitWarning: [Function],
+  nextTick: [Function: nextTick],
+  _tickCallback: [Function: _tickCallback],
+  stdout: [Getter],
+  stderr: [Getter],
+  stdin: [Getter],
+  openStdin: [Function],
+  hrtime: { [Function: hrtime] bigint: [Function] },
+  cpuUsage: [Function: cpuUsage],
+  memoryUsage: [Function: memoryUsage],
+  exit: [Function],
+  kill: [Function],
+  argv0: 'C:\\Program Files\\nodejs\\node.exe',
+  allowedNodeEnvironmentFlags: [Getter/Setter],
+  mainModule: Module {
+    id: '.',
+    exports: {},
+    parent: null,
+    filename: 'C:\\doc\\kg-dev\\gg-js\\exec.js',
+    loaded: false,
+    children: [ [Module], [Module] ],
+    paths: [
+      'C:\\doc\\kg-dev\\gg-js\\node_modules',
+      'C:\\doc\\kg-dev\\node_modules',
+      'C:\\doc\\node_modules',
+      'C:\\node_modules'
+    ]
+  }
+}
+*/
+
+// console.log('punycode', nodeModules['punycode']);
+/*
+punycode { 
+  version: '2.1.0',
+  ucs2: { 
+    decode: [Function: ucs2decode],
+    encode: [Function: ucs2encode] 
+  },
+  decode: [Function: decode],
+  encode: [Function: encode],
+  toASCII: [Function: toASCII],
+  toUnicode: [Function: toUnicode]
+}
+*/
+
+// console.log('querystring', nodeModules['querystring']);
+/*
+querystring { 
+  unescapeBuffer: [Function: unescapeBuffer],
+  unescape: [Function: qsUnescape],
+  escape: [Function: qsEscape],
+  stringify: [Function: stringify],
+  encode: [Function: stringify],
+  parse: [Function: parse],
+  decode: [Function: parse] }
+*/
+
+// console.log('readline', nodeModules['readline']);
+/*
+readline { 
+  Interface: { 
+    [Function: Interface]
+    super_: { 
+      [Function: EventEmitter]
+      EventEmitter: [Circular],
+      usingDomains: true,
+      defaultMaxListeners: [Getter/Setter],
+      init: [Function],
+      listenerCount: [Function] 
+    } 
+  },
+  clearLine: [Function: clearLine],
+  clearScreenDown: [Function: clearScreenDown],
+  createInterface: [Function: createInterface],
+  cursorTo: [Function: cursorTo],
+  emitKeypressEvents: [Function: emitKeypressEvents],
+  moveCursor: [Function: moveCursor]
+}
+*/
+
+// console.log('repl', nodeModules['repl']);
+/*
+repl { 
+  writer: { [Function]
+     options:
+      { showHidden: false,
+        depth: 2,
+        colors: false,
+        customInspect: true,
+        showProxy: true,
+        maxArrayLength: 100,
+        breakLength: 60,
+        compact: true,
+        sorted: false } },
+  _builtinLibs:
+   [ 'assert',
+     'async_hooks',
+     'buffer',
+     'child_process',
+     'cluster',
+     'crypto',
+     'dgram',
+     'dns',
+     'domain',
+     'events',
+     'fs',
+     'http',
+     'http2',
+     'https',
+     'inspector',
+     'net',
+     'os',
+     'path',
+     'perf_hooks',
+     'punycode',
+     'querystring',
+     'readline',
+     'repl',
+     'stream',
+     'string_decoder',
+     'tls',
+     'trace_events',
+     'tty',
+     'url',
+     'util',
+     'v8',
+     'vm',
+     'zlib' ],
+  REPLServer:
+   { [Function: REPLServer] super_: { [Function: Interface] super_: [Function] } },
+  REPL_MODE_SLOPPY: Symbol(repl-sloppy),
+  REPL_MODE_STRICT: Symbol(repl-strict),
+  start: [Function],
+  Recoverable: { [Function: Recoverable] super_: [Function: SyntaxError] } 
+}
+*/
+
+// console.log('stream', nodeModules['stream']);
+/*
+stream function Stream() {
+  EE.call(this);
+}
+*/
+
+// console.log('string_decoder', nodeModules['string_decoder']);
+/*
+string_decoder { StringDecoder: [Function: StringDecoder] }
+*/
+
+// console.log('sys', nodeModules['timers']);
+/*
+sys { 
+  active: [Function],
+  _unrefActive: [Function],
+  unenroll: [Function: deprecated],
+  enroll: [Function: deprecated],
+  setTimeout:
+   { [Function: setTimeout] [Symbol(util.promisify.custom)]: [Function] },
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  clearInterval: [Function: clearInterval],
+  setImmediate:
+   { [Function: setImmediate] [Symbol(util.promisify.custom)]: [Function] },
+  clearImmediate: [Function: clearImmediate] 
+}
+*/
+
+// console.log('timers',nodeModules['timers']);
+/*
+timers { 
+  active: [Function],
+  _unrefActive: [Function],
+  unenroll: [Function: deprecated],
+  enroll: [Function: deprecated],
+  setTimeout:
+   { [Function: setTimeout] [Symbol(util.promisify.custom)]: [Function] },
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  clearInterval: [Function: clearInterval],
+  setImmediate:
+   { [Function: setImmediate] [Symbol(util.promisify.custom)]: [Function] },
+  clearImmediate: [Function: clearImmediate] 
 }
 */
 
