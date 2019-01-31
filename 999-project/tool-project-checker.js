@@ -1,6 +1,8 @@
 ;
 
 var fs = require('fs');
+var os = require('os');
+var path = require('path');
 
 var files = fs.readdirSync('./../');
 
@@ -102,7 +104,6 @@ prj.file_dir_extra =
 010-js-parse
 100-snippets
 999-project
-utility-shell
 `;
 
 console.log(checkInsideList(prj.file_config.split('\n'), files));
@@ -116,3 +117,47 @@ console.log(checkInsideList(prj.file_readme.split('\n'), files));
 console.log(checkInsideList(prj.file_dir.split('\n'), files));
 
 console.log(checkInsideList(prj.file_dir_extra.split('\n'), files));
+
+// console.log(os);
+// os.arch() : x64
+// os.cpus() :  4-core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+// os.platform() : win32
+// os.release() : 10.0.17134
+// os.EOL : '\r\n'
+
+// console.log(path);
+/*
+path.resolve()
+path.normalize()
+path.isAbsolute()
+path.join()
+path.relative()
+path.toNamespacePath()
+path.dirname()
+path.basename()
+path.extname()
+path.format()
+path.parse()
+path.sep : '\\'
+path.delimiter : ';'
+path.win32: 
+path.posix: {
+  resolve()
+  normalize()
+  isAbsolute()
+  join()
+  relative()
+  toNamespacedPath()
+  dirname()
+  basename()
+  extname()
+  format()
+  parse()
+  sep : '/'
+  delimiter : ':'
+  win32: 
+  posix:
+  _makeLong()
+}
+path._makeLong()
+*/
