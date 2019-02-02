@@ -1,4 +1,4 @@
-### web api
+### javascript web api
 Alarm API
 Ambient Light Events
 App Cache
