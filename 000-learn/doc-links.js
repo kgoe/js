@@ -14,6 +14,23 @@ https://www.valuecoders.com/blog/technology-and-apps/top-15-front-end-developmen
 https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
 `;
 
+doc.links_github =
+`
+https://github.com/airbnb/javascript
+https://github.com/GitbookIO/javascript
+https://github.com/trekhleb/javascript-algorithms
+https://github.com/wesbos/JavaScript30
+https://github.com/pubnub/javascript
+https://github.com/sorrycc/awesome-javascript
+https://github.com/shichuan/javascript-patterns
+https://github.com/ryanmcdermott/clean-code-javascript
+https://github.com/tcorral/Design-Patterns-in-Javascript
+https://github.com/mjavascript/mastering-modular-javascript
+https://github.com/addyosmani/essential-js-design-patterns
+https://github.com/sohamkamani/javascript-design-patterns-for-humans
+https://github.com/vasanthk/react-bits
+`;
+
 doc.links_youtube =
 `
 `;
