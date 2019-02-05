@@ -24,3 +24,61 @@ var theApp2 = {};
   app.property1 = 1;
   app.property2 = 2;
 })(theApp2);
+
+/**
+ * nsStringExtend
+ * @desc a convenience function for parsing string namespaces and
+ * @descautomatically generating nested namespaces
+ * @param {*} ns 
+ * @param {*} ns_string 
+ */
+function nsStringExtend( ns, ns_string ) {
+  var parts = ns_string.split("."),
+      parent = ns,
+      pl;
+ 
+  pl = parts.length;
+ 
+  for ( var i = 0; i < pl; i++ ) {
+    // create a property if it doesn't exist
+    if ( typeof parent[parts[i]] === "undefined" ) {
+      parent[parts[i]] = {};
+    }
+ 
+    parent = parent[parts[i]];
+  }
+ 
+  return parent;
+}
+
+/**
+ * nsObjectExtend
+ * @desc Written by Andrew Dupont, optimized by Addy Osmani
+ * @param {*} destination 
+ * @param {*} source 
+ */
+function nsObjectExtend( destination, source ) {
+ 
+  var toString = Object.prototype.toString,
+      objTest = toString.call({});
+ 
+  for ( var property in source ) {
+    if ( source[property] && objTest === toString.call(source[property]) ) {
+      destination[property] = destination[property] || {};
+      extend(destination[property], source[property]);
+    } else {
+      destination[property] = source[property];
+    }
+  }
+ 
+  return destination;
+};
+
+// jquery extend example
+$.extend( true, myApp, {
+  library:{
+    bar: function(){
+      //...
+    }
+  }
+});
