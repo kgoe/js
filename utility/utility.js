@@ -176,6 +176,26 @@ function globalProperties2( parent ) {
   return output;
 }
 
+/**
+ * getPropType
+ * @param {*} val
+ * @return {object}
+ */
+function getPropType( val ) {
+  var prop = Object.getOwnPropertyNames( val );
+  var ll = prop.length;
+  var output = {};
+  for ( cc = 0; cc < ll; cc++ ) {
+    try {
+      output[prop[cc]] = typeof val[prop[cc]];
+    } catch ( err ) {
+      console.log( 'error: ', err, prop[cc] );
+      output[prop[cc]] = false;
+    }
+  }
+  return output;
+};
+
 // End
 if ( typeof module !== 'undefined'
   && typeof require !== 'undefined'
@@ -206,5 +226,6 @@ if ( typeof module !== 'undefined'
     globalProperties2: globalProperties2,
     checkTypes: checkTypes,
     printDetails: printDetails,
+    getPropType: getPropType,
   };
 }
