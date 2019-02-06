@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const emmet = require('emmet');
+
 // const kcheck = require('./005-js-node/tool-check-node-10-15-modules.js');
 // const kutility = require('./utility/utility.js');
 // const kcheck = require('./999-project/tool-project-checker.js');
@@ -16,5 +17,5 @@ const emmet = require('emmet');
 // console.log(kutility);
 
 // TOOL : dockerfile
-const d01 = require('./tool-dockerfile.js');
+const d01 = require(__dirname + '/utility/tool-dockerfile.js');
 

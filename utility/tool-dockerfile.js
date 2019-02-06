@@ -28,7 +28,10 @@ var sourcecode = [];
 // WORKDIR
 // ONBUILD
 
-
+/**
+ * sourceFrom
+ * @return {string}
+ */
 function sourceFrom() {
   var theImage = 'node:11.8-alpine';
   var line = `FROM ${theImage}`;
