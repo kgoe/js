@@ -4,7 +4,8 @@
  * nsCreator
  * @param {string} path
  * @param {*} value
- * @param {*} parent ?
+ * @param {*} parent
+ * @return {*}
  */
 function nsCreator( path, value, parent ) {
   var theParent = typeof parent !== 'undefined' ? parent : typeof global !== 'undefined' ? global : window;
@@ -49,7 +50,8 @@ function nsCreator( path, value, parent ) {
 /**
  * nsChecker
  * @param {string} path
- * @param {*} parent ?
+ * @param {*} parent
+ * @return {*}
  */
 function nsChecker( path, parent ) {
   var theParent = typeof parent !== 'undefined'
