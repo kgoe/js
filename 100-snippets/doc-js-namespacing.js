@@ -1,5 +1,7 @@
 ;
 
+// reference : addy osmani
+
 var myApplication = myApplication || {};
 
 if( !MyApplication ){ MyApplication = {} };
