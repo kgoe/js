@@ -4,7 +4,9 @@
 
 var myApplication = myApplication || {};
 
-if( !MyApplication ){ MyApplication = {} };
+if ( !MyApplication ) {
+  MyApplication = {}
+};
 
 window.myApplication || ( window.myApplication = {} );
 
@@ -29,41 +31,42 @@ var theApp2 = {};
 
 /**
  * nsStringExtend
+ * @desc Addy Osmani
  * @desc a convenience function for parsing string namespaces and
- * @descautomatically generating nested namespaces
- * @param {*} ns 
- * @param {*} ns_string 
+ * @desc automatically generating nested namespaces
+ * @param {*} ns
+ * @param {*} nsString
+ * @return {*}
  */
-function nsStringExtend( ns, ns_string ) {
-  var parts = ns_string.split("."),
-      parent = ns,
-      pl;
- 
+function nsStringExtend( ns, nsString ) {
+  var parts = nsString.split('.');
+  var parent = ns;
+  var pl;
+
   pl = parts.length;
- 
+
   for ( var i = 0; i < pl; i++ ) {
     // create a property if it doesn't exist
-    if ( typeof parent[parts[i]] === "undefined" ) {
+    if ( typeof parent[parts[i]] === 'undefined' ) {
       parent[parts[i]] = {};
     }
- 
     parent = parent[parts[i]];
   }
- 
+
   return parent;
 }
 
 /**
  * nsObjectExtend
  * @desc Written by Andrew Dupont, optimized by Addy Osmani
- * @param {*} destination 
- * @param {*} source 
+ * @param {*} destination
+ * @param {*} source
+ * @return {*}
  */
 function nsObjectExtend( destination, source ) {
- 
-  var toString = Object.prototype.toString,
-      objTest = toString.call({});
- 
+  var toString = Object.prototype.toString;
+  var objTest = toString.call({});
+
   for ( var property in source ) {
     if ( source[property] && objTest === toString.call(source[property]) ) {
       destination[property] = destination[property] || {};
@@ -72,15 +75,15 @@ function nsObjectExtend( destination, source ) {
       destination[property] = source[property];
     }
   }
- 
+
   return destination;
 };
 
 // jquery extend example
 $.extend( true, myApp, {
-  library:{
-    bar: function(){
-      //...
-    }
-  }
+  library: {
+    bar: function() {
+      // ...
+    },
+  },
 });
