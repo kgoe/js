@@ -5,8 +5,8 @@
 var myApplication = myApplication || {};
 
 if ( !MyApplication ) {
-  MyApplication = {}
-};
+  MyApplication = {};
+}
 
 window.myApplication || ( window.myApplication = {} );
 
