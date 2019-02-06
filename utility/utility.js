@@ -73,6 +73,36 @@ function dateyymmddhhmmss( sep ) {
 }
 
 /**
+ * isoDate
+ * @param {string} sep
+ * @return {string}
+ */
+var isoDate = function isoDate( sep ) {
+  var date = new Date();
+  var output = [];
+  var separator = sep === undefined ? '-' : sep;
+  output.push(date.getFullYear());
+  output.push(pad(date.getMonth(), 2));
+  output.push(pad(date.getDate(), 2));
+  return output.join(separator);
+};
+
+/**
+ * isoTime
+ * @param {string} sep
+ * @return {string}
+ */
+var isoTime = function isoTime( sep ) {
+  var date = new Date();
+  var output = [];
+  var separator = sep === undefined ? '-' : sep;
+  output.push(pad(date.getHours(), 2));
+  output.push(pad(date.getMinutes(), 2));
+  output.push(pad(date.getSeconds(), 2));
+  return output.join(separator);
+};
+
+/**
  * getRandomColor
  * @return {string}
  */
@@ -351,6 +381,8 @@ if ( typeof module !== 'undefined'
     pad: pad,
     dateyymmdd: dateyymmdd,
     dateyymmddhhmmss: dateyymmddhhmmss,
+    isoDate: isoDate,
+    isoTime: isoTime,
     getRandomColor: getRandomColor,
     globalProperties: globalProperties,
     globalPrpperties1: globalProperties1,
