@@ -12,7 +12,6 @@ const {exec} = require('child_process');
  * @param {string} command
  */
 function executor( command ) {
-
   /**
    * execCallback
    * @param {*} err
