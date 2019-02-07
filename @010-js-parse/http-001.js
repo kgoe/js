@@ -1,10 +1,10 @@
-// const http = require('http');
-const http = require('https');
+;
+const http = require('http');
+const https = require('https');
 
 /**
  * httpBasicPromise
- * @param {string} theHost
- * @param {string} thePath
+ * @param {object} theConfig
  * @return {Promise}
  */
 var httpBasicPromise = function httpBasicPromise(theConfig) {
@@ -45,7 +45,14 @@ var httpBasicPromise = function httpBasicPromise(theConfig) {
         typeof theCallback === 'function' ? theCallback(body) : console.log(body);
       });
     };
-    var requestHandler = http.get(theRequest, requestCallback);
+
+    var nodeRequest = http;
+    if ( theConfig.isHTTPS ) {
+      nodeRequest = http;
+    } else {
+      nodeRequest = https;
+    }
+    var requestHandler = nodeRequest.get(theRequest, requestCallback);
 
     return requestHandler;
   };
@@ -81,7 +88,7 @@ function valiateHttpOutput( input ) {
     bodyOutput = input;
   }
   */
- 
+
   var output = {
     isHTML: isHTML,
     isJSON: isJSON,
@@ -97,6 +104,7 @@ function valiateHttpOutput( input ) {
 config = {
   theHost: 'www.google.com',
   thePath: '/?gws_rd=ssl',
+  isHTTPS: true,
   outputResponse: true,
 };
 
