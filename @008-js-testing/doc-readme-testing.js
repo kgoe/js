@@ -1,11 +1,12 @@
 ;
 
-var doc = {}
+var doc = {};
 
 doc['000'] =
 `
 mocha
 chai
+chai-http
 node.js assert
 jest
 qunit
