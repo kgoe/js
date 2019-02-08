@@ -2,15 +2,14 @@
 
 var doc = {};
 
-doc.temp = (()=>{
-  var text =
+doc.temp =
 `
+one
+two
+three
 `;
-  return text;
-})();
 
-doc.topic = (()=>{
-  var text =
+doc.topics =
 `
 javascipt
 ecmasciprt
@@ -62,11 +61,8 @@ Moment.js
 Semantic UI
 Pelk
 `;
-  return text;
-})();
 
-doc.todo = (()=>{
-  var text =
+doc.todo =
 `
 complete and expanded reference list
 common core api list
@@ -74,12 +70,8 @@ core api list
 node.js api list
 browser web api list
 `;
-  return text;
-})();
 
-
-doc.topic2019 = (()=>{
-  var text =
+doc.topic2019 =
 `
 5g
 flexible screens
@@ -96,5 +88,3 @@ progressive web apps
 size matters again
 the workforce gets even more diverse
 `;
-  return text;
-})();
