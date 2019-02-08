@@ -1,4 +1,5 @@
 ;
+
 var dom2Interfaces = {
   dom: 'undefined',
   _DOM_IDL_: 'undefined',

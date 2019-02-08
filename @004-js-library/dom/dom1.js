@@ -1,4 +1,5 @@
 ;
+
 var dom1Interfaces = {
   DOMImplementation: 'function',
   DocumentFragment: 'function',

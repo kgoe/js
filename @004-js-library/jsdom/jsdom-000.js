@@ -1,17 +1,18 @@
 const log = console.log;
 const _jsdom = require('jsdom');
-const { JSDOM } = _jsdom;
+const {JSDOM} = _jsdom;
 
-const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
+const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
 
-console.log(dom.window.document.querySelector("p").textContent); 
-// Hello World
+console.log(dom.window.document.querySelector('p').textContent);
+
+// Hello World
 
 // console.log(_jsdom);
 // dom jsdom
 /*
 JSDOM {
-  [Symbol(window)]: 
+  [Symbol(window)]:
    Window {
      onafterprint: [Getter/Setter],
      onbeforeprint: [Getter/Setter],
@@ -94,14 +95,14 @@ JSDOM {
      onwaiting: [Getter/Setter],
      _registeredHandlers: Set {},
      _eventHandlers: {},
-     _resourceLoader: 
+     _resourceLoader:
       NoOpResourceLoader {
         _strictSSL: true,
         _proxy: undefined,
         _userAgent: 'Mozilla/5.0 (android) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/13.0.0' },
      _globalProxy: [Circular],
      _document: Document { location: [Getter/Setter] },
-     _sessionHistory: 
+     _sessionHistory:
       SessionHistory {
         _window: [Circular],
         _windowImpl: [Object],
