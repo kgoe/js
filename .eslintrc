@@ -12,6 +12,6 @@
         "no-alert": 2,
         "no-array-constructor": 1,
         "no-bitwise": 0,
-        "linebreak-style": [2, "windows"]
+        "linebreak-style": [2, "unix"]
     }
 }
