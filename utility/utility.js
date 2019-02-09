@@ -48,8 +48,24 @@ function dateyymmdd( sep ) {
   var output = '';
   sep = sep || '';
   var theDate = new Date();
-  // return theDate.getFullYear() + sep + pad(theDate.getMonth() + 1,2) + sep + pad(theDate.getDate(),2);
-  output += [theDate.getFullYear(), pad(theDate.getMonth() + 1, 2), pad(theDate.getDate(), 2)].join(sep);
+
+  /*
+  var dateString =
+    theDate.getFullYear() +
+    sep +
+    pad(theDate.getMonth() + 1, 2) +
+    sep +
+    pad(theDate.getDate(), 2);
+  return dateString;
+  /*/
+  var dateArray =
+  [
+    theDate.getFullYear(),
+    pad(theDate.getMonth() + 1, 2),
+    pad(theDate.getDate(), 2),
+  ];
+  output += dateArray.join(sep);
+  // */
 
   return output;
 }
@@ -62,12 +78,38 @@ function dateyymmdd( sep ) {
 function dateyymmddhhmmss( sep ) {
   var output = '';
   sep = sep || '';
+
   var theDate = new Date();
-  // output = theDate.getFullYear() + sep + pad(theDate.getMonth() + 1,2) + sep + pad(theDate.getDate(),2);
+  /*
+    output =
+      theDate.getFullYear() +
+      sep +
+      pad(theDate.getMonth() + 1, 2) +
+      sep +
+      pad(theDate.getDate(), 2);
+
+
+  */
+
   // output += dateyymmdd(sep);
-  output += [theDate.getFullYear(), pad(theDate.getMonth() + 1, 2), pad(theDate.getDate(), 2)].join(sep);
+
+  var dateArray =
+  [
+    theDate.getFullYear(),
+    pad(theDate.getMonth() + 1, 2),
+    pad(theDate.getDate(), 2),
+  ];
+
+  var timeArray =
+  [
+    pad(theDate.getHours(), 2),
+    pad(theDate.getMinutes(), 2),
+    pad(theDate.getSeconds(), 2),
+  ];
+
+  output += dateArray.join(sep);
   output += '-';
-  output += [pad(theDate.getHours(), 2), pad(theDate.getMinutes(), 2), pad(theDate.getSeconds(), 2)].join(sep);
+  output += timeArray.join(sep);
 
   return output;
 }
@@ -188,12 +230,16 @@ function globalProperties2( parent ) {
     : typeof global != 'undefined'
     ? global
     : window;
+
   var prop = Object.getOwnPropertyNames(root);
   var output = [];
+
   for ( var cnt = 0; cnt < prop.length; cnt++ ) {
     var item = prop[cnt];
     var type = typeof root[item];
-    var toString = typeof root[item] !== 'undefined' && typeof root[item].toString == 'function' ? root[item].toString() : '';
+    var chkStr = typeof root[item] !== 'undefined';
+    chkStr = chkStr && typeof root[item].toString == 'function';
+    var toString = chkStr ? root[item].toString() : '';
     var syntax =
       type == 'function'
       ? toString
@@ -202,6 +248,7 @@ function globalProperties2( parent ) {
       : toString;
     output.push([item, type, syntax]);
   }
+
   // console.log(output);
   return output;
 }
@@ -234,7 +281,8 @@ function getPropType( val ) {
  * @return {*}
  */
 function nsCreator( path, value, parent ) {
-  var theParent = typeof parent !== 'undefined' ? parent : typeof global !== 'undefined' ? global : window;
+  var theRoot = typeof global !== 'undefined' ? global : window;
+  var theParent = typeof parent !== 'undefined' ? parent : theRoot;
   var thePath = path.split('.');
   var theReference = [];
   var pathContext = false;
