@@ -46,7 +46,7 @@ worker_threads
 zlib
 `;
 
-doc.3precommended =
+doc.precommended =
 `
 mocha
 chai
@@ -54,7 +54,7 @@ cheerio
 puppeteer
 `;
 
-doc.3pglobal =
+doc.pglobal =
 `
 mocha
 `;
