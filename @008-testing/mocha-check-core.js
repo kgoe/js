@@ -8,25 +8,25 @@ if ( typeof describe == 'function') {
   describe('js core properties', function() {
     it('js environment', function() {
       assert.equal(typeof arguments,'object');
-      assert.equal(typeof this,'object');
-      assert.equal(typeof Object,'function');
-      assert.equal(typeof Function,'function');
-      assert.equal(typeof Number,'function');
-      assert.equal(typeof String,'function');
-      assert.equal(typeof Symbol,'function');
-      assert.equal(typeof Boolean,'function');
-      assert.equal(typeof Array,'function');
-      assert.equal(typeof Date,'function');
-      assert.equal(typeof Math,'object');
-      assert.equal(typeof JSON,'object');
+      assert.equal(typeof this, 'object');
+      assert.equal(typeof Object, 'function');
+      assert.equal(typeof Function, 'function');
+      assert.equal(typeof Number, 'function');
+      assert.equal(typeof String, 'function');
+      assert.equal(typeof Symbol, 'function');
+      assert.equal(typeof Boolean, 'function');
+      assert.equal(typeof Array, 'function');
+      assert.equal(typeof Date, 'function');
+      assert.equal(typeof Math, 'object');
+      assert.equal(typeof JSON, 'object');
       if ( typeof global !== 'undefined') {
         // node js
-        assert.equal(typeof global,'object');
+        assert.equal(typeof global, 'object');
       } else if ( typeof window !== 'undefined' ) {
         // browser
-        assert.equal(typeof widnow,'object');
+        assert.equal(typeof widnow, 'object');
       } else {
-        assert.equal(true,false);
+        assert.equal(true, false);
       }
     });
 

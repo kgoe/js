@@ -23,14 +23,16 @@ var log = console.log;
 
 /**
  * theFunction
- * @param {*} a 
- * @param {*} b 
- * @param {*} c 
- * @param {*} d 
- * @param {*} e 
+ * @param {*} a
+ * @param {*} b
+ * @param {*} c
+ * @param {*} d
+ * @param {*} e
+ * @return {*}
  */
 function theFunction(a, b, c, d, e) {
   var test = true;
+  return a + b + c + d + e + test;
 }
 
 /**
@@ -41,6 +43,7 @@ function theFunction(a, b, c, d, e) {
  * @param {*} d
  * @param {*} e
  * @param {*} f
+ * @return {*}
  */
 function thatFunction(
     a,
@@ -51,7 +54,11 @@ function thatFunction(
     f,
 ) {
   var helloWorld = 'hello world';
+  return a + b + c + d + e + f + helloWorld;
 }
+
+theFunction(1, 2, 3, 4, 5);
+thatFunction(1, 2, 3, 4, 5, 6);
 
 // log(theFunction.toString().split('{')[0]);
 // log(theFunction.a);
