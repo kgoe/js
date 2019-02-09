@@ -4,7 +4,7 @@ const fs = require('fs');
 const emmet = require('emmet');
 
 // const kcheck = require('./005-js-node/tool-check-node-10-15-modules.js');
-// const kutility = require('./utility/utility.js');
+// const kutility = require('./utility/kgutility.js');
 // const kcheck = require('./999-project/tool-project-checker.js');
 
 // TOOL : emmet

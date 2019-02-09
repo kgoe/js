@@ -1,6 +1,9 @@
 ;
+
 /**
- * utility.js
+ * kgutility.js
+ * @file
+ * @desc module containing utility functions
  */
 
 /**

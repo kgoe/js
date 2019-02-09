@@ -1,7 +1,7 @@
 ;
 
 const fs = require('fs');
-const util = require(__dirname + '/../utility/utility.js');
+const util = require(__dirname + '/../utility/kgutility.js');
 
 var pad = util.pad;
 var dateyymmdd = util.dateyymmdd;
