@@ -10,8 +10,8 @@
         "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
         "no-var": 0,
         "no-alert": 2,
-        "no-array-constructor": 1,
-        "no-bitwise": 0,
-        "linebreak-style": [2, "unix"]
+        "no-array-constructor": 2,
+        "no-bitwise": 2,
+        "linebreak-style": 0
     }
 }
