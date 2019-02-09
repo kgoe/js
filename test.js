@@ -2,7 +2,7 @@
 
 /*
  * test.js entry point
- * executor : node.js
+ * executor : node.js + mocha
  *
  * Project Wide Test Entry Point
  * Load Files From Test Folder
@@ -14,7 +14,7 @@ var path = require('path');
 
 // Instantiate a Mocha instance.
 var mocha = new Mocha();
-var testDir = '@008-js-testing';
+var testDir = '@008-testing';
 
 // Add each .js file to the mocha instance
 fs.readdirSync(testDir)

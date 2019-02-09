@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * server.js entry point
+ * executor : node.js + express
+ */
+
 const express = require('express');
 
 // Constants
