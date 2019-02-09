@@ -357,6 +357,17 @@ function nsObjectExtend( destination, source ) {
   return destination;
 };
 
+/**
+ * hereDocHelper
+ * @param {*} f
+ * @return {string}
+ */
+function hereDocHelper(f) {
+  return f.toString().
+      replace(/^[^\/]+\/\*!?/, '').
+      replace(/\*\/[^\/]+$/, '');
+};
+
 // End
 if ( typeof module !== 'undefined'
   && typeof require !== 'undefined'
@@ -394,5 +405,6 @@ if ( typeof module !== 'undefined'
     nsChecker: nsChecker,
     nsStringExtend: nsStringExtend,
     nsObjectExtend: nsObjectExtend,
+    hereDocHelper: hereDocHelper,
   };
 }
