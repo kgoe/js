@@ -11,7 +11,7 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
-          - npm install -g  mocha assert debug chai
+#          - npm install -g  mocha assert debug chai
           - npm install
 #          - npm test
 #          - mocha
