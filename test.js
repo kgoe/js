@@ -23,7 +23,9 @@ fs.readdirSync(testDir)
       return file.substr(-3) === '.js';
     })
     .forEach(function(file) {
-      mocha.addFile( path.join(testDir, file) );
+      if ( file.indexOf('testrun-') === 0 ) {
+        mocha.addFile( path.join(testDir, file) );
+      }
     });
 
 // Run the tests.
