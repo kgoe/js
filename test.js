@@ -14,18 +14,18 @@ var path = require('path');
 
 // Instantiate a Mocha instance.
 var mocha = new Mocha();
-var testDir = '@008-testing';
+var testDir = '008-testing';
 
 // Add each .js file to the mocha instance
 fs.readdirSync(testDir)
     .filter(function(file) {
       // Only keep the .js files
-      return file.substr(-3) === '.js';
+      var check = file.substr(-3) === '.js';
+      check = check && file.indexOf('testrun-') === 0;
+      return check;
     })
-    .forEach(function(file) {
-      if ( file.indexOf('testrun-') === 0 ) {
-        mocha.addFile( path.join(testDir, file) );
-      }
+    .forEach((file) => {
+      mocha.addFile( path.join(testDir, file) );
     });
 
 // Run the tests.
