@@ -2,7 +2,7 @@
 
 var doc = {};
 
-doc['lifehack'] =
+doc.lifehack =
 `
 date
 category
@@ -22,7 +22,7 @@ _VER2
 _SDF
 `;
 
-doc['2019-trends'] =
+doc.d2019trends =
 `
 Modular design and lower development costs
 Responsive design and the rise of mobile users
@@ -53,7 +53,7 @@ https://electricsilk.com/website-design-and-development-trends-for-2019/
 https://www.forbes.com/sites/forbeshumanresourcescouncil/2018/09/24/seven-learning-and-development-trends-to-adopt-in-2019/#423230ee104b
 `;
 
-doc['links'] =
+doc.links =
 `
 https://hackernoon.com/which-top-javascript-trends-to-look-in-2019-528072bf0082
 https://scotch.io/bar-talk/10-node-frameworks-to-use-in-2019
@@ -75,7 +75,7 @@ CircleCI
 Boomerang
 `;
 
-doc['github-projects'] =
+doc.github_projects =
 `
 https://github.com/GokuMohandas/practicalAI
 https://github.com/trimstray/the-book-of-secret-knowledge
@@ -93,12 +93,8 @@ https://github.com/testerSunshine/12306
 https://github.com/30-seconds/30-seconds-of-code
 `;
 
-/*
-### JavaScript Libraries
-
-### Top Libraries
-
-#### 2019
+doc.d2019_libraries =
+`
 Vanilla JavaScript
 jQuery
 React
@@ -153,15 +149,10 @@ JSDoc
 YUIDoc
 documentation.js
 Transcription
+`;
 
-https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
-https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade
-https://www.quora.com/What-are-the-top-JavaScript-libraries-tech-to-learn-in-2019
-https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727
-https://blog.snap.hr/13/11/2018/top-10-javascript-libraries-learn-2019/
-https://blog.bitsrc.io/9-javascript-date-time-libraries-for-2018-12d82f37872d
-
-#### 2018
+doc.d2018_libraries =
+`
 React
 Vue.js
 jQuery
@@ -203,7 +194,22 @@ Drones
 React Native
 Electron
 Storybook
+`;
 
+/*
+### JavaScript Libraries
+
+### Top Libraries
+
+#### 2019
+https://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/
+https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade
+https://www.quora.com/What-are-the-top-JavaScript-libraries-tech-to-learn-in-2019
+https://blog.bitsrc.io/11-javascript-charts-and-data-visualization-libraries-for-2018-f01a283a5727
+https://blog.snap.hr/13/11/2018/top-10-javascript-libraries-learn-2019/
+https://blog.bitsrc.io/9-javascript-date-time-libraries-for-2018-12d82f37872d
+
+#### 2018
 https://medium.com/javascript-scene/top-javascript-libraries-tech-to-learn-in-2018-c38028e028e6
 https://www.htmlgoodies.com/beyond/javascript/top-javascript-libraries-and-trends-for-2018.html
 https://www.ma-no.org/en/content/index_top-javascript-libraries-in-2018_2332.php

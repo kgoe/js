@@ -2,6 +2,10 @@
 
 var doc = {};
 
+doc.name =
+`
+`;
+
 doc.desc =
 `
 TypeScript

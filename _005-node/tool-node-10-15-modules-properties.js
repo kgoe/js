@@ -147,14 +147,14 @@ zlib|object
  * @param {array} arr
  */
 function eachModule( str, arr ) {
-	 if ( str.trim().length > 0 ) {
-	 	 var item = str.split('|')[0];
-	 	 var type = str.split('|')[1];
-	 	 try {
+  if ( str.trim().length > 0 ) {
+    var item = str.split('|')[0];
+    var type = str.split('|')[1];
+    try {
       nodeModules[item] = require(item);
       console.log( item, type, typeof nodeModules[item] == type );
     } catch ( err ) {
-    	 console.log( item, type, err );
+      console.log( item, type, err );
     }
   }
 }

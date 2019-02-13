@@ -2,7 +2,7 @@
 
 var doc = {};
 
-doc['000'] =
+doc.d000 =
 `
 mocha
 chai
@@ -17,7 +17,7 @@ integration tests
 ui tests / functional tests
 `;
 
-doc['testing structure'] =
+doc.testing_structure =
 `
 mocha
 jasmine
@@ -25,7 +25,7 @@ jest
 cucumber
 `;
 
-doc['assertion functions'] =
+doc.assertion_functions =
 `
 assert
 chai
@@ -33,7 +33,7 @@ jest
 unexpected
 `;
 
-doc['testing displayer'] =
+doc.testing_displayer =
 `
 mocha
 jasmine
@@ -41,13 +41,13 @@ jest
 karma
 `;
 
-doc['testing snapshots'] =
+doc.testing_snapshots =
 `
 jest
 ava
 `;
 
-doc['testing mocks, spies, stubs'] =
+doc.testing_mocks_spies_stubs =
 `
 sinon
 jasmine
@@ -55,14 +55,14 @@ enzyme
 jest
 `;
 
-doc['testing code coverage'] =
+doc.testing_code_coverage =
 `
 istanbul
 jest
 blanket
 `;
 
-doc['testing browser environment'] =
+doc.testing_browser_environment =
 `
 protractor
 nightwatch
@@ -75,7 +75,7 @@ qunit ?
 `;
 
 
-doc['Node.JS and PHPUnit Integration'] =
+doc.nodejs_and_PHPUnit_Integration =
 `
 https://mwop.net/blog/2016-10-24-watch-phpunit-with-node.html
 `;

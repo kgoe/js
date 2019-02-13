@@ -1,3 +1,5 @@
+;
+
 var customProperty = {
   Object: {
     length: 'number',

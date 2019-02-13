@@ -1,6 +1,8 @@
 ;
 
-var doc =
+var doc = {};
+
+doc.name =
 `
 `;
 

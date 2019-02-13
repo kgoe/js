@@ -166,7 +166,6 @@ describe('node properties group', function() {
         } else {
           assert.ok(typeof global[item.trim().toString()] == 'undefined');
         }
-        
       });
     }
   });

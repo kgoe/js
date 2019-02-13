@@ -1,5 +1,25 @@
 ;
 
+var doc = {};
+
+doc.name =
+`
+backbone
+`;
+
+doc.namespace =
+`
+Backbone.Collection
+Backbone.Events
+Backbone.history
+Backbone.Model
+Backbone.Router
+Backbone.sync
+Backbone.View
+Backbone.$
+Backbone.noConflict
+`;
+
 /*
 ### Backbone
 
@@ -12,17 +32,4 @@ Router     ( 6 )
 Sync       ( 4 )
 Utility    ( 2 )
 View       ( 13 )
-
-### Backbone Index Details
-
-### Backbone Namespace
-Backbone.Collection
-Backbone.Events
-Backbone.history
-Backbone.Model
-Backbone.Router
-Backbone.sync
-Backbone.View
-Backbone.$
-Backbone.noConflict
 */
