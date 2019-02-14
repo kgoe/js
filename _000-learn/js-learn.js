@@ -11,13 +11,9 @@ three
 
 doc.topics =
 `
-javascipt
-ecmasciprt
-
+javascipt|ecmasciprt
 javascript core
 javascirpt dom
-
-typescript
 
 ReactJS
 AngularJS
@@ -71,7 +67,7 @@ node.js api list
 browser web api list
 `;
 
-doc.topic2019 =
+doc.trends2019 =
 `
 5g
 flexible screens

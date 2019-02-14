@@ -214,7 +214,7 @@ valueOf
 toLocaleString
 `;
 
-doc['number.__proto__'] =
+doc.number__proto__ =
 `
 length',
 name',
@@ -254,7 +254,7 @@ entries
 values
 `;
 
-doc['object.properties'] =
+doc.object_properties =
 `
 constructor
 __defineGetter__
@@ -270,7 +270,7 @@ __proto__
 toLocaleString
 `;
 
-doc['object.__proto__'] =
+doc.object__proto__ =
 `
 length
 name
