@@ -10,3 +10,7 @@ config file generator
 */
 
 var doc = {};
+
+if ( typeof module !== 'undefined' ) {
+  module.exports = doc;
+}

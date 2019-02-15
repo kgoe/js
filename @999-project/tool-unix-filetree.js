@@ -31,3 +31,7 @@ initrd.img.old
 vmlinuz
 vmlinuz.old
 `;
+
+if ( typeof module !== 'undefined' ) {
+  module.exports = doc;
+}

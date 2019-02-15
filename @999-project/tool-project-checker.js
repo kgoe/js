@@ -180,3 +180,7 @@ path._makeLong()
   name: 'tool-project-checker'
 }
 */
+
+if ( typeof module !== 'undefined' ) {
+  module.exports = doc;
+}

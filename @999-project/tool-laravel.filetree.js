@@ -36,3 +36,7 @@ artisan
 composer.phar
 phpunit.phar
 `;
+
+if ( typeof module !== 'undefined' ) {
+  module.exports = doc;
+}
