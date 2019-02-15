@@ -9,11 +9,25 @@ var doc = {};
 
 doc.files = {};
 
+doc.files.directories =
+`
+.git
+.cr
+.es
+build
+src
+res
+test
+node_modules
+vendors
+`;
+
 doc.files.entry =
 `
 index.js
 test.js
 server.js
+exec.js
 index.php
 index.html
 `;
@@ -25,8 +39,10 @@ example.env
 .env
 .gitignore
 .dockerignore
-packages.json
+package-lock.json
+package.json
 dockerfile
+Dockerfile
 docker-compose.yml
 bitbucket-pipelines.yml
 `;

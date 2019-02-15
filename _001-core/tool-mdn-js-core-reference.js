@@ -1,5 +1,7 @@
 ;
 
+var doc = require('./20190215-core.js');
+
 /**
  * checkTypeRoot
  * @param {string} value
@@ -47,111 +49,7 @@ function checkEachStringList( input ) {
   };
 }
 
-var doc = {};
 
-doc.valueProp =
-`
-Infinity|number
-NaN|number
-undefined|undefined
-null|undefined
-`;
-
-doc.funcProp =
-`
-eval|function
-uneval|undefined
-isFinite|function
-isNaN|function
-parseFloat|function
-parseInt|function
-decodeURI|function
-decodeURIComponent|function
-encodeURI|function
-encodeURIComponent|function
-escape|function
-unescape|function
-`;
-
-doc.fundamentalObjects =
-`
-Object|function
-Function|function
-Boolean|function
-Symbol|function
-Error|function
-EvalError|function
-InternalError|undefined
-RangeError|function
-ReferenceError|function
-SyntaxError|function
-TypeError|function
-URIError|function
-`;
-
-doc.numbersDates =
-`
-Number|function
-Math|object
-Date|function
-`;
-
-doc.textProcessing =
-`
-String|function
-RegExp|function
-`;
-
-doc.indexedCollections =
-`
-Array|function
-Int8Array|function
-Uint8Array|function
-Uint8ClampedArray|function
-Int16Array|function
-Uint16Array|function
-Int32Array|function
-Uint32Array|function
-Float32Array|function
-Float64Array|function
-`;
-
-doc.keyedCollections =
-`
-Map|function
-Set|function
-WeakMap|function
-WeakSet|function
-`;
-
-doc.controlAbstraction =
-`
-Promise|function
-Generator|undefined
-GeneratorFunction|undefined
-AsyncFunction|undefined
-`;
-
-doc.reflection =
-`
-Reflect|object
-Proxy|function
-`;
-
-doc.intl =
-`
-Intl|object
-`;
-
-doc.webassembly =
-`
-WebAssembly|object
-`;
-
-doc.arguments =
-`
-arguments|object
-`;
 
 console.log(checkEachStringList(doc.valueProp));
 
