@@ -1,32 +1,14 @@
 ;
 
-var doc = require('./20190215-core.js');
+var doc = require('./properties-javascript-core.js');
+
+var helper = require('./tool-core-helper.js');
+
+var getGlobalRoot = helper.getGlobalRoot;
+var splitTemplateVariables = helper.splitTemplateVariables;
 
 if ( typeof global !== 'undefined' ) {
   main();
-}
-
-/**
- * getGlobalRoot
- * @return {object}
- */
-function getGlobalRoot() {
-  var output = false;
-  output = typeof global !== 'undefined' ?
-    global : typeof window !== 'undefined' ?
-    window : false;
-  return output;
-}
-
-/**
- * splitTemplateVariables
- * @param {string} text
- * @return {array}
- */
-function splitTemplateVariables( text ) {
-  return text.split('\n').filter((item)=>{
-    return item.length > 0;
-  });
 }
 
 /**
@@ -40,6 +22,7 @@ function main() {
    */
   function forEachLine(line) {
     line = line.split('|');
+
     var theProperty = line[0];
     var theType = typeof line[1] == 'string' ? line[1] : false;
     var typeCheck = (theType) ?

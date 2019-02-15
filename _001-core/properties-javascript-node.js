@@ -45,7 +45,7 @@ Set|function
 WeakMap|function
 WeakSet|function
 Proxy|function
-Reflect|function
+Reflect|object
 decodeURI|function
 decodeURIComponent|function
 encodeURI|function
@@ -69,6 +69,18 @@ setInterval|function
 setTimeout|function
 `;
 
-if ( typeof module !== 'undefined' ) {
-  module.exports = doc;
+if ( typeof global !== 'undefined' ) {
+  // End
+  if ( typeof module !== 'undefined'
+    && typeof require !== 'undefined'
+    && typeof require.main !== 'undefined'
+    && typeof module.exports !== 'undefined'
+    && require.main === module
+  ) {
+    console.log('LOADED : node', __filename);
+    console.log('script running itself');
+  } else {
+    console.log('LOADED : node-module', __filename);
+    module.exports = doc;
+  }
 }

@@ -211,4 +211,4 @@ if ( typeof global !== 'undefined' ) {
     console.log('LOADED : node-module', __filename);
     module.exports = doc;
   }
-};
+}
