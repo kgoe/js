@@ -1,5 +1,8 @@
 ;
 
+// reference :
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
 var doc = {};
 
 doc.valueProp =
@@ -7,7 +10,7 @@ doc.valueProp =
 Infinity|number
 NaN|number
 undefined|undefined
-null|undefined
+null|object
 `;
 
 doc.funcProp =
@@ -77,6 +80,15 @@ WeakMap|function
 WeakSet|function
 `;
 
+doc.structuredData =
+`
+ArrayBuffer|function
+SharedArrayBuffer|function
+Atomics|object
+DataView|function
+JSON|object
+`;
+
 doc.controlAbstraction =
 `
 Promise|function
@@ -94,11 +106,23 @@ Proxy|function
 doc.intl =
 `
 Intl|object
+Intl.Collarot|object
+Intl.DateTimeFormat|object
+Intl.NumberFormat|object
+Intl.PluralRules|object
+Intl.RelativeTimeFormat|object
 `;
 
 doc.webassembly =
 `
 WebAssembly|object
+WebAssembly.Module|object
+WebAssembly.Instance|object
+WebAssembly.Memory|object
+WebAssembly.Table|object
+WebAssembly.CompileError|object
+WebAssembly.LinkError|object
+WebAssembly.RuntimeError|object
 `;
 
 doc.arguments =
@@ -149,7 +173,7 @@ Set|function
 WeakMap|function
 WeakSet|function
 Proxy|function
-Reflect|function
+Reflect|object
 decodeURI|function
 decodeURIComponent|function
 encodeURI|function
@@ -173,6 +197,18 @@ setInterval|function
 setTimeout|function
 `;
 
-if ( typeof module !== 'undefined' ) {
-  module.exports = doc;
-}
+if ( typeof global !== 'undefined' ) {
+  // End
+  if ( typeof module !== 'undefined'
+    && typeof require !== 'undefined'
+    && typeof require.main !== 'undefined'
+    && typeof module.exports !== 'undefined'
+    && require.main === module
+  ) {
+    console.log('LOADED : node', __filename);
+    console.log('script running itself');
+  } else {
+    console.log('LOADED : node-module', __filename);
+    module.exports = doc;
+  }
+};

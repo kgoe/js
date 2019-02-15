@@ -49,8 +49,6 @@ function checkEachStringList( input ) {
   };
 }
 
-
-
 console.log(checkEachStringList(doc.valueProp));
 
 console.log(checkEachStringList(doc.funcProp));

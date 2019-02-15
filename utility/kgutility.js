@@ -7,6 +7,18 @@
  */
 
 /**
+ * getGlobalRoot
+ * @return {object}
+ */
+function getGlobalRoot() {
+  var output = false;
+  output = typeof global !== 'undefined' ?
+    global : typeof window !== 'undefined' ?
+    window : false;
+  return output;
+}
+
+/**
  * makeid
  * creates uuid
  * @param {number} length
@@ -439,6 +451,7 @@ if ( typeof module !== 'undefined'
 } else {
   console.log('LOADED : node-module', __filename);
   module.exports = {
+    getGlobalRoot: getGlobalRoot,
     makeid: makeid,
     pad: pad,
     dateyymmdd: dateyymmdd,
