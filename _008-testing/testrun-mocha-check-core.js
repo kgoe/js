@@ -1,3 +1,5 @@
+;
+
 // js core properties checker
 // checks if javascript core properties is supported
 
