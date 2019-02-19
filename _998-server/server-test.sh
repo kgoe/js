@@ -1,6 +1,7 @@
 # wget https://raw.githubusercontent.com/kgoe/js/master/_998-server/test.sh
 
 python -v
+python3 --version
 node -v
 php -v
 
@@ -33,3 +34,7 @@ php -v
 ### OR
 # cp /etc/sudoers /etc/sudoers.orginal
 # visudo
+
+### web server
+# sudo apt-get install apache2
+# update apache config /etc/apache2/*
