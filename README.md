@@ -8,3 +8,4 @@ a repository created to collect useful topics about :
 file sync
 project generation
 directory generation
+node server + testing
