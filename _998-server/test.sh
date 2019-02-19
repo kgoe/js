@@ -1,4 +1,4 @@
-# wget https://raw.githubusercontent.com/kgoe/js/master/test.sh
+# wget https://raw.githubusercontent.com/kgoe/js/master/_998-server/test.sh
 
 python -v
 node -v
