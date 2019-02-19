@@ -20,3 +20,7 @@ php -v
 # groupadd webmgr21
 # useradd -m webmgr21 -g webmgr21
 # passwd webmgr21
+
+### user is not in the sudoers file
+# cp /etc/sudoers /etc/sudoers.orginal
+# visudo
