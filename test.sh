@@ -1,0 +1,20 @@
+python -v
+node -v
+php -v
+
+# sudo apt-get install python3
+
+# nvm for current user only !
+# wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+# node.js : not recommended to run with root privileges
+# apache and php default user & user permissions
+
+### create user
+# groupadd <somegroup>
+# useradd -m <user> -g <group>
+# passwd <user>
+
+# groupadd webmgr21
+# useradd -m webmgr21 -g webmgr21
+# passwd webmgr21
