@@ -21,6 +21,11 @@ php -v
 # useradd -m webmgr21 -g webmgr21
 # passwd webmgr21
 
+# groups
+# users
+
 ### user is not in the sudoers file
+# usermod -a -G <group> <username>
+### OR
 # cp /etc/sudoers /etc/sudoers.orginal
 # visudo
