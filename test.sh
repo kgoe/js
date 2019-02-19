@@ -1,3 +1,5 @@
+# wget https://raw.githubusercontent.com/kgoe/js/master/test.sh
+
 python -v
 node -v
 php -v
