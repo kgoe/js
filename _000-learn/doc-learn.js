@@ -11,9 +11,10 @@ three
 
 doc.topics =
 `
-javascipt|ecmasciprt
+javascript|ecmasciprt
 javascript core
 javascirpt dom
+
 
 ReactJS
 AngularJS
