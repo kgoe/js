@@ -167,8 +167,8 @@ call
 toString
 `;
 
+// End
 if ( typeof global !== 'undefined' ) {
-  // End
   if ( typeof module !== 'undefined'
     && typeof require !== 'undefined'
     && typeof require.main !== 'undefined'
@@ -181,4 +181,4 @@ if ( typeof global !== 'undefined' ) {
     console.log('LOADED : node-module', __filename);
     module.exports = doc;
   }
-}
+};

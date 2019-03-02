@@ -1,12 +1,64 @@
-### JavaScript MDN Core Reference
-Global Objects
-Statements
+;
+
+var doc = {};
+
+doc.name =
+`
+mdn javascript
+`;
+
+doc.mdn_links =
+`
+https://developer.mozilla.org/en-US/ | MDN
+https://developer.mozilla.org/en-US/docs/Web/JavaScript | JavaScript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript | Tutorials
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
+`;
+
+doc.reference_properties_index =
+`
+>>> Global Objects
+`;
+
+doc.reference_statements_index =
+`
+>>> Statements
+Control Flow
+Declaration
+Functions and Classes
+Iterations
+Others
+>>> Expressions and Operators
+Primary Expressions
+Left Hand Side Expressions
+Increment and Decrement
+Unary Operators
+Arithmetic Operators
+Relational Operators
+Equalituy Operators
+Bitwise Shift Operators
+Binary Bitwise Operators
+Binary Logical Operators
+Conditional Ternary Operator
+Assignment Operators
+Comma Operator
+Non Standard Features
+>>> Functions
+arguments
+Arrow Functions
+Default Parameters
+Rest Parameters
+>>> Additional Reference Page
+Lexical Grammar
+Data Types and Data Structures
+Strict Mode
+Deprecated Features
+`;
+
+doc.sort =
+`
 Expressions and Operators
 Functions
-
-### Links
-https://developer.mozilla.org/en-US/
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ### Tutorials
 For Complete Beginners Topic >>>
@@ -42,11 +94,6 @@ JavaScript versions and release notes
 JSFiddle
 Plunker
 JSBin
-
-### JavaScript MDN
-
-### Link
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 #### Index
 Technologies
@@ -439,3 +486,5 @@ Plunker
 JSBin
 
 #### MDN JavaScript Web API
+
+`;
