@@ -16,4 +16,6 @@ data['2019']['01'] = {
   count: 0,
 };
 
+data.d20000101 = '2000 January 1';
+
 fs.writeFileSync(filename, JSON.stringify(data));
