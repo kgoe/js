@@ -13,8 +13,8 @@ Window
 
 doc.tags =
 `
-HTMLElement
-HTMLHtmlElement
-HTMLHeadElement
-HTMLBodyElement
+element |HTMLElement
+html    |HTMLHtmlElement
+head    |HTMLHeadElement
+body    |HTMLBodyElement
 `;
