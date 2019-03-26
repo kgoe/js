@@ -54,12 +54,14 @@ if ( typeof window == 'object' && typeof document == 'object' ) {
     return exports; //require returns object exported by module
   }
 
-  var doc = require('./properties-javascript-core.js');
-  var helper = require('./tool-core-helper.js');
+  // var doc = require('./properties-javascript-core.js');
+  // var helper = require('./tool-core-helper.js');
 }
 
-var getGlobalRoot = helper.getGlobalRoot;
-var splitTemplateVariables = helper.splitTemplateVariables;
+if ( typeof helper !== 'undefined' ) {
+  var getGlobalRoot = helper.getGlobalRoot;
+  var splitTemplateVariables = helper.splitTemplateVariables;
+}
 
 /**
  * processEachLine
