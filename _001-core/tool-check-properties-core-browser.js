@@ -411,6 +411,10 @@ function processEachLine(line) {
   if ( typeCheck === false ) {
     // display invalid
     console.log(theProperty, theType, typeCheck);
+
+    if ( typeof document !== 'undefined' ) {
+      document.getElementById('logger').innerHTML += '<p>'+theProperty+ ' | ' + theType + ' | ' + typeCheck + '</p>';
+    }
   } else {
     // display valid
     // console.log(theProperty, theType, typeCheck);
