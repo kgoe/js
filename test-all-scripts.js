@@ -1,3 +1,5 @@
+;
+
 const fs = require('fs');
 const path = require('path');
 
@@ -19,9 +21,9 @@ function readPath( thisPath ) {
       if ( item.indexOf('.js') !== -1 && item.indexOf('.json') == -1 ) {
         var ignore = 
         [
-          'test-all.js',
+          'test-all-scripts.js',
           // 'test.js',
-          // 'tool-complexity-consolidate.js'
+          // 'tool-complexity-consolidate.js',
         ];
         if ( ignore.indexOf(item) == -1 ) {
           console.log('>>> FILE >>> ', fullPath);
@@ -29,7 +31,14 @@ function readPath( thisPath ) {
         }
       }
       if ( fs.lstatSync(fullPath).isDirectory() ) {
-        readPath(fullPath);
+        var ignore =
+        [
+          'node_modules',
+          '.git',
+        ];
+        if ( ignore.indexOf(item) == -1 ) {
+          readPath(fullPath);
+        }
       }
     }
 
