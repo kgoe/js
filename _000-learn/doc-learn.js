@@ -1,15 +1,13 @@
-;
+;doc={};
 
-var doc = {};
-
-doc.temp =
+doc.temp=
 `
 one
 two
 three
 `;
 
-doc.topics =
+doc.topics=
 `
 javascript|ecmasciprt
 javascript core
@@ -59,7 +57,7 @@ Semantic UI
 Pelk
 `;
 
-doc.todo =
+doc.todo=
 `
 complete and expanded reference list
 common core api list
@@ -68,7 +66,7 @@ node.js api list
 browser web api list
 `;
 
-doc.trends2019 =
+doc.trends2019=
 `
 5g
 flexible screens
@@ -84,4 +82,13 @@ developers flock the web
 progressive web apps
 size matters again
 the workforce gets even more diverse
+`;
+
+doc.links=
+`
+https://en.wikipedia.org/wiki/ECMAScript
+https://developer.mozilla.org/bm/docs/Web/JavaScript
+https://www.ecma-international.org/publications/standards/Ecma-262.htm
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+https://apps.tgmanetwork.com/sso_session/index.php/worldwide/api/login
 `;
