@@ -1,10 +1,50 @@
 ;doc={};
 
+doc.todo=
+`
+complete and expanded reference list
+common core api list
+core api list
+node.js api list
+browser web api list
+`;
+
+doc.trends2019=
+`
+5g
+flexible screens
+wireless and streaming
+new google OS
+new gaming consoles
+4k, 8k
+ai, mental obesity, personalize
+voice interfaces
+accessibility becomes requirement
+web apps and AR
+developers flock the web
+progressive web apps
+size matters again
+the workforce gets even more diverse
+`;
+
+doc.trends2018=
+`
+`;
+
+doc.trends2017=
+`
+`;
+
+doc.trends2016=
+`
+`;
+
+doc.trends2015=
+`
+`;
+
 doc.temp=
 `
-one
-two
-three
 `;
 
 doc.topics=
@@ -12,7 +52,6 @@ doc.topics=
 javascript|ecmasciprt
 javascript core
 javascirpt dom
-
 
 ReactJS
 AngularJS
@@ -55,33 +94,6 @@ High Charts
 Moment.js
 Semantic UI
 Pelk
-`;
-
-doc.todo=
-`
-complete and expanded reference list
-common core api list
-core api list
-node.js api list
-browser web api list
-`;
-
-doc.trends2019=
-`
-5g
-flexible screens
-wireless and streaming
-new google OS
-new gaming consoles
-4k, 8k
-ai, mental obesity, personalize
-voice interfaces
-accessibility becomes requirement
-web apps and AR
-developers flock the web
-progressive web apps
-size matters again
-the workforce gets even more diverse
 `;
 
 doc.links=
