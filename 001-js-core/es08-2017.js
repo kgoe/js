@@ -58,7 +58,7 @@ doc.template=
 (doc=>{
 doc.es08c01=
 `
-es08c01|scope
+es08c01|Scope
 `;
 })(doc);
 
@@ -68,7 +68,7 @@ es08c01|scope
 (doc=>{
 doc.es08c02=
 `
-es08c02|conformance
+es08c02|Conformance
 `;
 })(doc);
 
@@ -78,7 +78,7 @@ es08c02|conformance
 (doc=>{
 doc.es08c03=
 `
-es08c01|normative references
+es08c01|Normative References
 `;
 })(doc);
 
@@ -88,7 +88,7 @@ es08c01|normative references
 (doc=>{
 doc.es08c04=
 `
-es08c04|overview
+es08c04|Overview
 `;
 })(doc);
 
@@ -98,7 +98,7 @@ es08c04|overview
 (doc=>{
 doc.es08c05=
 `
-es08c05|notational conventions
+es08c05|Notational Conventions
 `;
 })(doc);
 
@@ -109,7 +109,7 @@ es08c05|notational conventions
 (doc=>{
 doc.es08c06=
 `
-es08c06|ecmascript data types and values
+es08c06|ECMAScript Data Types and Calues
 ecmascript language types
 ecmascript specification types
 `;
@@ -121,7 +121,7 @@ ecmascript specification types
 (doc=>{
 doc.es08c07=
 `
-es08c07|abstract operations
+es08c07|Abstract Operations
 type conversion
 testing and comparison operations
 operations as objects
@@ -168,7 +168,7 @@ Built-in Exotic Object Internal Methods and Slots
 (doc=>{
 doc.es08c10=
 `
-es08c10|
+es08c10|ECMAScript Language: Source Code
 `;
 })(doc);
 
@@ -178,7 +178,7 @@ es08c10|
 (doc=>{
 doc.es08c11=
 `
-es08c11|
+es08c11|ECMAScript Language: Lexical Grammar
 `;
 })(doc);
 
@@ -188,7 +188,7 @@ es08c11|
 (doc=>{
 doc.es08c12=
 `
-es08c12|
+es08c12|ECMAScript Language: Expressions
 `;
 })(doc);
 
@@ -198,7 +198,7 @@ es08c12|
 (doc=>{
 doc.es08c13=
 `
-es08c13|
+es08c13|ECMAScript Language: Statements and Declarations
 `;
 })(doc);
 
@@ -208,7 +208,7 @@ es08c13|
 (doc=>{
 doc.es08c14=
 `
-es08c14|
+es08c14|ECMAScript Language: Functions and Classes
 `;
 })(doc);
 
@@ -218,7 +218,7 @@ es08c14|
 (doc=>{
 doc.es08c15=
 `
-es08c15|
+es08c15|ECMAScript Language: Scripts and Modules
 `;
 })(doc);
 
@@ -228,7 +228,7 @@ es08c15|
 (doc=>{
 doc.es08c16=
 `
-es08c16|
+es08c16|Error Handling and Language Extensions
 `;
 })(doc);
 
@@ -238,7 +238,7 @@ es08c16|
 (doc=>{
 doc.es08c17=
 `
-es08c17
+es08c17|ECMAScript Standard Built-in Objects
 `;
 })(doc);
 
