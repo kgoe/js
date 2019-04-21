@@ -1,5 +1,18 @@
 ;doc={};
 
+/*
+ * template
+ */
+(doc=>{
+doc.template=
+`
+`;
+})(doc);
+
+/*
+ * template
+ */
+(doc=>{
 doc.topics=
 `
 01|scope
@@ -37,8 +50,58 @@ doc.topics=
 0F|bibliography
 0G|copyright & software license
 `;
+})(doc);
 
-doc.c14=
+/*
+ * es08c01
+ */
+(doc=>{
+doc.es08c01=
+`
+`;
+})(doc);
+
+/*
+ * es08c02
+ */
+(doc=>{
+doc.es08c02=
+`
+`;
+})(doc);
+
+/*
+ * es08c03
+ */
+(doc=>{
+doc.es08c03=
+`
+`;
+})(doc);
+
+/*
+ * es08c04
+ */
+(doc=>{
+doc.es08c04=
+`
+`;
+})(doc);
+
+/*
+ * es08c05
+ */
+(doc=>{
+doc.es08c05=
+`
+`;
+})(doc);
+
+/*
+ * es08c14
+ */
+(doc=>{
+doc.es08c14=
 `
 value properties
 - Infinity
@@ -97,3 +160,4 @@ other properties
 - Math
 - Reflect
 `;
+})(doc);
