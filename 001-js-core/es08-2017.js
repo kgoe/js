@@ -176,6 +176,42 @@ doc.es08c13=
 (doc=>{
 doc.es08c14=
 `
+`;
+})(doc);
+
+/*
+ * es08c15
+ */
+(doc=>{
+doc.es08c15=
+`
+`;
+})(doc);
+
+/*
+ * es08c16
+ */
+(doc=>{
+doc.es08c16=
+`
+`;
+})(doc);
+
+/*
+ * es08c17
+ */
+(doc=>{
+doc.es08c17=
+`
+`;
+})(doc);
+
+/*
+ * es08c18
+ */
+(doc=>{
+doc.es08c18=
+`
 value properties
 - Infinity
 - NaN
@@ -236,10 +272,133 @@ other properties
 })(doc);
 
 /*
- * es08c15
+ * es08c19
  */
 (doc=>{
-doc.es08c15=
+doc.es08c19=
+`
+Object
+Function
+Boolean
+Symbol
+Error
+
+`;
+})(doc);
+
+/*
+ * es08c20
+ */
+(doc=>{
+doc.es08c20=
+`
+Number
+Math
+Date
+`;
+})(doc);
+
+/*
+ * es08c21
+ */
+(doc=>{
+doc.es08c21=
+`
+String
+RegExp
+`;
+})(doc);
+
+/*
+ * es08c22
+ */
+(doc=>{
+doc.es08c22=
+`
+Array
+TypedArray
+`;
+})(doc);
+
+/*
+ * es08c23
+ */
+(doc=>{
+doc.es08c23=
+`
+Map
+Set
+WeakMap
+WeakSet
+`;
+})(doc);
+
+/*
+ * es08c24
+ */
+(doc=>{
+doc.es08c24=
+`
+ArrayBuffer
+SharedArrayBuffer
+DataView
+Atomics
+DataView
+`;
+})(doc);
+
+/*
+ * es08c25
+ */
+(doc=>{
+doc.es08c25=
+`
+Iteration
+GeneratorFunction
+Generator
+Promise
+AsyncFunction
+`;
+})(doc);
+
+/*
+ * es08c25
+ */
+(doc=>{
+doc.es08c25=
+`
+Reflection
+Proxy
+Module Namespace
+`;
+})(doc);
+
+/*
+ * es08c26
+ */
+(doc=>{
+doc.es08c26=
+`
+Memory Model Fundamentals
+Agent Events Records
+Chosen Value Records
+Candidate Executions
+Abstract Operations for the Memoty Model
+Relations of Candidatew Executions
+Properties of Valid Executions
+Races
+Data Races
+Date Race Freedom
+Shared Memory Guidelines
+`;
+})(doc);
+
+
+/*
+ * template
+ */
+(doc=>{
+doc.template=
 `
 `;
 })(doc);
