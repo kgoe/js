@@ -22,10 +22,78 @@ doc.topics=
 18|the global object
 19|fundamental object
 20|numbers and dates
+21|text processing
+22|indexed collections
+23|keyed collections
+24|structured data
+25|control abstraction objects
+26|reflection
+27|memory model
 0A|grammar summary
-0B|compatability
+0B|additional ecmascript features for web browsers
 0C|the strict mode of ecmascript
-0D|corrections and clarifications in the 5th edition with possible 3rd edition compatability impact
-0E|additions and changes in the 5th edition that introduce incomoatabilities with the 3rd edition
-0F|technically significant corrections and clarifications in the 5.1 edition
+0D|corrections and clarifications in the ecmascript 2015 with possible compatability impact
+0E|additions and changes that introduce incomoatabilities with prior editions
+0F|bibliography
+0G|copyright & software license
+`;
+
+doc.c14=
+`
+value properties
+- Infinity
+- NaN
+- undefined
+function properties
+- eval
+- isFinite
+- isNaN
+- parseFloat
+- parseInt
+- uri rs encode
+- uri rs decode
+- decodeURI
+- decodeURIComponent
+- encodeURI
+- envodeURIComponent
+constructor properties
+- Array
+- ArrayBuffer
+- Boolean
+- DataView
+- Date
+- Error
+- EvalError
+- Float32Array
+- Float64Array
+- Function
+- Int8Array
+- Int16Array
+- Int32Array
+- Map
+- Number
+- Object
+- Proxy
+- Promise
+- RangeError
+- ReferenceError
+- RegExp
+- Set
+- SharedArrayBuffer
+- String
+- Symbol
+- SyntaxError
+- TypeError
+- Uint8Array
+- Uint8ClampedArray
+- Uint16Array
+- Uint32Array
+- URIError
+- WeakMap
+' WeakSet
+other properties
+- Atomics
+- JSON
+- Math
+- Reflect
 `;
