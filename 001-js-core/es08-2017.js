@@ -58,6 +58,7 @@ doc.template=
 (doc=>{
 doc.es08c01=
 `
+es08c01|scope
 `;
 })(doc);
 
@@ -67,6 +68,7 @@ doc.es08c01=
 (doc=>{
 doc.es08c02=
 `
+es08c02|conformance
 `;
 })(doc);
 
@@ -76,6 +78,7 @@ doc.es08c02=
 (doc=>{
 doc.es08c03=
 `
+es08c01|normative references
 `;
 })(doc);
 
@@ -85,6 +88,7 @@ doc.es08c03=
 (doc=>{
 doc.es08c04=
 `
+es08c04|overview
 `;
 })(doc);
 
@@ -94,6 +98,7 @@ doc.es08c04=
 (doc=>{
 doc.es08c05=
 `
+es08c05|notational conventions
 `;
 })(doc);
 
@@ -104,6 +109,9 @@ doc.es08c05=
 (doc=>{
 doc.es08c06=
 `
+es08c06|ecmascript data types and values
+ecmascript language types
+ecmascript specification types
 `;
 })(doc);
 
@@ -113,6 +121,11 @@ doc.es08c06=
 (doc=>{
 doc.es08c07=
 `
+es08c07|abstract operations
+type conversion
+testing and comparison operations
+operations as objects
+operations as iterator objects
 `;
 })(doc);
 
@@ -122,6 +135,16 @@ doc.es08c07=
 (doc=>{
 doc.es08c08=
 `
+es08c08|Executable Code and Execution Contexts
+Lexical Environments
+Realms
+Execution Contexts
+Jobs and Job Queues
+InitializeHostDefinedRealm
+RunJobs
+Agents
+Agent Clusters
+Forward Progress
 `;
 })(doc);
 
@@ -131,6 +154,11 @@ doc.es08c08=
 (doc=>{
 doc.es08c09=
 `
+es08c09|Ordinary and Exotic Objects Behaviours
+Ordinary Object Internal Methods and Internal Slots
+ECMAScript Function Objects
+Built-in Function Objects
+Built-in Exotic Object Internal Methods and Slots
 `;
 })(doc);
 
@@ -140,6 +168,7 @@ doc.es08c09=
 (doc=>{
 doc.es08c10=
 `
+es08c10|
 `;
 })(doc);
 
@@ -149,6 +178,7 @@ doc.es08c10=
 (doc=>{
 doc.es08c11=
 `
+es08c11|
 `;
 })(doc);
 
@@ -158,6 +188,7 @@ doc.es08c11=
 (doc=>{
 doc.es08c12=
 `
+es08c12|
 `;
 })(doc);
 
@@ -167,6 +198,7 @@ doc.es08c12=
 (doc=>{
 doc.es08c13=
 `
+es08c13|
 `;
 })(doc);
 
@@ -176,6 +208,7 @@ doc.es08c13=
 (doc=>{
 doc.es08c14=
 `
+es08c14|
 `;
 })(doc);
 
@@ -185,6 +218,7 @@ doc.es08c14=
 (doc=>{
 doc.es08c15=
 `
+es08c15|
 `;
 })(doc);
 
@@ -194,6 +228,7 @@ doc.es08c15=
 (doc=>{
 doc.es08c16=
 `
+es08c16|
 `;
 })(doc);
 
@@ -203,6 +238,7 @@ doc.es08c16=
 (doc=>{
 doc.es08c17=
 `
+es08c17
 `;
 })(doc);
 
@@ -212,11 +248,12 @@ doc.es08c17=
 (doc=>{
 doc.es08c18=
 `
-value properties
+es08c18|The Global Object
+Value Properties
 - Infinity
 - NaN
 - undefined
-function properties
+Function Properties
 - eval
 - isFinite
 - isNaN
@@ -228,7 +265,7 @@ function properties
 - decodeURIComponent
 - encodeURI
 - envodeURIComponent
-constructor properties
+Constructor Properties
 - Array
 - ArrayBuffer
 - Boolean
@@ -263,7 +300,7 @@ constructor properties
 - URIError
 - WeakMap
 ' WeakSet
-other properties
+Other Properties
 - Atomics
 - JSON
 - Math
@@ -277,6 +314,7 @@ other properties
 (doc=>{
 doc.es08c19=
 `
+es08c19|Fundamental Objects
 Object
 Function
 Boolean
@@ -292,6 +330,7 @@ Error
 (doc=>{
 doc.es08c20=
 `
+es08c20|Numbers and Dates
 Number
 Math
 Date
@@ -304,6 +343,7 @@ Date
 (doc=>{
 doc.es08c21=
 `
+es08c21|Text Processing
 String
 RegExp
 `;
@@ -315,6 +355,7 @@ RegExp
 (doc=>{
 doc.es08c22=
 `
+es08c22|Indexed Collection
 Array
 TypedArray
 `;
@@ -326,6 +367,7 @@ TypedArray
 (doc=>{
 doc.es08c23=
 `
+es08c23|Keyed Collection
 Map
 Set
 WeakMap
@@ -339,6 +381,7 @@ WeakSet
 (doc=>{
 doc.es08c24=
 `
+es08c24|Structured Data
 ArrayBuffer
 SharedArrayBuffer
 DataView
@@ -353,6 +396,7 @@ DataView
 (doc=>{
 doc.es08c25=
 `
+es08c25|Control Abstraction Objects
 Iteration
 GeneratorFunction
 Generator
@@ -362,11 +406,12 @@ AsyncFunction
 })(doc);
 
 /*
- * es08c25
+ * es08c26
  */
 (doc=>{
-doc.es08c25=
+doc.es08c26=
 `
+es08c26|Reflection
 Reflection
 Proxy
 Module Namespace
@@ -374,11 +419,12 @@ Module Namespace
 })(doc);
 
 /*
- * es08c26
+ * es08c27
  */
 (doc=>{
-doc.es08c26=
+doc.es08c27=
 `
+es08c27|Memory Model
 Memory Model Fundamentals
 Agent Events Records
 Chosen Value Records
