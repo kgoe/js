@@ -19,6 +19,5 @@ doc.topics=
 15|native ecmascript objects
 16|errors
 0A|grammar summary
-0B|compstability
-0
+0B|compatability
 `;
