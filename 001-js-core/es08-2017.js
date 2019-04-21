@@ -10,10 +10,10 @@ doc.template=
 })(doc);
 
 /*
- * template
+ * es08
  */
 (doc=>{
-doc.topics=
+doc.template=
 `
 01|scope
 02|conformance
@@ -97,6 +97,79 @@ doc.es08c05=
 `;
 })(doc);
 
+
+/*
+ * es08c06
+ */
+(doc=>{
+doc.es08c06=
+`
+`;
+})(doc);
+
+/*
+ * es08c07
+ */
+(doc=>{
+doc.es08c07=
+`
+`;
+})(doc);
+
+/*
+ * es08c08
+ */
+(doc=>{
+doc.es08c08=
+`
+`;
+})(doc);
+
+/*
+ * es08c09
+ */
+(doc=>{
+doc.es08c09=
+`
+`;
+})(doc);
+
+/*
+ * es08c10
+ */
+(doc=>{
+doc.es08c10=
+`
+`;
+})(doc);
+
+/*
+ * es08c11
+ */
+(doc=>{
+doc.es08c11=
+`
+`;
+})(doc);
+
+/*
+ * es08c12
+ */
+(doc=>{
+doc.es08c12=
+`
+`;
+})(doc);
+
+/*
+ * es08c13
+ */
+(doc=>{
+doc.es08c13=
+`
+`;
+})(doc);
+
 /*
  * es08c14
  */
@@ -159,5 +232,14 @@ other properties
 - JSON
 - Math
 - Reflect
+`;
+})(doc);
+
+/*
+ * es08c15
+ */
+(doc=>{
+doc.es08c15=
+`
 `;
 })(doc);

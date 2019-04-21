@@ -1,6 +1,19 @@
 ;doc={};
 
-doc.topics=
+/*
+ * template
+ */
+(doc=>{
+doc.template=
+`
+`;
+})(doc);
+
+/*
+ * es03
+ */
+(doc=>{
+doc.es03=
 `
 01|scope
 02|conformance
@@ -21,3 +34,4 @@ doc.topics=
 0A|grammar summary
 0B|compatability
 `;
+})(doc);

@@ -1,6 +1,19 @@
 ;doc={};
 
-doc.topics=
+/*
+ * template
+ */
+(doc=>{
+doc.template=
+`
+`;
+})(doc);
+
+/*
+ * es05
+ */
+(doc=>{
+doc.es05=
 `
 01|scope
 02|conformance
@@ -25,3 +38,4 @@ doc.topics=
 0E|additions and changes in the 5th edition that introduce incomoatabilities with the 3rd edition
 0F|technically significant corrections and clarifications in the 5.1 edition
 `;
+})(doc);
