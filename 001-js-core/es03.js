@@ -212,7 +212,7 @@ es03c15|Native ECMAScript Objects
  * es03c16|Errors
  */
 (doc=>{
-  doc.es03c16=
+doc.es03c16=
 `
 es03c16|Errors
 `;
