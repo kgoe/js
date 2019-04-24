@@ -20,35 +20,35 @@ doc.template=
 03|Normative References
 04|Overview
 05|Notational Conventions
-06|ecmascript data types and values
-07|abstract operations
-08|executable code and execution contexts
-09|ordinary and exotic object behaviours
-10|ecmascript language: source code
-11|ecmascript language: lexical grammar
-12|ecmascript language: expressions
-13|ecmascript language: statements and declarations
-14|ecmascript language: functions and classes
-15|ecmascript language: scripts and modules
-16|error handling and language extensions
-17|ecmascript standard built in objects
-18|the global object
-19|fundamental object
-20|numbers and dates
-21|text processing
-22|indexed collections
-23|keyed collections
-24|structured data
-25|control abstraction objects
-26|reflection
-27|memory model
-0A|grammar summary
-0B|additional ecmascript features for web browsers
-0C|the strict mode of ecmascript
-0D|corrections and clarifications in the ecmascript 2015 with possible compatability impact
-0E|additions and changes that introduce incomoatabilities with prior editions
-0F|bibliography
-0G|copyright & software license
+06|ECMAScript data types and values
+07|Abstract operations
+08|Executable code and execution contexts
+09|Ordinary and exotic object behaviours
+10|ECMAScript language: source code
+11|ECMAScript language: lexical grammar
+12|ECMAScript language: expressions
+13|ECMAScript language: statements and declarations
+14|ECMAScript language: functions and classes
+15|ECMAScript language: scripts and modules
+16|Error handling and language extensions
+17|ECMAScript standard built in objects
+18|The global object
+19|Fundamental object
+20|Numbers and dates
+21|Text processing
+22|Indexed collections
+23|Keyed collections
+24|Structured data
+25|Control abstraction objects
+26|Reflection
+27|Memory Model
+0A|Grammar Summary
+0B|Additional ECMAScript features for web browsers
+0C|The strict mode of ECMAScript
+0D|Corrections and clarifications in the ECMAScript 2015 with possible compatability impact
+0E|Additions and changes that introduce incomoatabilities with prior editions
+0F|Bibliography
+0G|Copyright & Software License
 `;
 })(doc);
 
@@ -110,8 +110,8 @@ es08c05|Notational Conventions
 doc.es08c06=
 `
 es08c06|ECMAScript Data Types and Calues
-ecmascript language types
-ecmascript specification types
+ECMAScript language types
+ECMAScript specification types
 `;
 })(doc);
 
