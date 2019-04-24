@@ -15,11 +15,11 @@ doc.template=
 (doc=>{
 doc.es05=
 `
-01|scope
-02|conformance
-03|normative references
-04|overview
-05|notational conventions
+01|Scope
+02|Conformance
+03|Normative References
+04|Overview
+05|Notational Conventions
 06|source text
 07|lexical conventions
 08|types
@@ -37,5 +37,15 @@ doc.es05=
 0D|corrections and clarifications in the 5th edition with possible 3rd edition compatability impact
 0E|additions and changes in the 5th edition that introduce incomoatabilities with the 3rd edition
 0F|technically significant corrections and clarifications in the 5.1 edition
+`;
+})(doc);
+
+/*
+ * es05c01
+ */
+(doc=>{
+doc.es05c01=
+`
+es05c01|Scope
 `;
 })(doc);
