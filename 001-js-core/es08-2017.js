@@ -15,11 +15,11 @@ doc.template=
 (doc=>{
 doc.template=
 `
-01|scope
-02|conformance
-03|normative references
-04|overview
-05|notational conventions
+01|Scope
+02|Conformance
+03|Normative References
+04|Overview
+05|Notational Conventions
 06|ecmascript data types and values
 07|abstract operations
 08|executable code and execution contexts
