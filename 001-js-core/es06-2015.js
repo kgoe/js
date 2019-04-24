@@ -1,5 +1,6 @@
 ;doc={};
 
+
 /*
  * template
  */
@@ -8,6 +9,7 @@ doc.template=
 `
 `;
 })(doc);
+
 
 /*
  * es06
@@ -40,6 +42,7 @@ doc.template=
 `;
 })(doc);
 
+
 /*
  * es06c01
  */
@@ -49,3 +52,173 @@ doc.es06c01=
 es06c01|Scope
 `;
 })(doc);
+
+
+/*
+ * es06c02|Conformance
+ */
+(doc=>{
+doc.es06c02=
+`
+es06c02|Conformance
+`;
+})(doc);
+
+
+/*
+ * es06c03|Normative References
+ */
+(doc=>{
+doc.es06c03=
+`
+es06c03|Normative References
+`;
+})(doc);
+
+
+/*
+* es06c04|Overview
+*/
+(doc=>{
+doc.es06c04=
+`
+es06c04|Overview
+`;
+})(doc);
+
+
+/*
+* es06c05|Notational Conventions
+*/
+(doc=>{
+doc.es06c05=
+`
+es06c05|Notational Conventions
+`;
+})(doc);
+
+
+/*
+ * es06c046|Source Text
+ */
+(doc=>{
+doc.es06c06=
+`
+es06c06|Source Text
+`;
+})(doc);
+
+
+
+/*
+ * es06c07|Lexical Conventions
+ */
+(doc=>{
+doc.es06c07=
+`
+es06c07|Lexical Conventions
+`;
+})(doc);
+
+
+
+/*
+ * es06c08|Types
+ */
+(doc=>{
+doc.es06c08=
+`
+es06c04|Types
+`;
+})(doc);
+
+
+
+/*
+ * es06c09|Type Conversion
+ */
+(doc=>{
+doc.es06c09=
+`
+es06c09|Type Conversion
+`;
+})(doc);
+
+
+
+/*
+ * es06c10|Execution Contexts
+ */
+(doc=>{
+doc.es06c10=
+`
+es06c10|Execution Contexts
+`;
+})(doc);
+
+
+/*
+ * es06c11|Expressions
+ */
+(doc=>{
+doc.es06c09=
+`
+es06c11|Expressions
+`;
+})(doc);
+
+
+/*
+ * es06c12|Statements
+ */
+(doc=>{
+doc.es06c12=
+`
+es06c12|Statements
+`;
+})(doc);
+
+
+/*
+ * es06c13|Function Defenition
+ */
+(doc=>{
+doc.es06c13=
+`
+es06c13|Function Defenition
+`;
+})(doc);
+
+
+/*
+ * es06c14|Program
+ */
+(doc=>{
+doc.es06c14=
+`
+es06c14|Program
+`;
+})(doc);
+
+
+/*
+ * es06c15|Native ECMAScript Objects
+ */
+(doc=>{
+doc.es06c15=
+`
+es06c15|Native ECMAScript Objects
+`;
+})(doc);
+
+
+/*
+ * es06c16|Errors
+ */
+(doc=>{
+doc.es06c16=
+`
+es06c16|Errors
+`;
+})(doc);
+  
