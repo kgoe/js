@@ -151,3 +151,69 @@ doc.es03c10=
 es03c10|Execution Contexts
 `;
 })(doc);
+
+
+/*
+ * es03c11|Expressions
+ */
+(doc=>{
+doc.es03c09=
+`
+es03c11|Expressions
+`;
+})(doc);
+
+
+/*
+ * es03c12|Statements
+ */
+(doc=>{
+doc.es03c12=
+`
+es03c12|Statements
+`;
+})(doc);
+
+
+/*
+ * es03c13|Function Defenition
+ */
+(doc=>{
+doc.es03c13=
+`
+es03c13|Function Defenition
+`;
+})(doc);
+
+
+/*
+ * es03c14|Program
+ */
+(doc=>{
+doc.es03c14=
+`
+es03c14|Program
+`;
+})(doc);
+
+
+/*
+ * es03c15|Native ECMAScript Objects
+ */
+(doc=>{
+doc.es03c15=
+`
+es03c15|Native ECMAScript Objects
+`;
+})(doc);
+
+
+/*
+ * es03c16|Errors
+ */
+(doc=>{
+  doc.es03c16=
+`
+es03c16|Errors
+`;
+})(doc);
