@@ -20,19 +20,19 @@ doc.es03=
 03|Normative References
 04|Overview
 05|Notational Conventions
-06|source text
-07|lexical conventions
-08|types
-09|type conversion
-10|execution contexts
-11|expressions
-12|statements
-13|function defenition
-14|program
-15|native ecmascript objects
-16|errors
-0A|grammar summary
-0B|compatability
+06|Source Text
+07|Lexical Conventions
+08|Types
+09|Type Conversion
+10|Execution Contexts
+11|Expressions
+12|Statements
+13|Function Defenition
+14|Program
+15|Native ECMAScript Objects
+16|Errors
+0A|Grammar Summary
+0B|Compatability
 `;
 })(doc);
 
