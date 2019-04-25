@@ -1,7 +1,0 @@
-;
-
-var doc = {};
-
-doc.desc =
-`
-`;

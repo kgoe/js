@@ -1,1 +1,0 @@
-// Object.getNotifier(obj) NS
