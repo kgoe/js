@@ -1,4 +1,4 @@
-;
+;doc={};
 
 /**
  * kgutility.js

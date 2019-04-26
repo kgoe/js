@@ -1,4 +1,4 @@
-;
+;doc={};
 
 // general javascript
 

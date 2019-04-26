@@ -1,6 +1,4 @@
-;
-
-var doc = {};
+;doc={};
 
 doc.script1 =
 `

@@ -1,4 +1,4 @@
-;
+;doc={};
 
 if ( typeof global !== 'undefined' ) {
   const fs = require('fs');
