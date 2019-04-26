@@ -13,7 +13,7 @@ doc.template=
  * d3_topics
  */
 (doc=>{
-doc.d2_topocs=
+doc.d3_topocs=
 `
 What do you need to get started
 Starting with a basic graph
