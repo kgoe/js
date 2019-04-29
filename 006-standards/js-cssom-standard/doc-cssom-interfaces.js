@@ -1,3 +1,8 @@
+;doc={};
+
+
+doc.sort=
+`
 ### CSSOM interfaces
 AnimationEvent
 CaretPosition
@@ -75,3 +80,5 @@ StylePropertyMapRead
 CSSPrimitiveValue 
 CSSValue 
 CSSValueList 
+`;
+

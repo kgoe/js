@@ -1,3 +1,8 @@
+;doc={};
+
+
+doc.sort=
+`
 ### README CSSOM ( CSS Object Model )
 
 ### Standards
@@ -40,3 +45,5 @@ https://drafts.csswg.org/css-counter-styles-3/
 
 Document Object Model (DOM) Level 2 Style Specification	Obsolete	Initial definition.
 https://www.w3.org/TR/DOM-Level-2-Style/
+
+`;
