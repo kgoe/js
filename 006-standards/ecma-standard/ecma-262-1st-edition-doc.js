@@ -7,6 +7,16 @@
 (doc=>{
 doc.template=
 `
+`;
+})(doc);
+
+
+/*
+ * template
+ */
+(doc=>{
+doc.es01=
+`
 01|Scope
 02|Conformance
 03|References

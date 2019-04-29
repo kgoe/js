@@ -1,5 +1,6 @@
 ;doc={};
 
+
 /*
  * template
  */
@@ -9,11 +10,12 @@ doc.template=
 `;
 })(doc);
 
+
 /*
  * es08
  */
 (doc=>{
-doc.template=
+doc.es08=
 `
 01|Scope
 02|Conformance
