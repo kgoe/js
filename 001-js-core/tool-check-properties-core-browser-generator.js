@@ -1,4 +1,12 @@
-;
+;doc={};
+
+
+doc.template=
+[
+`
+`
+];
+
 
 const fs = require('fs');
 

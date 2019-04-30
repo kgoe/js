@@ -1,6 +1,12 @@
-;
+;doc={};
 
-var doc = {};
+
+doc.template=
+[
+`
+`
+];
+
 
 doc.node_global =
 `
@@ -68,6 +74,7 @@ setImmediate|function
 setInterval|function
 setTimeout|function
 `;
+
 
 // End
 if ( typeof global !== 'undefined' ) {

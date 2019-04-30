@@ -1,10 +1,12 @@
 ;doc={};
 
+
 /**
  * template 01
  */
 ((doc)=>{
 })(doc);
+
 
 // template 02
 doc.template=
@@ -12,6 +14,7 @@ doc.template=
 `
 `
 ];
+
 
 doc.topics=
 [

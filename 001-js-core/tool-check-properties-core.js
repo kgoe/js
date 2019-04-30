@@ -1,4 +1,12 @@
-;
+;doc={};
+
+
+doc.template=
+[
+`
+`
+];
+
 
 if ( typeof require == 'function' ) {
   var doc = require('./properties-javascript-core.js');

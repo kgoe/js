@@ -1,6 +1,12 @@
-;
+;doc={};
 
-var doc = {};
+
+doc.template=
+[
+`
+`
+];
+
 
 doc.Array =
 `

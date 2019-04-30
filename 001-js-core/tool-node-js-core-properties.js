@@ -1,4 +1,12 @@
-;
+;doc={};
+
+
+doc.template=
+[
+`
+`
+];
+
 
 var doc = require('./properties-javascript-core.js');
 

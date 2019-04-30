@@ -1,9 +1,16 @@
-;
+;doc={};
+
+
+doc.template=
+[
+`
+`
+];
+
 
 // reference :
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
-var doc = {};
 
 doc.valueProp =
 `
