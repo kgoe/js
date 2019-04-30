@@ -13,6 +13,7 @@ doc.name =
 mdn javascript
 `;
 
+
 doc.mdn_links =
 `
 https://developer.mozilla.org/en-US/ | MDN
@@ -21,10 +22,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript | Tutorials
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
 `;
 
+
 doc.reference_properties_index =
 `
 >>> Global Objects
 `;
+
 
 doc.reference_statements_index =
 `
@@ -60,6 +63,7 @@ Data Types and Data Structures
 Strict Mode
 Deprecated Features
 `;
+
 
 doc.sort =
 `
@@ -494,3 +498,4 @@ JSBin
 #### MDN JavaScript Web API
 
 `;
+

@@ -20,6 +20,7 @@ undefined|undefined
 null|object
 `;
 
+
 doc.funcProp =
 `
 eval|function
@@ -35,6 +36,7 @@ encodeURIComponent|function
 escape|function
 unescape|function
 `;
+
 
 doc.fundamentalObjects =
 `
@@ -52,6 +54,7 @@ TypeError|function
 URIError|function
 `;
 
+
 doc.numbersDates =
 `
 Number|function
@@ -59,11 +62,13 @@ Math|object
 Date|function
 `;
 
+
 doc.textProcessing =
 `
 String|function
 RegExp|function
 `;
+
 
 doc.indexedCollections =
 `
@@ -79,6 +84,7 @@ Float32Array|function
 Float64Array|function
 `;
 
+
 doc.keyedCollections =
 `
 Map|function
@@ -86,6 +92,7 @@ Set|function
 WeakMap|function
 WeakSet|function
 `;
+
 
 doc.structuredData =
 `
@@ -96,6 +103,7 @@ DataView|function
 JSON|object
 `;
 
+
 doc.controlAbstraction =
 `
 Promise|function
@@ -104,11 +112,13 @@ GeneratorFunction|undefined
 AsyncFunction|undefined
 `;
 
+
 doc.reflection =
 `
 Reflect|object
 Proxy|function
 `;
+
 
 doc.intl =
 `
@@ -119,6 +129,7 @@ Intl.NumberFormat|object
 Intl.PluralRules|object
 Intl.RelativeTimeFormat|object
 `;
+
 
 doc.webassembly =
 `
@@ -132,10 +143,12 @@ WebAssembly.LinkError|object
 WebAssembly.RuntimeError|object
 `;
 
+
 doc.arguments =
 `
 arguments|object
 `;
+
 
 doc.node_global =
 `
@@ -203,6 +216,7 @@ setImmediate|function
 setInterval|function
 setTimeout|function
 `;
+
 
 // End
 if ( typeof global !== 'undefined' ) {
