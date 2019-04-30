@@ -1,29 +1,23 @@
 ;doc={};
 
-/*
- * template
- */
-(doc=>{
-doc.template=
-`
-`;
-})(doc);
 
-/*
- * references
- */
-(doc=>{
+doc.template=
+[
+`
+`
+];
+
+
 doc.references=
+[
 `
 d001|essential javascript & jquery design patterns|addy osmani
-`;
-})(doc);
+`
+];
 
-/*
- * template
- */
-(doc=>{
+
 doc.d001=
+[
 `
 writing design patterns
 design patterns in jquery
@@ -49,5 +43,6 @@ design patterns in javascript
 - facade pattern
 - factory pattern
 - decorator pattern
-`;
-})(doc);
+`
+];
+

@@ -1,23 +1,22 @@
 ;doc={};
 
-
-/*
- * template
+/**
+ * template 01
  */
-(doc=>{
+((doc)=>{
+})(doc);
+
+// template 02
 doc.template=
+[
 `
-`;
-})(doc);
+`
+];
 
-
-/*
- * topics
- */
-(doc=>{
 doc.topics=
+[
 `
-`;
-})(doc);
+`
+];
 
 
