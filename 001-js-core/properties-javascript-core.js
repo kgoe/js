@@ -1,6 +1,11 @@
 ;doc={};
 
 
+// reference :
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+
+
 doc.template=
 [
 `
@@ -8,20 +13,19 @@ doc.template=
 ];
 
 
-// reference :
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
-
-
-doc.valueProp =
+doc.valueProp=
+[
 `
 Infinity|number
 NaN|number
 undefined|undefined
 null|object
-`;
+`
+];
 
 
-doc.funcProp =
+doc.funcProp=
+[
 `
 eval|function
 uneval|undefined
@@ -35,10 +39,12 @@ encodeURI|function
 encodeURIComponent|function
 escape|function
 unescape|function
-`;
+`
+];
 
 
-doc.fundamentalObjects =
+doc.fundamentalObjects=
+[
 `
 Object|function
 Function|function
@@ -52,25 +58,31 @@ ReferenceError|function
 SyntaxError|function
 TypeError|function
 URIError|function
-`;
+`
+];
 
 
-doc.numbersDates =
+doc.numbersDates=
+[
 `
 Number|function
 Math|object
 Date|function
-`;
+`
+];
 
 
-doc.textProcessing =
+doc.textProcessing=
+[
 `
 String|function
 RegExp|function
-`;
+`
+];
 
 
 doc.indexedCollections =
+[
 `
 Array|function
 Int8Array|function
@@ -82,45 +94,55 @@ Int32Array|function
 Uint32Array|function
 Float32Array|function
 Float64Array|function
-`;
+`
+];
 
 
 doc.keyedCollections =
+[
 `
 Map|function
 Set|function
 WeakMap|function
 WeakSet|function
-`;
+`
+];
 
 
 doc.structuredData =
+[
 `
 ArrayBuffer|function
 SharedArrayBuffer|function
 Atomics|object
 DataView|function
 JSON|object
-`;
+`
+];
 
 
 doc.controlAbstraction =
+[
 `
 Promise|function
 Generator|undefined
 GeneratorFunction|undefined
 AsyncFunction|undefined
-`;
+`
+];
 
 
 doc.reflection =
+[
 `
 Reflect|object
 Proxy|function
-`;
+`
+];
 
 
 doc.intl =
+[
 `
 Intl|object
 Intl.Collarot|object
@@ -128,10 +150,12 @@ Intl.DateTimeFormat|object
 Intl.NumberFormat|object
 Intl.PluralRules|object
 Intl.RelativeTimeFormat|object
-`;
+`
+];
 
 
 doc.webassembly =
+[
 `
 WebAssembly|object
 WebAssembly.Module|object
@@ -141,16 +165,20 @@ WebAssembly.Table|object
 WebAssembly.CompileError|object
 WebAssembly.LinkError|object
 WebAssembly.RuntimeError|object
-`;
+`
+];
 
 
 doc.arguments =
+[
 `
 arguments|object
-`;
+`
+];
 
 
 doc.node_global =
+[
 `
 Object|function
 Function|function
@@ -215,7 +243,8 @@ clearTimeout|function
 setImmediate|function
 setInterval|function
 setTimeout|function
-`;
+`
+];
 
 
 // End
