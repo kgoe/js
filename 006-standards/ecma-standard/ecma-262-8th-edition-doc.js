@@ -1,14 +1,19 @@
 ;doc={};
 
 
-/*
- * template
- */
-(doc=>{
-doc.template=
+doc.temp=
+[
 `
-`;
-})(doc);
+`
+];
+
+
+doc.outline=
+[
+`
+`
+];
+
 
 
 /*

@@ -1,6 +1,21 @@
 ;doc={};
 
 
+doc.temp=
+[
+`
+`
+];
+
+
+doc.outline=
+[
+`
+`
+];
+
+
+
 /*
  * template
  */

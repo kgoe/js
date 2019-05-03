@@ -1,3 +1,19 @@
+;doc={};
+
+
+doc.temp=
+[
+`
+`
+];
+
+
+doc.outline=
+[
+`
+`
+];
+
 ### ECMA 262 2nd Edition
 ECMAScript 2nd Edition, August 1998
 PDF 117pages 389kb

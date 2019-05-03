@@ -1,3 +1,21 @@
+;doc={};
+
+
+doc.temp=
+[
+`
+`
+];
+
+
+doc.outline=
+[
+`
+`
+];
+
+
+
 ### ECMA 262 9th Edition
 ECMAEscript 9th Edition, June 2018
 PDF 805pages 8277kb
