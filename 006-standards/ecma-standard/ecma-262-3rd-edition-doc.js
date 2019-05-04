@@ -38,6 +38,7 @@ Annex B - Comparability
 `
 ];
 
+
 doc.details=
 [
 `
@@ -339,7 +340,6 @@ B.2.6 Date.prototype.toGMTString()
 ];
 
 
-
 doc.es03=
 [
 `
@@ -365,150 +365,150 @@ doc.es03=
 ];
 
 
-/*
- * es03c01|Scope
- */
-(doc=>{
+// es03c01|Scope
 doc.es03c01=
+[
 `
 es03c01|Scope
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c02|Conformance
- */
-(doc=>{
+// es03c02|Conformance
 doc.es03c02=
+[
 `
 es03c02|Conformance
-`;
-})(doc);
+Unicode Standard Version 2.1
+ISO/IEC 10646-1
+UCS-2
+UTF-16 implementation level 3
+ISO/IEC 10646-1 BMP subset collection 300
+UTF-16 encoding
+`
+];
 
 
-/*
- * es03c03|Normative References
- */
-(doc=>{
+// es03c03|Normative References
 doc.es03c03=
+[
 `
 es03c03|Normative References
-`;
-})(doc);
+ISO/IEC 9899:1996 Programming Langauges - C
+ISO/IEC 10646-1:1993 Information Technology
+Unicode Ing (1996) The Unicode Standard Version 2.0
+Unicode Inc. (1998) Version 2.1
+Unicode Inc. (1998) Unicode Normalization Forms
+ANSI/IEEE Std 754-1984: IEEE Standard for Binary Floating Point Arithmetic
+`
+];
 
 
-/*
- * es03c04|Overview
- */
-(doc=>{
+// es03c04|Overview
 doc.es03c04=
+[
 `
 es03c04|Overview
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c05|Notational Conventions
- */
-(doc=>{
+// es03c05|Notational Conventions
 doc.es03c05=
+[
 `
 es03c05|Notational Conventions
 Syntactic and Lexicsl Grammars
 Algorithm Conventions
-`;
-})(doc);
+`
+];
 
 
-  /*
- * es03c046|Source Text
- */
-(doc=>{
+// es03c046|Source Text
 doc.es03c06=
+[
 `
 es03c06|Source Text
-`;
-})(doc);
+`
+];
 
 
-
-/*
- * es03c07|Lexical Conventions
- */
-(doc=>{
+// es03c07|Lexical Conventions
 doc.es03c07=
+[
 `
 es03c07|Lexical Conventions
-`;
-})(doc);
+`
+];
 
 
-
-/*
- * es03c08|Types
- */
-(doc=>{
+// es03c08|Types
 doc.es03c08=
+[
 `
 es03c08|Types
-The Undefined Type
-The Null Type
-The Boolean Type
-The String Type
-The Number Type
-The Object Type
-The Reference Type
-The List Type
-The Completion Type
-`;
-})(doc);
+undefined
+null
+Boolean
+String
+Number
+Object
+Object|Property Attributes
+Object|Internal Properties and Methods
+Reference
+Reference|GetValue(V)
+Reference|GetValue(V,W)
+List
+Completion
+`
+];
 
 
-
-/*
- * es03c09|Type Conversion
- */
-(doc=>{
+// es03c09|Type Conversion
 doc.es03c09=
+[
 `
 es03c09|Type Conversion
 ToPrimative
 ToBoolean
 ToNumber
+ToNumber|Applied to the String Type
 ToInteger
 ToInt32
 ToUint32
 ToUint16
 ToString
+ToString|Applied to the Number Type
 ToObject
-`;
-})(doc);
+`
+];
 
 
-
-/*
- * es03c10|Execution Contexts
- */
-(doc=>{
+// es03c10|Execution Contexts
 doc.es03c10=
+[
 `
 es03c10|Execution Contexts
 Definitions
+- Function Objects
+- Types of Executable Code
+- Variable Instantiation
+- Scope Chain and Identifier Resolution
+- Global Object
+- Activation Object
+- This
+- Arguments Object
 Entering An Execution Context
 - Global Code
 - Eval Code
 - Function Code
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c11|Expressions
- */
-(doc=>{
+// es03c11|Expressions
 doc.es03c09=
+[
 `
 es03c11|Expressions
 Primary Expressions
@@ -525,16 +525,13 @@ Binary Logical Operators
 Conditional Operator
 Assignment Operators
 Comma Operator
+`
+];
 
-`;
-})(doc);
 
-
-/*
- * es03c12|Statements
- */
-(doc=>{
+// es03c12|Statements
 doc.es03c12=
+[
 `
 es03c12|Statements
 Block
@@ -551,39 +548,37 @@ The switch statement
 Labelled Statements
 The throw Statememt
 The try Statement
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c13|Function Defenition
- */
-(doc=>{
+// es03c13|Function Defenition
 doc.es03c13=
+[
 `
 es03c13|Function Defenition
 Definitions
+- Equated Grammar Productions
+- Joined Objects
 Creating Function Objects
-`;
-})(doc);
+- [[Call]]
+- [[Construct]]
+`
+];
 
 
-/*
- * es03c14|Program
- */
-(doc=>{
+// es03c14|Program
 doc.es03c14=
+[
 `
 es03c14|Program
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c15|Native ECMAScript Objects
- */
-(doc=>{
+// es03c15|Native ECMAScript Objects
 doc.es03c15=
+[
 `
 es03c15|Native ECMAScript Objects
 The Global Object
@@ -597,16 +592,14 @@ The Math Object
 Date Object
 RegExp Objects
 Error Objects
-`;
-})(doc);
+`
+];
 
 
-/*
- * es03c16|Errors
- */
-(doc=>{
+// es03c16|Errors
 doc.es03c16=
+[
 `
 es03c16|Errors
-`;
-})(doc);
+`
+];
