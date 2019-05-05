@@ -8,7 +8,7 @@ doc.template=
 ];
 
 
-var doc = require('./properties-javascript-node.js');
+var core = require('./properties-javascript-node.js');
 
 var helper = require('./tool-core-helper.js');
 
@@ -58,10 +58,14 @@ function main() {
    * @param {*} cat
    */
   function forEachCategory(cat) {
-    console.log('>>> Item :', cat);
-    var lines = splitTemplateVariables(doc[cat]);
-    lines.forEach(forEachLine);
+    try {
+      console.log('>>> Item :', cat);
+      var lines = splitTemplateVariables(core[cat][0]);
+      lines.forEach(forEachLine);
+    } catch(err) {
+      console.log('ERROR', cat, err);
+    }
   }
 
-  Object.getOwnPropertyNames(doc).forEach(forEachCategory);
+  Object.getOwnPropertyNames(core).forEach(forEachCategory);
 }

@@ -9,7 +9,7 @@ doc.template=
 
 
 if ( typeof require == 'function' ) {
-  var doc = require('./properties-javascript-core.js');
+  var core = require('./properties-javascript-core.js');
   var helper = require('./tool-core-helper.js');
 }
 
@@ -115,9 +115,13 @@ function processEachLine(line) {
  * @sideeffect
  */
 function forEachCategory(cat) {
-  console.log('>>> Item :', cat);
-  var lines = splitTemplateVariables(doc[cat]);
-  lines.forEach(processEachLine);
+  try {
+    console.log('>>> Item :', cat);
+    var lines = splitTemplateVariables(core[cat][0]);
+    lines.forEach(processEachLine);
+  } catch(err) {
+    console.log('ERROR', cat, err);
+  }
 }
 
 
@@ -127,7 +131,7 @@ function forEachCategory(cat) {
  */
 function main() {
   // var root = getGlobalRoot();
-  Object.getOwnPropertyNames(doc).forEach(forEachCategory);
+  Object.getOwnPropertyNames(core).forEach(forEachCategory);
 }
 
 if ( typeof global == 'object' && typeof module == 'object' ) {
