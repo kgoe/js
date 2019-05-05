@@ -38,7 +38,14 @@ javascript web libraries
 doc.links=
 [
 `
-https://devdocs.io
+https://devdocs.io/javascript/
+
+https://developer.mozilla.org/en-US/ | MDN
+https://developer.mozilla.org/en-US/docs/Web/JavaScript | JavaScript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tutorials | Tutorials
+https://developer.mozilla.org/en-US/docs/Web/JavaScript#Reference
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
+https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources
 `
 ];
 
