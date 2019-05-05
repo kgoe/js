@@ -1,7 +1,8 @@
 ;doc={};
 
-/**
- * template
- */
-((doc)=>{
-})(doc);
+
+doc.template=
+[
+`
+`
+];

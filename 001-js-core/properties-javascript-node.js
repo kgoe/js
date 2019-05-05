@@ -8,7 +8,8 @@ doc.template=
 ];
 
 
-doc.node_global =
+doc.node_global=
+[
 `
 Object|function
 Function|function
@@ -73,7 +74,8 @@ clearTimeout|function
 setImmediate|function
 setInterval|function
 setTimeout|function
-`;
+`
+];
 
 
 // End
