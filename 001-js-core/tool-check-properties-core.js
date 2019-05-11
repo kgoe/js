@@ -11,12 +11,17 @@ doc.template=
 if ( typeof require == 'function' ) {
   var core = require('./properties-javascript-core.js');
   var helper = require('./tool-core-helper.js');
+
+  // console.log('core',core);
+  // console.log('helper',helper);
 }
 
+
 if ( typeof window == 'object' && typeof document == 'object' ) {
-  // todo : handle for browser
+  // handle for browser
 
   // equivalent to require from node.js
+  // not effective
   var require = function require(url){
     // to allow loading without js suffix;
     if (url.toLowerCase().substr(-3)!=='.js') url+='.js';
@@ -62,13 +67,30 @@ if ( typeof window == 'object' && typeof document == 'object' ) {
     return exports; //require returns object exported by module
   }
 
-  // var doc = require('./properties-javascript-core.js');
-  // var helper = require('./tool-core-helper.js');
+  function loadscript(scriptUrl, callback) {
+    var script = document.createElement('script');
+    script.onload = function () {
+        //do stuff with the script
+        console.log(scriptUrl);
+        if ( typeof callback == 'function' ) {
+          callback();
+        }
+    };
+    script.src = scriptUrl;
+    
+    document.head.appendChild(script); //or something of the likes
+  }
+
+  // var core = require('properties-javascript-core.js');
+  // var helper = require('tool-core-helper.js');
+
+  loadscript('properties-javascript-core.js', function(){core = properties_javascript_core;});
+  loadscript('tool-core-helper.js', function(){helper = tool_core_helper;});
 }
 
 if ( typeof helper !== 'undefined' ) {
-  var getGlobalRoot = helper.getGlobalRoot;
-  var splitTemplateVariables = helper.splitTemplateVariables;
+  getGlobalRoot = helper.getGlobalRoot;
+  splitTemplateVariables = helper.splitTemplateVariables;
 }
 
 /**
@@ -77,13 +99,14 @@ if ( typeof helper !== 'undefined' ) {
  * @sideeffect
  */
 function processEachLine(line) {
+  var theRoot = helper.getGlobalRoot();
   line = line.split('|');
 
   var theProperty = line[0];
   var theType = typeof line[1] == 'string' ? line[1] : false;
   var typeCheck = (theType) ?
-    typeof root[theProperty] == theType :
-      typeof root[theProperty] !== 'undefined';
+    typeof theRoot[theProperty] == theType :
+      typeof theRoot[theProperty] !== 'undefined';
 
   if ( theProperty == 'null' ) {
     typeCheck = typeof null == theType;
@@ -118,28 +141,26 @@ function processEachLine(line) {
 function forEachCategory(cat) {
   try {
     console.log('>>> Item :', cat);
-    var lines = splitTemplateVariables(core[cat][0]);
+    var lines = helper.splitTemplateVariables(core[cat][0]);
     lines.forEach(processEachLine);
   } catch(err) {
     console.log('ERROR', cat, err);
   }
 }
 
-
 /**
  * main
  * @entrypoint
  */
 function main() {
-  // var root = getGlobalRoot();
   Object.getOwnPropertyNames(core).forEach(forEachCategory);
 }
 
 if ( typeof global == 'object' && typeof module == 'object' ) {
-  main();
+  setTimeout(main, 1000);
 }
 
 if ( typeof window == 'object' && typeof document == 'object' ) {
   // todo : handle for browser
-  main();
+  setTimeout(main, 1000);
 }

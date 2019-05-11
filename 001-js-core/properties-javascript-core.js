@@ -1,3 +1,5 @@
+var properties_javascript_core = (function thisModule(){
+
 ;doc={};
 
 
@@ -315,12 +317,16 @@ setTimeout|function
 `
 ];
 
+return doc;
 
-// End
-var output = doc;
+})();
+
+var output = properties_javascript_core;
 function main() {
   console.log('main')
 }
+
+// End
 if ( typeof global !== 'undefined' ) {
   if ( typeof module !== 'undefined'
     && typeof require !== 'undefined'
