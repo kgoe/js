@@ -1,3 +1,6 @@
+var properties_javascript_node = (function thisModule(){
+
+
 ;doc={};
 
 
@@ -63,20 +66,25 @@ eval|function
 isFinite|function
 isNaN|function
 WebAssembly|object
-global|object
-process|object
-GLOBAL|object
-root|object
-Buffer|function
-clearImmediate|function
+global|object|no browser
+process|object|no browser
+GLOBAL|object|no browser
+root|object|no browser
+Buffer|function|no browser
+clearImmediate|function|no browser
 clearInterval|function
 clearTimeout|function
-setImmediate|function
+setImmediate|function|no browser
 setInterval|function
 setTimeout|function
 `
 ];
 
+return doc;
+
+})();
+
+var output = properties_javascript_node;
 
 // End
 if ( typeof global !== 'undefined' ) {
@@ -90,6 +98,6 @@ if ( typeof global !== 'undefined' ) {
     console.log('script running itself');
   } else {
     console.log('LOADED : node-module', __filename);
-    module.exports = doc;
+    module.exports = output;
   }
 };
