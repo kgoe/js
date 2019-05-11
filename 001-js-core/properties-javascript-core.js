@@ -146,11 +146,11 @@ doc.intl =
 [
 `
 Intl|object
-Intl.Collarot|object|no browser
-Intl.DateTimeFormat|object|no browser
-Intl.NumberFormat|object|no browser
-Intl.PluralRules|object|no browser
-Intl.RelativeTimeFormat|object|no browser
+Intl.Collarot|object|no browser node
+Intl.DateTimeFormat|function
+Intl.NumberFormat|function
+Intl.PluralRules|function
+Intl.RelativeTimeFormat|object|no browser node
 `
 ];
 
@@ -159,13 +159,13 @@ doc.webassembly =
 [
 `
 WebAssembly|object
-WebAssembly.Module|object
-WebAssembly.Instance|object
-WebAssembly.Memory|object
-WebAssembly.Table|object
-WebAssembly.CompileError|object
-WebAssembly.LinkError|object
-WebAssembly.RuntimeError|object
+WebAssembly.Module|function
+WebAssembly.Instance|function
+WebAssembly.Memory|function
+WebAssembly.Table|function
+WebAssembly.CompileError|function
+WebAssembly.LinkError|function
+WebAssembly.RuntimeError|function
 `
 ];
 
@@ -233,13 +233,13 @@ eval|function
 isFinite|function
 isNaN|function
 WebAssembly|object
-global|object
-process|object
-GLOBAL|object
-root|object
-Buffer|function
-clearImmediate|function
-clearInterval|function
+global|object|no browser|no browser
+process|object|no browser|no browser
+GLOBAL|object|no browser|no browser
+root|object|no browser|no browser
+Buffer|function|no browser|no browser
+clearImmediate|function|no browser
+clearInterval|function|no browser
 clearTimeout|function
 setImmediate|function
 setInterval|function
@@ -303,15 +303,15 @@ eval|function
 isFinite|function
 isNaN|function
 WebAssembly|object
-global|object
-process|object
-GLOBAL|object
-root|object
-Buffer|function
-clearImmediate|function
+global|object|no browser
+process|object|no browser
+GLOBAL|object|no browser
+root|object|no browser
+Buffer|function|no browser
+clearImmediate|function|no browser
 clearInterval|function
 clearTimeout|function
-setImmediate|function
+setImmediate|function|no browser
 setInterval|function
 setTimeout|function
 `

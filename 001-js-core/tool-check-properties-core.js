@@ -94,6 +94,23 @@ if ( typeof helper !== 'undefined' ) {
 }
 
 /**
+ * processNamespacedProperty
+ * @param {*} prop 
+ */
+function processNamespacedProperty( props ) {
+  var theRoot = helper.getGlobalRoot();
+  props = props.split('.');
+
+  if ( props.length == 2 ) {
+    return theRoot[props[0]][props[1]];
+  }
+
+  if ( props.length == 3 ) {
+    return theRoot[props[0]][props[1]][props[2]];
+  }
+}
+
+/**
  * processEachLine
  * @param {*} line
  * @sideeffect
@@ -116,6 +133,11 @@ function processEachLine(line) {
     // check without namespace
   } else {
     // todo : check with namespace
+    thisProperty = processNamespacedProperty(theProperty);
+    // console.log('namespaced', thisProperty);
+    typeCheck = (theType) ?
+    typeof thisProperty == theType :
+      typeof thisProperty !== 'undefined';
   }
 
   // output
