@@ -146,11 +146,11 @@ doc.intl =
 [
 `
 Intl|object
-Intl.Collarot|object
-Intl.DateTimeFormat|object
-Intl.NumberFormat|object
-Intl.PluralRules|object
-Intl.RelativeTimeFormat|object
+Intl.Collarot|object|no browser
+Intl.DateTimeFormat|object|no browser
+Intl.NumberFormat|object|no browser
+Intl.PluralRules|object|no browser
+Intl.RelativeTimeFormat|object|no browser
 `
 ];
 
