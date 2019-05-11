@@ -53,7 +53,7 @@ Boolean|function
 Symbol|function
 Error|function
 EvalError|function
-InternalError|undefined
+InternalError|function
 RangeError|function
 ReferenceError|function
 SyntaxError|function
@@ -67,6 +67,7 @@ doc.numbersDates=
 [
 `
 Number|function
+BigInt|function
 Math|object
 Date|function
 `
@@ -126,9 +127,9 @@ doc.controlAbstraction =
 [
 `
 Promise|function
-Generator|undefined
-GeneratorFunction|undefined
-AsyncFunction|undefined
+Generator|function
+GeneratorFunction|function
+AsyncFunction|function
 `
 ];
 
@@ -238,76 +239,6 @@ process|object|no browser|no browser
 GLOBAL|object|no browser|no browser
 root|object|no browser|no browser
 Buffer|function|no browser|no browser
-clearImmediate|function|no browser
-clearInterval|function|no browser
-clearTimeout|function
-setImmediate|function
-setInterval|function
-setTimeout|function
-`
-];
-
-
-doc.node_global=
-[
-`
-Object|function
-Function|function
-Array|function
-Number|function
-parseFloat|function
-parseInt|function
-Infinity|number
-NaN|number
-undefined|undefined
-Boolean|function
-String|function
-Symbol|function
-Date|function
-Promise|function
-RegExp|function
-Error|function
-EvalError|function
-RangeError|function
-ReferenceError|function
-SyntaxError|function
-TypeError|function
-URIError|function
-JSON|object
-Math|object
-console|object
-ArrayBuffer|function
-Uint8Array|function
-Int8Array|function
-Uint16Array|function
-Int16Array|function
-Uint32Array|function
-Int32Array|function
-Float32Array|function
-Float64Array|function
-Uint8ClampedArray|function
-DataView|function
-Map|function
-Set|function
-WeakMap|function
-WeakSet|function
-Proxy|function
-Reflect|object
-decodeURI|function
-decodeURIComponent|function
-encodeURI|function
-encodeURIComponent|function
-escape|function
-unescape|function
-eval|function
-isFinite|function
-isNaN|function
-WebAssembly|object
-global|object|no browser
-process|object|no browser
-GLOBAL|object|no browser
-root|object|no browser
-Buffer|function|no browser
 clearImmediate|function|no browser
 clearInterval|function
 clearTimeout|function
