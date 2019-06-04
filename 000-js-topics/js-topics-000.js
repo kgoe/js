@@ -48,11 +48,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tutorials | Tutorials
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview
-https://developer.mozilla.org/en-US/docs/Web/API
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features
 `
 ];
 
