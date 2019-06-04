@@ -22,7 +22,7 @@ it is standardized as ECMA-262
 doc.topics=
 [
 `
-javascript / ecmascript
+javascript / ecmascript / js / es
 javascript core|https://devdocs.io/javascript/
 javascript dom|https://devdocs.io/dom/
 javascript dom events|https://devdocs.io/dom_events/
@@ -49,5 +49,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript#Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources
 `
+];
+
+
+doc.table_of_contents=
+[
+`
+`
+,
 ];
 
