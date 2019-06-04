@@ -1,6 +1,5 @@
-;
+;doc={};print=console.log;
 
-var doc = {};
 
 doc.node10_15 =
 `
