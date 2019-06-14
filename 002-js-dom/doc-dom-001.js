@@ -1,4 +1,6 @@
 ;doc={};
+;app={};
+;const print={};
 
 
 doc.template=
