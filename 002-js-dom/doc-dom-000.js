@@ -1,6 +1,6 @@
-;
-
-var doc = {};
+;doc={};
+;app={};
+;const print={};
 
 // Standards
 
