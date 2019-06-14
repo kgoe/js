@@ -1,4 +1,6 @@
-;doc={};print=console.log;
+;doc={};
+;app={};
+;const print={};
 
 
 doc.template=
