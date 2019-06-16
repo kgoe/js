@@ -5,6 +5,9 @@ a repository created to collect useful topics about :
 - node.js
 
 ### TOPICS
+JavaScript Core
+JavaScript DOM
+JavaScript DOM API
 file sync
 project generation
 directory generation
