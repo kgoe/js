@@ -1,4 +1,5 @@
-### README : kgoe js
+### README
+kgoe js
 a repository created to collect useful topics about :
 - ecmascript
 - javascript
@@ -8,7 +9,12 @@ a repository created to collect useful topics about :
 JavaScript Core
 JavaScript DOM
 JavaScript DOM API
-file sync
-project generation
-directory generation
+
+File Sync
+Project Generation
+Directory Generation
+JavaScript Testing
 node server + testing
+
+### Best Practices
+?
