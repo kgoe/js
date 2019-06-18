@@ -18,3 +18,7 @@ node server + testing
 
 ### Best Practices
 ?
+
+### LINKS
+https://devdocs.io/javascript/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
