@@ -10,6 +10,9 @@ doc.template=
 ];
 
 
+doc.name='mdn javascript api';
+
+
 doc.topics=
 [
 `
