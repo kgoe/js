@@ -1,4 +1,7 @@
-;
+;doc={};
+;app={};
+;const print=console.log;
+
 
 /*
  * test.js entry point
