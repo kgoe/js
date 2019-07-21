@@ -9,7 +9,7 @@ doc.template=
 
 
 if ( typeof require == 'function' ) {
-  var core = require('./properties-javascript-core.js');
+  var core = require('../001-js-core/properties-javascript-core.js');
   var helper = require('./tool-core-helper.js');
 
   // console.log('core',core);
