@@ -1,10 +1,9 @@
-;
+;doc={};
+const assert=require('assert');
+const log=console.log;
 
 // js core properties checker
 // checks if javascript core properties is supported
-
-var assert = require('assert');
-var log = console.log;
 
 if ( typeof describe == 'function') {
   describe('js core properties', function() {
