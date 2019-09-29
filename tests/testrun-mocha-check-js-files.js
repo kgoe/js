@@ -12,8 +12,8 @@ function filterJsFile(item) {
 
 
 if ( typeof describe == 'function') {
-  describe('checking 000-js-topics', function folder_check() {
-    let path = './000-js-topics'
+  describe('checkingdoc js-topics', function folder_check() {
+    let path = './doc'
     let fileList = fs.readdirSync(path);
 
     fileList.filter(filterJsFile).forEach((item, index, arr) => {
@@ -30,8 +30,8 @@ if ( typeof describe == 'function') {
       })
     });
   });
-  describe('checking 001-js-core', function folder_check() {
-    let path = './001-js-core'
+  describe('checking js-core', function folder_check() {
+    let path = './src/js-core'
     let fileList = fs.readdirSync(path);
 
     fileList.filter(filterJsFile).forEach((item, index, arr) => {
@@ -48,8 +48,8 @@ if ( typeof describe == 'function') {
       })
     });
   });
-  describe('checking 005-js-node-core', function folder_check() {
-    let path = './005-js-node-core'
+  describe('checking js-node-core', function folder_check() {
+    let path = './src/js-node-core'
     let fileList = fs.readdirSync(path);
 
     fileList.filter(filterJsFile).forEach((item, index, arr) => {

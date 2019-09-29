@@ -19,7 +19,7 @@ try {
   
   // Instantiate a Mocha instance.
   var mocha = new Mocha();
-  var testDir = '008-testing';
+  var testDir = 'tests';
   
   // Add each .js file to the mocha instance
   fs.readdirSync(testDir)
