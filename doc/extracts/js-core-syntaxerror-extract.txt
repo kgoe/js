@@ -1,0 +1,12 @@
+length|number|1
+name|string|SyntaxError
+prototype|object|SyntaxError
+length|number|1
+name|string|Error
+prototype|object|Error
+captureStackTrace|function|function captureStackTrace() 
+stackTraceLimit|number|10
+constructor|function|function SyntaxError() 
+name|string|SyntaxError
+message|string|
+toString|function|function toString() 

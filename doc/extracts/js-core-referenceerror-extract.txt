@@ -1,0 +1,12 @@
+length|number|1
+name|string|ReferenceError
+prototype|object|ReferenceError
+length|number|1
+name|string|Error
+prototype|object|Error
+captureStackTrace|function|function captureStackTrace() 
+stackTraceLimit|number|10
+constructor|function|function ReferenceError() 
+name|string|ReferenceError
+message|string|
+toString|function|function toString() 

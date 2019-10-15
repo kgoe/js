@@ -1,0 +1,12 @@
+length|number|1
+name|string|EvalError
+prototype|object|EvalError
+length|number|1
+name|string|Error
+prototype|object|Error
+captureStackTrace|function|function captureStackTrace() 
+stackTraceLimit|number|10
+constructor|function|function EvalError() 
+name|string|EvalError
+message|string|
+toString|function|function toString() 
