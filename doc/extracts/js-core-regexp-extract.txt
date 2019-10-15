@@ -1,0 +1,44 @@
+length|number|2
+name|string|RegExp
+prototype|object|/(?:)/
+input|string|xterm-256color
+$_|string|xterm-256color
+lastMatch|string|xterm-256
+$&|string|xterm-256
+lastParen|string|
+$+|string|
+leftContext|string|
+$`|string|
+rightContext|string|color
+$'|string|color
+$1|string|
+$2|string|
+$3|string|
+$4|string|
+$5|string|
+$6|string|
+$7|string|
+$8|string|
+$9|string|
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function RegExp() 
+exec|function|function exec() 
+dotAll
+flags|string|
+global
+ignoreCase
+multiline
+source|string|(?:)
+sticky
+unicode
+compile|function|function compile() 
+toString|function|function toString() 
+test|function|function test() 

@@ -1,0 +1,29 @@
+length|number|0
+name|string|Symbol
+prototype||
+for|function|function for() 
+keyFor|function|function keyFor() 
+asyncIterator|symbol|Symbol(Symbol.asyncIterator)
+hasInstance|symbol|Symbol(Symbol.hasInstance)
+isConcatSpreadable|symbol|Symbol(Symbol.isConcatSpreadable)
+iterator|symbol|Symbol(Symbol.iterator)
+match|symbol|Symbol(Symbol.match)
+replace|symbol|Symbol(Symbol.replace)
+search|symbol|Symbol(Symbol.search)
+species|symbol|Symbol(Symbol.species)
+split|symbol|Symbol(Symbol.split)
+toPrimitive|symbol|Symbol(Symbol.toPrimitive)
+toStringTag|symbol|Symbol(Symbol.toStringTag)
+unscopables|symbol|Symbol(Symbol.unscopables)
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function Symbol() 
+toString|function|function toString() 
+valueOf|function|function valueOf() 

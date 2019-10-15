@@ -1,0 +1,74 @@
+Object|function|function Object() 
+Function|function|function Function() 
+Array|function|function Array() 
+Number|function|function Number() 
+parseFloat|function|function parseFloat() 
+parseInt|function|function parseInt() 
+Infinity|number|Infinity
+NaN|number|NaN
+undefined|undefined|undefined
+Boolean|function|function Boolean() 
+String|function|function String() 
+Symbol|function|function Symbol() 
+Date|function|function Date() 
+Promise|function|function Promise() 
+RegExp|function|function RegExp() 
+Error|function|function Error() 
+EvalError|function|function EvalError() 
+RangeError|function|function RangeError() 
+ReferenceError|function|function ReferenceError() 
+SyntaxError|function|function SyntaxError() 
+TypeError|function|function TypeError() 
+URIError|function|function URIError() 
+JSON|object|[object JSON]
+Math|object|[object Math]
+console|object|[object Object]
+Intl|object|[object Object]
+ArrayBuffer|function|function ArrayBuffer() 
+Uint8Array|function|function Uint8Array() 
+Int8Array|function|function Int8Array() 
+Uint16Array|function|function Uint16Array() 
+Int16Array|function|function Int16Array() 
+Uint32Array|function|function Uint32Array() 
+Int32Array|function|function Int32Array() 
+Float32Array|function|function Float32Array() 
+Float64Array|function|function Float64Array() 
+Uint8ClampedArray|function|function Uint8ClampedArray() 
+BigUint64Array|function|function BigUint64Array() 
+BigInt64Array|function|function BigInt64Array() 
+DataView|function|function DataView() 
+Map|function|function Map() 
+Set|function|function Set() 
+WeakMap|function|function WeakMap() 
+WeakSet|function|function WeakSet() 
+Proxy|function|function Proxy() 
+Reflect|object|[object Object]
+decodeURI|function|function decodeURI() 
+decodeURIComponent|function|function decodeURIComponent() 
+encodeURI|function|function encodeURI() 
+encodeURIComponent|function|function encodeURIComponent() 
+escape|function|function escape() 
+unescape|function|function unescape() 
+eval|function|function eval() 
+isFinite|function|function isFinite() 
+isNaN|function|function isNaN() 
+SharedArrayBuffer|function|function SharedArrayBuffer() 
+Atomics|object|[object Atomics]
+BigInt|function|function BigInt() 
+WebAssembly|object|[object WebAssembly]
+global|object|[object global]
+process|object|[object process]
+GLOBAL|object|[object global]
+root|object|[object global]
+Buffer|function|function Buffer(arg, encodingOrOffset, length) 
+clearImmediate|function|function clearImmediate(immediate) 
+clearInterval|function|function clearInterval(timer) 
+clearTimeout|function|function clearTimeout(timer) 
+setImmediate|function|function setImmediate(callback, arg1, arg2, arg3) 
+setInterval|function|function setInterval(callback, repeat, arg1, arg2, arg3) 
+setTimeout|function|function setTimeout(callback, after, arg1, arg2, arg3) 
+URL|function|class URL 
+URLSearchParams|function|class URLSearchParams 
+doc|object|[object Object]
+app|object|[object Object]
+constructor|function|function Object() 

@@ -1,0 +1,33 @@
+length|number|1
+name|string|Number
+prototype|object|0
+isFinite|function|function isFinite() 
+isInteger|function|function isInteger() 
+isNaN|function|function isNaN() 
+isSafeInteger|function|function isSafeInteger() 
+parseFloat|function|function parseFloat() 
+parseInt|function|function parseInt() 
+MAX_VALUE|number|1.7976931348623157e+308
+MIN_VALUE|number|5e-324
+NaN|number|NaN
+NEGATIVE_INFINITY|number|-Infinity
+POSITIVE_INFINITY|number|Infinity
+MAX_SAFE_INTEGER|number|9007199254740991
+MIN_SAFE_INTEGER|number|-9007199254740991
+EPSILON|number|2.220446049250313e-16
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function Number() 
+toExponential|function|function toExponential() 
+toFixed|function|function toFixed() 
+toPrecision|function|function toPrecision() 
+toString|function|function toString() 
+valueOf|function|function valueOf() 
+toLocaleString|function|function toLocaleString() 

@@ -1,0 +1,64 @@
+environment|string|nodejs
+engine|function|function engine() 
+userAgent|function|function userAgent() 
+uriEscape|function|function uriEscape(string) 
+uriEscapePath|function|function uriEscapePath(string) 
+urlParse|function|function urlParse(url) 
+urlFormat|function|function urlFormat(url) 
+queryStringParse|function|function queryStringParse(qs) 
+queryParamsToString|function|function queryParamsToString(params) 
+readFileSync|function|function readFileSync(path) 
+base64|object|[object Object]
+buffer|object|[object Object]
+string|object|[object Object]
+ini|object|[object Object]
+fn|object|[object Object]
+date|object|[object Object]
+crypto|object|[object Object]
+abort|object|[object Object]
+each|function|function each(object, iterFunction) 
+arrayEach|function|function arrayEach(array, iterFunction) 
+update|function|function update(obj1, obj2) 
+merge|function|function merge(obj1, obj2) 
+copy|function|function copy(object) 
+isEmpty|function|function isEmpty(obj) 
+arraySliceFn|function|function arraySliceFn(obj) 
+isType|function|function isType(obj, type) 
+typeName|function|function typeName(type) 
+error|function|function error(err, options) 
+inherit|function|function inherit(klass, features) 
+mixin|function|function mixin() 
+hideProperties|function|function hideProperties(obj, props) 
+property|function|function property(obj, name, value, enumerable, isValue) 
+memoizedProperty|function|function memoizedProperty(obj, name, get, enumerable) 
+hoistPayloadMember|function|function hoistPayloadMember(resp) 
+computeSha256|function|function computeSha256(body, done) 
+isClockSkewed|function|function isClockSkewed(serverTime) 
+applyClockOffset|function|function applyClockOffset(serverTime) 
+extractRequestId|function|function extractRequestId(resp) 
+addPromises|function|function addPromises(constructors, PromiseDependency) 
+promisifyMethod|function|function promisifyMethod(methodName, PromiseDependency) 
+isDualstackAvailable|function|function isDualstackAvailable(service) 
+calculateRetryDelay|function|function calculateRetryDelay(retryCount, retryDelayOptions) 
+handleRequestWithRetries|function|function handleRequestWithRetries(httpRequest, options, cb) 
+uuid|object|[object Object]
+convertPayloadToString|function|function convertPayloadToString(resp) 
+defer|function|function defer(callback) 
+getRequestPayloadShape|function|function getRequestPayloadShape(req) 
+getProfilesFromSharedConfig|function|function getProfilesFromSharedConfig(iniLoader, filename) 
+defaultProfile|string|default
+configOptInEnv|string|AWS_SDK_LOAD_CONFIG
+sharedCredentialsFileEnv|string|AWS_SHARED_CREDENTIALS_FILE
+sharedConfigFileEnv|string|AWS_CONFIG_FILE
+imdsDisabledEnv|string|AWS_EC2_METADATA_DISABLED
+isBrowser|function|function() 
+isNode|function|function() 
+Buffer|function|function Buffer(arg, encodingOrOffset, length) 
+domain|object|[object Object]
+stream|function|function Stream() 
+url|object|[object Object]
+querystring|object|[object Object]
+createEventStream|function|function createEventStream(stream, parser, model) 
+realClock|object|[object Object]
+clientSideMonitoring|object|[object Object]
+iniLoader|object|[object Object]

@@ -1,0 +1,20 @@
+length|number|1
+name|string|Promise
+prototype|object|[object Promise]
+all|function|function all() 
+race|function|function race() 
+resolve|function|function resolve() 
+reject|function|function reject() 
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function Promise() 
+then|function|function then() 
+catch|function|function catch() 
+finally|function|function finally() 
