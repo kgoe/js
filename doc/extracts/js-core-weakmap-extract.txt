@@ -1,0 +1,17 @@
+length|number|0
+name|string|WeakMap
+prototype|object|[object WeakMap]
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function WeakMap() 
+delete|function|function delete() 
+get|function|function get() 
+has|function|function has() 
+set|function|function set() 

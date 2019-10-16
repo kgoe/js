@@ -1,0 +1,12 @@
+length|number|1
+name|string|URIError
+prototype|object|URIError
+length|number|1
+name|string|Error
+prototype|object|Error
+captureStackTrace|function|function captureStackTrace() 
+stackTraceLimit|number|10
+constructor|function|function URIError() 
+name|string|URIError
+message|string|
+toString|function|function toString() 

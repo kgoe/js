@@ -1,0 +1,27 @@
+length|number|2
+prototype||
+name|string|URL
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|class URL 
+toString|function|function toString() 
+href
+origin
+protocol
+username
+password
+host
+hostname
+port
+pathname
+search
+searchParams
+hash
+toJSON|function|function toJSON() 

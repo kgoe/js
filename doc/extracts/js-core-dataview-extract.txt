@@ -1,0 +1,36 @@
+length|number|3
+name|string|DataView
+prototype|object|[object DataView]
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function DataView() 
+buffer
+byteLength
+byteOffset
+getInt8|function|function getInt8() 
+setInt8|function|function setInt8() 
+getUint8|function|function getUint8() 
+setUint8|function|function setUint8() 
+getInt16|function|function getInt16() 
+setInt16|function|function setInt16() 
+getUint16|function|function getUint16() 
+setUint16|function|function setUint16() 
+getInt32|function|function getInt32() 
+setInt32|function|function setInt32() 
+getUint32|function|function getUint32() 
+setUint32|function|function setUint32() 
+getFloat32|function|function getFloat32() 
+setFloat32|function|function setFloat32() 
+getFloat64|function|function getFloat64() 
+setFloat64|function|function setFloat64() 
+getBigInt64|function|function getBigInt64() 
+setBigInt64|function|function setBigInt64() 
+getBigUint64|function|function getBigUint64() 
+setBigUint64|function|function setBigUint64() 

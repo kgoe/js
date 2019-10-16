@@ -1,0 +1,16 @@
+length|number|1
+name|string|ArrayBuffer
+prototype|object|[object ArrayBuffer]
+isView|function|function isView() 
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function ArrayBuffer() 
+byteLength
+slice|function|function slice() 

@@ -1,0 +1,22 @@
+length|number|0
+name|string|Set
+prototype|object|[object Set]
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function Set() 
+has|function|function has() 
+add|function|function add() 
+delete|function|function delete() 
+clear|function|function clear() 
+entries|function|function entries() 
+forEach|function|function forEach() 
+size
+values|function|function values() 
+keys|function|function values() 

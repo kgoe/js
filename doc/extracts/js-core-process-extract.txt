@@ -1,0 +1,63 @@
+title|string|node
+version|string|v10.16.3
+versions|object|[object Object]
+arch|string|arm64
+platform|string|android
+release|object|[object Object]
+argv|object|/data/data/com.termux/files/usr/bin/node,/storage/emulated/0/Documents/git.kgoe/prj.aws.helper/tool-global-explore-001.js
+execArgv|object|
+env|object|[object Object]
+pid|number|23615
+features|object|[object Object]
+ppid|number|10798
+execPath|string|/data/data/com.termux/files/usr/bin/node
+debugPort|number|9229
+_debugProcess|function|function _debugProcess() 
+_debugEnd|function|function _debugEnd() 
+_startProfilerIdleNotifier|function|function _startProfilerIdleNotifier() 
+_stopProfilerIdleNotifier|function|function _stopProfilerIdleNotifier() 
+abort|function|function abort() 
+chdir|function|function chdir(...args) 
+umask|function|function umask(...args) 
+_getActiveRequests|function|function _getActiveRequests() 
+_getActiveHandles|function|function _getActiveHandles() 
+_kill|function|function _kill() 
+cwd|function|function cwd() 
+dlopen|function|function dlopen() 
+reallyExit|function|function reallyExit() 
+uptime|function|function uptime() 
+getuid|function|function getuid() 
+geteuid|function|function geteuid() 
+getgid|function|function getgid() 
+getegid|function|function getegid() 
+getgroups|function|function getgroups() 
+_rawDebug|function|function() 
+moduleLoadList|object|Internal Binding module_wrap,Binding contextify,Internal Binding worker,NativeModule events,NativeModule internal/async_hooks,NativeModule internal/errors,Binding uv,Binding buffer,Binding async_wrap,Internal Binding async_wrap,Binding config,Binding icu,NativeModule util,NativeModule internal/util/inspect,Binding util,NativeModule internal/util,Binding constants,Internal Binding types,NativeModule internal/util/types,NativeModule internal/validators,NativeModule internal/encoding,Internal Binding icu,NativeModule buffer,NativeModule internal/buffer,NativeModule internal/process/per_thread,NativeModule internal/process/main_thread_only,NativeModule internal/process/stdio,NativeModule assert,NativeModule internal/assert,NativeModule fs,NativeModule path,NativeModule internal/constants,Binding fs,NativeModule internal/fs/streams,NativeModule internal/fs/utils,NativeModule stream,NativeModule internal/streams/pipeline,NativeModule internal/streams/end-of-stream,NativeModule internal/streams/legacy,NativeModule _stream_readable,NativeModule internal/streams/buffer_list,NativeModule internal/streams/destroy,NativeModule internal/streams/state,NativeModule _stream_writable,NativeModule _stream_duplex,NativeModule _stream_transform,NativeModule _stream_passthrough,NativeModule internal/url,NativeModule internal/querystring,Binding url,NativeModule internal/process/warning,NativeModule internal/process/next_tick,NativeModule internal/process/promises,Internal Binding util,NativeModule internal/fixed_queue,Binding performance,Binding trace_events,NativeModule internal/inspector_async_hook,Binding inspector,NativeModule internal/options,Internal Binding options,NativeModule timers,Binding timer_wrap,NativeModule internal/linkedlist,NativeModule internal/timers,NativeModule console,Binding tty_wrap,Internal Binding tty_wrap,NativeModule tty,NativeModule net,NativeModule internal/net,Binding stream_wrap,Binding tcp_wrap,Binding pipe_wrap,NativeModule internal/stream_base_commons,Internal Binding stream_wrap,Internal Binding uv,NativeModule internal/tty,Binding signal_wrap,NativeModule internal/modules/cjs/loader,NativeModule vm,NativeModule internal/modules/cjs/helpers,NativeModule url,NativeModule internal/safe_globals,Internal Binding contextify
+binding|function|function binding(module) 
+_linkedBinding|function|function _linkedBinding(module) 
+_events||
+_eventsCount|number|4
+_maxListeners|undefined|undefined
+_fatalException|function|(er) => 
+domain||
+_exiting|boolean|false
+assert|function|function deprecated(...args) 
+config|object|[object Object]
+setUncaughtExceptionCaptureCallback|function|function(fn) 
+hasUncaughtExceptionCaptureCallback|function|function() 
+emitWarning|function|(warning, type, code, ctor, now) => 
+nextTick|function|function nextTick(callback) 
+_tickCallback|function|function _tickCallback() 
+stdout|object|[object Object]
+stderr|object|[object Object]
+stdin|object|[object Object]
+openStdin|function|function() 
+hrtime|function|function hrtime(time) 
+cpuUsage|function|function cpuUsage(prevValue) 
+memoryUsage|function|function memoryUsage() 
+exit|function|function(code) 
+kill|function|function(pid, sig) 
+argv0|string|node
+allowedNodeEnvironmentFlags|object|[object Set]
+mainModule|object|[object Object]
+constructor|function|function process() 

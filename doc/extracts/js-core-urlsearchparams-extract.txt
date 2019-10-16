@@ -1,0 +1,25 @@
+length|number|0
+prototype||
+name|string|URLSearchParams
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|class URLSearchParams 
+append|function|append(name, value) 
+delete|function|delete(name) 
+get|function|get(name) 
+getAll|function|getAll(name) 
+has|function|has(name) 
+set|function|set(name, value) 
+sort|function|sort() 
+entries|function|entries() 
+forEach|function|forEach(callback, thisArg = undefined) 
+keys|function|keys() 
+values|function|values() 
+toString|function|toString() 

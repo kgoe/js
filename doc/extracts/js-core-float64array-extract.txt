@@ -1,0 +1,11 @@
+length|number|3
+name|string|Float64Array
+prototype||
+BYTES_PER_ELEMENT|number|8
+length|number|0
+name|string|TypedArray
+prototype
+of|function|function of() 
+from|function|function from() 
+constructor|function|function Float64Array() 
+BYTES_PER_ELEMENT|number|8

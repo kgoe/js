@@ -1,0 +1,23 @@
+length|number|0
+name|string|Map
+prototype|object|[object Map]
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function Map() 
+get|function|function get() 
+set|function|function set() 
+has|function|function has() 
+delete|function|function delete() 
+clear|function|function clear() 
+entries|function|function entries() 
+forEach|function|function forEach() 
+keys|function|function keys() 
+size
+values|function|function values() 

@@ -1,0 +1,15 @@
+length|number|1
+name|string|SharedArrayBuffer
+prototype|object|[object SharedArrayBuffer]
+length|number|0
+name|string|
+arguments
+caller
+constructor|function|function Function() 
+apply|function|function apply() 
+bind|function|function bind() 
+call|function|function call() 
+toString|function|function toString() 
+constructor|function|function SharedArrayBuffer() 
+byteLength
+slice|function|function slice() 

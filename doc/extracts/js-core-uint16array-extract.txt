@@ -1,0 +1,11 @@
+length|number|3
+name|string|Uint16Array
+prototype||
+BYTES_PER_ELEMENT|number|2
+length|number|0
+name|string|TypedArray
+prototype
+of|function|function of() 
+from|function|function from() 
+constructor|function|function Uint16Array() 
+BYTES_PER_ELEMENT|number|2
