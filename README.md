@@ -1,31 +1,31 @@
 ### README
 
-### KGOE JS
-	a repository created to collect useful topics about :
-	- ecmascript
-	- javascript
-	- node.js
+### JAVASCRIPT
+    a repository created to collect useful topics about :
+    - ecmascript
+    - javascript
+    - node.js
 
 ### TOPICS
-	JavaScript Core
-	JavaScript DOM
-	JavaScript DOM API
-	File Sync ?
-	Project Generation ?
-	Directory Generation ?
-	JavaScript Testing ?
-	node server ?
-	node server testing ?
+    JavaScript Core
+    JavaScript DOM
+    JavaScript DOM API
+    File Sync ?
+    Project Generation ?
+    Directory Generation ?
+    JavaScript Testing ?
+    node server ?
+    node server testing ?
 
-### Best Practices
-	?
-	
-### Entry Points
-	index.js
-	server.js
-	test.js
-	main.js
+### BEST PRACTICES
+    ?
+
+### ENTRY POINTS ( common code entry points)
+    index.js
+    server.js
+    test.js
+    main.js
 
 ### LINKS
-	https://devdocs.io/javascript/
-	https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    https://devdocs.io/javascript/
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript

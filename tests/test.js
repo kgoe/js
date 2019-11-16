@@ -2,7 +2,6 @@
 ;app={};
 ;const print=console.log;
 
-
 /*
  * test.js entry point
  * executor : node.js + mocha
@@ -12,7 +11,6 @@
  */
 
 try {
-
   var Mocha = require('mocha');
   var fs = require('fs');
   var path = require('path');
