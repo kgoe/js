@@ -33,5 +33,7 @@
     "puppeteer": "^1.11.0",
     "underscore": "^1.9.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "acorn": ">=6.4.1"
+  }
 }
