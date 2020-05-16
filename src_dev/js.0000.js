@@ -1,5 +1,21 @@
 // js 0000
 
+function fn_getRoot() {
+  if ( typeof global !== 'undefined' ) {
+    return global;
+  }
+
+  if ( typeof window !== 'undefined' ) {
+    return window;
+  }
+
+  console.log('Root Not Found');
+}
+
+function fn_chkPropType( root, prop ) {
+  return typeof root[prop];
+}
+
 try {
    var output = [];
    
@@ -43,6 +59,38 @@ try {
    output.push(Date);
    
    console.log (output);
+
+   let arrJsCoreKeyParams = [
+      'Object',
+      'Function',
+      'Boolean',
+      'Number',
+      'String',
+      'Symbol',
+      'Error',
+      'EvalError',
+      // 'InternalError',
+      'RangeError',
+      'ReferenceError',
+      'SyntaxError',
+      'TypeError',
+      'URIError',
+      // 'NativeError',
+      'Array',
+      'JSON',
+      'Math',
+      'Date',
+      'console',
+   ];
+
+   let theRoot = fn_getRoot();
+
+   let fn_cbForEachGetType = function fn_cbForEachGetType( item ) {
+      let check = fn_chkPropType( theRoot, item );
+      console.log( item, check );
+   };
+
+   arrJsCoreKeyParams.forEach( fn_cbForEachGetType );
    
 } catch( error ) {
    var output = {};
