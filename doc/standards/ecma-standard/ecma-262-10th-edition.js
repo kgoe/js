@@ -1,13 +1,13 @@
 ;doc={};
 
 
-doc.name = "ECMA 262 1st Edition";
-doc.details = "ECMAScirpt 1st Edition, June 1997";
-doc.notes = "PDF 111page 309kb";
-doc.link = "https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf";
+doc.name = "ECMA 262 ? Edition";
+doc.details = "ECMAScirpt";
+doc.notes = "";
+doc.link = "";
 
 
-doc.ES01TOC=
+doc.ES10TOC=
 `
 01|Scope
 02|Conformance
@@ -26,4 +26,3 @@ doc.ES01TOC=
 15|Native ECMAScript objects
 16|Errors
 `;
-
