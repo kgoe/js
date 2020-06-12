@@ -1,22 +1,4 @@
-;doc={};
-;app={};
-;const print={};
-
-
-doc.template=
-[
-`
-`
-];
-
-
-doc.name='mdn javascript api interfaces';
-
-
-doc.topics=
-[
-`
-# mdn javascript api interfaces
+# MDN - JavaScript Web API Interfaces
 
 A
 ANGLE_instanced_arrays
@@ -952,5 +934,3 @@ XPathExpression
 XPathNSResolver
 XPathResult
 XSLTProcessor
-`
-];

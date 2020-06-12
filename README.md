@@ -1,5 +1,5 @@
 # README
-    a repository created to collect useful topics about :
+    A Repository Created to Collect Useful Topics About :
     - ecmascript
     - javascript
     - node.js
@@ -9,7 +9,9 @@
 
 
 # JavaScript
-
+    JavaScript is a scripting language.
+    Originally intended to be run inside web browsers,
+    it is standardized as ECMA-262
 
 # JavaScript Topics
     JS Core

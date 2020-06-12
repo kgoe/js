@@ -1,22 +1,4 @@
-;doc={};
-;app={};
-;const print={};
-
-
-doc.template=
-[
-`
-`
-];
-
-
-doc.name='mdn javascript api';
-
-
-doc.topics=
-[
-`
-# mdn javascript api
+# MDN - JavaScript Web API
 
 Ambient Light Events
 Background Tasks
@@ -78,5 +60,3 @@ WebRTC
 WebVR API 
 WebVTT
 Websockets API
-`
-];
