@@ -1,6 +1,6 @@
 # MDN - JavaScript Web API Interfaces
 
-A
+# A
 ANGLE_instanced_arrays
 AbortController
 AbortSignal
@@ -41,7 +41,7 @@ AuthenticatorAssertionResponse
 AuthenticatorAttestationResponse
 AuthenticatorResponse
 
-B
+# B
 BaseAudioContext
 BasicCardRequest
 BasicCardResponse
@@ -68,7 +68,7 @@ BufferSource
 ByteLengthQueuingStrategy
 ByteString
 
-C
+# C
 CDATASection
 CSS
 CSSConditionRule
@@ -135,7 +135,7 @@ CryptoKeyPair
 CustomElementRegistry
 CustomEvent
 
-D
+# D
 DOMConfiguration
 DOMError
 DOMException
@@ -184,7 +184,7 @@ DoubleRange
 DragEvent
 DynamicsCompressorNode
 
-E
+# E
 EXT_blend_minmax
 EXT_color_buffer_float
 EXT_color_buffer_half_float
@@ -211,7 +211,7 @@ EventTarget
 ExtendableEvent
 ExtendableMessageEvent
 
-F
+# F
 FederatedCredential
 FetchEvent
 File
@@ -238,7 +238,7 @@ FormData
 FormDataEntryValue
 FullscreenOptions
 
-G
+# G
 GainNode
 Gamepad
 GamepadButton
@@ -251,7 +251,7 @@ GestureEvent
 GlobalEventHandlers
 Gyroscope
 
-H
+# H
 HMDVRDevice
 HTMLAnchorElement
 HTMLAreaElement
@@ -342,7 +342,7 @@ HkdfParams
 HmacImportParams
 HmacKeyGenParams
 
-I
+# I
 IDBCursor
 IDBCursorSync
 IDBCursorWithValue
@@ -381,13 +381,13 @@ IntersectionObserver
 IntersectionObserverEntry
 InterventionReportBody
 
-K
+# K
 Keyboard
 KeyboardEvent
 KeyboardLayoutMap
 KeyframeEffect
 
-L
+# L
 LinearAccelerationSensor
 LinkStyle
 LocalFileSystem
@@ -399,7 +399,7 @@ LockManager
 LockedFile
 LongRange
 
-M
+# M
 MIDIAccess
 MIDIConnectionEvent
 MIDIInput
@@ -464,7 +464,7 @@ MutationObserver
 MutationObserverInit
 MutationRecord
 
-N
+# N
 NameList
 NamedNodeMap
 NavigationPreloadManager
@@ -487,7 +487,7 @@ Notification
 NotificationEvent
 NotifyAudioAvailableEvent
 
-O
+# O
 OES_element_index_uint
 OES_fbo_render_mipmap
 OES_standard_derivatives
@@ -503,7 +503,7 @@ OrientationSensor
 OscillatorNode
 OverconstrainedError
 
-P
+# P
 PageTransitionEvent
 PaintWorklet
 PannerNode
@@ -570,7 +570,7 @@ PushMessageData
 PushRegistrationManager
 PushSubscription
 
-R
+# R
 RTCAnswerOptions
 RTCCertificate
 RTCConfiguration
@@ -647,7 +647,7 @@ RsaHashedKeyGenParams
 RsaOaepParams
 RsaPssParams
 
-S
+# S
 SVGAElement
 SVGAltGlyphDefElement
 SVGAltGlyphElement
@@ -821,7 +821,7 @@ SubtleCrypto
 SyncEvent
 SyncManager
 
-T
+# T
 TaskAttributionTiming
 Text
 TextDecoder
@@ -844,7 +844,7 @@ TransitionEvent
 TreeWalker
 TypeInfo
 
-U
+# U
 UIEvent
 URL
 URLSearchParams
@@ -855,7 +855,7 @@ USVString
 UserDataHandler
 UserProximityEvent
 
-V
+# V
 VRDisplay
 VRDisplayCapabilities
 VRDisplayEvent
@@ -874,7 +874,7 @@ VideoTrack
 VideoTrackList
 VisualViewport
 
-W
+# W
 WEBGL_color_buffer_float
 WEBGL_compressed_texture_astc
 WEBGL_compressed_texture_atc
@@ -921,7 +921,7 @@ WritableStream
 WritableStreamDefaultController
 WritableStreamDefaultWriter
 
-X
+# X
 XDomainRequest
 XMLDocument
 XMLHttpRequest

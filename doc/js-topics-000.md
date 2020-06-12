@@ -25,6 +25,15 @@
     https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources|Tools
     https://devdocs.io/javascript/
 
+    https://devdocs.io/javascript/
+    https://www.ecma-international.org/publications/standards/Ecma-262.htm
+    https://developer.mozilla.org/en-US/ | MDN
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript | JavaScript
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tutorials | Tutorials
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript#Reference | Reference
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference | Reference
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript#Tools_resources
+
 # Topics
     JavaScript|ECMAScript|JS|ES
     JavaScript Core|https://devdocs.io/javascript/
