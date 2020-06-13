@@ -16,4 +16,4 @@ pipelines:
 #          - npm test
 #          - mocha
           # - node tests/test.js
-          - ./node_modules/mocha/bin/mocha/ ./tests/testrun-mocha-check-core.js
+          - mocha ./tests/testrun-mocha-check-core.js
