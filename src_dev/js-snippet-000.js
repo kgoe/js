@@ -1,5 +1,9 @@
 // js 0000
 
+
+/**
+ * fn_getRoot()
+ */
 function fn_getRoot() {
   if ( typeof global !== 'undefined' ) {
     return global;
@@ -12,9 +16,16 @@ function fn_getRoot() {
   console.log('Root Not Found');
 }
 
+
+/**
+ * fn_chkPropType()
+ * @param {*} root 
+ * @param {*} prop 
+ */
 function fn_chkPropType( root, prop ) {
   return typeof root[prop];
 }
+
 
 try {
    var output = [];
