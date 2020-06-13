@@ -28,6 +28,6 @@ jobs:
     - run: mocha tests/test.js
     - run: mocha tests/testrun-mocha-check-core.js
     - run: mocha tests/testrun-mocha-check-es3.js
-    - run: mocha tests/testrun-mocha-check-js-files.js
+    # - run: mocha tests/testrun-mocha-check-js-files.js
       env:
         CI: true
