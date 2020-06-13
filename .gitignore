@@ -9,6 +9,7 @@ vendor
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*diff*.log
 
 # Runtime data
 pids
