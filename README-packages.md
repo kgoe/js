@@ -7,6 +7,8 @@
     related to javascript core exploration and unit testing
     additional packages to be handled in other repositories
 
+    rm -rf node_modules
+
     "chai": "^4.2.0",
     "jsdom": "^13.2.0",
     "mocha": "^5.2.0"
