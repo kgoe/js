@@ -27,7 +27,7 @@ var arrJsApiCoreProperties = [
 
 /**
  * fn_processArrayTypes
- * @param {*} input 
+ * @param {array} input
  */
 function fn_processArrayTypes( input ) {
   var root = typeof window !== 'undefined' ? window : global;
