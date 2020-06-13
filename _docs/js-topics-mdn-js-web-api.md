@@ -1,5 +1,4 @@
 # MDN - JavaScript Web API
-
 Ambient Light Events
 Background Tasks
 Battery API 

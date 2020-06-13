@@ -1,9 +1,11 @@
 # MDN - JavaScript Topics
 
+
 # Tutorials
 complete beginners
 intermediate
 advanced
+
 
 # References
 built-in objects
@@ -14,6 +16,7 @@ classes
 errors
 misc
 new in javascript
+
 
 # Documentation
 useful lists

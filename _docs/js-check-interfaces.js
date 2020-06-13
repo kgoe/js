@@ -13,7 +13,7 @@ if ( Array.isArray(items) ) {
         console.log( item, type );
       }
     } catch ( error ) {
-      console.log( 'ERRORL ', error);
+      console.log( 'ERROR ', error);
     }
   } );
 }
