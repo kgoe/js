@@ -1,0 +1,30 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "a repository containing topics to learn about javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "test-old": "echo \"Error: no test specified\" && exit 1",
+    "mocha-old": "mocha mocha-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgoe/js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgoe/js/issues"
+  },
+  "homepage": "https://github.com/kgoe/js#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "jsdom": "^13.2.0",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "acorn": ">=6.4.1"
+  }
+}
