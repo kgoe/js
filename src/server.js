@@ -1,4 +1,10 @@
 ;doc={};
-;const print=console.log;
 
-print('server.js' + ' gg-kgoe-js');
+
+app = {};
+const print = console.log;
+const metaProj = 'k.js';
+const metaName = 'server.js';
+
+
+print(metaProj, metaName);

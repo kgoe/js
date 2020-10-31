@@ -1,9 +1,8 @@
-# readme-tests
+# README Tests
     to contain test scripts for parsers
-
-
-# commands
-    ./node_modules/mocha/bin/mocha ./tests/testrun-mocha-check-core.js
     
+# COMMANDS
+    node tests/test.js
+    ./node_modules/mocha/bin/mocha ./tests/testrun-mocha-check-core.js
     mocha ./tests/testrun-mocha-check-core.js
     mocha ./tests/testrun-mocha-check-es3.js

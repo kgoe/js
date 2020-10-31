@@ -1,7 +1,8 @@
 # README
-    A Repository Created to Collect Useful Topics About :
-    - ecmascript
-    - javascript
+    A Repository Created to Collect Useful Topics About:
+    - ECMA Standard 262 ( ES262 )
+    - ECMAScript
+    - JavaScript
     - node.js
 
 
@@ -32,8 +33,19 @@
     Node.js server testing ?
 
 
-# Best Practices
-    ?
+# Best Practices + ES6
+    Syntax Block Scoping
+    Let Declaration
+    Const Declaration
+    Problem With Block Scoping Functions
+    Using Spread Operators
+    Using Default Parameters
+    Destructuring
+    Object Literals and Concise Parameters
+    Dynamic Property Names
+    Using Arrow Functions
+    For ... Of Loops
+    Number Loops
 
 
 # Entry Points ( common code entry points)
@@ -45,5 +57,7 @@
 
 # Links
     https://www.ecma-international.org/publications/standards/Ecma-262.htm
-    https://devdocs.io/javascript/
     https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    https://devdocs.io/javascript/
+    https://www.freecodecamp.org/news/make-your-code-cleaner-shorter-and-easier-to-read-es6-tips-and-tricks-afd4ce25977c/
+    

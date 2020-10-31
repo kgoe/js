@@ -1,6 +1,7 @@
 ;doc={};
-const assert=require('assert');
-const log=console.log;
+const log = console.log;
+const print = console.log;
+const assert = require('assert');
 
 // js core properties checker
 // checks if javascript core properties is supported
