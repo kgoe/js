@@ -21,7 +21,7 @@
   "homepage": "https://github.com/kgoe/js#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "jsdom": "^13.2.0",
+    "jsdom": "^16.5.0",
     "mocha": "^10.1.0"
   },
   "devDependencies": {
